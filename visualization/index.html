@@ -39,7 +39,7 @@
       const nodeSize = 24;
 
       const init = async () => {
-        const response = await fetch("/data/stations.json");
+        const response = await fetch("https://raw.githubusercontent.com/mostafa-kheibary/tehran-metro-graph/main/data/stations.json");
         const stations = await response.json();
 
         // add nodes and relationships based on the graph data
