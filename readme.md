@@ -81,9 +81,4 @@ Please note that this is just an example based on the data you provided. You may
 
 The data in this repository is licensed under the [Open Data Commons License](https://opendatacommons.org/licenses/). Please refer to the license file for more details on the terms and conditions of using the data.
 
-If you have any questions or suggestions regarding the data or this repository, feel free to open an issue or contact the repository maintainer.
-
-```
-
-Please note that this is just an example, and you may need to modify it to fit your specific repository and data.
-```
+If you have any questions or suggestions regarding the data or this repository, feel free to open an issue or contact me
