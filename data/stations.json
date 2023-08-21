@@ -2402,13 +2402,6 @@
 				"colors": ["#F8E100", "#007E46"],
 				"lines": [4, 5]
 			},
-			{
-				"name": "Ayatollah Kashani",
-				"disabled": false,
-				"fa": "آیت‌الله کاشانی",
-				"colors": ["#F8E100", "#EF639F"],
-				"lines": [4, 6]
-			}
 		]
 	},
 	"Eram-e Sabz": {
@@ -3386,24 +3379,10 @@
 			"disabled": true,
 			"name": "Ayatollah Kashani",
 			"fa": "آیت‌الله کاشانی",
-			"colors": ["#F8E100", "#EF639F"],
-			"lines": [4, 6]
+			"colors": ["#EF639F"],
+			"lines": [6]
 		},
 		"relations": [
-			{
-				"name": "Allameh Jafari",
-				"disabled": true,
-				"fa": "علامه جعفری",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			},
-			{
-				"name": "Chaharbagh",
-				"disabled": true,
-				"fa": "چهارباغ",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			},
 			{
 				"name": "Shahid Sattari",
 				"disabled": false,
@@ -3417,24 +3396,6 @@
 				"fa": "شهر زیبا",
 				"colors": ["#EF639F"],
 				"lines": [6]
-			}
-		]
-	},
-	"Chaharbagh": {
-		"property": {
-			"disabled": true,
-			"name": "Chaharbagh",
-			"fa": "چهارباغ",
-			"colors": ["#F8E100"],
-			"lines": [4]
-		},
-		"relations": [
-			{
-				"name": "Ayatollah Kashani",
-				"disabled": true,
-				"fa": "آیت‌الله کاشانی",
-				"colors": ["#F8E100", "#EF639F"],
-				"lines": [4, 6]
 			}
 		]
 	},
