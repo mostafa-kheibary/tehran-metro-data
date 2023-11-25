@@ -2661,7 +2661,7 @@
 			},
 			{
 				"name": "Shahid Sepahbod Qasem Soleimani",
-				"disabled": false,
+				"disabled": true,
 				"fa": "شهید سپهبد قاسم سلیمانی",
 				"colors": ["#007E46"],
 				"lines": [5]
@@ -2670,7 +2670,7 @@
 	},
 	"Shahid Sepahbod Qasem Soleimani": {
 		"property": {
-			"disabled": false,
+			"disabled": true,
 			"name": "Shahid Sepahbod Qasem Soleimani",
 			"fa": "شهید سپهبد قاسم سلیمانی",
 			"colors": ["#007E46"],
@@ -2679,7 +2679,7 @@
 		"relations": [
 			{
 				"name": "Golshahr",
-				"disabled": false,
+				"disabled": true,
 				"fa": "گلشهر",
 				"colors": ["#007E46"],
 				"lines": [5]
