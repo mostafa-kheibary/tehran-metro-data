@@ -1830,7 +1830,7 @@
 			{
 				"name": "Rahahan",
 				"disabled": false,
-				"fa": "رهاهان",
+				"fa": "راه آهن",
 				"colors": ["#67C5F5"],
 				"lines": [3]
 			}
@@ -1840,7 +1840,7 @@
 		"property": {
 			"disabled": false,
 			"name": "Rahahan",
-			"fa": "رهاهان",
+			"fa": "راه آهن",
 			"colors": ["#67C5F5"],
 			"lines": [3]
 		},
@@ -1873,7 +1873,7 @@
 			{
 				"name": "Rahahan",
 				"disabled": false,
-				"fa": "رهاهان",
+				"fa": "راه آهن",
 				"colors": ["#67C5F5"],
 				"lines": [3]
 			},
