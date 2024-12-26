@@ -39,19 +39,22 @@
       const nodeSize = 24;
 
       const init = async () => {
-        const response = await fetch("https://raw.githubusercontent.com/mostafa-kheibary/tehran-metro-graph/main/data/stations.json");
+        const response = await fetch(
+          "https://raw.githubusercontent.com/mostafa-kheibary/tehran-metro-graph/main/data/stations.json"
+        );
         const stations = await response.json();
 
         // add nodes and relationships based on the graph data
         for (let station in stations) {
-          graph.addNode(station, stations[station].property);
+          graph.addNode(station, stations[station]);
           for (let relationship of stations[station].relations) {
-            graph.addLink(station, relationship.name);
+            graph.addLink(station, relationship);
           }
         }
 
         // Graphic as svg
         graphics.node((node) => {
+          console.log(node.data);
           const ui = Viva.Graph.svg("g");
           // Create SVG text element with user id as content
           const svgText = Viva.Graph.svg("text")

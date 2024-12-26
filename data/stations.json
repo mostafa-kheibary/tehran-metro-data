@@ -1,3881 +1,2080 @@
 {
-	"Tajrish": {
-		"property": {
-			"disabled": false,
-			"name": "Tajrish",
-			"fa": "تجریش",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Gheytariyeh",
-				"disabled": false,
-				"fa": "قیطریه",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Gheytariyeh": {
-		"property": {
-			"disabled": false,
-			"name": "Gheytariyeh",
-			"fa": "قیطریه",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Tajrish",
-				"disabled": false,
-				"fa": "تجریش",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Shahid Sadr",
-				"disabled": false,
-				"fa": "شهید صدر",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Shahid Sadr": {
-		"property": {
-			"disabled": false,
-			"name": "Shahid Sadr",
-			"fa": "شهید صدر",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Gheytariyeh",
-				"disabled": false,
-				"fa": "قیطریه",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Qolhak",
-				"disabled": false,
-				"fa": "قلهک",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Qolhak": {
-		"property": {
-			"disabled": false,
-			"name": "Qolhak",
-			"fa": "قلهک",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Shahid Sadr",
-				"disabled": false,
-				"fa": "شهید صدر",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Doctor Shariati",
-				"disabled": false,
-				"fa": "دکتر شریعتی",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Doctor Shariati": {
-		"property": {
-			"disabled": false,
-			"name": "Doctor Shariati",
-			"fa": "دکتر شریعتی",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Qolhak",
-				"disabled": false,
-				"fa": "قلهک",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Mirdamad",
-				"disabled": false,
-				"fa": "میرداماد",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Mirdamad": {
-		"property": {
-			"disabled": false,
-			"name": "Mirdamad",
-			"fa": "میرداماد",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Doctor Shariati",
-				"disabled": false,
-				"fa": "دکتر شریعتی",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Shahid Haghani",
-				"disabled": false,
-				"fa": "شهید حقانی",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Shahid Haghani": {
-		"property": {
-			"disabled": false,
-			"name": "Shahid Haghani",
-			"fa": "شهید حقانی",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Mirdamad",
-				"disabled": false,
-				"fa": "میرداماد",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Shahid Hemmat",
-				"disabled": false,
-				"fa": "شهید همت",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Shahid Hemmat": {
-		"property": {
-			"disabled": false,
-			"name": "Shahid Hemmat",
-			"fa": "شهید همت",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Shahid Haghani",
-				"disabled": false,
-				"fa": "شهید حقانی",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Mosalla-ye Imam Khomeini",
-				"disabled": false,
-				"fa": "مصلی امام خمینی",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Mosalla-ye Imam Khomeini": {
-		"property": {
-			"disabled": false,
-			"name": "Mosalla-ye Imam Khomeini",
-			"fa": "مصلی امام خمینی",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Shahid Hemmat",
-				"disabled": false,
-				"fa": "شهید همت",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Shahid Beheshti",
-				"disabled": false,
-				"fa": "شهید بهشتی",
-				"colors": ["#E0001F", "#67C5F5"],
-				"lines": [1, 3]
-			}
-		]
-	},
-	"Shahid Beheshti": {
-		"property": {
-			"disabled": false,
-			"name": "Shahid Beheshti",
-			"fa": "شهید بهشتی",
-			"colors": ["#E0001F", "#67C5F5"],
-			"lines": [1, 3]
-		},
-		"relations": [
-			{
-				"name": "Mosalla-ye Imam Khomeini",
-				"disabled": false,
-				"fa": "مصلی امام خمینی",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Sohrevardi",
-				"disabled": false,
-				"fa": "سهروردی",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			},
-			{
-				"name": "Mirza-ye Shirazi",
-				"disabled": false,
-				"fa": "میرزا شیرازی",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			},
-			{
-				"name": "Shahid Mofattah",
-				"disabled": false,
-				"fa": "شهید مفتح",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Shahid Mofattah": {
-		"property": {
-			"disabled": false,
-			"name": "Shahid Mofattah",
-			"fa": "شهید مفتح",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Shahid Beheshti",
-				"disabled": false,
-				"fa": "شهید بهشتی",
-				"colors": ["#E0001F", "#67C5F5"],
-				"lines": [1, 3]
-			},
-			{
-				"name": "Shohada-ye Haftom-e Tir",
-				"disabled": false,
-				"fa": "شهدای هفتم تیر",
-				"colors": ["#E0001F", "#EF639F"],
-				"lines": [1, 6]
-			}
-		]
-	},
-	"Ayatollah Taleghani": {
-		"property": {
-			"disabled": false,
-			"name": "Ayatollah Taleghani",
-			"fa": "آیت‌الله طالقانی",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Shohada-ye Haftom-e Tir",
-				"disabled": false,
-				"fa": "شهدای هفتم تیر",
-				"colors": ["#E0001F", "#EF639F"],
-				"lines": [1, 6]
-			},
-			{
-				"name": "Darvazeh Dolat",
-				"disabled": false,
-				"fa": "دروازه دولت",
-				"colors": ["#E0001F", "#F8E100"],
-				"lines": [1, 4]
-			}
-		]
-	},
-	"Darvazeh Dolat": {
-		"property": {
-			"disabled": false,
-			"name": "Darvazeh Dolat",
-			"fa": "دروازه دولت",
-			"colors": ["#E0001F", "#F8E100"],
-			"lines": [1, 4]
-		},
-		"relations": [
-			{
-				"name": "Ayatollah Taleghani",
-				"disabled": false,
-				"fa": "آیت‌الله طالقانی",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Ferdowsi",
-				"disabled": false,
-				"fa": "فردوسی",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			},
-			{
-				"name": "Darvazeh Shemiran",
-				"disabled": false,
-				"fa": "دروازه شمیران",
-				"colors": ["#2F4389", "#F8E100"],
-				"lines": [2, 4]
-			},
-			{
-				"name": "Sa'adi",
-				"disabled": false,
-				"fa": "سعدی",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Sa'adi": {
-		"property": {
-			"disabled": false,
-			"name": "Sa'adi",
-			"fa": "سعدی",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Darvazeh Dolat",
-				"disabled": false,
-				"fa": "دروازه دولت",
-				"colors": ["#E0001F", "#F8E100"],
-				"lines": [1, 4]
-			},
-			{
-				"name": "Imam Khomeini",
-				"disabled": false,
-				"fa": "امام خمینی",
-				"colors": ["#E0001F", "#2F4389"],
-				"lines": [1, 2]
-			}
-		]
-	},
-	"Imam Khomeini": {
-		"property": {
-			"disabled": false,
-			"name": "Imam Khomeini",
-			"fa": "امام خمینی",
-			"colors": ["#E0001F", "#2F4389"],
-			"lines": [1, 2]
-		},
-		"relations": [
-			{
-				"name": "Sa'adi",
-				"disabled": false,
-				"fa": "سعدی",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Hasan Abad",
-				"disabled": false,
-				"fa": "حسن آباد",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			},
-			{
-				"name": "Mellat",
-				"disabled": false,
-				"fa": "ملت",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			},
-			{
-				"name": "Panzdah-e Khordad",
-				"disabled": false,
-				"fa": "پانزده خرداد",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Panzdah-e Khordad": {
-		"property": {
-			"disabled": false,
-			"name": "Panzdah-e Khordad",
-			"fa": "پانزده خرداد",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Imam Khomeini",
-				"disabled": false,
-				"fa": "امام خمینی",
-				"colors": ["#E0001F", "#2F4389"],
-				"lines": [1, 2]
-			},
-			{
-				"name": "Khayyam",
-				"disabled": false,
-				"fa": "خیام",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Khayyam": {
-		"property": {
-			"disabled": false,
-			"name": "Khayyam",
-			"fa": "خیام",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Panzdah-e Khordad",
-				"disabled": false,
-				"fa": "پانزده خرداد",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Meydan-e Mohammadiyeh",
-				"disabled": false,
-				"fa": "میدان محمدیه",
-				"colors": ["#E0001F", "#7F0B74"],
-				"lines": [1, 7]
-			}
-		]
-	},
-	"Meydan-e Mohammadiyeh": {
-		"property": {
-			"disabled": false,
-			"name": "Meydan-e Mohammadiyeh",
-			"fa": "میدان محمدیه",
-			"colors": ["#E0001F", "#7F0B74"],
-			"lines": [1, 7]
-		},
-		"relations": [
-			{
-				"name": "Khayyam",
-				"disabled": false,
-				"fa": "خیام",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Mahdiyeh",
-				"disabled": false,
-				"fa": "مهدیه",
-				"colors": ["#67C5F5", "#7F0B74"],
-				"lines": [3, 7]
-			},
-			{
-				"name": "Mowlavi",
-				"disabled": false,
-				"fa": "مولوی",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			},
-			{
-				"name": "Shoush",
-				"disabled": false,
-				"fa": "شوش",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Shoush": {
-		"property": {
-			"disabled": false,
-			"name": "Shoush",
-			"fa": "شوش",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Meydan-e Mohammadiyeh",
-				"disabled": false,
-				"fa": "میدان محمدیه",
-				"colors": ["#E0001F", "#7F0B74"],
-				"lines": [1, 7]
-			},
-			{
-				"name": "Payaneh Jonoub(Jonoub Terminal)",
-				"disabled": false,
-				"fa": "پایانه جنوبی",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Payaneh Jonoub(Jonoub Terminal)": {
-		"property": {
-			"disabled": false,
-			"name": "Payaneh Jonoub(Jonoub Terminal)",
-			"fa": "پایانه جنوبی",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Shoush",
-				"disabled": false,
-				"fa": "شوش",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Shahid Bokharaei",
-				"disabled": false,
-				"fa": "شهید بخارایی",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Shahid Bokharaei": {
-		"property": {
-			"disabled": false,
-			"name": "Shahid Bokharaei",
-			"fa": "شهید بخارایی",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Payaneh Jonoub(Jonoub Terminal)",
-				"disabled": false,
-				"fa": "پایانه جنوبی",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Aliabad",
-				"disabled": false,
-				"fa": "علی‌آباد",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Aliabad": {
-		"property": {
-			"disabled": false,
-			"name": "Aliabad",
-			"fa": "علی‌آباد",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Shahid Bokharaei",
-				"disabled": false,
-				"fa": "شهید بخارایی",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Javanmard-e Ghassab",
-				"disabled": false,
-				"fa": "جوانمرد قصاب",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Javanmard-e Ghassab": {
-		"property": {
-			"disabled": false,
-			"name": "Javanmard-e Ghassab",
-			"fa": "جوانمرد قصاب",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Aliabad",
-				"disabled": false,
-				"fa": "علی‌آباد",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Shahr-e Rey",
-				"disabled": false,
-				"fa": "شهر ری",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Shahr-e Rey": {
-		"property": {
-			"disabled": false,
-			"name": "Shahr-e Rey",
-			"fa": "شهر ری",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Javanmard-e Ghassab",
-				"disabled": false,
-				"fa": "جوانمرد قصاب",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Palayeshgah",
-				"disabled": false,
-				"fa": "پالایشگاه",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Palayeshgah": {
-		"property": {
-			"disabled": false,
-			"name": "Palayeshgah",
-			"fa": "پالایشگاه",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Shahr-e Rey",
-				"disabled": false,
-				"fa": "شهر ری",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Shahed - BagherShahr",
-				"disabled": false,
-				"fa": "شاهد - باغرشهر",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Shahed - BagherShahr": {
-		"property": {
-			"disabled": false,
-			"name": "Shahed - BagherShahr",
-			"fa": "شاهد - باغرشهر",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Palayeshgah",
-				"disabled": false,
-				"fa": "پالایشگاه",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Namayeshgah-e Shahr-e Aftab",
-				"disabled": false,
-				"fa": "نمایشگاه شهر آفتاب",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Holy Shrine of Imam Khomeini",
-				"disabled": false,
-				"fa": "حرم مطهر امام خمینی",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Namayeshgah-e Shahr-e Aftab": {
-		"property": {
-			"disabled": false,
-			"name": "Namayeshgah-e Shahr-e Aftab",
-			"fa": "نمایشگاه شهر آفتاب",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Shahed - BagherShahr",
-				"disabled": false,
-				"fa": "شاهد - باغرشهر",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Vavan",
-				"disabled": false,
-				"fa": "واوان",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Vavan": {
-		"property": {
-			"disabled": true,
-			"name": "Vavan",
-			"fa": "واوان",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Namayeshgah-e Shahr-e Aftab",
-				"disabled": false,
-				"fa": "نمایشگاه شهر آفتاب",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Emam Khomeini Airport",
-				"disabled": false,
-				"fa": "فرودگاه امام خمینی",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Emam Khomeini Airport": {
-		"property": {
-			"disabled": false,
-			"name": "Emam Khomeini Airport",
-			"fa": "فرودگاه امام خمینی",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Vavan",
-				"disabled": false,
-				"fa": "واوان",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Shahr-e Parand",
-				"disabled": true,
-				"fa": "شهر پرند",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Shahr-e Parand": {
-		"property": {
-			"disabled": true,
-			"name": "Shahr-e Parand",
-			"fa": "شهر پرند",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Emam Khomeini Airport",
-				"disabled": true,
-				"fa": "فرودگاه امام خمینی",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Holy Shrine of Imam Khomeini": {
-		"property": {
-			"disabled": false,
-			"name": "Holy Shrine of Imam Khomeini",
-			"fa": "حرم مطهر امام خمینی",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Shahed - BagherShahr",
-				"disabled": false,
-				"fa": "شاهد - باغرشهر",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Kahrizak",
-				"disabled": false,
-				"fa": "کهریزک",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Kahrizak": {
-		"property": {
-			"disabled": false,
-			"name": "Kahrizak",
-			"fa": "کهریزک",
-			"colors": ["#E0001F"],
-			"lines": [1]
-		},
-		"relations": [
-			{
-				"name": "Holy Shrine of Imam Khomeini",
-				"disabled": false,
-				"fa": "حرم مطهر امام خمینی",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Farhangsara": {
-		"property": {
-			"disabled": false,
-			"name": "Farhangsara",
-			"fa": "فرهنگسرا",
-			"colors": ["#2F4389"],
-			"lines": [2]
-		},
-		"relations": [
-			{
-				"name": "Tehranpars",
-				"disabled": false,
-				"fa": "تهرانپارس",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			}
-		]
-	},
-	"Tehranpars": {
-		"property": {
-			"disabled": false,
-			"name": "Tehranpars",
-			"fa": "تهرانپارس",
-			"colors": ["#2F4389"],
-			"lines": [2]
-		},
-		"relations": [
-			{
-				"name": "Farhangsara",
-				"disabled": false,
-				"fa": "فرهنگسرا",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			},
-			{
-				"name": "Shahid Bagheri",
-				"disabled": false,
-				"fa": "شهید باقری",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			}
-		]
-	},
-	"Shahid Bagheri": {
-		"property": {
-			"disabled": false,
-			"name": "Shahid Bagheri",
-			"fa": "شهید باقری",
-			"colors": ["#2F4389"],
-			"lines": [2]
-		},
-		"relations": [
-			{
-				"name": "Tehranpars",
-				"disabled": false,
-				"fa": "تهرانپارس",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			},
-			{
-				"name": "Daneshgah-e Elm va Sanat",
-				"disabled": false,
-				"fa": "دانشگاه علم و صنعت",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			}
-		]
-	},
-	"Daneshgah-e Elm va Sanat": {
-		"property": {
-			"disabled": false,
-			"name": "Daneshgah-e Elm va Sanat",
-			"fa": "دانشگاه علم و صنعت",
-			"colors": ["#2F4389"],
-			"lines": [2]
-		},
-		"relations": [
-			{
-				"name": "Shahid Bagheri",
-				"disabled": false,
-				"fa": "شهید باقری",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			},
-			{
-				"name": "Sarsabz",
-				"disabled": false,
-				"fa": "سرسبز",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			}
-		]
-	},
-	"Sarsabz": {
-		"property": {
-			"disabled": false,
-			"name": "Sarsabz",
-			"fa": "سرسبز",
-			"colors": ["#2F4389"],
-			"lines": [2]
-		},
-		"relations": [
-			{
-				"name": "Daneshgah-e Elm va Sanat",
-				"disabled": false,
-				"fa": "دانشگاه علم و صنعت",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			},
-			{
-				"name": "Janbazan",
-				"disabled": false,
-				"fa": "جانبازان",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			}
-		]
-	},
-	"Janbazan": {
-		"property": {
-			"disabled": false,
-			"name": "Janbazan",
-			"fa": "جانبازان",
-			"colors": ["#2F4389"],
-			"lines": [2]
-		},
-		"relations": [
-			{
-				"name": "Sarsabz",
-				"disabled": false,
-				"fa": "سرسبز",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			},
-			{
-				"name": "Fadak",
-				"disabled": false,
-				"fa": "فدک",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			}
-		]
-	},
-	"Fadak": {
-		"property": {
-			"disabled": false,
-			"name": "Fadak",
-			"fa": "فدک",
-			"colors": ["#2F4389"],
-			"lines": [2]
-		},
-		"relations": [
-			{
-				"name": "Janbazan",
-				"disabled": false,
-				"fa": "جانبازان",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			},
-			{
-				"name": "Sabalan",
-				"disabled": false,
-				"fa": "سبلان",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			}
-		]
-	},
-	"Sabalan": {
-		"property": {
-			"disabled": false,
-			"name": "Sabalan",
-			"fa": "سبلان",
-			"colors": ["#2F4389"],
-			"lines": [2]
-		},
-		"relations": [
-			{
-				"name": "Fadak",
-				"disabled": false,
-				"fa": "فدک",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			},
-			{
-				"name": "Shahid Madani",
-				"disabled": false,
-				"fa": "شهید مدنی",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			}
-		]
-	},
-	"Shahid Madani": {
-		"property": {
-			"disabled": false,
-			"name": "Shahid Madani",
-			"fa": "شهید مدنی",
-			"colors": ["#2F4389"],
-			"lines": [2]
-		},
-		"relations": [
-			{
-				"name": "Sabalan",
-				"disabled": false,
-				"fa": "سبلان",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			},
-			{
-				"name": "Imam Hussein",
-				"disabled": false,
-				"fa": "امام حسین",
-				"colors": ["#2F4389", "#EF639F"],
-				"lines": [2, 6]
-			}
-		]
-	},
-	"Imam Hussein": {
-		"property": {
-			"disabled": false,
-			"name": "Imam Hussein",
-			"fa": "امام حسین",
-			"colors": ["#2F4389", "#EF639F"],
-			"lines": [2, 6]
-		},
-		"relations": [
-			{
-				"name": "Shahid Madani",
-				"disabled": false,
-				"fa": "شهید مدنی",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			},
-			{
-				"name": "Sarbaz",
-				"disabled": false,
-				"fa": "سرباز",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			},
-			{
-				"name": "Meydan-e Shohada",
-				"disabled": false,
-				"fa": "میدان شهدا",
-				"colors": ["#F8E100", "#EF639F"],
-				"lines": [4, 6]
-			},
-			{
-				"name": "Darvazeh Shemiran",
-				"disabled": false,
-				"fa": "دروازه شمیران",
-				"colors": ["#2F4389", "#F8E100"],
-				"lines": [2, 4]
-			}
-		]
-	},
-	"Darvazeh Shemiran": {
-		"property": {
-			"disabled": false,
-			"name": "Darvazeh Shemiran",
-			"fa": "دروازه شمیران",
-			"colors": ["#2F4389", "#F8E100"],
-			"lines": [2, 4]
-		},
-		"relations": [
-			{
-				"name": "Imam Hussein",
-				"disabled": false,
-				"fa": "امام حسین",
-				"colors": ["#2F4389", "#EF639F"],
-				"lines": [2, 6]
-			},
-			{
-				"name": "Meydan-e Shohada",
-				"disabled": false,
-				"fa": "میدان شهدا",
-				"colors": ["#F8E100", "#EF639F"],
-				"lines": [4, 6]
-			},
-			{
-				"name": "Darvazeh Dolat",
-				"disabled": false,
-				"fa": "دروازه دولت",
-				"colors": ["#E0001F", "#F8E100"],
-				"lines": [1, 4]
-			},
-			{
-				"name": "Baharistan",
-				"disabled": false,
-				"fa": "بهارستان",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			}
-		]
-	},
-	"Baharistan": {
-		"property": {
-			"disabled": false,
-			"name": "Baharistan",
-			"fa": "بهارستان",
-			"colors": ["#2F4389"],
-			"lines": [2]
-		},
-		"relations": [
-			{
-				"name": "Darvazeh Shemiran",
-				"disabled": false,
-				"fa": "دروازه شمیران",
-				"colors": ["#2F4389", "#F8E100"],
-				"lines": [2, 4]
-			},
-			{
-				"name": "Mellat",
-				"disabled": false,
-				"fa": "ملت",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			}
-		]
-	},
-	"Mellat": {
-		"property": {
-			"disabled": false,
-			"name": "Mellat",
-			"fa": "ملت",
-			"colors": ["#2F4389"],
-			"lines": [2]
-		},
-		"relations": [
-			{
-				"name": "Baharistan",
-				"disabled": false,
-				"fa": "بهارستان",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			},
-			{
-				"name": "Imam Khomeini",
-				"disabled": false,
-				"fa": "امام خمینی",
-				"colors": ["#E0001F", "#2F4389"],
-				"lines": [1, 2]
-			}
-		]
-	},
-	"Hasan Abad": {
-		"property": {
-			"disabled": false,
-			"name": "Hasan Abad",
-			"fa": "حسن آباد",
-			"colors": ["#2F4389"],
-			"lines": [2]
-		},
-		"relations": [
-			{
-				"name": "Imam Khomeini",
-				"disabled": false,
-				"fa": "امام خمینی",
-				"colors": ["#E0001F", "#2F4389"],
-				"lines": [1, 2]
-			},
-			{
-				"name": "Daneshgah-e Imam Ali",
-				"disabled": false,
-				"fa": "دانشگاه امام علی",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			}
-		]
-	},
-	"Daneshgah-e Imam Ali": {
-		"property": {
-			"disabled": false,
-			"name": "Daneshgah-e Imam Ali",
-			"fa": "دانشگاه امام علی",
-			"colors": ["#2F4389"],
-			"lines": [2]
-		},
-		"relations": [
-			{
-				"name": "Hasan Abad",
-				"disabled": false,
-				"fa": "حسن آباد",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			},
-			{
-				"name": "Meydan-e Horr",
-				"disabled": false,
-				"fa": "میدان حر",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			}
-		]
-	},
-	"Meydan-e Horr": {
-		"property": {
-			"disabled": false,
-			"name": "Meydan-e Horr",
-			"fa": "میدان حر",
-			"colors": ["#2F4389"],
-			"lines": [2]
-		},
-		"relations": [
-			{
-				"name": "Daneshgah-e Imam Ali",
-				"disabled": false,
-				"fa": "دانشگاه امام علی",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			},
-			{
-				"name": "Shahid Navab-e Safavi",
-				"disabled": false,
-				"fa": "شهید نواب صفوی",
-				"colors": ["#2F4389", "#7F0B74"],
-				"lines": [2, 7]
-			}
-		]
-	},
-	"Shahid Navab-e Safavi": {
-		"property": {
-			"disabled": false,
-			"name": "Shahid Navab-e Safavi",
-			"fa": "شهید نواب صفوی",
-			"colors": ["#2F4389", "#7F0B74"],
-			"lines": [2, 7]
-		},
-		"relations": [
-			{
-				"name": "Meydan-e Horr",
-				"disabled": false,
-				"fa": "میدان حر",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			},
-			{
-				"name": "Towhid",
-				"disabled": false,
-				"fa": "توحید",
-				"colors": ["#F8E100", "#7F0B74"],
-				"lines": [4, 7]
-			},
-			{
-				"name": "Roudaki",
-				"disabled": false,
-				"fa": "رودکی",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			},
-			{
-				"name": "Shademan",
-				"disabled": false,
-				"fa": "شادمان",
-				"colors": ["#2F4389", "#F8E100"],
-				"lines": [2, 4]
-			}
-		]
-	},
-	"Shademan": {
-		"property": {
-			"disabled": false,
-			"name": "Shademan",
-			"fa": "شادمان",
-			"colors": ["#2F4389", "#F8E100"],
-			"lines": [2, 4]
-		},
-		"relations": [
-			{
-				"name": "Shahid Navab-e Safavi",
-				"disabled": false,
-				"fa": "شهید نواب صفوی",
-				"colors": ["#2F4389", "#7F0B74"],
-				"lines": [2, 7]
-			},
-			{
-				"name": "Towhid",
-				"disabled": false,
-				"fa": "توحید",
-				"colors": ["#F8E100", "#7F0B74"],
-				"lines": [4, 7]
-			},
-			{
-				"name": "Doctor Habibollah",
-				"disabled": false,
-				"fa": "دکتر حبیب‌الله",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			},
-			{
-				"name": "Daneshgah-e Sharif",
-				"disabled": false,
-				"fa": "دانشگاه شریف",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			}
-		]
-	},
-	"Daneshgah-e Sharif": {
-		"property": {
-			"disabled": false,
-			"name": "Daneshgah-e Sharif",
-			"fa": "دانشگاه شریف",
-			"colors": ["#2F4389"],
-			"lines": [2]
-		},
-		"relations": [
-			{
-				"name": "Shademan",
-				"disabled": false,
-				"fa": "شادمان",
-				"colors": ["#2F4389", "#F8E100"],
-				"lines": [2, 4]
-			},
-			{
-				"name": "Tarasht",
-				"disabled": false,
-				"fa": "طرشت",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			}
-		]
-	},
-	"Tarasht": {
-		"property": {
-			"disabled": false,
-			"name": "Tarasht",
-			"fa": "طرشت",
-			"colors": ["#2F4389"],
-			"lines": [2]
-		},
-		"relations": [
-			{
-				"name": "Daneshgah-e Sharif",
-				"disabled": false,
-				"fa": "دانشگاه شریف",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			},
-			{
-				"name": "Tehran (Sadeghiyeh)",
-				"disabled": false,
-				"fa": "تهران (صادقیه)",
-				"colors": ["#2F4389", "#007E46"],
-				"lines": [2, 5]
-			}
-		]
-	},
-	"Tehran (Sadeghiyeh)": {
-		"property": {
-			"disabled": false,
-			"name": "Tehran (Sadeghiyeh)",
-			"fa": "تهران (صادقیه)",
-			"colors": ["#2F4389", "#007E46"],
-			"lines": [2, 5]
-		},
-		"relations": [
-			{
-				"name": "Tarasht",
-				"disabled": false,
-				"fa": "طرشت",
-				"colors": ["#2F4389"],
-				"lines": [2]
-			},
-			{
-				"name": "Eram-e Sabz",
-				"disabled": false,
-				"fa": "ارم سبز",
-				"colors": ["#F8E100", "#007E46"],
-				"lines": [4, 5]
-			}
-		]
-	},
-	"Qa'em": {
-		"property": {
-			"disabled": false,
-			"name": "Qa'em",
-			"fa": "قائم",
-			"colors": ["#67C5F5"],
-			"lines": [3]
-		},
-		"relations": [
-			{
-				"name": "Shahid Mahallati",
-				"disabled": false,
-				"fa": "شهید محلاتی",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			}
-		]
-	},
-	"Shahid Mahallati": {
-		"property": {
-			"disabled": false,
-			"name": "Shahid Mahallati",
-			"fa": "شهید محلاتی",
-			"colors": ["#67C5F5"],
-			"lines": [3]
-		},
-		"relations": [
-			{
-				"name": "Qa'em",
-				"disabled": false,
-				"fa": "قائم",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			},
-			{
-				"name": "Aghdasiyeh",
-				"disabled": false,
-				"fa": "اقتصادیه",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			}
-		]
-	},
-	"Aghdasiyeh": {
-		"property": {
-			"disabled": false,
-			"name": "Aghdasiyeh",
-			"fa": "اقتصادیه",
-			"colors": ["#67C5F5"],
-			"lines": [3]
-		},
-		"relations": [
-			{
-				"name": "Shahid Mahallati",
-				"disabled": false,
-				"fa": "شهید محلاتی",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			},
-			{
-				"name": "Nobonyad",
-				"disabled": false,
-				"fa": "نوبنیاد",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			}
-		]
-	},
-	"Nobonyad": {
-		"property": {
-			"disabled": false,
-			"name": "Nobonyad",
-			"fa": "نوبنیاد",
-			"colors": ["#67C5F5"],
-			"lines": [3]
-		},
-		"relations": [
-			{
-				"name": "Aghdasiyeh",
-				"disabled": false,
-				"fa": "اقتصادیه",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			},
-			{
-				"name": "Hoseinabad",
-				"disabled": false,
-				"fa": "حسین‌آباد",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			}
-		]
-	},
-	"Hoseinabad": {
-		"property": {
-			"disabled": false,
-			"name": "Hoseinabad",
-			"fa": "حسین‌آباد",
-			"colors": ["#67C5F5"],
-			"lines": [3]
-		},
-		"relations": [
-			{
-				"name": "Nobonyad",
-				"disabled": false,
-				"fa": "نوبنیاد",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			},
-			{
-				"name": "Meydan-e Heravi",
-				"disabled": false,
-				"fa": "میدان هروی",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			}
-		]
-	},
-	"Meydan-e Heravi": {
-		"property": {
-			"disabled": false,
-			"name": "Meydan-e Heravi",
-			"fa": "میدان هروی",
-			"colors": ["#67C5F5"],
-			"lines": [3]
-		},
-		"relations": [
-			{
-				"name": "Hoseinabad",
-				"disabled": false,
-				"fa": "حسین‌آباد",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			},
-			{
-				"name": "Shahid Zeynoddin",
-				"disabled": false,
-				"fa": "شهید زین‌الدین",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			}
-		]
-	},
-	"Shahid Zeynoddin": {
-		"property": {
-			"disabled": false,
-			"name": "Shahid Zeynoddin",
-			"fa": "شهید زین‌الدین",
-			"colors": ["#67C5F5"],
-			"lines": [3]
-		},
-		"relations": [
-			{
-				"name": "Meydan-e Heravi",
-				"disabled": false,
-				"fa": "میدان هروی",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			},
-			{
-				"name": "Khajeh Abdollah-e Ansari",
-				"disabled": false,
-				"fa": "خواجه عبدالله انصاری",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			}
-		]
-	},
-	"Khajeh Abdollah-e Ansari": {
-		"property": {
-			"disabled": false,
-			"name": "Khajeh Abdollah-e Ansari",
-			"fa": "خواجه عبدالله انصاری",
-			"colors": ["#67C5F5"],
-			"lines": [3]
-		},
-		"relations": [
-			{
-				"name": "Shahid Zeynoddin",
-				"disabled": false,
-				"fa": "شهید زین‌الدین",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			},
-			{
-				"name": "Shahid Sayyad Shirazi",
-				"disabled": false,
-				"fa": "شهید صیاد شیرازی",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			}
-		]
-	},
-	"Shahid Sayyad Shirazi": {
-		"property": {
-			"disabled": false,
-			"name": "Shahid Sayyad Shirazi",
-			"fa": "شهید صیاد شیرازی",
-			"colors": ["#67C5F5"],
-			"lines": [3]
-		},
-		"relations": [
-			{
-				"name": "Khajeh Abdollah-e Ansari",
-				"disabled": false,
-				"fa": "خواجه عبدالله انصاری",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			},
-			{
-				"name": "Shahid Ghodousi",
-				"disabled": false,
-				"fa": "شهید قدوسی",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			}
-		]
-	},
-	"Shahid Ghodousi": {
-		"property": {
-			"disabled": false,
-			"name": "Shahid Ghodousi",
-			"fa": "شهید قدوسی",
-			"colors": ["#67C5F5"],
-			"lines": [3]
-		},
-		"relations": [
-			{
-				"name": "Shahid Sayyad Shirazi",
-				"disabled": false,
-				"fa": "شهید صیاد شیرازی",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			},
-			{
-				"name": "Sohrevardi",
-				"disabled": false,
-				"fa": "سهروردی",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			}
-		]
-	},
-	"Sohrevardi": {
-		"property": {
-			"disabled": false,
-			"name": "Sohrevardi",
-			"fa": "سهروردی",
-			"colors": ["#67C5F5"],
-			"lines": [3]
-		},
-		"relations": [
-			{
-				"name": "Shahid Ghodousi",
-				"disabled": false,
-				"fa": "شهید قدوسی",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			},
-			{
-				"name": "Shahid Beheshti",
-				"disabled": false,
-				"fa": "شهید بهشتی",
-				"colors": ["#E0001F", "#67C5F5"],
-				"lines": [1, 3]
-			}
-		]
-	},
-	"Mirza-ye Shirazi": {
-		"property": {
-			"disabled": false,
-			"name": "Mirza-ye Shirazi",
-			"fa": "میرزا شیرازی",
-			"colors": ["#67C5F5"],
-			"lines": [3]
-		},
-		"relations": [
-			{
-				"name": "Shahid Beheshti",
-				"disabled": false,
-				"fa": "شهید بهشتی",
-				"colors": ["#E0001F", "#67C5F5"],
-				"lines": [1, 3]
-			},
-			{
-				"name": "Meydan-e Jahad",
-				"disabled": false,
-				"fa": "میدان جهاد",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			}
-		]
-	},
-	"Meydan-e Jahad": {
-		"property": {
-			"disabled": false,
-			"name": "Meydan-e Jahad",
-			"fa": "میدان جهاد",
-			"colors": ["#67C5F5"],
-			"lines": [3]
-		},
-		"relations": [
-			{
-				"name": "Mirza-ye Shirazi",
-				"disabled": false,
-				"fa": "میرزا شیرازی",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			},
-			{
-				"name": "Meydan-e Hazrat Vali Asr",
-				"disabled": false,
-				"fa": "میدان حضرت ولیعصر",
-				"colors": ["#67C5F5", "#EF639F"],
-				"lines": [3, 6]
-			}
-		]
-	},
-	"Teatr-e Shahr": {
-		"property": {
-			"disabled": false,
-			"name": "Teatr-e Shahr",
-			"fa": "تئاتر شهر",
-			"colors": ["#67C5F5", "#F8E100"],
-			"lines": [3, 4]
-		},
-		"relations": [
-			{
-				"name": "Meydan-e Hazrat Vali Asr",
-				"disabled": false,
-				"fa": "میدان حضرت ولیعصر",
-				"colors": ["#67C5F5", "#EF639F"],
-				"lines": [3, 6]
-			},
-			{
-				"name": "Ferdowsi",
-				"disabled": false,
-				"fa": "فردوسی",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			},
-			{
-				"name": "Meydan-e Enghelab-e Eslami",
-				"disabled": false,
-				"fa": "میدان انقلاب اسلامی",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			},
-			{
-				"name": "Moniriyeh",
-				"disabled": false,
-				"fa": "منیریه",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			}
-		]
-	},
-	"Moniriyeh": {
-		"property": {
-			"disabled": false,
-			"name": "Moniriyeh",
-			"fa": "منیریه",
-			"colors": ["#67C5F5"],
-			"lines": [3]
-		},
-		"relations": [
-			{
-				"name": "Teatr-e Shahr",
-				"disabled": false,
-				"fa": "تئاتر شهر",
-				"colors": ["#67C5F5", "#F8E100"],
-				"lines": [3, 4]
-			},
-			{
-				"name": "Mahdiyeh",
-				"disabled": false,
-				"fa": "مهدیه",
-				"colors": ["#67C5F5", "#7F0B74"],
-				"lines": [3, 7]
-			}
-		]
-	},
-	"Mahdiyeh": {
-		"property": {
-			"disabled": false,
-			"name": "Mahdiyeh",
-			"fa": "مهدیه",
-			"colors": ["#67C5F5", "#7F0B74"],
-			"lines": [3, 7]
-		},
-		"relations": [
-			{
-				"name": "Moniriyeh",
-				"disabled": false,
-				"fa": "منیریه",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			},
-			{
-				"name": "Meydan-e Mohammadiyeh",
-				"disabled": false,
-				"fa": "میدان محمدیه",
-				"colors": ["#E0001F", "#7F0B74"],
-				"lines": [1, 7]
-			},
-			{
-				"name": "Helal Ahmar",
-				"disabled": false,
-				"fa": "هلال احمر",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			},
-			{
-				"name": "Rahahan",
-				"disabled": false,
-				"fa": "راه آهن",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			}
-		]
-	},
-	"Rahahan": {
-		"property": {
-			"disabled": false,
-			"name": "Rahahan",
-			"fa": "راه آهن",
-			"colors": ["#67C5F5"],
-			"lines": [3]
-		},
-		"relations": [
-			{
-				"name": "Mahdiyeh",
-				"disabled": false,
-				"fa": "مهدیه",
-				"colors": ["#67C5F5", "#7F0B74"],
-				"lines": [3, 7]
-			},
-			{
-				"name": "Javadiyeh",
-				"disabled": false,
-				"fa": "جوادیه",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			}
-		]
-	},
-	"Javadiyeh": {
-		"property": {
-			"disabled": false,
-			"name": "Javadiyeh",
-			"fa": "جوادیه",
-			"colors": ["#67C5F5"],
-			"lines": [3]
-		},
-		"relations": [
-			{
-				"name": "Rahahan",
-				"disabled": false,
-				"fa": "راه آهن",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			},
-			{
-				"name": "Zamzam",
-				"disabled": false,
-				"fa": "زمزم",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			}
-		]
-	},
-	"Zamzam": {
-		"property": {
-			"disabled": false,
-			"name": "Zamzam",
-			"fa": "زمزم",
-			"colors": ["#67C5F5"],
-			"lines": [3]
-		},
-		"relations": [
-			{
-				"name": "Javadiyeh",
-				"disabled": false,
-				"fa": "جوادیه",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			},
-			{
-				"name": "Shahrak-e Shariaty",
-				"disabled": false,
-				"fa": "شهرک شریعتی",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			}
-		]
-	},
-	"Shahrak-e Shariaty": {
-		"property": {
-			"disabled": false,
-			"name": "Shahrak-e Shariaty",
-			"fa": "شهرک شریعتی",
-			"colors": ["#67C5F5"],
-			"lines": [3]
-		},
-		"relations": [
-			{
-				"name": "Zamzam",
-				"disabled": false,
-				"fa": "زمزم",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			},
-			{
-				"name": "Abdol Abad",
-				"disabled": false,
-				"fa": "عبدالآباد",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			}
-		]
-	},
-	"Abdol Abad": {
-		"property": {
-			"disabled": false,
-			"name": "Abdol Abad",
-			"fa": "عبدالآباد",
-			"colors": ["#67C5F5"],
-			"lines": [3]
-		},
-		"relations": [
-			{
-				"name": "Shahrak-e Shariaty",
-				"disabled": false,
-				"fa": "شهرک شریعتی",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			},
-			{
-				"name": "Nemat Abad",
-				"disabled": false,
-				"fa": "نعمت آباد",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			}
-		]
-	},
-	"Nemat Abad": {
-		"property": {
-			"disabled": false,
-			"name": "Nemat Abad",
-			"fa": "نعمت آباد",
-			"colors": ["#67C5F5"],
-			"lines": [3]
-		},
-		"relations": [
-			{
-				"name": "Abdol Abad",
-				"disabled": false,
-				"fa": "عبدالآباد",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			},
-			{
-				"name": "Azadegan",
-				"disabled": false,
-				"fa": "آزادگان",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			}
-		]
-	},
-	"Azadegan": {
-		"property": {
-			"disabled": false,
-			"name": "Azadegan",
-			"fa": "آزادگان",
-			"colors": ["#67C5F5"],
-			"lines": [3]
-		},
-		"relations": [
-			{
-				"name": "Nemat Abad",
-				"disabled": false,
-				"fa": "نعمت آباد",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			}
-		]
-	},
-	"Shahid Kolahdooz": {
-		"property": {
-			"disabled": false,
-			"name": "Shahid Kolahdooz",
-			"fa": "شهید کلاهدوز",
-			"colors": ["#F8E100"],
-			"lines": [4]
-		},
-		"relations": [
-			{
-				"name": "Niroohavaii",
-				"disabled": false,
-				"fa": "نیروهوایی",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			}
-		]
-	},
-	"Niroohavaii": {
-		"property": {
-			"disabled": false,
-			"name": "Niroohavaii",
-			"fa": "نیروهوایی",
-			"colors": ["#F8E100"],
-			"lines": [4]
-		},
-		"relations": [
-			{
-				"name": "Shahid Kolahdooz",
-				"disabled": false,
-				"fa": "شهید کلاهدوز",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			},
-			{
-				"name": "Nobard",
-				"disabled": false,
-				"fa": "نوبارد",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			}
-		]
-	},
-	"Nobard": {
-		"property": {
-			"disabled": false,
-			"name": "Nobard",
-			"fa": "نوبارد",
-			"colors": ["#F8E100"],
-			"lines": [4]
-		},
-		"relations": [
-			{
-				"name": "Niroohavaii",
-				"disabled": false,
-				"fa": "نیروهوایی",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			},
-			{
-				"name": "Piroozi",
-				"disabled": false,
-				"fa": "پیروزی",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			}
-		]
-	},
-	"Piroozi": {
-		"property": {
-			"disabled": false,
-			"name": "Piroozi",
-			"fa": "پیروزی",
-			"colors": ["#F8E100"],
-			"lines": [4]
-		},
-		"relations": [
-			{
-				"name": "Nobard",
-				"disabled": false,
-				"fa": "نوبارد",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			},
-			{
-				"name": "Ebn-e Sina",
-				"disabled": false,
-				"fa": "ابن سینا",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			}
-		]
-	},
-	"Ebn-e Sina": {
-		"property": {
-			"disabled": false,
-			"name": "Ebn-e Sina",
-			"fa": "ابن سینا",
-			"colors": ["#F8E100"],
-			"lines": [4]
-		},
-		"relations": [
-			{
-				"name": "Piroozi",
-				"disabled": false,
-				"fa": "پیروزی",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			},
-			{
-				"name": "Meydan-e Shohada",
-				"disabled": false,
-				"fa": "میدان شهدا",
-				"colors": ["#F8E100", "#EF639F"],
-				"lines": [4, 6]
-			}
-		]
-	},
-	"Ferdowsi": {
-		"property": {
-			"disabled": false,
-			"name": "Ferdowsi",
-			"fa": "فردوسی",
-			"colors": ["#F8E100"],
-			"lines": [4]
-		},
-		"relations": [
-			{
-				"name": "Darvazeh Dolat",
-				"disabled": false,
-				"fa": "دروازه دولت",
-				"colors": ["#E0001F", "#F8E100"],
-				"lines": [1, 4]
-			},
-			{
-				"name": "Teatr-e Shahr",
-				"disabled": false,
-				"fa": "تئاتر شهر",
-				"colors": ["#67C5F5", "#F8E100"],
-				"lines": [3, 4]
-			}
-		]
-	},
-	"Meydan-e Enghelab-e Eslami": {
-		"property": {
-			"disabled": false,
-			"name": "Meydan-e Enghelab-e Eslami",
-			"fa": "میدان انقلاب اسلامی",
-			"colors": ["#F8E100"],
-			"lines": [4]
-		},
-		"relations": [
-			{
-				"name": "Teatr-e Shahr",
-				"disabled": false,
-				"fa": "تئاتر شهر",
-				"colors": ["#67C5F5", "#F8E100"],
-				"lines": [3, 4]
-			},
-			{
-				"name": "Towhid",
-				"disabled": false,
-				"fa": "توحید",
-				"colors": ["#F8E100", "#7F0B74"],
-				"lines": [4, 7]
-			}
-		]
-	},
-	"Towhid": {
-		"property": {
-			"disabled": false,
-			"name": "Towhid",
-			"fa": "توحید",
-			"colors": ["#F8E100", "#7F0B74"],
-			"lines": [4, 7]
-		},
-		"relations": [
-			{
-				"name": "Meydan-e Enghelab-e Eslami",
-				"disabled": false,
-				"fa": "میدان انقلاب اسلامی",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			},
-			{
-				"name": "Modafean-e Salamat",
-				"disabled": false,
-				"fa": "مدافعان سلامت",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			},
-			{
-				"name": "Shahid Navab-e Safavi",
-				"disabled": false,
-				"fa": "شهید نواب صفوی",
-				"colors": ["#2F4389", "#7F0B74"],
-				"lines": [2, 7]
-			},
-			{
-				"name": "Shademan",
-				"disabled": false,
-				"fa": "شادمان",
-				"colors": ["#2F4389", "#F8E100"],
-				"lines": [2, 4]
-			}
-		]
-	},
-	"Doctor Habibollah": {
-		"property": {
-			"disabled": false,
-			"name": "Doctor Habibollah",
-			"fa": "دکتر حبیب‌الله",
-			"colors": ["#F8E100"],
-			"lines": [4]
-		},
-		"relations": [
-			{
-				"name": "Shademan",
-				"disabled": false,
-				"fa": "شادمان",
-				"colors": ["#2F4389", "#F8E100"],
-				"lines": [2, 4]
-			},
-			{
-				"name": "Ostad Mo'in",
-				"disabled": false,
-				"fa": "استاد معین",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			}
-		]
-	},
-	"Ostad Mo'in": {
-		"property": {
-			"disabled": false,
-			"name": "Ostad Mo'in",
-			"fa": "استاد معین",
-			"colors": ["#F8E100"],
-			"lines": [4]
-		},
-		"relations": [
-			{
-				"name": "Doctor Habibollah",
-				"disabled": false,
-				"fa": "دکتر حبیب‌الله",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			},
-			{
-				"name": "Meydan-e Azadi",
-				"disabled": false,
-				"fa": "میدان آزادی",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			}
-		]
-	},
-	"Meydan-e Azadi": {
-		"property": {
-			"disabled": false,
-			"name": "Meydan-e Azadi",
-			"fa": "میدان آزادی",
-			"colors": ["#F8E100"],
-			"lines": [4]
-		},
-		"relations": [
-			{
-				"name": "Ostad Mo'in",
-				"disabled": false,
-				"fa": "استاد معین",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			},
-			{
-				"name": "Bimeh",
-				"disabled": false,
-				"fa": "بیمه",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			}
-		]
-	},
-	"Bimeh": {
-		"property": {
-			"disabled": false,
-			"name": "Bimeh",
-			"fa": "بیمه",
-			"colors": ["#F8E100"],
-			"lines": [4]
-		},
-		"relations": [
-			{
-				"name": "Meydan-e Azadi",
-				"disabled": false,
-				"fa": "میدان آزادی",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			},
-			{
-				"name": "Shahrak-e Ekbatan",
-				"disabled": false,
-				"fa": "شهرک اکباتان",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			},
-			{
-				"name": "Mehrabad Airport Terminal 1&2",
-				"disabled": false,
-				"fa": "ترمینال ۱ و ۲ فرودگاه مهرآباد",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			}
-		]
-	},
-	"Mehrabad Airport Terminal 1&2": {
-		"property": {
-			"disabled": false,
-			"name": "Mehrabad Airport Terminal 1&2",
-			"fa": "ترمینال ۱ و ۲ فرودگاه مهرآباد",
-			"colors": ["#F8E100"],
-			"lines": [4]
-		},
-		"relations": [
-			{
-				"name": "Bimeh",
-				"disabled": false,
-				"fa": "بیمه",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			},
-			{
-				"name": "Mehrabad Airport Terminal 4&6",
-				"disabled": false,
-				"fa": "ترمینال ۴ و ۶ فرودگاه مهرآباد",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			}
-		]
-	},
-	"Mehrabad Airport Terminal 4&6": {
-		"property": {
-			"disabled": false,
-			"name": "Mehrabad Airport Terminal 4&6",
-			"fa": "ترمینال ۴ و ۶ فرودگاه مهرآباد",
-			"colors": ["#F8E100"],
-			"lines": [4]
-		},
-		"relations": [
-			{
-				"name": "Mehrabad Airport Terminal 1&2",
-				"disabled": false,
-				"fa": "ترمینال ۱ و ۲ فرودگاه مهرآباد",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			}
-		]
-	},
-	"Shahrak-e Ekbatan": {
-		"property": {
-			"disabled": false,
-			"name": "Shahrak-e Ekbatan",
-			"fa": "شهرک اکباتان",
-			"colors": ["#F8E100"],
-			"lines": [4]
-		},
-		"relations": [
-			{
-				"name": "Bimeh",
-				"disabled": false,
-				"fa": "بیمه",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			},
-			{
-				"name": "Eram-e Sabz",
-				"disabled": false,
-				"fa": "ارم سبز",
-				"colors": ["#F8E100", "#007E46"],
-				"lines": [4, 5]
-			}
-		]
-	},
-	"Allameh Jafari": {
-		"property": {
-			"disabled": false,
-			"name": "Allameh Jafari",
-			"fa": "علامه جعفری",
-			"colors": ["#F8E100"],
-			"lines": [4]
-		},
-		"relations": [
-			{
-				"name": "Eram-e Sabz",
-				"disabled": false,
-				"fa": "ارم سبز",
-				"colors": ["#F8E100", "#007E46"],
-				"lines": [4, 5]
-			}
-		]
-	},
-	"Eram-e Sabz": {
-		"property": {
-			"disabled": false,
-			"name": "Eram-e Sabz",
-			"fa": "ارم سبز",
-			"colors": ["#F8E100", "#007E46"],
-			"lines": [4, 5]
-		},
-		"relations": [
-			{
-				"name": "Tehran (Sadeghiyeh)",
-				"disabled": false,
-				"fa": "تهران (صادقیه)",
-				"colors": ["#2F4389", "#007E46"],
-				"lines": [2, 5]
-			},
-			{
-				"name": "Varzeshgah-e Azadi",
-				"disabled": false,
-				"fa": "ورزشگاه آزادی",
-				"colors": ["#007E46"],
-				"lines": [5]
-			},
-			{
-				"name": "Allameh Jafari",
-				"disabled": false,
-				"fa": "علامه جعفری",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			},
-			{
-				"name": "Shahrak-e Ekbatan",
-				"disabled": false,
-				"fa": "شهرک اکباتان",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			}
-		]
-	},
-	"Varzeshgah-e Azadi": {
-		"property": {
-			"disabled": false,
-			"name": "Varzeshgah-e Azadi",
-			"fa": "ورزشگاه آزادی",
-			"colors": ["#007E46"],
-			"lines": [5]
-		},
-		"relations": [
-			{
-				"name": "Eram-e Sabz",
-				"disabled": false,
-				"fa": "ارم سبز",
-				"colors": ["#F8E100", "#007E46"],
-				"lines": [4, 5]
-			},
-			{
-				"name": "Chitgar",
-				"disabled": false,
-				"fa": "چیتگر",
-				"colors": ["#007E46"],
-				"lines": [5]
-			}
-		]
-	},
-	"Chitgar": {
-		"property": {
-			"disabled": false,
-			"name": "Chitgar",
-			"fa": "چیتگر",
-			"colors": ["#007E46"],
-			"lines": [5]
-		},
-		"relations": [
-			{
-				"name": "Varzeshgah-e Azadi",
-				"disabled": false,
-				"fa": "ورزشگاه آزادی",
-				"colors": ["#007E46"],
-				"lines": [5]
-			},
-			{
-				"name": "Iran Khodro",
-				"disabled": false,
-				"fa": "ایران‌خودرو",
-				"colors": ["#007E46"],
-				"lines": [5]
-			}
-		]
-	},
-	"Iran Khodro": {
-		"property": {
-			"disabled": false,
-			"name": "Iran Khodro",
-			"fa": "ایران‌خودرو",
-			"colors": ["#007E46"],
-			"lines": [5]
-		},
-		"relations": [
-			{
-				"name": "Chitgar",
-				"disabled": false,
-				"fa": "چیتگر",
-				"colors": ["#007E46"],
-				"lines": [5]
-			},
-			{
-				"name": "Vardavard",
-				"disabled": false,
-				"fa": "وردآورد",
-				"colors": ["#007E46"],
-				"lines": [5]
-			}
-		]
-	},
-	"Vardavard": {
-		"property": {
-			"disabled": false,
-			"name": "Vardavard",
-			"fa": "وردآورد",
-			"colors": ["#007E46"],
-			"lines": [5]
-		},
-		"relations": [
-			{
-				"name": "Iran Khodro",
-				"disabled": false,
-				"fa": "ایران‌خودرو",
-				"colors": ["#007E46"],
-				"lines": [5]
-			},
-			{
-				"name": "Garmdareh",
-				"disabled": false,
-				"fa": "گرمدره",
-				"colors": ["#007E46"],
-				"lines": [5]
-			}
-		]
-	},
-	"Garmdareh": {
-		"property": {
-			"disabled": false,
-			"name": "Garmdareh",
-			"fa": "گرمدره",
-			"colors": ["#007E46"],
-			"lines": [5]
-		},
-		"relations": [
-			{
-				"name": "Vardavard",
-				"disabled": false,
-				"fa": "وردآورد",
-				"colors": ["#007E46"],
-				"lines": [5]
-			},
-			{
-				"name": "Atmosphere",
-				"disabled": false,
-				"fa": "اتمسفر",
-				"colors": ["#007E46"],
-				"lines": [5]
-			}
-		]
-	},
-	"Atmosphere": {
-		"property": {
-			"disabled": false,
-			"name": "Atmosphere",
-			"fa": "اتمسفر",
-			"colors": ["#007E46"],
-			"lines": [5]
-		},
-		"relations": [
-			{
-				"name": "Garmdareh",
-				"disabled": false,
-				"fa": "گرمدره",
-				"colors": ["#007E46"],
-				"lines": [5]
-			},
-			{
-				"name": "Karaj",
-				"disabled": false,
-				"fa": "کرج",
-				"colors": ["#007E46"],
-				"lines": [5]
-			}
-		]
-	},
-	"Karaj": {
-		"property": {
-			"disabled": false,
-			"name": "Karaj",
-			"fa": "کرج",
-			"colors": ["#007E46"],
-			"lines": [5]
-		},
-		"relations": [
-			{
-				"name": "Atmosphere",
-				"disabled": false,
-				"fa": "اتمسفر",
-				"colors": ["#007E46"],
-				"lines": [5]
-			},
-			{
-				"name": "Mohammadshahr",
-				"disabled": false,
-				"fa": "محمدشهر",
-				"colors": ["#007E46"],
-				"lines": [5]
-			}
-		]
-	},
-	"Mohammadshahr": {
-		"property": {
-			"disabled": false,
-			"name": "Mohammadshahr",
-			"fa": "محمدشهر",
-			"colors": ["#007E46"],
-			"lines": [5]
-		},
-		"relations": [
-			{
-				"name": "Karaj",
-				"disabled": false,
-				"fa": "کرج",
-				"colors": ["#007E46"],
-				"lines": [5]
-			},
-			{
-				"name": "Golshahr",
-				"disabled": false,
-				"fa": "گلشهر",
-				"colors": ["#007E46"],
-				"lines": [5]
-			}
-		]
-	},
-	"Golshahr": {
-		"property": {
-			"disabled": false,
-			"name": "Golshahr",
-			"fa": "گلشهر",
-			"colors": ["#007E46"],
-			"lines": [5]
-		},
-		"relations": [
-			{
-				"name": "Mohammadshahr",
-				"disabled": false,
-				"fa": "محمدشهر",
-				"colors": ["#007E46"],
-				"lines": [5]
-			},
-			{
-				"name": "Shahid Sepahbod Qasem Soleimani",
-				"disabled": true,
-				"fa": "شهید سپهبد قاسم سلیمانی",
-				"colors": ["#007E46"],
-				"lines": [5]
-			}
-		]
-	},
-	"Shahid Sepahbod Qasem Soleimani": {
-		"property": {
-			"disabled": true,
-			"name": "Shahid Sepahbod Qasem Soleimani",
-			"fa": "شهید سپهبد قاسم سلیمانی",
-			"colors": ["#007E46"],
-			"lines": [5]
-		},
-		"relations": [
-			{
-				"name": "Golshahr",
-				"disabled": true,
-				"fa": "گلشهر",
-				"colors": ["#007E46"],
-				"lines": [5]
-			}
-		]
-	},
-	"Haram-e Hazrat-e Abdol Azim": {
-		"property": {
-			"disabled": true,
-			"name": "Haram-e Hazrat-e Abdol Azim",
-			"fa": "حرم حضرت عبدالعظیم",
-			"colors": ["#EF639F"],
-			"lines": [6]
-		},
-		"relations": [
-			{
-				"name": "Meydan-e Hazrat-e Abdol Azim",
-				"disabled": true,
-				"fa": "میدان حضرت عبدالعظیم",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			}
-		]
-	},
-	"Meydan-e Hazrat-e Abdol Azim": {
-		"property": {
-			"disabled": true,
-			"name": "Meydan-e Hazrat-e Abdol Azim",
-			"fa": "میدان حضرت عبدالعظیم",
-			"colors": ["#EF639F"],
-			"lines": [6]
-		},
-		"relations": [
-			{
-				"name": "Haram-e Hazrat-e Abdol Azim",
-				"disabled": true,
-				"fa": "حرم حضرت عبدالعظیم",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			},
-			{
-				"name": "Ebn-e Babviyeh",
-				"disabled": true,
-				"fa": "ابن بابویه",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			}
-		]
-	},
-	"Ebn-e Babviyeh": {
-		"property": {
-			"disabled": true,
-			"name": "Ebn-e Babviyeh",
-			"fa": "ابن بابویه",
-			"colors": ["#EF639F"],
-			"lines": [6]
-		},
-		"relations": [
-			{
-				"name": "Meydan-e Hazrat-e Abdol Azim",
-				"disabled": true,
-				"fa": "میدان حضرت عبدالعظیم",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			},
-			{
-				"name": "Cheshmeh Ali",
-				"disabled": true,
-				"fa": "چشمه علی",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			}
-		]
-	},
-	"Cheshmeh Ali": {
-		"property": {
-			"disabled": true,
-			"name": "Cheshmeh Ali",
-			"fa": "چشمه علی",
-			"colors": ["#EF639F"],
-			"lines": [6]
-		},
-		"relations": [
-			{
-				"name": "Ebn-e Babviyeh",
-				"disabled": true,
-				"fa": "ابن بابویه",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			},
-			{
-				"name": "Shohada-ye Dowlat Abad",
-				"disabled": false,
-				"fa": "شهدای دولت‌آباد",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			}
-		]
-	},
-	"Shohada-ye Dowlat Abad": {
-		"property": {
-			"disabled": false,
-			"name": "Shohada-ye Dowlat Abad",
-			"fa": "شهدای دولت‌آباد",
-			"colors": ["#EF639F"],
-			"lines": [6]
-		},
-		"relations": [
-			{
-				"name": "Cheshmeh Ali",
-				"disabled": false,
-				"fa": "چشمه علی",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			},
-			{
-				"name": "Kiyan Shahr",
-				"disabled": false,
-				"fa": "کیان شهر",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			}
-		]
-	},
-	"Kiyan Shahr": {
-		"property": {
-			"disabled": false,
-			"name": "Kiyan Shahr",
-			"fa": "کیان شهر",
-			"colors": ["#EF639F"],
-			"lines": [6]
-		},
-		"relations": [
-			{
-				"name": "Shohada-ye Dowlat Abad",
-				"disabled": false,
-				"fa": "شهدای دولت‌آباد",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			},
-			{
-				"name": "Be'sat",
-				"disabled": false,
-				"fa": "بعثت",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			}
-		]
-	},
-	"Be'sat": {
-		"property": {
-			"disabled": false,
-			"name": "Be'sat",
-			"fa": "بعثت",
-			"colors": ["#EF639F"],
-			"lines": [6]
-		},
-		"relations": [
-			{
-				"name": "Kiyan Shahr",
-				"disabled": false,
-				"fa": "کیان شهر",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			},
-			{
-				"name": "Shahid Rezaei",
-				"disabled": false,
-				"fa": "شهید رضایی",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			}
-		]
-	},
-	"Shahid Rezaei": {
-		"property": {
-			"disabled": false,
-			"name": "Shahid Rezaei",
-			"fa": "شهید رضایی",
-			"colors": ["#EF639F"],
-			"lines": [6]
-		},
-		"relations": [
-			{
-				"name": "Be'sat",
-				"disabled": false,
-				"fa": "بعثت",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			},
-			{
-				"name": "Meydan-e Khorasan",
-				"disabled": false,
-				"fa": "میدان خراسان",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			}
-		]
-	},
-	"Meydan-e Khorasan": {
-		"property": {
-			"disabled": true,
-			"name": "Meydan-e Khorasan",
-			"fa": "میدان خراسان",
-			"colors": ["#EF639F"],
-			"lines": [6]
-		},
-		"relations": [
-			{
-				"name": "Shahid Rezaei",
-				"disabled": false,
-				"fa": "شهید رضایی",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			},
-			{
-				"name": "Shohada-ye Hefdah-e Shahrivar",
-				"disabled": false,
-				"fa": "شهدای هفده شهریور",
-				"colors": ["#EF639F", "#7F0B74"],
-				"lines": [6, 7]
-			}
-		]
-	},
-	"Shohada-ye Hefdah-e Shahrivar": {
-		"property": {
-			"disabled": true,
-			"name": "Shohada-ye Hefdah-e Shahrivar",
-			"fa": "شهدای هفده شهریور",
-			"colors": ["#EF639F", "#7F0B74"],
-			"lines": [6, 7]
-		},
-		"relations": [
-			{
-				"name": "Meydan-e Khorasan",
-				"disabled": false,
-				"fa": "میدان خراسان",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			},
-			{
-				"name": "Amirkabir",
-				"disabled": false,
-				"fa": "امیرکبیر",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			},
-			{
-				"name": "Chehel Tan-e Doulab",
-				"disabled": false,
-				"fa": "چهل تن دولاب",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			},
-			{
-				"name": "Meydan-e Ghiyam",
-				"disabled": false,
-				"fa": "میدان قیام",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			}
-		]
-	},
-	"Amirkabir": {
-		"property": {
-			"disabled": false,
-			"name": "Amirkabir",
-			"fa": "امیرکبیر",
-			"colors": ["#EF639F"],
-			"lines": [6]
-		},
-		"relations": [
-			{
-				"name": "Shohada-ye Hefdah-e Shahrivar",
-				"disabled": false,
-				"fa": "شهدای هفده شهریور",
-				"colors": ["#EF639F", "#7F0B74"],
-				"lines": [6, 7]
-			},
-			{
-				"name": "Meydan-e Shohada",
-				"disabled": false,
-				"fa": "میدان شهدا",
-				"colors": ["#F8E100", "#EF639F"],
-				"lines": [4, 6]
-			}
-		]
-	},
-	"Meydan-e Shohada": {
-		"property": {
-			"disabled": false,
-			"name": "Meydan-e Shohada",
-			"fa": "میدان شهدا",
-			"colors": ["#F8E100", "#EF639F"],
-			"lines": [4, 6]
-		},
-		"relations": [
-			{
-				"name": "Amirkabir",
-				"disabled": false,
-				"fa": "امیرکبیر",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			},
-			{
-				"name": "Ebn-e Sina",
-				"disabled": false,
-				"fa": "ابن سینا",
-				"colors": ["#F8E100"],
-				"lines": [4]
-			},
-			{
-				"name": "Darvazeh Shemiran",
-				"disabled": false,
-				"fa": "دروازه شمیران",
-				"colors": ["#2F4389", "#F8E100"],
-				"lines": [2, 4]
-			},
-			{
-				"name": "Imam Hussein",
-				"disabled": false,
-				"fa": "امام حسین",
-				"colors": ["#2F4389", "#EF639F"],
-				"lines": [2, 6]
-			}
-		]
-	},
-	"Sarbaz": {
-		"property": {
-			"disabled": true,
-			"name": "Sarbaz",
-			"fa": "سرباز",
-			"colors": ["#EF639F"],
-			"lines": [6]
-		},
-		"relations": [
-			{
-				"name": "Imam Hussein",
-				"disabled": false,
-				"fa": "امام حسین",
-				"colors": ["#2F4389", "#EF639F"],
-				"lines": [2, 6]
-			},
-			{
-				"name": "Bahar Shiraz (Khanevadeh Hospital)",
-				"disabled": false,
-				"fa": "بهار شیراز (بیمارستان خانواده)",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			}
-		]
-	},
-	"Bahar Shiraz (Khanevadeh Hospital)": {
-		"property": {
-			"disabled": true,
-			"name": "Bahar Shiraz (Khanevadeh Hospital)",
-			"fa": "بهار شیراز (بیمارستان خانواده)",
-			"colors": ["#EF639F"],
-			"lines": [6]
-		},
-		"relations": [
-			{
-				"name": "Sarbaz",
-				"disabled": false,
-				"fa": "سرباز",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			},
-			{
-				"name": "Shohada-ye Haftom-e Tir",
-				"disabled": false,
-				"fa": "شهدای هفتم تیر",
-				"colors": ["#E0001F", "#EF639F"],
-				"lines": [1, 6]
-			}
-		]
-	},
-	"Shohada-ye Haftom-e Tir": {
-		"property": {
-			"disabled": false,
-			"name": "Shohada-ye Haftom-e Tir",
-			"fa": "شهدای هفتم تیر",
-			"colors": ["#E0001F", "#EF639F"],
-			"lines": [1, 6]
-		},
-		"relations": [
-			{
-				"name": "Bahar Shiraz (Khanevadeh Hospital)",
-				"disabled": false,
-				"fa": "بهار شیراز (بیمارستان خانواده)",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			},
-			{
-				"name": "Shahid Nejatollahi",
-				"disabled": false,
-				"fa": "شهید نجات اللهی",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			},
-			{
-				"name": "Shahid Mofattah",
-				"disabled": false,
-				"fa": "شهید مفتح",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			},
-			{
-				"name": "Ayatollah Taleghani",
-				"disabled": false,
-				"fa": "آیت‌الله طالقانی",
-				"colors": ["#E0001F"],
-				"lines": [1]
-			}
-		]
-	},
-	"Shahid Nejatollahi": {
-		"property": {
-			"disabled": true,
-			"name": "Shahid Nejatollahi",
-			"fa": "شهید نجات اللهی",
-			"colors": ["#EF639F"],
-			"lines": [6]
-		},
-		"relations": [
-			{
-				"name": "Shohada-ye Haftom-e Tir",
-				"disabled": false,
-				"fa": "شهدای هفتم تیر",
-				"colors": ["#E0001F", "#EF639F"],
-				"lines": [1, 6]
-			},
-			{
-				"name": "Meydan-e Hazrat Vali Asr",
-				"disabled": false,
-				"fa": "میدان حضرت ولیعصر",
-				"colors": ["#67C5F5", "#EF639F"],
-				"lines": [3, 6]
-			}
-		]
-	},
-	"Meydan-e Hazrat Vali Asr": {
-		"property": {
-			"disabled": false,
-			"name": "Meydan-e Hazrat Vali Asr",
-			"fa": "میدان حضرت ولیعصر",
-			"colors": ["#67C5F5", "#EF639F"],
-			"lines": [3, 6]
-		},
-		"relations": [
-			{
-				"name": "Shahid Nejatollahi",
-				"disabled": false,
-				"fa": "شهید نجات اللهی",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			},
-			{
-				"name": "Meydan-e Jahad",
-				"disabled": false,
-				"fa": "میدان جهاد",
-				"colors": ["#67C5F5"],
-				"lines": [3]
-			},
-			{
-				"name": "Teatr-e Shahr",
-				"disabled": false,
-				"fa": "تئاتر شهر",
-				"colors": ["#67C5F5", "#F8E100"],
-				"lines": [3, 4]
-			},
-			{
-				"name": "Bustan-e Laleh",
-				"disabled": false,
-				"fa": "بوستان لاله",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			}
-		]
-	},
-	"Bustan-e Laleh": {
-		"property": {
-			"disabled": false,
-			"name": "Bustan-e Laleh",
-			"fa": "بوستان لاله",
-			"colors": ["#EF639F"],
-			"lines": [6]
-		},
-		"relations": [
-			{
-				"name": "Meydan-e Hazrat Vali Asr",
-				"disabled": false,
-				"fa": "میدان حضرت ولیعصر",
-				"colors": ["#67C5F5", "#EF639F"],
-				"lines": [3, 6]
-			},
-			{
-				"name": "Karagar",
-				"disabled": false,
-				"fa": "کارگر",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			}
-		]
-	},
-	"Karagar": {
-		"property": {
-			"disabled": false,
-			"name": "Karagar",
-			"fa": "کارگر",
-			"colors": ["#EF639F"],
-			"lines": [6]
-		},
-		"relations": [
-			{
-				"name": "Bustan-e Laleh",
-				"disabled": false,
-				"fa": "بوستان لاله",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			},
-			{
-				"name": "Daneshgah-e Tarbiat Modarres",
-				"disabled": false,
-				"fa": "دانشگاه تربیت مدرس",
-				"colors": ["#EF639F", "#7F0B74"],
-				"lines": [6, 7]
-			}
-		]
-	},
-	"Daneshgah-e Tarbiat Modarres": {
-		"property": {
-			"disabled": false,
-			"name": "Daneshgah-e Tarbiat Modarres",
-			"fa": "دانشگاه تربیت مدرس",
-			"colors": ["#EF639F", "#7F0B74"],
-			"lines": [6, 7]
-		},
-		"relations": [
-			{
-				"name": "Karagar",
-				"disabled": false,
-				"fa": "کارگر",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			},
-			{
-				"name": "Boostan-e Goftegou",
-				"disabled": false,
-				"fa": "بوستان گفتگو",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			},
-			{
-				"name": "Modafean-e Salamat",
-				"disabled": false,
-				"fa": "مدافعان سلامت",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			},
-			{
-				"name": "Shahrak-e Azmayesh",
-				"disabled": false,
-				"fa": "شهرک آزمایش",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			}
-		]
-	},
-	"Shahrak-e Azmayesh": {
-		"property": {
-			"disabled": false,
-			"name": "Shahrak-e Azmayesh",
-			"fa": "شهرک آزمایش",
-			"colors": ["#EF639F"],
-			"lines": [6]
-		},
-		"relations": [
-			{
-				"name": "Daneshgah-e Tarbiat Modarres",
-				"disabled": false,
-				"fa": "دانشگاه تربیت مدرس",
-				"colors": ["#EF639F", "#7F0B74"],
-				"lines": [6, 7]
-			},
-			{
-				"name": "Marzdaran",
-				"disabled": false,
-				"fa": "مرزداران",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			}
-		]
-	},
-	"Marzdaran": {
-		"property": {
-			"disabled": false,
-			"name": "Marzdaran",
-			"fa": "مرزداران",
-			"colors": ["#EF639F"],
-			"lines": [6]
-		},
-		"relations": [
-			{
-				"name": "Shahrak-e Azmayesh",
-				"disabled": false,
-				"fa": "شهرک آزمایش",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			},
-			{
-				"name": "Yadegar-e Imam",
-				"disabled": false,
-				"fa": "یادگار امام",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			}
-		]
-	},
-	"Yadegar-e Imam": {
-		"property": {
-			"disabled": false,
-			"name": "Yadegar-e Imam",
-			"fa": "یادگار امام",
-			"colors": ["#EF639F"],
-			"lines": [6]
-		},
-		"relations": [
-			{
-				"name": "Marzdaran",
-				"disabled": false,
-				"fa": "مرزداران",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			},
-			{
-				"name": "Shahid Ashrafi Esfahani",
-				"disabled": false,
-				"fa": "شهید اشرفی اصفهانی",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			}
-		]
-	},
-	"Shahid Ashrafi Esfahani": {
-		"property": {
-			"disabled": false,
-			"name": "Shahid Ashrafi Esfahani",
-			"fa": "شهید اشرفی اصفهانی",
-			"colors": ["#EF639F"],
-			"lines": [6]
-		},
-		"relations": [
-			{
-				"name": "Yadegar-e Imam",
-				"disabled": false,
-				"fa": "یادگار امام",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			},
-			{
-				"name": "Shahid Sattari",
-				"disabled": false,
-				"fa": "شهید ستاری",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			}
-		]
-	},
-	"Shahid Sattari": {
-		"property": {
-			"disabled": false,
-			"name": "Shahid Sattari",
-			"fa": "شهید ستاری",
-			"colors": ["#EF639F"],
-			"lines": [6]
-		},
-		"relations": [
-			{
-				"name": "Shahid Ashrafi Esfahani",
-				"disabled": false,
-				"fa": "شهید اشرفی اصفهانی",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			},
-			{
-				"name": "Ayatollah Kashani",
-				"disabled": false,
-				"fa": "آیت‌الله کاشانی",
-				"colors": ["#F8E100", "#EF639F"],
-				"lines": [4, 6]
-			}
-		]
-	},
-	"Ayatollah Kashani": {
-		"property": {
-			"disabled": true,
-			"name": "Ayatollah Kashani",
-			"fa": "آیت‌الله کاشانی",
-			"colors": ["#EF639F"],
-			"lines": [6]
-		},
-		"relations": [
-			{
-				"name": "Shahid Sattari",
-				"disabled": false,
-				"fa": "شهید ستاری",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			},
-			{
-				"name": "Shahr-e Ziba",
-				"disabled": true,
-				"fa": "شهر زیبا",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			}
-		]
-	},
-	"Shahr-e Ziba": {
-		"property": {
-			"disabled": true,
-			"name": "Shahr-e Ziba",
-			"fa": "شهر زیبا",
-			"colors": ["#EF639F"],
-			"lines": [6]
-		},
-		"relations": [
-			{
-				"name": "Ayatollah Kashani",
-				"disabled": true,
-				"fa": "آیت‌الله کاشانی",
-				"colors": ["#F8E100", "#EF639F"],
-				"lines": [4, 6]
-			},
-			{
-				"name": "Shahran",
-				"disabled": true,
-				"fa": "شهران",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			}
-		]
-	},
-	"Shahran": {
-		"property": {
-			"disabled": true,
-			"name": "Shahran",
-			"fa": "شهران",
-			"colors": ["#EF639F"],
-			"lines": [6]
-		},
-		"relations": [
-			{
-				"name": "Shahr-e Ziba",
-				"disabled": true,
-				"fa": "شهر زیبا",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			},
-			{
-				"name": "Shohada-ye Kan",
-				"disabled": true,
-				"fa": "شهدای کن",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			}
-		]
-	},
-	"Shohada-ye Kan": {
-		"property": {
-			"disabled": true,
-			"name": "Shohada-ye Kan",
-			"fa": "شهدای کن",
-			"colors": ["#EF639F"],
-			"lines": [6]
-		},
-		"relations": [
-			{
-				"name": "Shahran",
-				"disabled": true,
-				"fa": "شهران",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			},
-			{
-				"name": "Kouhsar",
-				"disabled": true,
-				"fa": "کوهسار",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			}
-		]
-	},
-	"Kouhsar": {
-		"property": {
-			"disabled": true,
-			"name": "Kouhsar",
-			"fa": "کوهسار",
-			"colors": ["#EF639F"],
-			"lines": [6]
-		},
-		"relations": [
-			{
-				"name": "Shohada-ye Kan",
-				"disabled": true,
-				"fa": "شهدای کن",
-				"colors": ["#EF639F"],
-				"lines": [6]
-			}
-		]
-	},
-	"Varzeshgah-e Takhti": {
-		"property": {
-			"disabled": true,
-			"name": "Varzeshgah-e Takhti",
-			"fa": "ورزشگاه تختی",
-			"colors": ["#7F0B74"],
-			"lines": [7]
-		},
-		"relations": [
-			{
-				"name": "Basij",
-				"disabled": false,
-				"fa": "بسیج",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			}
-		]
-	},
-	"Basij": {
-		"property": {
-			"disabled": false,
-			"name": "Basij",
-			"fa": "بسیج",
-			"colors": ["#7F0B74"],
-			"lines": [7]
-		},
-		"relations": [
-			{
-				"name": "Varzeshgah-e Takhti",
-				"disabled": false,
-				"fa": "ورزشگاه تختی",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			},
-			{
-				"name": "Ahang",
-				"disabled": false,
-				"fa": "آهنگ",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			}
-		]
-	},
-	"Ahang": {
-		"property": {
-			"disabled": false,
-			"name": "Ahang",
-			"fa": "آهنگ",
-			"colors": ["#7F0B74"],
-			"lines": [7]
-		},
-		"relations": [
-			{
-				"name": "Basij",
-				"disabled": false,
-				"fa": "بسیج",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			},
-			{
-				"name": "Chehel Tan-e Doulab",
-				"disabled": false,
-				"fa": "چهل تن دولاب",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			}
-		]
-	},
-	"Chehel Tan-e Doulab": {
-		"property": {
-			"disabled": false,
-			"name": "Chehel Tan-e Doulab",
-			"fa": "چهل تن دولاب",
-			"colors": ["#7F0B74"],
-			"lines": [7]
-		},
-		"relations": [
-			{
-				"name": "Ahang",
-				"disabled": false,
-				"fa": "آهنگ",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			},
-			{
-				"name": "Shohada-ye Hefdah-e Shahrivar",
-				"disabled": false,
-				"fa": "شهدای هفده شهریور",
-				"colors": ["#EF639F", "#7F0B74"],
-				"lines": [6, 7]
-			}
-		]
-	},
-	"Meydan-e Ghiyam": {
-		"property": {
-			"disabled": false,
-			"name": "Meydan-e Ghiyam",
-			"fa": "میدان قیام",
-			"colors": ["#7F0B74"],
-			"lines": [7]
-		},
-		"relations": [
-			{
-				"name": "Shohada-ye Hefdah-e Shahrivar",
-				"disabled": false,
-				"fa": "شهدای هفده شهریور",
-				"colors": ["#EF639F", "#7F0B74"],
-				"lines": [6, 7]
-			},
-			{
-				"name": "Mowlavi",
-				"disabled": false,
-				"fa": "مولوی",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			}
-		]
-	},
-	"Mowlavi": {
-		"property": {
-			"disabled": false,
-			"name": "Mowlavi",
-			"fa": "مولوی",
-			"colors": ["#7F0B74"],
-			"lines": [7]
-		},
-		"relations": [
-			{
-				"name": "Meydan-e Ghiyam",
-				"disabled": false,
-				"fa": "میدان قیام",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			},
-			{
-				"name": "Meydan-e Mohammadiyeh",
-				"disabled": false,
-				"fa": "میدان محمدیه",
-				"colors": ["#E0001F", "#7F0B74"],
-				"lines": [1, 7]
-			}
-		]
-	},
-	"Helal Ahmar": {
-		"property": {
-			"disabled": false,
-			"name": "Helal Ahmar",
-			"fa": "هلال احمر",
-			"colors": ["#7F0B74"],
-			"lines": [7]
-		},
-		"relations": [
-			{
-				"name": "Mahdiyeh",
-				"disabled": false,
-				"fa": "مهدیه",
-				"colors": ["#67C5F5", "#7F0B74"],
-				"lines": [3, 7]
-			},
-			{
-				"name": "Beryanak",
-				"disabled": false,
-				"fa": "بریانک",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			}
-		]
-	},
-	"Beryanak": {
-		"property": {
-			"disabled": false,
-			"name": "Beryanak",
-			"fa": "بریانک",
-			"colors": ["#7F0B74"],
-			"lines": [7]
-		},
-		"relations": [
-			{
-				"name": "Helal Ahmar",
-				"disabled": false,
-				"fa": "هلال احمر",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			},
-			{
-				"name": "Kamil",
-				"disabled": false,
-				"fa": "کامیل",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			}
-		]
-	},
-	"Kamil": {
-		"property": {
-			"disabled": false,
-			"name": "Kamil",
-			"fa": "کامیل",
-			"colors": ["#7F0B74"],
-			"lines": [7]
-		},
-		"relations": [
-			{
-				"name": "Beryanak",
-				"disabled": false,
-				"fa": "بریانک",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			},
-			{
-				"name": "Roudaki",
-				"disabled": false,
-				"fa": "رودکی",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			}
-		]
-	},
-	"Roudaki": {
-		"property": {
-			"disabled": false,
-			"name": "Roudaki",
-			"fa": "رودکی",
-			"colors": ["#7F0B74"],
-			"lines": [7]
-		},
-		"relations": [
-			{
-				"name": "Kamil",
-				"disabled": false,
-				"fa": "کامیل",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			},
-			{
-				"name": "Shahid Navab-e Safavi",
-				"disabled": false,
-				"fa": "شهید نواب صفوی",
-				"colors": ["#2F4389", "#7F0B74"],
-				"lines": [2, 7]
-			}
-		]
-	},
-	"Modafean-e Salamat": {
-		"property": {
-			"disabled": false,
-			"name": "Modafean-e Salamat",
-			"fa": "مدافعان سلامت",
-			"colors": ["#7F0B74"],
-			"lines": [7]
-		},
-		"relations": [
-			{
-				"name": "Towhid",
-				"disabled": false,
-				"fa": "توحید",
-				"colors": ["#F8E100", "#7F0B74"],
-				"lines": [4, 7]
-			},
-			{
-				"name": "Daneshgah-e Tarbiat Modarres",
-				"disabled": false,
-				"fa": "دانشگاه تربیت مدرس",
-				"colors": ["#EF639F", "#7F0B74"],
-				"lines": [6, 7]
-			}
-		]
-	},
-	"Boostan-e Goftegou": {
-		"property": {
-			"disabled": false,
-			"name": "Boostan-e Goftegou",
-			"fa": "بوستان گفتگو",
-			"colors": ["#7F0B74"],
-			"lines": [7]
-		},
-		"relations": [
-			{
-				"name": "Daneshgah-e Tarbiat Modarres",
-				"disabled": false,
-				"fa": "دانشگاه تربیت مدرس",
-				"colors": ["#EF639F", "#7F0B74"],
-				"lines": [6, 7]
-			},
-			{
-				"name": "Milad Tower",
-				"disabled": false,
-				"fa": "برج میلاد",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			}
-		]
-	},
-	"Milad Tower": {
-		"property": {
-			"disabled": false,
-			"name": "Milad Tower",
-			"fa": "برج میلاد",
-			"colors": ["#7F0B74"],
-			"lines": [7]
-		},
-		"relations": [
-			{
-				"name": "Boostan-e Goftegou",
-				"disabled": false,
-				"fa": "بوستان گفتگو",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			},
-			{
-				"name": "Meydan-e San'at",
-				"disabled": false,
-				"fa": "میدان صنعت",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			}
-		]
-	},
-	"Meydan-e San'at": {
-		"property": {
-			"disabled": false,
-			"name": "Meydan-e San'at",
-			"fa": "میدان صنعت",
-			"colors": ["#7F0B74"],
-			"lines": [7]
-		},
-		"relations": [
-			{
-				"name": "Milad Tower",
-				"disabled": false,
-				"fa": "برج میلاد",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			},
-			{
-				"name": "Shahid Dadman",
-				"disabled": false,
-				"fa": "شهید دادمان",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			}
-		]
-	},
-	"Shahid Dadman": {
-		"property": {
-			"disabled": false,
-			"name": "Shahid Dadman",
-			"fa": "شهید دادمان",
-			"colors": ["#7F0B74"],
-			"lines": [7]
-		},
-		"relations": [
-			{
-				"name": "Meydan-e San'at",
-				"disabled": false,
-				"fa": "میدان صنعت",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			},
-			{
-				"name": "Meydan-e Ketab",
-				"disabled": false,
-				"fa": "میدان کتاب",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			}
-		]
-	},
-	"Meydan-e Ketab": {
-		"property": {
-			"disabled": false,
-			"name": "Meydan-e Ketab",
-			"fa": "میدان کتاب",
-			"colors": ["#7F0B74"],
-			"lines": [7]
-		},
-		"relations": [
-			{
-				"name": "Shahid Dadman",
-				"disabled": false,
-				"fa": "شهید دادمان",
-				"colors": ["#7F0B74"],
-				"lines": [7]
-			}
-		]
-	}
+  "Tajrish": {
+    "name": "Tajrish",
+    "fa": "تجریش",
+    "lines": [1],
+    "longitude": "51.433643000000004",
+    "latitude": "35.804501",
+    "address": "خیابان شریعتی-ضلع جنوب غربی میدان قدس",
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Gheytariyeh"]
+  },
+  "Gheytariyeh": {
+    "name": "Gheytariyeh",
+    "fa": "قیطریه",
+    "lines": [1],
+    "longitude": "51.435252",
+    "latitude": "35.793119",
+    "address": "خیابان دکترشریعتی - روبه روی پل رومی",
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Tajrish", "Shahid Sadr"]
+  },
+  "Shahid Sadr": {
+    "name": "Shahid Sadr",
+    "fa": "شهید صدر",
+    "lines": [1],
+    "longitude": "51.435639",
+    "latitude": "35.785374",
+    "address": "100 متر بعد از تقاطع بزرگراه شهید صدر و خیابان دکتر شریعتی",
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Gheytariyeh", "Qolhak"]
+  },
+  "Qolhak": {
+    "name": "Qolhak",
+    "fa": "قلهک",
+    "lines": [1],
+    "longitude": "51.4379137",
+    "latitude": "35.7726822",
+    "address": "خیابان دکترشریعتی، بالاتر از دو راهی قلهک، نرسیده به خیابان دولت",
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Shahid Sadr", "Doctor Shariati"]
+  },
+  "Doctor Shariati": {
+    "name": "Doctor Shariati",
+    "fa": "دکتر شریعتی",
+    "lines": [1],
+    "longitude": "51.4440981",
+    "latitude": "35.7626452",
+    "address": "خیابان دکتر شریعتی، بالاتر از بلوار میرداماد",
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Qolhak", "Mirdamad"]
+  },
+  "Mirdamad": {
+    "name": "Mirdamad",
+    "fa": "میرداماد",
+    "lines": [1],
+    "longitude": "51.43375",
+    "latitude": "35.76006",
+    "address": "بلوار میرداماد، جنب پمپ بنزین، زیر ساختمان رز میرداماد",
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Doctor Shariati", "Shahid Haghani"]
+  },
+  "Shahid Haghani": {
+    "name": "Shahid Haghani",
+    "fa": "شهید حقانی",
+    "lines": [1],
+    "longitude": "51.4257773",
+    "latitude": "35.7565207",
+    "address": "بزرگراه شهید حقانی - جنب پارک طالقانی",
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Mirdamad", "Shahid Hemmat"]
+  },
+  "Shahid Hemmat": {
+    "name": "Shahid Hemmat",
+    "fa": "شهید همت",
+    "lines": [1],
+    "longitude": "51.427372",
+    "latitude": "35.748228",
+    "address": "بزرگراه شهید همت ، جنب سازمان فرهنگ و ارتباطات اسلامی",
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Shahid Haghani", "Mosalla-ye Imam Khomeini"]
+  },
+  "Mosalla-ye Imam Khomeini": {
+    "name": "Mosalla-ye Imam Khomeini",
+    "fa": "مصلی امام خمینی",
+    "lines": [1],
+    "longitude": "51.427082",
+    "latitude": "35.74073",
+    "address": "بزرگراه رسالت ، شمال مصلی ، روبروی سازمان فرهنگ و ارتباطات اسلامی",
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Shahid Hemmat", "Shahid Beheshti"]
+  },
+  "Shahid Beheshti": {
+    "name": "Shahid Beheshti",
+    "fa": "شهید بهشتی",
+    "lines": [1, 3],
+    "longitude": "51.42704",
+    "latitude": "35.731037",
+    "address": "تقاطع خیابان های شهید بهشتی و شهید مفتح",
+    "colors": ["#E0001F", "#67C5F5"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": [
+      "Mosalla-ye Imam Khomeini",
+      "Sohrevardi",
+      "Mirza-ye Shirazi",
+      "Shahid Mofattah"
+    ]
+  },
+  "Shahid Mofattah": {
+    "name": "Shahid Mofattah",
+    "fa": "شهید مفتح",
+    "lines": [1],
+    "longitude": "51.427632",
+    "latitude": "35.724453",
+    "address": "تقاطع خیابان های استاد شهید مطهری و شهید مفتح",
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Shahid Beheshti", "Shohada-ye Haftom-e Tir"]
+  },
+  "Ayatollah Taleghani": {
+    "name": "Ayatollah Taleghani",
+    "fa": "آیت‌الله طالقانی",
+    "lines": [1],
+    "longitude": "51.425495",
+    "latitude": "35.707161",
+    "address": "تقاطع خیابان آیت اله طالقانی و خیابان شهید مفتح",
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Shohada-ye Haftom-e Tir", "Darvazeh Dolat"]
+  },
+  "Darvazeh Dolat": {
+    "name": "Darvazeh Dolat",
+    "fa": "دروازه دولت",
+    "lines": [1, 4],
+    "longitude": "51.425849",
+    "latitude": "35.701316",
+    "address": "خیابان انقلاب اسلامی ، تقاطع سعدی شمالی و شهید مفتح",
+    "colors": ["#E0001F", "#F8E100"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": [
+      "Ayatollah Taleghani",
+      "Ferdowsi",
+      "Darvazeh Shemiran",
+      "Sa'adi"
+    ]
+  },
+  "Sa'adi": {
+    "name": "Sa'adi",
+    "fa": "سعدی",
+    "lines": [1],
+    "longitude": "51.4244163",
+    "latitude": "35.6934793",
+    "address": "میدان استقلال - (میدان مخبرالدوله)",
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Darvazeh Dolat", "Imam Khomeini"]
+  },
+  "Imam Khomeini": {
+    "name": "Imam Khomeini",
+    "fa": "امام خمینی",
+    "lines": [1, 2],
+    "longitude": "51.421171",
+    "latitude": "35.686433",
+    "address": "میدان امام خمینی (ره)",
+    "colors": ["#E0001F", "#2F4389"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Sa'adi", "Hasan Abad", "Mellat", "Panzdah-e Khordad"]
+  },
+  "Panzdah-e Khordad": {
+    "name": "Panzdah-e Khordad",
+    "fa": "پانزده خرداد",
+    "lines": [1],
+    "longitude": "51.417287",
+    "latitude": "35.678276",
+    "address": "تقاطع خیابان های پانزد خرداد و خیام - چهارراه گلوبندک",
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Imam Khomeini", "Khayyam"]
+  },
+  "Khayyam": {
+    "name": "Khayyam",
+    "fa": "خیام",
+    "lines": [1],
+    "longitude": "51.416568",
+    "latitude": "35.673073",
+    "address": "خیابان خیام شمالی ، پایین تر از چهارراه گلوبندک ، جنب امامزاده",
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Panzdah-e Khordad", "Meydan-e Mohammadiyeh"]
+  },
+  "Meydan-e Mohammadiyeh": {
+    "name": "Meydan-e Mohammadiyeh",
+    "fa": "میدان محمدیه",
+    "lines": [1, 7],
+    "longitude": "51.415488",
+    "latitude": "35.667753",
+    "address": "میدان محمدیه(اعدام) ، تقاطع خیابان خیام و مولوی",
+    "colors": ["#E0001F", "#7F0B74"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Khayyam", "Mahdiyeh", "Mowlavi", "Shoush"]
+  },
+  "Shoush": {
+    "name": "Shoush",
+    "fa": "شوش",
+    "lines": [1],
+    "longitude": "51.414154",
+    "latitude": "35.65754",
+    "address": "تقاطع خیابان های شوش و خیام",
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Meydan-e Mohammadiyeh", "Payaneh Jonoub(Jonoub Terminal)"]
+  },
+  "Payaneh Jonoub(Jonoub Terminal)": {
+    "name": "Payaneh Jonoub(Jonoub Terminal)",
+    "fa": "پایانه جنوبی",
+    "lines": [1],
+    "longitude": "51.416289",
+    "latitude": "35.650688",
+    "address": "خیابان عباسی ، ضلع شمال غربی ترمینال جنوب",
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Shoush", "Shahid Bokharaei"]
+  },
+  "Shahid Bokharaei": {
+    "name": "Shahid Bokharaei",
+    "fa": "شهید بخارایی",
+    "lines": [1],
+    "longitude": "51.414787",
+    "latitude": "35.640609",
+    "address": "خیابان شهید رجایی ، خیابان ابریشم ، 100متری شهید همدانی",
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "wc": true,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Payaneh Jonoub(Jonoub Terminal)", "Aliabad"]
+  },
+  "Aliabad": {
+    "name": "Aliabad",
+    "fa": "علی‌آباد",
+    "lines": [1],
+    "longitude": "51.416203",
+    "latitude": "35.629256",
+    "address": "جاده قدیم قم- سه راه پالایشگاه - خیابان شهید گلشنی",
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "wc": true,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Shahid Bokharaei", "Javanmard-e Ghassab"]
+  },
+  "Javanmard-e Ghassab": {
+    "name": "Javanmard-e Ghassab",
+    "fa": "جوانمرد قصاب",
+    "lines": [1],
+    "longitude": "51.420141",
+    "latitude": "35.609764",
+    "address": "بلوار شهید دستواره جنوبی - بین میدان مادر و نماز",
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "wc": true,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Aliabad", "Shahr-e Rey"]
+  },
+  "Shahr-e Rey": {
+    "name": "Shahr-e Rey",
+    "fa": "شهر ری",
+    "lines": [1],
+    "longitude": "51.422287",
+    "latitude": "35.594672",
+    "address": "شهر ری ، میدان فرمانداری ، خیابان مدرس",
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "wc": true,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Javanmard-e Ghassab", "Palayeshgah"]
+  },
+  "Palayeshgah": {
+    "name": "Palayeshgah",
+    "fa": "پالایشگاه",
+    "lines": [1],
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "relations": ["Shahr-e Rey", "Shahed - BagherShahr"]
+  },
+  "Shahed - BagherShahr": {
+    "name": "Shahed - BagherShahr",
+    "fa": "شاهد - باغرشهر",
+    "lines": [1],
+    "longitude": "51.382606",
+    "latitude": "35.546998",
+    "address": "اتوبان شهید کاظمی، روبه روی درب شمالی بهشت زهرا",
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": [
+      "Palayeshgah",
+      "Namayeshgah-e Shahr-e Aftab",
+      "Holy Shrine of Imam Khomeini"
+    ]
+  },
+  "Namayeshgah-e Shahr-e Aftab": {
+    "name": "Namayeshgah-e Shahr-e Aftab",
+    "fa": "نمایشگاه شهر آفتاب",
+    "lines": [1],
+    "longitude": "51.349032",
+    "latitude": "35.539811",
+    "address": "شهر آفتاب",
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Shahed - BagherShahr", "Vavan"]
+  },
+  "Vavan": {
+    "name": "Vavan",
+    "fa": "واوان",
+    "lines": [1],
+    "colors": ["#E0001F"],
+    "disabled": true,
+    "relations": ["Namayeshgah-e Shahr-e Aftab", "Emam Khomeini Airport"]
+  },
+  "Emam Khomeini Airport": {
+    "name": "Emam Khomeini Airport",
+    "fa": "فرودگاه امام خمینی",
+    "lines": [1],
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "relations": ["Vavan", "Shahr-e Parand"]
+  },
+  "Shahr-e Parand": {
+    "name": "Shahr-e Parand",
+    "fa": "شهر پرند",
+    "lines": [1],
+    "colors": ["#E0001F"],
+    "disabled": true,
+    "relations": ["Emam Khomeini Airport"]
+  },
+  "Holy Shrine of Imam Khomeini": {
+    "name": "Holy Shrine of Imam Khomeini",
+    "fa": "حرم مطهر امام خمینی",
+    "lines": [1],
+    "longitude": "51.373036",
+    "latitude": "35.545077",
+    "address": "ضلع شرقی حرم امام خمینی - بلوار اصلی بهشت زهرا",
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Shahed - BagherShahr", "Kahrizak"]
+  },
+  "Kahrizak": {
+    "name": "Kahrizak",
+    "fa": "کهریزک",
+    "lines": [1],
+    "longitude": "51.369292",
+    "latitude": "35.521574",
+    "address": "جاده قدیم قم - بعداز درب اصلی بهشت زهرا (س) - جنب پارک لاله",
+    "colors": ["#E0001F"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Holy Shrine of Imam Khomeini"]
+  },
+  "Farhangsara": {
+    "name": "Farhangsara",
+    "fa": "فرهنگسرا",
+    "lines": [2],
+    "longitude": "51.546757",
+    "latitude": "35.729687",
+    "address": "تهرانپارس، اول خیابان درختی ، روبه روی فرهنگسرای اشراق",
+    "colors": ["#2F4389"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Tehranpars"]
+  },
+  "Tehranpars": {
+    "name": "Tehranpars",
+    "fa": "تهرانپارس",
+    "lines": [2],
+    "longitude": "51.5285321",
+    "latitude": "35.7316491",
+    "address": "بزرگراه رسالت بعد از چهارراه تیرانداز نبش اخوت",
+    "colors": ["#2F4389"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Farhangsara", "Shahid Bagheri"]
+  },
+  "Shahid Bagheri": {
+    "name": "Shahid Bagheri",
+    "fa": "شهید باقری",
+    "lines": [2],
+    "longitude": "51.516856",
+    "latitude": "35.733397",
+    "address": "تقاطع بزرگراه رسالت و شهید باقری",
+    "colors": ["#2F4389"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Tehranpars", "Daneshgah-e Elm va Sanat"]
+  },
+  "Daneshgah-e Elm va Sanat": {
+    "name": "Daneshgah-e Elm va Sanat",
+    "fa": "دانشگاه علم و صنعت",
+    "lines": [2],
+    "longitude": "51.504786",
+    "latitude": "35.734425",
+    "address": "بزرگراه رسالت، چهار راه دردشت",
+    "colors": ["#2F4389"],
+    "disabled": false,
+    "wc": true,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Shahid Bagheri", "Sarsabz"]
+  },
+  "Sarsabz": {
+    "name": "Sarsabz",
+    "fa": "سرسبز",
+    "lines": [2],
+    "longitude": "51.494873",
+    "latitude": "35.73547",
+    "address": "بزگراه رسالت، چهارراه شهید آیت",
+    "colors": ["#2F4389"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Daneshgah-e Elm va Sanat", "Janbazan"]
+  },
+  "Janbazan": {
+    "name": "Janbazan",
+    "fa": "جانبازان",
+    "lines": [2],
+    "longitude": "51.484081",
+    "latitude": "35.733088",
+    "address": "خیابان شهید مدنی، بالاتر از خیابان گلبرگ",
+    "colors": ["#2F4389"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Sarsabz", "Fadak"]
+  },
+  "Fadak": {
+    "name": "Fadak",
+    "fa": "فدک",
+    "lines": [2],
+    "longitude": "51.4756353",
+    "latitude": "35.7264805",
+    "address": "خیابان شهید مدنی، روبروی ساختمان های مسکونی دادگستری",
+    "colors": ["#2F4389"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Janbazan", "Sabalan"]
+  },
+  "Sabalan": {
+    "name": "Sabalan",
+    "fa": "سبلان",
+    "lines": [2],
+    "longitude": "51.464531",
+    "latitude": "35.71826",
+    "address": "تقاطع خیابان های شهید مدنی و سبلان",
+    "colors": ["#2F4389"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Fadak", "Shahid Madani"]
+  },
+  "Shahid Madani": {
+    "name": "Shahid Madani",
+    "fa": "شهید مدنی",
+    "lines": [2],
+    "longitude": "51.453459",
+    "latitude": "35.70913",
+    "address": "خیابان شهید مدنی، بالاتر از بیمارستان امام حسین (ع)",
+    "colors": ["#2F4389"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Sabalan", "Imam Hussein"]
+  },
+  "Imam Hussein": {
+    "name": "Imam Hussein",
+    "fa": "امام حسین",
+    "lines": [2, 6],
+    "longitude": "51.445702",
+    "latitude": "35.702188",
+    "address": "میدان امام حسین (ع) - تقاطع خیابان انقلاب اسلامی و شهید مدنی",
+    "colors": ["#2F4389", "#EF639F"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": [
+      "Shahid Madani",
+      "Sarbaz",
+      "Meydan-e Shohada",
+      "Darvazeh Shemiran"
+    ]
+  },
+  "Darvazeh Shemiran": {
+    "name": "Darvazeh Shemiran",
+    "fa": "دروازه شمیران",
+    "lines": [2, 4],
+    "longitude": "51.437709",
+    "latitude": "35.699338",
+    "address": "خیابان بهارستان، میدان ابن سینا",
+    "colors": ["#2F4389", "#F8E100"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": [
+      "Imam Hussein",
+      "Meydan-e Shohada",
+      "Darvazeh Dolat",
+      "Baharistan"
+    ]
+  },
+  "Baharistan": {
+    "name": "Baharistan",
+    "fa": "بهارستان",
+    "lines": [2],
+    "longitude": "51.432946",
+    "latitude": "35.692263",
+    "address": "خیابان بهارستان، جنب ساختمان وزارت فرهنگ و ارشاد اسلامی",
+    "colors": ["#2F4389"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Darvazeh Shemiran", "Mellat"]
+  },
+  "Mellat": {
+    "name": "Mellat",
+    "fa": "ملت",
+    "lines": [2],
+    "longitude": "51.4277635",
+    "latitude": "35.6889986",
+    "address": "خیابان اکباتان، سه راهی ملت - اکباتان",
+    "colors": ["#2F4389"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Baharistan", "Imam Khomeini"]
+  },
+  "Hasan Abad": {
+    "name": "Hasan Abad",
+    "fa": "حسن آباد",
+    "lines": [2],
+    "longitude": "51.4088914",
+    "latitude": "35.6863779",
+    "address": "میدان حسن آباد",
+    "colors": ["#2F4389"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Imam Khomeini", "Daneshgah-e Imam Ali"]
+  },
+  "Daneshgah-e Imam Ali": {
+    "name": "Daneshgah-e Imam Ali",
+    "fa": "دانشگاه امام علی",
+    "lines": [2],
+    "longitude": "51.3990645",
+    "latitude": "35.6874007",
+    "address": "خیابان امام خمینی (ره)، روبروی مجلس",
+    "colors": ["#2F4389"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Hasan Abad", "Meydan-e Horr"]
+  },
+  "Meydan-e Horr": {
+    "name": "Meydan-e Horr",
+    "fa": "میدان حر",
+    "lines": [2],
+    "longitude": "51.3884",
+    "latitude": "35.691008",
+    "address": "خیابان کارگر جنوبی، تقاطع پاستور و دانشگاه جنگ",
+    "colors": ["#2F4389"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Daneshgah-e Imam Ali", "Shahid Navab-e Safavi"]
+  },
+  "Shahid Navab-e Safavi": {
+    "name": "Shahid Navab-e Safavi",
+    "fa": "شهید نواب صفوی",
+    "lines": [2, 7],
+    "longitude": "51.378229",
+    "latitude": "35.69526",
+    "address": "تقاطع بزرگراه شهید نواب صفوی و خیابان آذربایجان",
+    "colors": ["#2F4389", "#7F0B74"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Meydan-e Horr", "Towhid", "Roudaki", "Shademan"]
+  },
+  "Shademan": {
+    "name": "Shademan",
+    "fa": "شادمان",
+    "lines": [2, 4],
+    "longitude": "51.363809",
+    "latitude": "35.700627",
+    "address": "تقاطع خیابان های آزادی و آذربایجان",
+    "colors": ["#2F4389", "#F8E100"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": [
+      "Shahid Navab-e Safavi",
+      "Towhid",
+      "Doctor Habibollah",
+      "Daneshgah-e Sharif"
+    ]
+  },
+  "Daneshgah-e Sharif": {
+    "name": "Daneshgah-e Sharif",
+    "fa": "دانشگاه شریف",
+    "lines": [2],
+    "longitude": "51.353638",
+    "latitude": "35.70575",
+    "address": "خیابان حبیب الهی - شهید تیموری",
+    "colors": ["#2F4389"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Shademan", "Tarasht"]
+  },
+  "Tarasht": {
+    "name": "Tarasht",
+    "fa": "طرشت",
+    "lines": [2],
+    "longitude": "51.34351",
+    "latitude": "35.716134",
+    "address": "خیابان محمدعلی جناح، بلوار شهید گلاب، بلوار شهید چوب تراش",
+    "colors": ["#2F4389"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Daneshgah-e Sharif", "Tehran (Sadeghiyeh)"]
+  },
+  "Tehran (Sadeghiyeh)": {
+    "name": "Tehran (Sadeghiyeh)",
+    "fa": "تهران (صادقیه)",
+    "lines": [2, 5],
+    "longitude": "51.330979",
+    "latitude": "35.717598",
+    "address": "بزرگراه محمد علی جناح، خیابان سازمان آب",
+    "colors": ["#2F4389", "#007E46"],
+    "disabled": false,
+    "wc": true,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Tarasht", "Eram-e Sabz"]
+  },
+  "Qa'em": {
+    "name": "Qa'em",
+    "fa": "قائم",
+    "lines": [3],
+    "longitude": "51.521684",
+    "latitude": "35.799759",
+    "address": "بلوار نیروی هوایی، میدان اول شهرک",
+    "colors": ["#67C5F5"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Shahid Mahallati"]
+  },
+  "Shahid Mahallati": {
+    "name": "Shahid Mahallati",
+    "fa": "شهید محلاتی",
+    "lines": [3],
+    "longitude": "51.508169",
+    "latitude": "35.797925",
+    "address": "بزرگراه لشگرک - تقاطع بلوار ارتش - ابتدای شهرک شهید محلاتی",
+    "colors": ["#67C5F5"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Qa'em", "Aghdasiyeh"]
+  },
+  "Aghdasiyeh": {
+    "name": "Aghdasiyeh",
+    "fa": "اقتصادیه",
+    "lines": [3],
+    "colors": ["#67C5F5"],
+    "disabled": false,
+    "relations": ["Shahid Mahallati", "Nobonyad"]
+  },
+  "Nobonyad": {
+    "name": "Nobonyad",
+    "fa": "نوبنیاد",
+    "lines": [3],
+    "longitude": "51.478029",
+    "latitude": "35.790987",
+    "address": "نوبنیاد، ابتدای اقدسیه",
+    "colors": ["#67C5F5"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Aghdasiyeh", "Hoseinabad"]
+  },
+  "Hoseinabad": {
+    "name": "Hoseinabad",
+    "fa": "حسین‌آباد",
+    "lines": [3],
+    "longitude": "51.47852",
+    "latitude": "35.779428",
+    "address": "تقاطع خیابان مغان و بزرگراه شهید صیاد شیرازی",
+    "colors": ["#67C5F5"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Nobonyad", "Meydan-e Heravi"]
+  },
+  "Meydan-e Heravi": {
+    "name": "Meydan-e Heravi",
+    "fa": "میدان هروی",
+    "lines": [3],
+    "longitude": "51.473219",
+    "latitude": "35.771831",
+    "address": "اتوبان صیاد شیرازی٬ بالاتر از خیابان موسوی",
+    "colors": ["#67C5F5"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Hoseinabad", "Shahid Zeynoddin"]
+  },
+  "Shahid Zeynoddin": {
+    "name": "Shahid Zeynoddin",
+    "fa": "شهید زین‌الدین",
+    "lines": [3],
+    "longitude": "51.4659032",
+    "latitude": "35.7595603",
+    "address": "بزرگراه صیاد شیرازی، تقاطع بزرگراه شهید زین‌الدین",
+    "colors": ["#67C5F5"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Meydan-e Heravi", "Khajeh Abdollah-e Ansari"]
+  },
+  "Khajeh Abdollah-e Ansari": {
+    "name": "Khajeh Abdollah-e Ansari",
+    "fa": "خواجه عبدالله انصاری",
+    "lines": [3],
+    "longitude": "51.462922",
+    "latitude": "35.743739",
+    "address": "بلوار خواجه عبدالله انصاری",
+    "colors": ["#67C5F5"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Shahid Zeynoddin", "Shahid Sayyad Shirazi"]
+  },
+  "Shahid Sayyad Shirazi": {
+    "name": "Shahid Sayyad Shirazi",
+    "fa": "شهید صیاد شیرازی",
+    "lines": [3],
+    "longitude": "51.458594",
+    "latitude": "35.735349",
+    "address": "تفاطع بزگراه صیاد شیرازی و مسیل باختر",
+    "colors": ["#67C5F5"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Khajeh Abdollah-e Ansari", "Shahid Ghodousi"]
+  },
+  "Shahid Ghodousi": {
+    "name": "Shahid Ghodousi",
+    "fa": "شهید قدوسی",
+    "lines": [3],
+    "longitude": "51.4445",
+    "latitude": "35.731553",
+    "address": "\tخیابان شریعتی - تقاطع خیابان شهید بهشتی",
+    "colors": ["#67C5F5"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Shahid Sayyad Shirazi", "Sohrevardi"]
+  },
+  "Sohrevardi": {
+    "name": "Sohrevardi",
+    "fa": "سهروردی",
+    "lines": [3],
+    "longitude": "51.435852",
+    "latitude": "35.731066",
+    "address": "خیابان عباس آباد، روبروی بلوار یوسفی",
+    "colors": ["#67C5F5"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Shahid Ghodousi", "Shahid Beheshti"]
+  },
+  "Mirza-ye Shirazi": {
+    "name": "Mirza-ye Shirazi",
+    "fa": "میرزا شیرازی",
+    "lines": [3],
+    "longitude": "51.417448",
+    "latitude": "35.728365",
+    "address": "خیابان بهشتی، مابین میرزای شیرازی و قائم مقام فرهانی",
+    "colors": ["#67C5F5"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Shahid Beheshti", "Meydan-e Jahad"]
+  },
+  "Meydan-e Jahad": {
+    "name": "Meydan-e Jahad",
+    "fa": "میدان جهاد",
+    "lines": [3],
+    "longitude": "51.408803",
+    "latitude": "35.721672",
+    "address": "خیابان ولیعصر، تقاطع خیابان دکتر فاطمی",
+    "colors": ["#67C5F5"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Mirza-ye Shirazi", "Meydan-e Hazrat Vali Asr"]
+  },
+  "Teatr-e Shahr": {
+    "name": "Teatr-e Shahr",
+    "fa": "تئاتر شهر",
+    "lines": [3, 4],
+    "longitude": "51.405831",
+    "latitude": "35.700954",
+    "address": "خیابان انقلاب اسلامی، چهارراه ولیعصر(عج)",
+    "colors": ["#67C5F5", "#F8E100"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": [
+      "Meydan-e Hazrat Vali Asr",
+      "Ferdowsi",
+      "Meydan-e Enghelab-e Eslami",
+      "Moniriyeh"
+    ]
+  },
+  "Moniriyeh": {
+    "name": "Moniriyeh",
+    "fa": "منیریه",
+    "lines": [3],
+    "longitude": "51.401594",
+    "latitude": "35.681087",
+    "address": "خیابان ولیعصر(عج) میدان منیریه",
+    "colors": ["#67C5F5"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Teatr-e Shahr", "Mahdiyeh"]
+  },
+  "Mahdiyeh": {
+    "name": "Mahdiyeh",
+    "fa": "مهدیه",
+    "lines": [3, 7],
+    "colors": ["#67C5F5", "#7F0B74"],
+    "disabled": false,
+    "relations": [
+      "Moniriyeh",
+      "Meydan-e Mohammadiyeh",
+      "Helal Ahmar",
+      "Rahahan"
+    ]
+  },
+  "Rahahan": {
+    "name": "Rahahan",
+    "fa": "راه آهن",
+    "lines": [3],
+    "longitude": "51.3984659",
+    "latitude": "35.6595573",
+    "address": "میدان راه آهن",
+    "colors": ["#67C5F5"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Mahdiyeh", "Javadiyeh"]
+  },
+  "Javadiyeh": {
+    "name": "Javadiyeh",
+    "fa": "جوادیه",
+    "lines": [3],
+    "longitude": "51.388215",
+    "latitude": "35.659075",
+    "address": "حد فاصل پل جوادیه و میدان رباط کریم",
+    "colors": ["#67C5F5"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Rahahan", "Zamzam"]
+  },
+  "Zamzam": {
+    "name": "Zamzam",
+    "fa": "زمزم",
+    "lines": [3],
+    "longitude": "51.3733202",
+    "latitude": "35.6525844",
+    "address": "بزرگراه شهید چراغی",
+    "colors": ["#67C5F5"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Javadiyeh", "Shahrak-e Shariaty"]
+  },
+  "Shahrak-e Shariaty": {
+    "name": "Shahrak-e Shariaty",
+    "fa": "شهرک شریعتی",
+    "lines": [3],
+    "longitude": "51.3677387",
+    "latitude": "35.6435696",
+    "address": "بزرگراه شهید چراغی، جوانه",
+    "colors": ["#67C5F5"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Zamzam", "Abdol Abad"]
+  },
+  "Abdol Abad": {
+    "name": "Abdol Abad",
+    "fa": "عبدالآباد",
+    "lines": [3],
+    "longitude": "51.359773",
+    "latitude": "35.638159",
+    "address": "بزرگراه شهید چراغی،ابتدای خیابان ورزش",
+    "colors": ["#67C5F5"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Shahrak-e Shariaty", "Nemat Abad"]
+  },
+  "Nemat Abad": {
+    "name": "Nemat Abad",
+    "fa": "نعمت آباد",
+    "lines": [3],
+    "longitude": "51.34703",
+    "latitude": "35.63392",
+    "address": " بزرگراه سعیدی ، روبروی خیابان سهیل",
+    "colors": ["#67C5F5"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Abdol Abad", "Azadegan"]
+  },
+  "Azadegan": {
+    "name": "Azadegan",
+    "fa": "آزادگان",
+    "lines": [3],
+    "longitude": "51.335533",
+    "latitude": "35.627216",
+    "address": "بزرگراه سعیدی، نرسیده به بزرگراه آزادگان ابتدای شهید حیدری",
+    "colors": ["#67C5F5"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Nemat Abad"]
+  },
+  "Shahid Kolahdooz": {
+    "name": "Shahid Kolahdooz",
+    "fa": "شهید کلاهدوز",
+    "lines": [4],
+    "longitude": "51.498563",
+    "latitude": "35.698954",
+    "address": "ابتدای بزرگراه شهید دوران،بالاتر از بانک سپه",
+    "colors": ["#F8E100"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Niroohavaii"]
+  },
+  "Niroohavaii": {
+    "name": "Niroohavaii",
+    "fa": "نیروهوایی",
+    "lines": [4],
+    "longitude": "51.4886226",
+    "latitude": "35.6926988",
+    "address": "خیابان پیروزی- بین خیابانهای چهارم و پنجم نیرو هوایی",
+    "colors": ["#F8E100"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Shahid Kolahdooz", "Nobard"]
+  },
+  "Nobard": {
+    "name": "Nobard",
+    "fa": "نوبارد",
+    "lines": [4],
+    "longitude": "51.4777301",
+    "latitude": "35.6913253",
+    "address": "خیابان پیروزی ، چهار راه کوکاکولا ، جنب مجتمع تجاری کسا",
+    "colors": ["#F8E100"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Niroohavaii", "Piroozi"]
+  },
+  "Piroozi": {
+    "name": "Piroozi",
+    "fa": "پیروزی",
+    "lines": [4],
+    "longitude": "51.46775",
+    "latitude": "35.691356",
+    "address": "خیابان پیروزی –قبل از خیابان شهید حسن پورمند",
+    "colors": ["#F8E100"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Nobard", "Ebn-e Sina"]
+  },
+  "Ebn-e Sina": {
+    "name": "Ebn-e Sina",
+    "fa": "ابن سینا",
+    "lines": [4],
+    "longitude": "51.4579435",
+    "latitude": "35.6907927",
+    "address": "خیابان پیروزی ،چهارصد دستگاه( تقاطع اتوبان امام علی (ع) و پیروزی)",
+    "colors": ["#F8E100"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Piroozi", "Meydan-e Shohada"]
+  },
+  "Ferdowsi": {
+    "name": "Ferdowsi",
+    "fa": "فردوسی",
+    "lines": [4],
+    "longitude": "51.418569",
+    "latitude": "35.701255",
+    "address": "میدان فردوسی",
+    "colors": ["#F8E100"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Darvazeh Dolat", "Teatr-e Shahr"]
+  },
+  "Meydan-e Enghelab-e Eslami": {
+    "name": "Meydan-e Enghelab-e Eslami",
+    "fa": "میدان انقلاب اسلامی",
+    "lines": [4],
+    "longitude": "51.392176",
+    "latitude": "35.701255",
+    "address": "میدان انقلاب اسلامی،ابتدای خیابان آزادی، کوچه شهید جنتی",
+    "colors": ["#F8E100"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Teatr-e Shahr", "Towhid"]
+  },
+  "Towhid": {
+    "name": "Towhid",
+    "fa": "توحید",
+    "lines": [4, 7],
+    "longitude": "51.378572",
+    "latitude": "35.700767",
+    "address": "خیابان آزادی - شمال شرقی تقاطع خیابان آزادی و شهید نواب صفوی",
+    "colors": ["#F8E100", "#7F0B74"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": [
+      "Meydan-e Enghelab-e Eslami",
+      "Modafean-e Salamat",
+      "Shahid Navab-e Safavi",
+      "Shademan"
+    ]
+  },
+  "Doctor Habibollah": {
+    "name": "Doctor Habibollah",
+    "fa": "دکتر حبیب‌الله",
+    "lines": [4],
+    "longitude": "51.356079",
+    "latitude": "35.700653",
+    "address": "خیابان آزادی - نرسیده به خیابان دکتر حبیب اله",
+    "colors": ["#F8E100"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Shademan", "Ostad Mo'in"]
+  },
+  "Ostad Mo'in": {
+    "name": "Ostad Mo'in",
+    "fa": "استاد معین",
+    "lines": [4],
+    "longitude": "51.34461",
+    "latitude": "35.700131",
+    "address": "خیابان آزادی- قبل از میدان آزادی - تقاطع خیابان نور بخش",
+    "colors": ["#F8E100"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Doctor Habibollah", "Meydan-e Azadi"]
+  },
+  "Meydan-e Azadi": {
+    "name": "Meydan-e Azadi",
+    "fa": "میدان آزادی",
+    "lines": [4],
+    "longitude": "51.332492",
+    "latitude": "35.700802",
+    "address": "میدان آزادی - ابتدای بزرگراه شهید برادران رحمانی",
+    "colors": ["#F8E100"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Ostad Mo'in", "Bimeh"]
+  },
+  "Bimeh": {
+    "name": "Bimeh",
+    "fa": "بیمه",
+    "lines": [4],
+    "longitude": "51.32036",
+    "latitude": "35.699546",
+    "address": "بزرگراه شهید لشگری، ابتدای بیمه",
+    "colors": ["#F8E100"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": [
+      "Meydan-e Azadi",
+      "Shahrak-e Ekbatan",
+      "Mehrabad Airport Terminal 1&2"
+    ]
+  },
+  "Mehrabad Airport Terminal 1&2": {
+    "name": "Mehrabad Airport Terminal 1&2",
+    "fa": "ترمینال ۱ و ۲ فرودگاه مهرآباد",
+    "lines": [4],
+    "longitude": "51.3196823",
+    "latitude": "35.690689",
+    "address": "میدان آزادی، ترمینال ۲ فرودگاه مهرآباد",
+    "colors": ["#F8E100"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Bimeh", "Mehrabad Airport Terminal 4&6"]
+  },
+  "Mehrabad Airport Terminal 4&6": {
+    "name": "Mehrabad Airport Terminal 4&6",
+    "fa": "ترمینال ۴ و ۶ فرودگاه مهرآباد",
+    "lines": [4],
+    "longitude": "51.3271795",
+    "latitude": "35.6886266",
+    "address": "میدان آزادی، ترمینال ۶ فرودگاه مهرآباد",
+    "colors": ["#F8E100"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Mehrabad Airport Terminal 1&2"]
+  },
+  "Shahrak-e Ekbatan": {
+    "name": "Shahrak-e Ekbatan",
+    "fa": "شهرک اکباتان",
+    "lines": [4],
+    "longitude": "51.3074478",
+    "latitude": "35.705557400000004",
+    "address": "فاز دو شهرک اکباتان- روبروی بلوک 13",
+    "colors": ["#F8E100"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Bimeh", "Eram-e Sabz"]
+  },
+  "Allameh Jafari": {
+    "name": "Allameh Jafari",
+    "fa": "علامه جعفری",
+    "lines": [4],
+    "colors": ["#F8E100"],
+    "disabled": false,
+    "relations": ["Eram-e Sabz"]
+  },
+  "Eram-e Sabz": {
+    "name": "Eram-e Sabz",
+    "fa": "ارم سبز",
+    "lines": [4, 5],
+    "longitude": "51.301979",
+    "latitude": "35.717476",
+    "address": "ارم سبز",
+    "colors": ["#F8E100", "#007E46"],
+    "disabled": false,
+    "wc": true,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": [
+      "Tehran (Sadeghiyeh)",
+      "Varzeshgah-e Azadi",
+      "Allameh Jafari",
+      "Shahrak-e Ekbatan"
+    ]
+  },
+  "Varzeshgah-e Azadi": {
+    "name": "Varzeshgah-e Azadi",
+    "fa": "ورزشگاه آزادی",
+    "lines": [5],
+    "longitude": "51.281208",
+    "latitude": "35.716727",
+    "address": "اتوبان کرج - جنب مجموعه ورزشی آزادی",
+    "colors": ["#007E46"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Eram-e Sabz", "Chitgar"]
+  },
+  "Chitgar": {
+    "name": "Chitgar",
+    "fa": "چیتگر",
+    "lines": [5],
+    "longitude": "51.243904",
+    "latitude": "35.717563",
+    "address": "کیلومتر 8 اتوبان تهران کرج ، روبروی کارخانه بهنوش ، بلوار کوهک",
+    "colors": ["#007E46"],
+    "disabled": false,
+    "wc": true,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Varzeshgah-e Azadi", "Iran Khodro"]
+  },
+  "Iran Khodro": {
+    "name": "Iran Khodro",
+    "fa": "ایران‌خودرو",
+    "lines": [5],
+    "longitude": "51.196654",
+    "latitude": "35.725402",
+    "address": "کیلومتر 14 اتوبان تهران کرج ، جنب باشگاه ایران خودرو",
+    "colors": ["#007E46"],
+    "disabled": false,
+    "wc": true,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Chitgar", "Vardavard"]
+  },
+  "Vardavard": {
+    "name": "Vardavard",
+    "fa": "وردآورد",
+    "lines": [5],
+    "longitude": "51.1509866",
+    "latitude": "35.7444768",
+    "address": "کیلومتر 16 بزرگراه تهران کرج - خیابان دارو پخش",
+    "colors": ["#007E46"],
+    "disabled": false,
+    "wc": true,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Iran Khodro", "Garmdareh"]
+  },
+  "Garmdareh": {
+    "name": "Garmdareh",
+    "fa": "گرمدره",
+    "lines": [5],
+    "longitude": "51.08193",
+    "latitude": "35.751002",
+    "address": "کیلومتر ۲۳ بزرگراه تهران-کرج، جنب اردوگاه آموزشی قدس",
+    "colors": ["#007E46"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Vardavard", "Atmosphere"]
+  },
+  "Atmosphere": {
+    "name": "Atmosphere",
+    "fa": "اتمسفر",
+    "lines": [5],
+    "longitude": "51.0469759",
+    "latitude": "35.7662914",
+    "address": "کیلومتر 27 جاده مخصوص تهران کرج اتمسفر",
+    "colors": ["#007E46"],
+    "disabled": false,
+    "wc": true,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Garmdareh", "Karaj"]
+  },
+  "Karaj": {
+    "name": "Karaj",
+    "fa": "کرج",
+    "lines": [5],
+    "longitude": "51.0026979",
+    "latitude": "35.7870098",
+    "address": "کرج ، پل فردیس ، جنب میدان شهید سلطانی ، ابتدای جاده ملارد",
+    "colors": ["#007E46"],
+    "disabled": false,
+    "wc": true,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Atmosphere", "Mohammadshahr"]
+  },
+  "Mohammadshahr": {
+    "name": "Mohammadshahr",
+    "fa": "محمدشهر",
+    "lines": [5],
+    "longitude": "50.964729",
+    "latitude": "35.800951",
+    "address": "اتوبان ( تهران - کرج ) جاده محمد شهر",
+    "colors": ["#007E46"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Karaj", "Golshahr"]
+  },
+  "Golshahr": {
+    "name": "Golshahr",
+    "fa": "گلشهر",
+    "lines": [5],
+    "longitude": "50.933079",
+    "latitude": "35.824877",
+    "address": "کرج-45 متری گلشهر- خیابان اختر غربی",
+    "colors": ["#007E46"],
+    "disabled": false,
+    "wc": true,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Mohammadshahr", "Shahid Sepahbod Qasem Soleimani"]
+  },
+  "Shahid Sepahbod Qasem Soleimani": {
+    "name": "Shahid Sepahbod Qasem Soleimani",
+    "fa": "شهید سپهبد قاسم سلیمانی",
+    "lines": [5],
+    "colors": ["#007E46"],
+    "disabled": true,
+    "relations": ["Golshahr"]
+  },
+  "Haram-e Hazrat-e Abdol Azim": {
+    "name": "Haram-e Hazrat-e Abdol Azim",
+    "fa": "حرم حضرت عبدالعظیم",
+    "lines": [6],
+    "colors": ["#EF639F"],
+    "disabled": true,
+    "relations": ["Meydan-e Hazrat-e Abdol Azim"]
+  },
+  "Meydan-e Hazrat-e Abdol Azim": {
+    "name": "Meydan-e Hazrat-e Abdol Azim",
+    "fa": "میدان حضرت عبدالعظیم",
+    "lines": [6],
+    "colors": ["#EF639F"],
+    "disabled": true,
+    "relations": ["Haram-e Hazrat-e Abdol Azim", "Ebn-e Babviyeh"]
+  },
+  "Ebn-e Babviyeh": {
+    "name": "Ebn-e Babviyeh",
+    "fa": "ابن بابویه",
+    "lines": [6],
+    "colors": ["#EF639F"],
+    "disabled": true,
+    "relations": ["Meydan-e Hazrat-e Abdol Azim", "Cheshmeh Ali"]
+  },
+  "Cheshmeh Ali": {
+    "name": "Cheshmeh Ali",
+    "fa": "چشمه علی",
+    "lines": [6],
+    "colors": ["#EF639F"],
+    "disabled": true,
+    "relations": ["Ebn-e Babviyeh", "Shohada-ye Dowlat Abad"]
+  },
+  "Shohada-ye Dowlat Abad": {
+    "name": "Shohada-ye Dowlat Abad",
+    "fa": "شهدای دولت‌آباد",
+    "lines": [6],
+    "colors": ["#EF639F"],
+    "disabled": false,
+    "relations": ["Cheshmeh Ali", "Kiyan Shahr"]
+  },
+  "Kiyan Shahr": {
+    "name": "Kiyan Shahr",
+    "fa": "کیان شهر",
+    "lines": [6],
+    "colors": ["#EF639F"],
+    "disabled": false,
+    "relations": ["Shohada-ye Dowlat Abad", "Be'sat"]
+  },
+  "Be'sat": {
+    "name": "Be'sat",
+    "fa": "بعثت",
+    "lines": [6],
+    "colors": ["#EF639F"],
+    "disabled": false,
+    "relations": ["Kiyan Shahr", "Shahid Rezaei"]
+  },
+  "Shahid Rezaei": {
+    "name": "Shahid Rezaei",
+    "fa": "شهید رضایی",
+    "lines": [6],
+    "colors": ["#EF639F"],
+    "disabled": false,
+    "relations": ["Be'sat", "Meydan-e Khorasan"]
+  },
+  "Meydan-e Khorasan": {
+    "name": "Meydan-e Khorasan",
+    "fa": "میدان خراسان",
+    "lines": [6],
+    "colors": ["#EF639F"],
+    "disabled": true,
+    "relations": ["Shahid Rezaei", "Shohada-ye Hefdah-e Shahrivar"]
+  },
+  "Shohada-ye Hefdah-e Shahrivar": {
+    "name": "Shohada-ye Hefdah-e Shahrivar",
+    "fa": "شهدای هفده شهریور",
+    "lines": [6, 7],
+    "colors": ["#EF639F", "#7F0B74"],
+    "disabled": true,
+    "relations": [
+      "Meydan-e Khorasan",
+      "Amirkabir",
+      "Chehel Tan-e Doulab",
+      "Meydan-e Ghiyam"
+    ]
+  },
+  "Amirkabir": {
+    "name": "Amirkabir",
+    "fa": "امیرکبیر",
+    "lines": [6],
+    "colors": ["#EF639F"],
+    "disabled": false,
+    "relations": ["Shohada-ye Hefdah-e Shahrivar", "Meydan-e Shohada"]
+  },
+  "Meydan-e Shohada": {
+    "name": "Meydan-e Shohada",
+    "fa": "میدان شهدا",
+    "lines": [4, 6],
+    "longitude": "51.447237",
+    "latitude": "35.690381",
+    "address": "خیابان پیروزی تقاطع 17 شهریور،نرسیده به میدان شهدا، جنب اداره برق",
+    "colors": ["#F8E100", "#EF639F"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": [
+      "Amirkabir",
+      "Ebn-e Sina",
+      "Darvazeh Shemiran",
+      "Imam Hussein"
+    ]
+  },
+  "Sarbaz": {
+    "name": "Sarbaz",
+    "fa": "سرباز",
+    "lines": [6],
+    "colors": ["#EF639F"],
+    "disabled": true,
+    "relations": ["Imam Hussein", "Bahar Shiraz (Khanevadeh Hospital)"]
+  },
+  "Bahar Shiraz (Khanevadeh Hospital)": {
+    "name": "Bahar Shiraz (Khanevadeh Hospital)",
+    "fa": "بهار شیراز (بیمارستان خانواده)",
+    "lines": [6],
+    "colors": ["#EF639F"],
+    "disabled": true,
+    "relations": ["Sarbaz", "Shohada-ye Haftom-e Tir"]
+  },
+  "Shohada-ye Haftom-e Tir": {
+    "name": "Shohada-ye Haftom-e Tir",
+    "fa": "شهدای هفتم تیر",
+    "lines": [1, 6],
+    "longitude": "51.426042",
+    "latitude": "35.715986",
+    "address": "میدان هفت تیر",
+    "colors": ["#E0001F", "#EF639F"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": [
+      "Bahar Shiraz (Khanevadeh Hospital)",
+      "Shahid Nejatollahi",
+      "Shahid Mofattah",
+      "Ayatollah Taleghani"
+    ]
+  },
+  "Shahid Nejatollahi": {
+    "name": "Shahid Nejatollahi",
+    "fa": "شهید نجات اللهی",
+    "lines": [6],
+    "colors": ["#EF639F"],
+    "disabled": true,
+    "relations": ["Shohada-ye Haftom-e Tir", "Meydan-e Hazrat Vali Asr"]
+  },
+  "Meydan-e Hazrat Vali Asr": {
+    "name": "Meydan-e Hazrat Vali Asr",
+    "fa": "میدان حضرت ولیعصر",
+    "lines": [3, 6],
+    "longitude": "51.4070255",
+    "latitude": "35.7115282",
+    "address": "خیابان ولیعصر، میدان ولیعصر",
+    "colors": ["#67C5F5", "#EF639F"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": [
+      "Shahid Nejatollahi",
+      "Meydan-e Jahad",
+      "Teatr-e Shahr",
+      "Bustan-e Laleh"
+    ]
+  },
+  "Bustan-e Laleh": {
+    "name": "Bustan-e Laleh",
+    "fa": "بوستان لاله",
+    "lines": [6],
+    "colors": ["#EF639F"],
+    "disabled": false,
+    "relations": ["Meydan-e Hazrat Vali Asr", "Karagar"]
+  },
+  "Karagar": {
+    "name": "Karagar",
+    "fa": "کارگر",
+    "lines": [6],
+    "colors": ["#EF639F"],
+    "disabled": false,
+    "relations": ["Bustan-e Laleh", "Daneshgah-e Tarbiat Modarres"]
+  },
+  "Daneshgah-e Tarbiat Modarres": {
+    "name": "Daneshgah-e Tarbiat Modarres",
+    "fa": "دانشگاه تربیت مدرس",
+    "lines": [6, 7],
+    "colors": ["#EF639F", "#7F0B74"],
+    "disabled": false,
+    "relations": [
+      "Karagar",
+      "Boostan-e Goftegou",
+      "Modafean-e Salamat",
+      "Shahrak-e Azmayesh"
+    ]
+  },
+  "Shahrak-e Azmayesh": {
+    "name": "Shahrak-e Azmayesh",
+    "fa": "شهرک آزمایش",
+    "lines": [6],
+    "colors": ["#EF639F"],
+    "disabled": false,
+    "relations": ["Daneshgah-e Tarbiat Modarres", "Marzdaran"]
+  },
+  "Marzdaran": {
+    "name": "Marzdaran",
+    "fa": "مرزداران",
+    "lines": [6],
+    "colors": ["#EF639F"],
+    "disabled": false,
+    "relations": ["Shahrak-e Azmayesh", "Yadegar-e Imam"]
+  },
+  "Yadegar-e Imam": {
+    "name": "Yadegar-e Imam",
+    "fa": "یادگار امام",
+    "lines": [6],
+    "colors": ["#EF639F"],
+    "disabled": false,
+    "relations": ["Marzdaran", "Shahid Ashrafi Esfahani"]
+  },
+  "Shahid Ashrafi Esfahani": {
+    "name": "Shahid Ashrafi Esfahani",
+    "fa": "شهید اشرفی اصفهانی",
+    "lines": [6],
+    "colors": ["#EF639F"],
+    "disabled": false,
+    "relations": ["Yadegar-e Imam", "Shahid Sattari"]
+  },
+  "Shahid Sattari": {
+    "name": "Shahid Sattari",
+    "fa": "شهید ستاری",
+    "lines": [6],
+    "colors": ["#EF639F"],
+    "disabled": false,
+    "relations": ["Shahid Ashrafi Esfahani", "Ayatollah Kashani"]
+  },
+  "Ayatollah Kashani": {
+    "name": "Ayatollah Kashani",
+    "fa": "آیت‌الله کاشانی",
+    "lines": [6],
+    "colors": ["#EF639F"],
+    "disabled": true,
+    "relations": ["Shahid Sattari", "Shahr-e Ziba"]
+  },
+  "Shahr-e Ziba": {
+    "name": "Shahr-e Ziba",
+    "fa": "شهر زیبا",
+    "lines": [6],
+    "colors": ["#EF639F"],
+    "disabled": true,
+    "relations": ["Ayatollah Kashani", "Shahran"]
+  },
+  "Shahran": {
+    "name": "Shahran",
+    "fa": "شهران",
+    "lines": [6],
+    "colors": ["#EF639F"],
+    "disabled": true,
+    "relations": ["Shahr-e Ziba", "Shohada-ye Kan"]
+  },
+  "Shohada-ye Kan": {
+    "name": "Shohada-ye Kan",
+    "fa": "شهدای کن",
+    "lines": [6],
+    "colors": ["#EF639F"],
+    "disabled": true,
+    "relations": ["Shahran", "Kouhsar"]
+  },
+  "Kouhsar": {
+    "name": "Kouhsar",
+    "fa": "کوهسار",
+    "lines": [6],
+    "colors": ["#EF639F"],
+    "disabled": true,
+    "relations": ["Shohada-ye Kan"]
+  },
+  "Varzeshgah-e Takhti": {
+    "name": "Varzeshgah-e Takhti",
+    "fa": "ورزشگاه تختی",
+    "lines": [7],
+    "colors": ["#7F0B74"],
+    "disabled": true,
+    "relations": ["Basij"]
+  },
+  "Basij": {
+    "name": "Basij",
+    "fa": "بسیج",
+    "lines": [7],
+    "longitude": "51.489404",
+    "latitude": "35.667159",
+    "address": "محدوده بزرگراه بسیج - افسریه",
+    "colors": ["#7F0B74"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Varzeshgah-e Takhti", "Ahang"]
+  },
+  "Ahang": {
+    "name": "Ahang",
+    "fa": "آهنگ",
+    "lines": [7],
+    "colors": ["#7F0B74"],
+    "disabled": false,
+    "relations": ["Basij", "Chehel Tan-e Doulab"]
+  },
+  "Chehel Tan-e Doulab": {
+    "name": "Chehel Tan-e Doulab",
+    "fa": "چهل تن دولاب",
+    "lines": [7],
+    "colors": ["#7F0B74"],
+    "disabled": false,
+    "relations": ["Ahang", "Shohada-ye Hefdah-e Shahrivar"]
+  },
+  "Meydan-e Ghiyam": {
+    "name": "Meydan-e Ghiyam",
+    "fa": "میدان قیام",
+    "lines": [7],
+    "colors": ["#7F0B74"],
+    "disabled": false,
+    "relations": ["Shohada-ye Hefdah-e Shahrivar", "Mowlavi"]
+  },
+  "Mowlavi": {
+    "name": "Mowlavi",
+    "fa": "مولوی",
+    "lines": [7],
+    "colors": ["#7F0B74"],
+    "disabled": false,
+    "relations": ["Meydan-e Ghiyam", "Meydan-e Mohammadiyeh"]
+  },
+  "Helal Ahmar": {
+    "name": "Helal Ahmar",
+    "fa": "هلال احمر",
+    "lines": [7],
+    "colors": ["#7F0B74"],
+    "disabled": false,
+    "relations": ["Mahdiyeh", "Beryanak"]
+  },
+  "Beryanak": {
+    "name": "Beryanak",
+    "fa": "بریانک",
+    "lines": [7],
+    "colors": ["#7F0B74"],
+    "disabled": false,
+    "relations": ["Helal Ahmar", "Kamil"]
+  },
+  "Kamil": {
+    "name": "Kamil",
+    "fa": "کامیل",
+    "lines": [7],
+    "longitude": "51.380143",
+    "latitude": "35.682491",
+    "address": "محدوده بزرگراه شهیدنواب صفوی با جنوب خیابان کمیل",
+    "colors": ["#7F0B74"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Beryanak", "Roudaki"]
+  },
+  "Roudaki": {
+    "name": "Roudaki",
+    "fa": "رودکی",
+    "lines": [7],
+    "colors": ["#7F0B74"],
+    "disabled": false,
+    "relations": ["Kamil", "Shahid Navab-e Safavi"]
+  },
+  "Modafean-e Salamat": {
+    "name": "Modafean-e Salamat",
+    "fa": "مدافعان سلامت",
+    "lines": [7],
+    "colors": ["#7F0B74"],
+    "disabled": false,
+    "relations": ["Towhid", "Daneshgah-e Tarbiat Modarres"]
+  },
+  "Boostan-e Goftegou": {
+    "name": "Boostan-e Goftegou",
+    "fa": "بوستان گفتگو",
+    "lines": [7],
+    "colors": ["#7F0B74"],
+    "disabled": false,
+    "relations": ["Daneshgah-e Tarbiat Modarres", "Milad Tower"]
+  },
+  "Milad Tower": {
+    "name": "Milad Tower",
+    "fa": "برج میلاد",
+    "lines": [7],
+    "colors": ["#7F0B74"],
+    "disabled": false,
+    "relations": ["Boostan-e Goftegou", "Meydan-e San'at"]
+  },
+  "Meydan-e San'at": {
+    "name": "Meydan-e San'at",
+    "fa": "میدان صنعت",
+    "lines": [7],
+    "longitude": "51.367808",
+    "latitude": "35.754386",
+    "address": "محدوده ضلع شمالی میدان صنعت",
+    "colors": ["#7F0B74"],
+    "disabled": false,
+    "wc": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": false,
+    "relations": ["Milad Tower", "Shahid Dadman"]
+  },
+  "Shahid Dadman": {
+    "name": "Shahid Dadman",
+    "fa": "شهید دادمان",
+    "lines": [7],
+    "colors": ["#7F0B74"],
+    "disabled": false,
+    "relations": ["Meydan-e San'at", "Meydan-e Ketab"]
+  },
+  "Meydan-e Ketab": {
+    "name": "Meydan-e Ketab",
+    "fa": "میدان کتاب",
+    "lines": [7],
+    "colors": ["#7F0B74"],
+    "disabled": false,
+    "relations": ["Shahid Dadman"]
+  }
 }

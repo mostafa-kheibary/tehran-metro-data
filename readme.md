@@ -1,13 +1,12 @@
-# Tehran Metro Stations Data Repository
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Tehran_Metro_Logo.svg/200px-Tehran_Metro_Logo.svg.png) 
+<img width="100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Tehran_Metro_Logo.svg/200px-Tehran_Metro_Logo.svg.png"/>
 
-This repository contains data related to the Tehran Metro stations. The data is available in both JSON format and Neo4j database format, providing different options for utilizing the data.
+# Tehran Metro Graph Data
+
+This repository contains data related to the Tehran Metro stations. The data is available in JSON format as a graph structure data, providing different options for utilizing the data.
 
 ## Repository Contents
 
-1. `data/stations.json.json`: This file contains the Tehran Metro stations data in JSON format. It includes information such as station names, coordinates, and other relevant details.
-
-2. `data/neo4j.stations.json.`: This file contains the Tehran Metro stations data in the Neo4j json database format. The Neo4j format allows for storing and querying graph data, which can be useful for analyzing the relationships between different metro stations.
+1. `data/stations.json`: This file contains the Tehran Metro stations data in JSON format. It includes information such as station names, coordinates, and other relevant details.
 
 ## Data Structure (data/stations.json)
 
@@ -28,14 +27,18 @@ Example:
 ```json
 {
     "Tajrish": {
-        "property": {
-            "disabled": false,
-            "name": "Tajrish",
-            "fa": "تجریش",
-            "colors": ["#E0001F"],
-            "lines": [1]
-        },
-        ...
+        "name": "Tajrish",
+        "fa": "تجریش",
+        "lines": [1],
+        "longitude": "51.433643000000004",
+        "latitude": "35.804501",
+        "address": "خیابان شریعتی-ضلع جنوب غربی میدان قدس",
+        "wc": false,
+        "coffeeShop": false,
+        "groceryStore": false,
+        "fastFood": false,
+        "atm": false,
+        "relations": ["Gheytariyeh"]
     },
     ...
 }
@@ -43,41 +46,19 @@ Example:
 
 ### Station Relations
 
-Each station can have relations with other stations. These relations are represented as an array of objects within the station object. Each relation object contains similar properties to the station object, including:
-
-- `"name"`: The name of the related station in English.
-- `"disabled"`: A boolean value indicating if the related station is disabled or not.
-- `"fa"`: The name of the related station in Persian (Farsi).
-- `"colors"`: An array of color codes associated with the related station.
-- `"lines"`: An array of line numbers associated with the related station.
+Each station can have relations with other stations. These relations are represented as an array of names within the station object.
 
 Example:
 
 ```json
 {
-    "Tajrish": {
-        "property": {
-            ...
-        },
-        "relations": [
-            {
-                "name": "Gheytariyeh",
-                "disabled": false,
-                "fa": "قیطریه",
-                "colors": ["#E0001F"],
-                "lines": [1]
-            },
-            ...
-        ]
+    "Gheytariyeh": {
+        ...
+        "relations": ["Tajrish", "Shahid Sadr"]
     },
     ...
 }
 ```
-
-This structure allows for representing stations, their properties, and their relations in a structured and organized manner. You can use this data to build applications, perform analyses, or create visualizations related to the Tehran Metro stations.
-
-## Donation
-<a href="https://www.coffeebede.com/mosidev"><img width="300" class="img-fluid" src="https://coffeebede.ir/DashboardTemplateV2/app-assets/images/banner/default-yellow.svg" /></a>
 
 ## License
 
