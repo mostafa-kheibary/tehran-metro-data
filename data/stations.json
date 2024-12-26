@@ -1,7 +1,7 @@
 {
   "Tajrish": {
     "name": "Tajrish",
-    "fa": "تجریش",
+    "translations": {"fa": "تجریش"},
     "lines": [1],
     "longitude": "51.433643000000004",
     "latitude": "35.804501",
@@ -17,7 +17,7 @@
   },
   "Gheytariyeh": {
     "name": "Gheytariyeh",
-    "fa": "قیطریه",
+    "translations": {"fa": "قیطریه"},
     "lines": [1],
     "longitude": "51.435252",
     "latitude": "35.793119",
@@ -33,7 +33,7 @@
   },
   "Shahid Sadr": {
     "name": "Shahid Sadr",
-    "fa": "شهید صدر",
+    "translations": {"fa": "شهید صدر"},
     "lines": [1],
     "longitude": "51.435639",
     "latitude": "35.785374",
@@ -49,7 +49,7 @@
   },
   "Qolhak": {
     "name": "Qolhak",
-    "fa": "قلهک",
+    "translations": {"fa": "قلهک"},
     "lines": [1],
     "longitude": "51.4379137",
     "latitude": "35.7726822",
@@ -65,7 +65,7 @@
   },
   "Doctor Shariati": {
     "name": "Doctor Shariati",
-    "fa": "دکتر شریعتی",
+    "translations": {"fa": "دکتر شریعتی"},
     "lines": [1],
     "longitude": "51.4440981",
     "latitude": "35.7626452",
@@ -81,7 +81,7 @@
   },
   "Mirdamad": {
     "name": "Mirdamad",
-    "fa": "میرداماد",
+    "translations": {"fa": "میرداماد"},
     "lines": [1],
     "longitude": "51.43375",
     "latitude": "35.76006",
@@ -97,7 +97,7 @@
   },
   "Shahid Haghani": {
     "name": "Shahid Haghani",
-    "fa": "شهید حقانی",
+    "translations": {"fa": "شهید حقانی"},
     "lines": [1],
     "longitude": "51.4257773",
     "latitude": "35.7565207",
@@ -113,7 +113,7 @@
   },
   "Shahid Hemmat": {
     "name": "Shahid Hemmat",
-    "fa": "شهید همت",
+    "translations": {"fa": "شهید همت"},
     "lines": [1],
     "longitude": "51.427372",
     "latitude": "35.748228",
@@ -129,7 +129,7 @@
   },
   "Mosalla-ye Imam Khomeini": {
     "name": "Mosalla-ye Imam Khomeini",
-    "fa": "مصلی امام خمینی",
+    "translations": {"fa": "مصلی امام خمینی"},
     "lines": [1],
     "longitude": "51.427082",
     "latitude": "35.74073",
@@ -145,7 +145,7 @@
   },
   "Shahid Beheshti": {
     "name": "Shahid Beheshti",
-    "fa": "شهید بهشتی",
+    "translations": {"fa": "شهید بهشتی"},
     "lines": [1, 3],
     "longitude": "51.42704",
     "latitude": "35.731037",
@@ -157,16 +157,11 @@
     "groceryStore": false,
     "fastFood": false,
     "atm": false,
-    "relations": [
-      "Mosalla-ye Imam Khomeini",
-      "Sohrevardi",
-      "Mirza-ye Shirazi",
-      "Shahid Mofattah"
-    ]
+    "relations": ["Mosalla-ye Imam Khomeini", "Sohrevardi", "Mirza-ye Shirazi", "Shahid Mofattah"]
   },
   "Shahid Mofattah": {
     "name": "Shahid Mofattah",
-    "fa": "شهید مفتح",
+    "translations": {"fa": "شهید مفتح"},
     "lines": [1],
     "longitude": "51.427632",
     "latitude": "35.724453",
@@ -182,7 +177,7 @@
   },
   "Ayatollah Taleghani": {
     "name": "Ayatollah Taleghani",
-    "fa": "آیت‌الله طالقانی",
+    "translations": {"fa": "آیت‌الله طالقانی"},
     "lines": [1],
     "longitude": "51.425495",
     "latitude": "35.707161",
@@ -198,7 +193,7 @@
   },
   "Darvazeh Dolat": {
     "name": "Darvazeh Dolat",
-    "fa": "دروازه دولت",
+    "translations": {"fa": "دروازه دولت"},
     "lines": [1, 4],
     "longitude": "51.425849",
     "latitude": "35.701316",
@@ -210,16 +205,11 @@
     "groceryStore": false,
     "fastFood": false,
     "atm": false,
-    "relations": [
-      "Ayatollah Taleghani",
-      "Ferdowsi",
-      "Darvazeh Shemiran",
-      "Sa'adi"
-    ]
+    "relations": ["Ayatollah Taleghani", "Ferdowsi", "Darvazeh Shemiran", "Sa'adi"]
   },
   "Sa'adi": {
     "name": "Sa'adi",
-    "fa": "سعدی",
+    "translations": {"fa": "سعدی"},
     "lines": [1],
     "longitude": "51.4244163",
     "latitude": "35.6934793",
@@ -235,7 +225,7 @@
   },
   "Imam Khomeini": {
     "name": "Imam Khomeini",
-    "fa": "امام خمینی",
+    "translations": {"fa": "امام خمینی"},
     "lines": [1, 2],
     "longitude": "51.421171",
     "latitude": "35.686433",
@@ -251,7 +241,7 @@
   },
   "Panzdah-e Khordad": {
     "name": "Panzdah-e Khordad",
-    "fa": "پانزده خرداد",
+    "translations": {"fa": "پانزده خرداد"},
     "lines": [1],
     "longitude": "51.417287",
     "latitude": "35.678276",
@@ -267,7 +257,7 @@
   },
   "Khayyam": {
     "name": "Khayyam",
-    "fa": "خیام",
+    "translations": {"fa": "خیام"},
     "lines": [1],
     "longitude": "51.416568",
     "latitude": "35.673073",
@@ -283,7 +273,7 @@
   },
   "Meydan-e Mohammadiyeh": {
     "name": "Meydan-e Mohammadiyeh",
-    "fa": "میدان محمدیه",
+    "translations": {"fa": "میدان محمدیه"},
     "lines": [1, 7],
     "longitude": "51.415488",
     "latitude": "35.667753",
@@ -299,7 +289,7 @@
   },
   "Shoush": {
     "name": "Shoush",
-    "fa": "شوش",
+    "translations": {"fa": "شوش"},
     "lines": [1],
     "longitude": "51.414154",
     "latitude": "35.65754",
@@ -315,7 +305,7 @@
   },
   "Payaneh Jonoub(Jonoub Terminal)": {
     "name": "Payaneh Jonoub(Jonoub Terminal)",
-    "fa": "پایانه جنوبی",
+    "translations": {"fa": "پایانه جنوبی"},
     "lines": [1],
     "longitude": "51.416289",
     "latitude": "35.650688",
@@ -331,7 +321,7 @@
   },
   "Shahid Bokharaei": {
     "name": "Shahid Bokharaei",
-    "fa": "شهید بخارایی",
+    "translations": {"fa": "شهید بخارایی"},
     "lines": [1],
     "longitude": "51.414787",
     "latitude": "35.640609",
@@ -347,7 +337,7 @@
   },
   "Aliabad": {
     "name": "Aliabad",
-    "fa": "علی‌آباد",
+    "translations": {"fa": "علی‌آباد"},
     "lines": [1],
     "longitude": "51.416203",
     "latitude": "35.629256",
@@ -363,7 +353,7 @@
   },
   "Javanmard-e Ghassab": {
     "name": "Javanmard-e Ghassab",
-    "fa": "جوانمرد قصاب",
+    "translations": {"fa": "جوانمرد قصاب"},
     "lines": [1],
     "longitude": "51.420141",
     "latitude": "35.609764",
@@ -379,7 +369,7 @@
   },
   "Shahr-e Rey": {
     "name": "Shahr-e Rey",
-    "fa": "شهر ری",
+    "translations": {"fa": "شهر ری"},
     "lines": [1],
     "longitude": "51.422287",
     "latitude": "35.594672",
@@ -395,7 +385,7 @@
   },
   "Palayeshgah": {
     "name": "Palayeshgah",
-    "fa": "پالایشگاه",
+    "translations": {"fa": "پالایشگاه"},
     "lines": [1],
     "colors": ["#E0001F"],
     "disabled": false,
@@ -403,7 +393,7 @@
   },
   "Shahed - BagherShahr": {
     "name": "Shahed - BagherShahr",
-    "fa": "شاهد - باغرشهر",
+    "translations": {"fa": "شاهد - باغرشهر"},
     "lines": [1],
     "longitude": "51.382606",
     "latitude": "35.546998",
@@ -415,15 +405,11 @@
     "groceryStore": false,
     "fastFood": false,
     "atm": false,
-    "relations": [
-      "Palayeshgah",
-      "Namayeshgah-e Shahr-e Aftab",
-      "Holy Shrine of Imam Khomeini"
-    ]
+    "relations": ["Palayeshgah", "Namayeshgah-e Shahr-e Aftab", "Holy Shrine of Imam Khomeini"]
   },
   "Namayeshgah-e Shahr-e Aftab": {
     "name": "Namayeshgah-e Shahr-e Aftab",
-    "fa": "نمایشگاه شهر آفتاب",
+    "translations": {"fa": "نمایشگاه شهر آفتاب"},
     "lines": [1],
     "longitude": "51.349032",
     "latitude": "35.539811",
@@ -439,7 +425,7 @@
   },
   "Vavan": {
     "name": "Vavan",
-    "fa": "واوان",
+    "translations": {"fa": "واوان"},
     "lines": [1],
     "colors": ["#E0001F"],
     "disabled": true,
@@ -447,7 +433,7 @@
   },
   "Emam Khomeini Airport": {
     "name": "Emam Khomeini Airport",
-    "fa": "فرودگاه امام خمینی",
+    "translations": {"fa": "فرودگاه امام خمینی"},
     "lines": [1],
     "colors": ["#E0001F"],
     "disabled": false,
@@ -455,7 +441,7 @@
   },
   "Shahr-e Parand": {
     "name": "Shahr-e Parand",
-    "fa": "شهر پرند",
+    "translations": {"fa": "شهر پرند"},
     "lines": [1],
     "colors": ["#E0001F"],
     "disabled": true,
@@ -463,7 +449,7 @@
   },
   "Holy Shrine of Imam Khomeini": {
     "name": "Holy Shrine of Imam Khomeini",
-    "fa": "حرم مطهر امام خمینی",
+    "translations": {"fa": "حرم مطهر امام خمینی"},
     "lines": [1],
     "longitude": "51.373036",
     "latitude": "35.545077",
@@ -479,7 +465,7 @@
   },
   "Kahrizak": {
     "name": "Kahrizak",
-    "fa": "کهریزک",
+    "translations": {"fa": "کهریزک"},
     "lines": [1],
     "longitude": "51.369292",
     "latitude": "35.521574",
@@ -495,7 +481,7 @@
   },
   "Farhangsara": {
     "name": "Farhangsara",
-    "fa": "فرهنگسرا",
+    "translations": {"fa": "فرهنگسرا"},
     "lines": [2],
     "longitude": "51.546757",
     "latitude": "35.729687",
@@ -511,7 +497,7 @@
   },
   "Tehranpars": {
     "name": "Tehranpars",
-    "fa": "تهرانپارس",
+    "translations": {"fa": "تهرانپارس"},
     "lines": [2],
     "longitude": "51.5285321",
     "latitude": "35.7316491",
@@ -527,7 +513,7 @@
   },
   "Shahid Bagheri": {
     "name": "Shahid Bagheri",
-    "fa": "شهید باقری",
+    "translations": {"fa": "شهید باقری"},
     "lines": [2],
     "longitude": "51.516856",
     "latitude": "35.733397",
@@ -543,7 +529,7 @@
   },
   "Daneshgah-e Elm va Sanat": {
     "name": "Daneshgah-e Elm va Sanat",
-    "fa": "دانشگاه علم و صنعت",
+    "translations": {"fa": "دانشگاه علم و صنعت"},
     "lines": [2],
     "longitude": "51.504786",
     "latitude": "35.734425",
@@ -559,7 +545,7 @@
   },
   "Sarsabz": {
     "name": "Sarsabz",
-    "fa": "سرسبز",
+    "translations": {"fa": "سرسبز"},
     "lines": [2],
     "longitude": "51.494873",
     "latitude": "35.73547",
@@ -575,7 +561,7 @@
   },
   "Janbazan": {
     "name": "Janbazan",
-    "fa": "جانبازان",
+    "translations": {"fa": "جانبازان"},
     "lines": [2],
     "longitude": "51.484081",
     "latitude": "35.733088",
@@ -591,7 +577,7 @@
   },
   "Fadak": {
     "name": "Fadak",
-    "fa": "فدک",
+    "translations": {"fa": "فدک"},
     "lines": [2],
     "longitude": "51.4756353",
     "latitude": "35.7264805",
@@ -607,7 +593,7 @@
   },
   "Sabalan": {
     "name": "Sabalan",
-    "fa": "سبلان",
+    "translations": {"fa": "سبلان"},
     "lines": [2],
     "longitude": "51.464531",
     "latitude": "35.71826",
@@ -623,7 +609,7 @@
   },
   "Shahid Madani": {
     "name": "Shahid Madani",
-    "fa": "شهید مدنی",
+    "translations": {"fa": "شهید مدنی"},
     "lines": [2],
     "longitude": "51.453459",
     "latitude": "35.70913",
@@ -639,7 +625,7 @@
   },
   "Imam Hussein": {
     "name": "Imam Hussein",
-    "fa": "امام حسین",
+    "translations": {"fa": "امام حسین"},
     "lines": [2, 6],
     "longitude": "51.445702",
     "latitude": "35.702188",
@@ -651,16 +637,11 @@
     "groceryStore": false,
     "fastFood": false,
     "atm": false,
-    "relations": [
-      "Shahid Madani",
-      "Sarbaz",
-      "Meydan-e Shohada",
-      "Darvazeh Shemiran"
-    ]
+    "relations": ["Shahid Madani", "Sarbaz", "Meydan-e Shohada", "Darvazeh Shemiran"]
   },
   "Darvazeh Shemiran": {
     "name": "Darvazeh Shemiran",
-    "fa": "دروازه شمیران",
+    "translations": {"fa": "دروازه شمیران"},
     "lines": [2, 4],
     "longitude": "51.437709",
     "latitude": "35.699338",
@@ -672,16 +653,11 @@
     "groceryStore": false,
     "fastFood": false,
     "atm": false,
-    "relations": [
-      "Imam Hussein",
-      "Meydan-e Shohada",
-      "Darvazeh Dolat",
-      "Baharistan"
-    ]
+    "relations": ["Imam Hussein", "Meydan-e Shohada", "Darvazeh Dolat", "Baharistan"]
   },
   "Baharistan": {
     "name": "Baharistan",
-    "fa": "بهارستان",
+    "translations": {"fa": "بهارستان"},
     "lines": [2],
     "longitude": "51.432946",
     "latitude": "35.692263",
@@ -697,7 +673,7 @@
   },
   "Mellat": {
     "name": "Mellat",
-    "fa": "ملت",
+    "translations": {"fa": "ملت"},
     "lines": [2],
     "longitude": "51.4277635",
     "latitude": "35.6889986",
@@ -713,7 +689,7 @@
   },
   "Hasan Abad": {
     "name": "Hasan Abad",
-    "fa": "حسن آباد",
+    "translations": {"fa": "حسن آباد"},
     "lines": [2],
     "longitude": "51.4088914",
     "latitude": "35.6863779",
@@ -729,7 +705,7 @@
   },
   "Daneshgah-e Imam Ali": {
     "name": "Daneshgah-e Imam Ali",
-    "fa": "دانشگاه امام علی",
+    "translations": {"fa": "دانشگاه امام علی"},
     "lines": [2],
     "longitude": "51.3990645",
     "latitude": "35.6874007",
@@ -745,7 +721,7 @@
   },
   "Meydan-e Horr": {
     "name": "Meydan-e Horr",
-    "fa": "میدان حر",
+    "translations": {"fa": "میدان حر"},
     "lines": [2],
     "longitude": "51.3884",
     "latitude": "35.691008",
@@ -761,7 +737,7 @@
   },
   "Shahid Navab-e Safavi": {
     "name": "Shahid Navab-e Safavi",
-    "fa": "شهید نواب صفوی",
+    "translations": {"fa": "شهید نواب صفوی"},
     "lines": [2, 7],
     "longitude": "51.378229",
     "latitude": "35.69526",
@@ -777,7 +753,7 @@
   },
   "Shademan": {
     "name": "Shademan",
-    "fa": "شادمان",
+    "translations": {"fa": "شادمان"},
     "lines": [2, 4],
     "longitude": "51.363809",
     "latitude": "35.700627",
@@ -789,16 +765,11 @@
     "groceryStore": false,
     "fastFood": false,
     "atm": false,
-    "relations": [
-      "Shahid Navab-e Safavi",
-      "Towhid",
-      "Doctor Habibollah",
-      "Daneshgah-e Sharif"
-    ]
+    "relations": ["Shahid Navab-e Safavi", "Towhid", "Doctor Habibollah", "Daneshgah-e Sharif"]
   },
   "Daneshgah-e Sharif": {
     "name": "Daneshgah-e Sharif",
-    "fa": "دانشگاه شریف",
+    "translations": {"fa": "دانشگاه شریف"},
     "lines": [2],
     "longitude": "51.353638",
     "latitude": "35.70575",
@@ -814,7 +785,7 @@
   },
   "Tarasht": {
     "name": "Tarasht",
-    "fa": "طرشت",
+    "translations": {"fa": "طرشت"},
     "lines": [2],
     "longitude": "51.34351",
     "latitude": "35.716134",
@@ -830,7 +801,7 @@
   },
   "Tehran (Sadeghiyeh)": {
     "name": "Tehran (Sadeghiyeh)",
-    "fa": "تهران (صادقیه)",
+    "translations": {"fa": "تهران (صادقیه)"},
     "lines": [2, 5],
     "longitude": "51.330979",
     "latitude": "35.717598",
@@ -846,7 +817,7 @@
   },
   "Qa'em": {
     "name": "Qa'em",
-    "fa": "قائم",
+    "translations": {"fa": "قائم"},
     "lines": [3],
     "longitude": "51.521684",
     "latitude": "35.799759",
@@ -862,7 +833,7 @@
   },
   "Shahid Mahallati": {
     "name": "Shahid Mahallati",
-    "fa": "شهید محلاتی",
+    "translations": {"fa": "شهید محلاتی"},
     "lines": [3],
     "longitude": "51.508169",
     "latitude": "35.797925",
@@ -878,7 +849,7 @@
   },
   "Aghdasiyeh": {
     "name": "Aghdasiyeh",
-    "fa": "اقتصادیه",
+    "translations": {"fa": "اقتصادیه"},
     "lines": [3],
     "colors": ["#67C5F5"],
     "disabled": false,
@@ -886,7 +857,7 @@
   },
   "Nobonyad": {
     "name": "Nobonyad",
-    "fa": "نوبنیاد",
+    "translations": {"fa": "نوبنیاد"},
     "lines": [3],
     "longitude": "51.478029",
     "latitude": "35.790987",
@@ -902,7 +873,7 @@
   },
   "Hoseinabad": {
     "name": "Hoseinabad",
-    "fa": "حسین‌آباد",
+    "translations": {"fa": "حسین‌آباد"},
     "lines": [3],
     "longitude": "51.47852",
     "latitude": "35.779428",
@@ -918,7 +889,7 @@
   },
   "Meydan-e Heravi": {
     "name": "Meydan-e Heravi",
-    "fa": "میدان هروی",
+    "translations": {"fa": "میدان هروی"},
     "lines": [3],
     "longitude": "51.473219",
     "latitude": "35.771831",
@@ -934,7 +905,7 @@
   },
   "Shahid Zeynoddin": {
     "name": "Shahid Zeynoddin",
-    "fa": "شهید زین‌الدین",
+    "translations": {"fa": "شهید زین‌الدین"},
     "lines": [3],
     "longitude": "51.4659032",
     "latitude": "35.7595603",
@@ -950,7 +921,7 @@
   },
   "Khajeh Abdollah-e Ansari": {
     "name": "Khajeh Abdollah-e Ansari",
-    "fa": "خواجه عبدالله انصاری",
+    "translations": {"fa": "خواجه عبدالله انصاری"},
     "lines": [3],
     "longitude": "51.462922",
     "latitude": "35.743739",
@@ -966,7 +937,7 @@
   },
   "Shahid Sayyad Shirazi": {
     "name": "Shahid Sayyad Shirazi",
-    "fa": "شهید صیاد شیرازی",
+    "translations": {"fa": "شهید صیاد شیرازی"},
     "lines": [3],
     "longitude": "51.458594",
     "latitude": "35.735349",
@@ -982,7 +953,7 @@
   },
   "Shahid Ghodousi": {
     "name": "Shahid Ghodousi",
-    "fa": "شهید قدوسی",
+    "translations": {"fa": "شهید قدوسی"},
     "lines": [3],
     "longitude": "51.4445",
     "latitude": "35.731553",
@@ -998,7 +969,7 @@
   },
   "Sohrevardi": {
     "name": "Sohrevardi",
-    "fa": "سهروردی",
+    "translations": {"fa": "سهروردی"},
     "lines": [3],
     "longitude": "51.435852",
     "latitude": "35.731066",
@@ -1014,7 +985,7 @@
   },
   "Mirza-ye Shirazi": {
     "name": "Mirza-ye Shirazi",
-    "fa": "میرزا شیرازی",
+    "translations": {"fa": "میرزا شیرازی"},
     "lines": [3],
     "longitude": "51.417448",
     "latitude": "35.728365",
@@ -1030,7 +1001,7 @@
   },
   "Meydan-e Jahad": {
     "name": "Meydan-e Jahad",
-    "fa": "میدان جهاد",
+    "translations": {"fa": "میدان جهاد"},
     "lines": [3],
     "longitude": "51.408803",
     "latitude": "35.721672",
@@ -1046,7 +1017,7 @@
   },
   "Teatr-e Shahr": {
     "name": "Teatr-e Shahr",
-    "fa": "تئاتر شهر",
+    "translations": {"fa": "تئاتر شهر"},
     "lines": [3, 4],
     "longitude": "51.405831",
     "latitude": "35.700954",
@@ -1058,16 +1029,11 @@
     "groceryStore": false,
     "fastFood": false,
     "atm": false,
-    "relations": [
-      "Meydan-e Hazrat Vali Asr",
-      "Ferdowsi",
-      "Meydan-e Enghelab-e Eslami",
-      "Moniriyeh"
-    ]
+    "relations": ["Meydan-e Hazrat Vali Asr", "Ferdowsi", "Meydan-e Enghelab-e Eslami", "Moniriyeh"]
   },
   "Moniriyeh": {
     "name": "Moniriyeh",
-    "fa": "منیریه",
+    "translations": {"fa": "منیریه"},
     "lines": [3],
     "longitude": "51.401594",
     "latitude": "35.681087",
@@ -1083,20 +1049,15 @@
   },
   "Mahdiyeh": {
     "name": "Mahdiyeh",
-    "fa": "مهدیه",
+    "translations": {"fa": "مهدیه"},
     "lines": [3, 7],
     "colors": ["#67C5F5", "#7F0B74"],
     "disabled": false,
-    "relations": [
-      "Moniriyeh",
-      "Meydan-e Mohammadiyeh",
-      "Helal Ahmar",
-      "Rahahan"
-    ]
+    "relations": ["Moniriyeh", "Meydan-e Mohammadiyeh", "Helal Ahmar", "Rahahan"]
   },
   "Rahahan": {
     "name": "Rahahan",
-    "fa": "راه آهن",
+    "translations": {"fa": "راه آهن"},
     "lines": [3],
     "longitude": "51.3984659",
     "latitude": "35.6595573",
@@ -1112,7 +1073,7 @@
   },
   "Javadiyeh": {
     "name": "Javadiyeh",
-    "fa": "جوادیه",
+    "translations": {"fa": "جوادیه"},
     "lines": [3],
     "longitude": "51.388215",
     "latitude": "35.659075",
@@ -1128,7 +1089,7 @@
   },
   "Zamzam": {
     "name": "Zamzam",
-    "fa": "زمزم",
+    "translations": {"fa": "زمزم"},
     "lines": [3],
     "longitude": "51.3733202",
     "latitude": "35.6525844",
@@ -1144,7 +1105,7 @@
   },
   "Shahrak-e Shariaty": {
     "name": "Shahrak-e Shariaty",
-    "fa": "شهرک شریعتی",
+    "translations": {"fa": "شهرک شریعتی"},
     "lines": [3],
     "longitude": "51.3677387",
     "latitude": "35.6435696",
@@ -1160,7 +1121,7 @@
   },
   "Abdol Abad": {
     "name": "Abdol Abad",
-    "fa": "عبدالآباد",
+    "translations": {"fa": "عبدالآباد"},
     "lines": [3],
     "longitude": "51.359773",
     "latitude": "35.638159",
@@ -1176,7 +1137,7 @@
   },
   "Nemat Abad": {
     "name": "Nemat Abad",
-    "fa": "نعمت آباد",
+    "translations": {"fa": "نعمت آباد"},
     "lines": [3],
     "longitude": "51.34703",
     "latitude": "35.63392",
@@ -1192,7 +1153,7 @@
   },
   "Azadegan": {
     "name": "Azadegan",
-    "fa": "آزادگان",
+    "translations": {"fa": "آزادگان"},
     "lines": [3],
     "longitude": "51.335533",
     "latitude": "35.627216",
@@ -1208,7 +1169,7 @@
   },
   "Shahid Kolahdooz": {
     "name": "Shahid Kolahdooz",
-    "fa": "شهید کلاهدوز",
+    "translations": {"fa": "شهید کلاهدوز"},
     "lines": [4],
     "longitude": "51.498563",
     "latitude": "35.698954",
@@ -1224,7 +1185,7 @@
   },
   "Niroohavaii": {
     "name": "Niroohavaii",
-    "fa": "نیروهوایی",
+    "translations": {"fa": "نیروهوایی"},
     "lines": [4],
     "longitude": "51.4886226",
     "latitude": "35.6926988",
@@ -1240,7 +1201,7 @@
   },
   "Nobard": {
     "name": "Nobard",
-    "fa": "نوبارد",
+    "translations": {"fa": "نوبارد"},
     "lines": [4],
     "longitude": "51.4777301",
     "latitude": "35.6913253",
@@ -1256,7 +1217,7 @@
   },
   "Piroozi": {
     "name": "Piroozi",
-    "fa": "پیروزی",
+    "translations": {"fa": "پیروزی"},
     "lines": [4],
     "longitude": "51.46775",
     "latitude": "35.691356",
@@ -1272,7 +1233,7 @@
   },
   "Ebn-e Sina": {
     "name": "Ebn-e Sina",
-    "fa": "ابن سینا",
+    "translations": {"fa": "ابن سینا"},
     "lines": [4],
     "longitude": "51.4579435",
     "latitude": "35.6907927",
@@ -1288,7 +1249,7 @@
   },
   "Ferdowsi": {
     "name": "Ferdowsi",
-    "fa": "فردوسی",
+    "translations": {"fa": "فردوسی"},
     "lines": [4],
     "longitude": "51.418569",
     "latitude": "35.701255",
@@ -1304,7 +1265,7 @@
   },
   "Meydan-e Enghelab-e Eslami": {
     "name": "Meydan-e Enghelab-e Eslami",
-    "fa": "میدان انقلاب اسلامی",
+    "translations": {"fa": "میدان انقلاب اسلامی"},
     "lines": [4],
     "longitude": "51.392176",
     "latitude": "35.701255",
@@ -1320,7 +1281,7 @@
   },
   "Towhid": {
     "name": "Towhid",
-    "fa": "توحید",
+    "translations": {"fa": "توحید"},
     "lines": [4, 7],
     "longitude": "51.378572",
     "latitude": "35.700767",
@@ -1332,16 +1293,11 @@
     "groceryStore": false,
     "fastFood": false,
     "atm": false,
-    "relations": [
-      "Meydan-e Enghelab-e Eslami",
-      "Modafean-e Salamat",
-      "Shahid Navab-e Safavi",
-      "Shademan"
-    ]
+    "relations": ["Meydan-e Enghelab-e Eslami", "Modafean-e Salamat", "Shahid Navab-e Safavi", "Shademan"]
   },
   "Doctor Habibollah": {
     "name": "Doctor Habibollah",
-    "fa": "دکتر حبیب‌الله",
+    "translations": {"fa": "دکتر حبیب‌الله"},
     "lines": [4],
     "longitude": "51.356079",
     "latitude": "35.700653",
@@ -1357,7 +1313,7 @@
   },
   "Ostad Mo'in": {
     "name": "Ostad Mo'in",
-    "fa": "استاد معین",
+    "translations": {"fa": "استاد معین"},
     "lines": [4],
     "longitude": "51.34461",
     "latitude": "35.700131",
@@ -1373,7 +1329,7 @@
   },
   "Meydan-e Azadi": {
     "name": "Meydan-e Azadi",
-    "fa": "میدان آزادی",
+    "translations": {"fa": "میدان آزادی"},
     "lines": [4],
     "longitude": "51.332492",
     "latitude": "35.700802",
@@ -1389,7 +1345,7 @@
   },
   "Bimeh": {
     "name": "Bimeh",
-    "fa": "بیمه",
+    "translations": {"fa": "بیمه"},
     "lines": [4],
     "longitude": "51.32036",
     "latitude": "35.699546",
@@ -1401,15 +1357,11 @@
     "groceryStore": false,
     "fastFood": false,
     "atm": false,
-    "relations": [
-      "Meydan-e Azadi",
-      "Shahrak-e Ekbatan",
-      "Mehrabad Airport Terminal 1&2"
-    ]
+    "relations": ["Meydan-e Azadi", "Shahrak-e Ekbatan", "Mehrabad Airport Terminal 1&2"]
   },
   "Mehrabad Airport Terminal 1&2": {
     "name": "Mehrabad Airport Terminal 1&2",
-    "fa": "ترمینال ۱ و ۲ فرودگاه مهرآباد",
+    "translations": {"fa": "ترمینال ۱ و ۲ فرودگاه مهرآباد"},
     "lines": [4],
     "longitude": "51.3196823",
     "latitude": "35.690689",
@@ -1425,7 +1377,7 @@
   },
   "Mehrabad Airport Terminal 4&6": {
     "name": "Mehrabad Airport Terminal 4&6",
-    "fa": "ترمینال ۴ و ۶ فرودگاه مهرآباد",
+    "translations": {"fa": "ترمینال ۴ و ۶ فرودگاه مهرآباد"},
     "lines": [4],
     "longitude": "51.3271795",
     "latitude": "35.6886266",
@@ -1441,7 +1393,7 @@
   },
   "Shahrak-e Ekbatan": {
     "name": "Shahrak-e Ekbatan",
-    "fa": "شهرک اکباتان",
+    "translations": {"fa": "شهرک اکباتان"},
     "lines": [4],
     "longitude": "51.3074478",
     "latitude": "35.705557400000004",
@@ -1457,7 +1409,7 @@
   },
   "Allameh Jafari": {
     "name": "Allameh Jafari",
-    "fa": "علامه جعفری",
+    "translations": {"fa": "علامه جعفری"},
     "lines": [4],
     "colors": ["#F8E100"],
     "disabled": false,
@@ -1465,7 +1417,7 @@
   },
   "Eram-e Sabz": {
     "name": "Eram-e Sabz",
-    "fa": "ارم سبز",
+    "translations": {"fa": "ارم سبز"},
     "lines": [4, 5],
     "longitude": "51.301979",
     "latitude": "35.717476",
@@ -1477,16 +1429,11 @@
     "groceryStore": false,
     "fastFood": false,
     "atm": false,
-    "relations": [
-      "Tehran (Sadeghiyeh)",
-      "Varzeshgah-e Azadi",
-      "Allameh Jafari",
-      "Shahrak-e Ekbatan"
-    ]
+    "relations": ["Tehran (Sadeghiyeh)", "Varzeshgah-e Azadi", "Allameh Jafari", "Shahrak-e Ekbatan"]
   },
   "Varzeshgah-e Azadi": {
     "name": "Varzeshgah-e Azadi",
-    "fa": "ورزشگاه آزادی",
+    "translations": {"fa": "ورزشگاه آزادی"},
     "lines": [5],
     "longitude": "51.281208",
     "latitude": "35.716727",
@@ -1502,7 +1449,7 @@
   },
   "Chitgar": {
     "name": "Chitgar",
-    "fa": "چیتگر",
+    "translations": {"fa": "چیتگر"},
     "lines": [5],
     "longitude": "51.243904",
     "latitude": "35.717563",
@@ -1518,7 +1465,7 @@
   },
   "Iran Khodro": {
     "name": "Iran Khodro",
-    "fa": "ایران‌خودرو",
+    "translations": {"fa": "ایران‌خودرو"},
     "lines": [5],
     "longitude": "51.196654",
     "latitude": "35.725402",
@@ -1534,7 +1481,7 @@
   },
   "Vardavard": {
     "name": "Vardavard",
-    "fa": "وردآورد",
+    "translations": {"fa": "وردآورد"},
     "lines": [5],
     "longitude": "51.1509866",
     "latitude": "35.7444768",
@@ -1550,7 +1497,7 @@
   },
   "Garmdareh": {
     "name": "Garmdareh",
-    "fa": "گرمدره",
+    "translations": {"fa": "گرمدره"},
     "lines": [5],
     "longitude": "51.08193",
     "latitude": "35.751002",
@@ -1566,7 +1513,7 @@
   },
   "Atmosphere": {
     "name": "Atmosphere",
-    "fa": "اتمسفر",
+    "translations": {"fa": "اتمسفر"},
     "lines": [5],
     "longitude": "51.0469759",
     "latitude": "35.7662914",
@@ -1582,7 +1529,7 @@
   },
   "Karaj": {
     "name": "Karaj",
-    "fa": "کرج",
+    "translations": {"fa": "کرج"},
     "lines": [5],
     "longitude": "51.0026979",
     "latitude": "35.7870098",
@@ -1598,7 +1545,7 @@
   },
   "Mohammadshahr": {
     "name": "Mohammadshahr",
-    "fa": "محمدشهر",
+    "translations": {"fa": "محمدشهر"},
     "lines": [5],
     "longitude": "50.964729",
     "latitude": "35.800951",
@@ -1614,7 +1561,7 @@
   },
   "Golshahr": {
     "name": "Golshahr",
-    "fa": "گلشهر",
+    "translations": {"fa": "گلشهر"},
     "lines": [5],
     "longitude": "50.933079",
     "latitude": "35.824877",
@@ -1630,7 +1577,7 @@
   },
   "Shahid Sepahbod Qasem Soleimani": {
     "name": "Shahid Sepahbod Qasem Soleimani",
-    "fa": "شهید سپهبد قاسم سلیمانی",
+    "translations": {"fa": "شهید سپهبد قاسم سلیمانی"},
     "lines": [5],
     "colors": ["#007E46"],
     "disabled": true,
@@ -1638,7 +1585,7 @@
   },
   "Haram-e Hazrat-e Abdol Azim": {
     "name": "Haram-e Hazrat-e Abdol Azim",
-    "fa": "حرم حضرت عبدالعظیم",
+    "translations": {"fa": "حرم حضرت عبدالعظیم"},
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": true,
@@ -1646,7 +1593,7 @@
   },
   "Meydan-e Hazrat-e Abdol Azim": {
     "name": "Meydan-e Hazrat-e Abdol Azim",
-    "fa": "میدان حضرت عبدالعظیم",
+    "translations": {"fa": "میدان حضرت عبدالعظیم"},
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": true,
@@ -1654,7 +1601,7 @@
   },
   "Ebn-e Babviyeh": {
     "name": "Ebn-e Babviyeh",
-    "fa": "ابن بابویه",
+    "translations": {"fa": "ابن بابویه"},
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": true,
@@ -1662,7 +1609,7 @@
   },
   "Cheshmeh Ali": {
     "name": "Cheshmeh Ali",
-    "fa": "چشمه علی",
+    "translations": {"fa": "چشمه علی"},
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": true,
@@ -1670,7 +1617,7 @@
   },
   "Shohada-ye Dowlat Abad": {
     "name": "Shohada-ye Dowlat Abad",
-    "fa": "شهدای دولت‌آباد",
+    "translations": {"fa": "شهدای دولت‌آباد"},
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": false,
@@ -1678,7 +1625,7 @@
   },
   "Kiyan Shahr": {
     "name": "Kiyan Shahr",
-    "fa": "کیان شهر",
+    "translations": {"fa": "کیان شهر"},
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": false,
@@ -1686,7 +1633,7 @@
   },
   "Be'sat": {
     "name": "Be'sat",
-    "fa": "بعثت",
+    "translations": {"fa": "بعثت"},
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": false,
@@ -1694,7 +1641,7 @@
   },
   "Shahid Rezaei": {
     "name": "Shahid Rezaei",
-    "fa": "شهید رضایی",
+    "translations": {"fa": "شهید رضایی"},
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": false,
@@ -1702,7 +1649,7 @@
   },
   "Meydan-e Khorasan": {
     "name": "Meydan-e Khorasan",
-    "fa": "میدان خراسان",
+    "translations": {"fa": "میدان خراسان"},
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": true,
@@ -1710,20 +1657,15 @@
   },
   "Shohada-ye Hefdah-e Shahrivar": {
     "name": "Shohada-ye Hefdah-e Shahrivar",
-    "fa": "شهدای هفده شهریور",
+    "translations": {"fa": "شهدای هفده شهریور"},
     "lines": [6, 7],
     "colors": ["#EF639F", "#7F0B74"],
     "disabled": true,
-    "relations": [
-      "Meydan-e Khorasan",
-      "Amirkabir",
-      "Chehel Tan-e Doulab",
-      "Meydan-e Ghiyam"
-    ]
+    "relations": ["Meydan-e Khorasan", "Amirkabir", "Chehel Tan-e Doulab", "Meydan-e Ghiyam"]
   },
   "Amirkabir": {
     "name": "Amirkabir",
-    "fa": "امیرکبیر",
+    "translations": {"fa": "امیرکبیر"},
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": false,
@@ -1731,7 +1673,7 @@
   },
   "Meydan-e Shohada": {
     "name": "Meydan-e Shohada",
-    "fa": "میدان شهدا",
+    "translations": {"fa": "میدان شهدا"},
     "lines": [4, 6],
     "longitude": "51.447237",
     "latitude": "35.690381",
@@ -1743,16 +1685,11 @@
     "groceryStore": false,
     "fastFood": false,
     "atm": false,
-    "relations": [
-      "Amirkabir",
-      "Ebn-e Sina",
-      "Darvazeh Shemiran",
-      "Imam Hussein"
-    ]
+    "relations": ["Amirkabir", "Ebn-e Sina", "Darvazeh Shemiran", "Imam Hussein"]
   },
   "Sarbaz": {
     "name": "Sarbaz",
-    "fa": "سرباز",
+    "translations": {"fa": "سرباز"},
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": true,
@@ -1760,7 +1697,7 @@
   },
   "Bahar Shiraz (Khanevadeh Hospital)": {
     "name": "Bahar Shiraz (Khanevadeh Hospital)",
-    "fa": "بهار شیراز (بیمارستان خانواده)",
+    "translations": {"fa": "بهار شیراز (بیمارستان خانواده)"},
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": true,
@@ -1768,7 +1705,7 @@
   },
   "Shohada-ye Haftom-e Tir": {
     "name": "Shohada-ye Haftom-e Tir",
-    "fa": "شهدای هفتم تیر",
+    "translations": {"fa": "شهدای هفتم تیر"},
     "lines": [1, 6],
     "longitude": "51.426042",
     "latitude": "35.715986",
@@ -1780,16 +1717,11 @@
     "groceryStore": false,
     "fastFood": false,
     "atm": false,
-    "relations": [
-      "Bahar Shiraz (Khanevadeh Hospital)",
-      "Shahid Nejatollahi",
-      "Shahid Mofattah",
-      "Ayatollah Taleghani"
-    ]
+    "relations": ["Bahar Shiraz (Khanevadeh Hospital)", "Shahid Nejatollahi", "Shahid Mofattah", "Ayatollah Taleghani"]
   },
   "Shahid Nejatollahi": {
     "name": "Shahid Nejatollahi",
-    "fa": "شهید نجات اللهی",
+    "translations": {"fa": "شهید نجات اللهی"},
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": true,
@@ -1797,7 +1729,7 @@
   },
   "Meydan-e Hazrat Vali Asr": {
     "name": "Meydan-e Hazrat Vali Asr",
-    "fa": "میدان حضرت ولیعصر",
+    "translations": {"fa": "میدان حضرت ولیعصر"},
     "lines": [3, 6],
     "longitude": "51.4070255",
     "latitude": "35.7115282",
@@ -1809,16 +1741,11 @@
     "groceryStore": false,
     "fastFood": false,
     "atm": false,
-    "relations": [
-      "Shahid Nejatollahi",
-      "Meydan-e Jahad",
-      "Teatr-e Shahr",
-      "Bustan-e Laleh"
-    ]
+    "relations": ["Shahid Nejatollahi", "Meydan-e Jahad", "Teatr-e Shahr", "Bustan-e Laleh"]
   },
   "Bustan-e Laleh": {
     "name": "Bustan-e Laleh",
-    "fa": "بوستان لاله",
+    "translations": {"fa": "بوستان لاله"},
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": false,
@@ -1826,7 +1753,7 @@
   },
   "Karagar": {
     "name": "Karagar",
-    "fa": "کارگر",
+    "translations": {"fa": "کارگر"},
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": false,
@@ -1834,20 +1761,15 @@
   },
   "Daneshgah-e Tarbiat Modarres": {
     "name": "Daneshgah-e Tarbiat Modarres",
-    "fa": "دانشگاه تربیت مدرس",
+    "translations": {"fa": "دانشگاه تربیت مدرس"},
     "lines": [6, 7],
     "colors": ["#EF639F", "#7F0B74"],
     "disabled": false,
-    "relations": [
-      "Karagar",
-      "Boostan-e Goftegou",
-      "Modafean-e Salamat",
-      "Shahrak-e Azmayesh"
-    ]
+    "relations": ["Karagar", "Boostan-e Goftegou", "Modafean-e Salamat", "Shahrak-e Azmayesh"]
   },
   "Shahrak-e Azmayesh": {
     "name": "Shahrak-e Azmayesh",
-    "fa": "شهرک آزمایش",
+    "translations": {"fa": "شهرک آزمایش"},
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": false,
@@ -1855,7 +1777,7 @@
   },
   "Marzdaran": {
     "name": "Marzdaran",
-    "fa": "مرزداران",
+    "translations": {"fa": "مرزداران"},
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": false,
@@ -1863,7 +1785,7 @@
   },
   "Yadegar-e Imam": {
     "name": "Yadegar-e Imam",
-    "fa": "یادگار امام",
+    "translations": {"fa": "یادگار امام"},
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": false,
@@ -1871,7 +1793,7 @@
   },
   "Shahid Ashrafi Esfahani": {
     "name": "Shahid Ashrafi Esfahani",
-    "fa": "شهید اشرفی اصفهانی",
+    "translations": {"fa": "شهید اشرفی اصفهانی"},
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": false,
@@ -1879,7 +1801,7 @@
   },
   "Shahid Sattari": {
     "name": "Shahid Sattari",
-    "fa": "شهید ستاری",
+    "translations": {"fa": "شهید ستاری"},
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": false,
@@ -1887,7 +1809,7 @@
   },
   "Ayatollah Kashani": {
     "name": "Ayatollah Kashani",
-    "fa": "آیت‌الله کاشانی",
+    "translations": {"fa": "آیت‌الله کاشانی"},
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": true,
@@ -1895,7 +1817,7 @@
   },
   "Shahr-e Ziba": {
     "name": "Shahr-e Ziba",
-    "fa": "شهر زیبا",
+    "translations": {"fa": "شهر زیبا"},
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": true,
@@ -1903,7 +1825,7 @@
   },
   "Shahran": {
     "name": "Shahran",
-    "fa": "شهران",
+    "translations": {"fa": "شهران"},
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": true,
@@ -1911,7 +1833,7 @@
   },
   "Shohada-ye Kan": {
     "name": "Shohada-ye Kan",
-    "fa": "شهدای کن",
+    "translations": {"fa": "شهدای کن"},
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": true,
@@ -1919,7 +1841,7 @@
   },
   "Kouhsar": {
     "name": "Kouhsar",
-    "fa": "کوهسار",
+    "translations": {"fa": "کوهسار"},
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": true,
@@ -1927,7 +1849,7 @@
   },
   "Varzeshgah-e Takhti": {
     "name": "Varzeshgah-e Takhti",
-    "fa": "ورزشگاه تختی",
+    "translations": {"fa": "ورزشگاه تختی"},
     "lines": [7],
     "colors": ["#7F0B74"],
     "disabled": true,
@@ -1935,7 +1857,7 @@
   },
   "Basij": {
     "name": "Basij",
-    "fa": "بسیج",
+    "translations": {"fa": "بسیج"},
     "lines": [7],
     "longitude": "51.489404",
     "latitude": "35.667159",
@@ -1951,7 +1873,7 @@
   },
   "Ahang": {
     "name": "Ahang",
-    "fa": "آهنگ",
+    "translations": {"fa": "آهنگ"},
     "lines": [7],
     "colors": ["#7F0B74"],
     "disabled": false,
@@ -1959,7 +1881,7 @@
   },
   "Chehel Tan-e Doulab": {
     "name": "Chehel Tan-e Doulab",
-    "fa": "چهل تن دولاب",
+    "translations": {"fa": "چهل تن دولاب"},
     "lines": [7],
     "colors": ["#7F0B74"],
     "disabled": false,
@@ -1967,7 +1889,7 @@
   },
   "Meydan-e Ghiyam": {
     "name": "Meydan-e Ghiyam",
-    "fa": "میدان قیام",
+    "translations": {"fa": "میدان قیام"},
     "lines": [7],
     "colors": ["#7F0B74"],
     "disabled": false,
@@ -1975,7 +1897,7 @@
   },
   "Mowlavi": {
     "name": "Mowlavi",
-    "fa": "مولوی",
+    "translations": {"fa": "مولوی"},
     "lines": [7],
     "colors": ["#7F0B74"],
     "disabled": false,
@@ -1983,7 +1905,7 @@
   },
   "Helal Ahmar": {
     "name": "Helal Ahmar",
-    "fa": "هلال احمر",
+    "translations": {"fa": "هلال احمر"},
     "lines": [7],
     "colors": ["#7F0B74"],
     "disabled": false,
@@ -1991,7 +1913,7 @@
   },
   "Beryanak": {
     "name": "Beryanak",
-    "fa": "بریانک",
+    "translations": {"fa": "بریانک"},
     "lines": [7],
     "colors": ["#7F0B74"],
     "disabled": false,
@@ -1999,7 +1921,7 @@
   },
   "Kamil": {
     "name": "Kamil",
-    "fa": "کامیل",
+    "translations": {"fa": "کامیل"},
     "lines": [7],
     "longitude": "51.380143",
     "latitude": "35.682491",
@@ -2015,7 +1937,7 @@
   },
   "Roudaki": {
     "name": "Roudaki",
-    "fa": "رودکی",
+    "translations": {"fa": "رودکی"},
     "lines": [7],
     "colors": ["#7F0B74"],
     "disabled": false,
@@ -2023,7 +1945,7 @@
   },
   "Modafean-e Salamat": {
     "name": "Modafean-e Salamat",
-    "fa": "مدافعان سلامت",
+    "translations": {"fa": "مدافعان سلامت"},
     "lines": [7],
     "colors": ["#7F0B74"],
     "disabled": false,
@@ -2031,7 +1953,7 @@
   },
   "Boostan-e Goftegou": {
     "name": "Boostan-e Goftegou",
-    "fa": "بوستان گفتگو",
+    "translations": {"fa": "بوستان گفتگو"},
     "lines": [7],
     "colors": ["#7F0B74"],
     "disabled": false,
@@ -2039,7 +1961,7 @@
   },
   "Milad Tower": {
     "name": "Milad Tower",
-    "fa": "برج میلاد",
+    "translations": {"fa": "برج میلاد"},
     "lines": [7],
     "colors": ["#7F0B74"],
     "disabled": false,
@@ -2047,7 +1969,7 @@
   },
   "Meydan-e San'at": {
     "name": "Meydan-e San'at",
-    "fa": "میدان صنعت",
+    "translations": {"fa": "میدان صنعت"},
     "lines": [7],
     "longitude": "51.367808",
     "latitude": "35.754386",
@@ -2063,7 +1985,7 @@
   },
   "Shahid Dadman": {
     "name": "Shahid Dadman",
-    "fa": "شهید دادمان",
+    "translations": {"fa": "شهید دادمان"},
     "lines": [7],
     "colors": ["#7F0B74"],
     "disabled": false,
@@ -2071,7 +1993,7 @@
   },
   "Meydan-e Ketab": {
     "name": "Meydan-e Ketab",
-    "fa": "میدان کتاب",
+    "translations": {"fa": "میدان کتاب"},
     "lines": [7],
     "colors": ["#7F0B74"],
     "disabled": false,
