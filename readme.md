@@ -18,7 +18,9 @@ Each station is represented by an object containing the following properties:
 
 - `"disabled"`: A boolean value indicating if the station is disabled or not.
 - `"name"`: The name of the station in English.
-- `"fa"`: The name of the station in Persian (Farsi).
+- `"translations"`: An object containing translations of the station name in different languages.
+  - `"fa"`: The name of the station in Persian (Farsi).
+  - ***[Other Languages]***: You can add more language translations as needed.
 - `"colors"`: An array of color codes associated with the station. This can be used to represent the station on maps or in visualizations.
 - `"lines"`: An array of line numbers associated with the station. This indicates the metro lines that pass through the station.
 
@@ -28,7 +30,9 @@ Example:
 {
     "Tajrish": {
         "name": "Tajrish",
-        "fa": "تجریش",
+        "translations":{
+          "fa": "تجریش"
+        }, 
         "lines": [1],
         "longitude": "51.433643000000004",
         "latitude": "35.804501",
