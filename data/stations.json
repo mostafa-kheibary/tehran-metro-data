@@ -309,7 +309,7 @@
     "lines": [1],
     "longitude": "51.416289",
     "latitude": "35.650688",
-    "address": "خیابان عباسی ، ضلع شمال غربی ترمینال جنوب",
+    "address": "خیابان عباسی ، ضلع شمال غربی پایانه جنوب",
     "colors": ["#E0001F"],
     "disabled": false,
     "wc": false,
@@ -393,7 +393,7 @@
   },
   "Shahed - BagherShahr": {
     "name": "Shahed - BagherShahr",
-    "translations": {"fa": "شاهد - باغرشهر"},
+    "translations": {"fa": "شاهد - باقرشهر"},
     "lines": [1],
     "longitude": "51.382606",
     "latitude": "35.546998",
@@ -849,7 +849,7 @@
   },
   "Aghdasiyeh": {
     "name": "Aghdasiyeh",
-    "translations": {"fa": "اقتصادیه"},
+    "translations": {"fa": "اقدسیه"},
     "lines": [3],
     "colors": ["#67C5F5"],
     "disabled": false,
@@ -1121,7 +1121,7 @@
   },
   "Abdol Abad": {
     "name": "Abdol Abad",
-    "translations": {"fa": "عبدالآباد"},
+    "translations": {"fa": "عبدل آباد"},
     "lines": [3],
     "longitude": "51.359773",
     "latitude": "35.638159",
@@ -1200,8 +1200,8 @@
     "relations": ["Shahid Kolahdooz", "Nobard"]
   },
   "Nobard": {
-    "name": "Nobard",
-    "translations": {"fa": "نوبارد"},
+    "name": "Nabard",
+    "translations": {"fa": "نبرد"},
     "lines": [4],
     "longitude": "51.4777301",
     "latitude": "35.6913253",
@@ -1361,11 +1361,11 @@
   },
   "Mehrabad Airport Terminal 1&2": {
     "name": "Mehrabad Airport Terminal 1&2",
-    "translations": {"fa": "ترمینال ۱ و ۲ فرودگاه مهرآباد"},
+    "translations": {"fa": "پایانه ۱ و ۲ فرودگاه مهرآباد"},
     "lines": [4],
     "longitude": "51.3196823",
     "latitude": "35.690689",
-    "address": "میدان آزادی، ترمینال ۲ فرودگاه مهرآباد",
+    "address": "میدان آزادی، پایانه ۲ فرودگاه مهرآباد",
     "colors": ["#F8E100"],
     "disabled": false,
     "wc": false,
@@ -1377,11 +1377,11 @@
   },
   "Mehrabad Airport Terminal 4&6": {
     "name": "Mehrabad Airport Terminal 4&6",
-    "translations": {"fa": "ترمینال ۴ و ۶ فرودگاه مهرآباد"},
+    "translations": {"fa": "پایانه ۴ و ۶ فرودگاه مهرآباد"},
     "lines": [4],
     "longitude": "51.3271795",
     "latitude": "35.6886266",
-    "address": "میدان آزادی، ترمینال ۶ فرودگاه مهرآباد",
+    "address": "میدان آزادی، پایانه ۶ فرودگاه مهرآباد",
     "colors": ["#F8E100"],
     "disabled": false,
     "wc": false,
@@ -1497,7 +1497,7 @@
   },
   "Garmdareh": {
     "name": "Garmdareh",
-    "translations": {"fa": "گرمدره"},
+    "translations": {"fa": "گرم‌دره"},
     "lines": [5],
     "longitude": "51.08193",
     "latitude": "35.751002",
@@ -1920,8 +1920,8 @@
     "relations": ["Helal Ahmar", "Kamil"]
   },
   "Kamil": {
-    "name": "Kamil",
-    "translations": {"fa": "کامیل"},
+    "name": "Komeyl",
+    "translations": {"fa": "کمیل"},
     "lines": [7],
     "longitude": "51.380143",
     "latitude": "35.682491",
