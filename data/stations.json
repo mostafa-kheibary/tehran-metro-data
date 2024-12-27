@@ -1415,6 +1415,14 @@
     "disabled": false,
     "relations": ["Eram-e Sabz"]
   },
+  "Chaharbagh": {
+    "name": "Chaharbagh",
+    "translations": {"fa": "چهارباغ"},
+    "lines": [4],
+    "colors": ["#F8E100"],
+    "disabled": false,
+    "relations": ["Eram-e Sabz"]
+  },
   "Eram-e Sabz": {
     "name": "Eram-e Sabz",
     "translations": {"fa": "ارم سبز"},
@@ -1813,7 +1821,7 @@
     "lines": [6],
     "colors": ["#EF639F"],
     "disabled": true,
-    "relations": ["Shahid Sattari", "Shahr-e Ziba"]
+    "relations": ["Shahid Sattari", "Shahr-e Ziba", "Allameh Jafari", "Chaharbagh"]
   },
   "Shahr-e Ziba": {
     "name": "Shahr-e Ziba",
