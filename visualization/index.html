@@ -1,134 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tehran metro station graph</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tehran metro station graph</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .body {
+      background-color: rgb(243, 243, 243);
+      width: 100%;
+    }
+    .graph_wrapper {
+      width: 100%;
+      height: 100vh;
+    }
+    svg {
+      width: 100%;
+      height: 99%;
+    }
+    text {
+      font-family: 'Shabnam', Tahoma, serif;
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/shabnam-font@v5.0.1/dist/font-face.css" rel="stylesheet">
+</head>
+<body>
+<div class="graph_wrapper" id="graph"></div>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/vivagraphjs/0.12.0/vivagraph.min.js"
+        integrity="sha512-gkKEgYqs7I24YHETln6iLyd9Oy10s2Cyaev28dxbCQa3mV22SbdDsWrprpRL/DSAJERZiFiQcN+wnsxPKR6Trw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+></script>
+<script>
+  const graph = Viva.Graph.graph();
+  const graphics = Viva.Graph.View.svgGraphics();
+  const nodeSize = 24;
+
+  const init = async () => {
+    const response = await fetch(
+            "https://raw.githubusercontent.com/mostafa-kheibary/tehran-metro-graph/main/data/stations.json"
+    );
+    const stations = await response.json();
+
+    // add nodes and relationships based on the graph data
+    for (let station in stations) {
+      graph.addNode(station, stations[station]);
+      for (let relationship of stations[station].relations) {
+        graph.addLink(station, relationship);
       }
-      .body {
-        background-color: rgb(243, 243, 243);
-        width: 100%;
+    }
+
+    // Graphic as svg
+    graphics.node((node) => {
+      console.log(node.data);
+      const ui = Viva.Graph.svg("g");
+      // Create SVG text element with user id as content
+      const svgText = Viva.Graph.svg("text")
+              .attr("y", "-2px")
+              .attr("font-size", "10px")
+              .attr("font-weight", "bold")
+              .attr("fill", "#000")
+              .text(node.data?.translations.fa || "");
+      const svgTexten = Viva.Graph.svg("text")
+              .attr("y", "-15px")
+              .attr("font-size", "10px")
+              .attr("fill", "#000")
+              .text(node.data?.name || "");
+
+      const svgRect = Viva.Graph.svg("rect")
+              .attr("width", "10px")
+              .attr("height", "10px")
+              .attr("fill", node.data?.colors[0] || "black")
+              .attr("y", "10px")
+              .attr("x", "10px")
+              .attr("rx", "150px");
+      if (node.data?.colors[1]) {
+        const svg2Rect = Viva.Graph.svg("rect")
+                .attr("width", "15px")
+                .attr("height", "15px")
+                .attr("rx", "150px")
+                .attr("fill", node.data?.colors[1] || "black")
+                .attr("y", "7.5px")
+                .attr("x", "7.5px");
+        ui.append(svg2Rect);
       }
-      .graph_wrapper {
-        width: 100%;
-        height: 100vh;
+      if (node.data.disabled) {
+        const svg4Rect = Viva.Graph.svg("rect")
+                .attr("width", "15px")
+                .attr("height", "15px")
+                .attr("rx", "150px")
+                .attr("strock", "black")
+                .attr("stroke-dasharray", "3 3")
+                .attr("y", "7.5px")
+                .attr("x", "7.5px");
+        ui.append(svg4Rect);
       }
-      svg {
-        width: 100%;
-        height: 99%;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="graph_wrapper" id="graph"></div>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/vivagraphjs/0.12.0/vivagraph.min.js"
-      integrity="sha512-gkKEgYqs7I24YHETln6iLyd9Oy10s2Cyaev28dxbCQa3mV22SbdDsWrprpRL/DSAJERZiFiQcN+wnsxPKR6Trw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script>
-      const graph = Viva.Graph.graph();
-      const graphics = Viva.Graph.View.svgGraphics();
-      const nodeSize = 24;
+      ui.append(svgTexten);
+      ui.append(svgText);
+      ui.append(svgRect);
+      return ui;
+    });
 
-      const init = async () => {
-        const response = await fetch(
-          "https://raw.githubusercontent.com/mostafa-kheibary/tehran-metro-graph/main/data/stations.json"
-        );
-        const stations = await response.json();
-
-        // add nodes and relationships based on the graph data
-        for (let station in stations) {
-          graph.addNode(station, stations[station]);
-          for (let relationship of stations[station].relations) {
-            graph.addLink(station, relationship);
-          }
-        }
-
-        // Graphic as svg
-        graphics.node((node) => {
-          console.log(node.data);
-          const ui = Viva.Graph.svg("g");
-          // Create SVG text element with user id as content
-          const svgText = Viva.Graph.svg("text")
-            .attr("y", "-2px")
-            .attr("font-size", "10px")
-            .attr("font-weight", "bold")
-            .attr("fill", "#000")
-            .text(node.data?.translations.fa || "");
-          const svgTexten = Viva.Graph.svg("text")
-            .attr("y", "-15px")
-            .attr("font-size", "10px")
-            .attr("fill", "#000")
-            .text(node.data?.name || "");
-
-          const svgRect = Viva.Graph.svg("rect")
-            .attr("width", "10px")
-            .attr("height", "10px")
-            .attr("fill", node.data?.colors[0] || "black")
-            .attr("y", "10px")
-            .attr("x", "10px")
-            .attr("rx", "150px");
-          if (node.data?.colors[1]) {
-            const svg2Rect = Viva.Graph.svg("rect")
-              .attr("width", "15px")
-              .attr("height", "15px")
-              .attr("rx", "150px")
-              .attr("fill", node.data?.colors[1] || "black")
-              .attr("y", "7.5px")
-              .attr("x", "7.5px");
-            ui.append(svg2Rect);
-          }
-          if (node.data.disabled) {
-            const svg4Rect = Viva.Graph.svg("rect")
-              .attr("width", "15px")
-              .attr("height", "15px")
-              .attr("rx", "150px")
-              .attr("strock", "black")
-              .attr("stroke-dasharray", "3 3")
-              .attr("y", "7.5px")
-              .attr("x", "7.5px");
-            ui.append(svg4Rect);
-          }
-          ui.append(svgTexten);
-          ui.append(svgText);
-          ui.append(svgRect);
-          return ui;
-        });
-
-        graphics.placeNode(function (nodeUI, pos) {
-          nodeUI.attr(
-            "transform",
-            "translate(" +
+    graphics.placeNode(function (nodeUI, pos) {
+      nodeUI.attr(
+              "transform",
+              "translate(" +
               (pos.x - nodeSize / 2) +
               "," +
               (pos.y - nodeSize / 2) +
               ")"
-          );
-        });
+      );
+    });
 
-        const layout = Viva.Graph.Layout.forceDirected(graph, {
-          springLength: 50,
-          springCoeff: 0.0005,
-          dragCoeff: 0.02,
-          gravity: -5,
-        });
+    const layout = Viva.Graph.Layout.forceDirected(graph, {
+      springLength: 50,
+      springCoeff: 0.0005,
+      dragCoeff: 0.02,
+      gravity: -5,
+    });
 
-        const renderer = Viva.Graph.View.renderer(graph, {
-          layout,
-          graphics,
-          container: document.getElementById("graph"),
-        });
-        renderer.run();
-      };
-      init();
-    </script>
-  </body>
+    const renderer = Viva.Graph.View.renderer(graph, {
+      layout,
+      graphics,
+      container: document.getElementById("graph"),
+    });
+    renderer.run();
+  };
+  init();
+</script>
+</body>
 </html>
