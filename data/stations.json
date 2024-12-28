@@ -1413,7 +1413,6 @@
     "lines": [4],
     "colors": ["#F8E100"],
     "disabled": false,
-    "wc":true,
     "coffeeShop": false,
     "groceryStore": false,
     "fastFood": false,
