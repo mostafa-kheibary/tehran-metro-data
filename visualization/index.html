@@ -73,7 +73,7 @@
         border: 2px solid rgba(255, 255, 255, 0.3); /* Light, semi-transparent border */
         border-radius: 8px;
         padding: 10px;
-        z-index: 1000;
+        z-index: 1;
         backdrop-filter: blur(10px); /* Apply the blur effect to the background */
         -webkit-backdrop-filter: blur(10px); /* For Safari */
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
@@ -107,10 +107,16 @@
         'GRAD' 0,
         'opsz' 24
       }
+      .no-select {
+        -webkit-user-select: none; 
+        -moz-user-select: none; 
+        -ms-user-select: none; 
+        user-select: none;
+      }
     </style>
   </head>
   <body>
-    <div class="graph_wrapper ibm-plex-sans-arabic-thin" id="graph"></div>
+    <div class="graph_wrapper ibm-plex-sans-arabic-thin no-select" id="graph"></div>
     <div  class="dialog ibm-plex-sans-arabic-regular" id="nodePropertiesDialog">
       <div class="dialog-header">
         <span id="dialogTitle">اطلاعات ایستگاه</span>
@@ -119,7 +125,7 @@
       <div class="dialog-body">
         <p><strong>نام:</strong> <span id="nodeName"></span></p>
         <p><strong>خط:</strong> <span id="nodeLines"></span></p>
-        <p><strong>آدرس:</strong> <span id="nodeAddress"></span></p>
+        <p><strong>آدرس:</strong> <span class="no-select" id="nodeAddress"></span></p>
       </div>
     </div>
 
@@ -133,6 +139,8 @@
       const graph = Viva.Graph.graph();
       const graphics = Viva.Graph.View.svgGraphics();
       const nodeSize = 24;
+      const GOOGLE_MAPS_BASE_URL = "https://maps.google.com/";
+      const LOCATION_ICON = `<span class="material-symbols-outlined" style="font-size:17px">location_on</span>`;
 
       const init = async () => {
         const response = await fetch(
@@ -237,12 +245,11 @@
         const nodeNameElement = document.getElementById('nodeName');
         const nodeAddressElement = document.getElementById('nodeAddress');
         const nodeLinesElement = document.getElementById('nodeLines');
-        const updateButton = document.getElementById('updateNodeBtn');
         const closeButton = document.getElementById('closeDialogBtn');
 
         nodeNameElement.textContent = node.data.translations.fa || node.data.name;
         nodeLinesElement.innerHTML = node.data.lines.map((line, i) => `<span style="color: ${node.data.colors[i]}; text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);">${line}</span>`).join(' و ');
-        nodeAddressElement.innerHTML = node.data.address ? `<a href="https://maps.google.com/?q=$${node.data.latitude},${node.data.longitude}" target="_blank"><span class="material-symbols-outlined" style="font-size:17px">location_on</span></a> ${node.data.address}` : '<span class="material-symbols-outlined" style="font-size:17px">location_on</span> به زودی ...';
+        nodeAddressElement.innerHTML = node.data.address ? `<a href="${GOOGLE_MAPS_BASE_URL}?q=$${node.data.latitude},${node.data.longitude}" target="_blank">${LOCATION_ICON}</a> ${node.data.address}` : `${LOCATION_ICON} به زودی ...`;
         nodeAddressElement.style.fontSize = "13px"
 
         dialog.style.display = 'block';
@@ -251,13 +258,29 @@
           dialog.style.display = 'none';
         };
 
-        updateButton.onclick = function() {
-          const newDetails = prompt('Enter new details:', node.data.details);
-          if (newDetails !== null) {
-            node.data.details = newDetails;
-            nodeAddressElement.textContent = newDetails;
-          }
+        // Add click event listener for copy functionality
+        const handleAddressClick = (event) => {
+          event.preventDefault(); 
+          navigator.clipboard.writeText(node.data.address || "")
+            .then(() => {
+              nodeAddressElement.innerHTML = 
+              node.data.address 
+              ? `<a href="${GOOGLE_MAPS_BASE_URL}?q=$${node.data.latitude},${node.data.longitude}" target="_blank">${LOCATION_ICON}</a> آدرس کپی شد !` 
+              : `${LOCATION_ICON} به زودی ...`;
+              
+              setTimeout(() => {
+                nodeAddressElement.innerHTML = node.data.address 
+                ? `<a href="${GOOGLE_MAPS_BASE_URL}?q=$${node.data.latitude},${node.data.longitude}" target="_blank">${LOCATION_ICON}</a> ${node.data.address}`
+                : `${LOCATION_ICON} به زودی ...`;
+              }, 1000);
+            })
+            .catch(err => {
+              console.error('Failed to copy text:', err);
+            });
         };
+
+        nodeAddressElement.addEventListener('click', handleAddressClick);
+        nodeAddressElement.addEventListener('touchstart', handleAddressClick);
       }
 
       init();
