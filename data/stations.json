@@ -1025,9 +1025,9 @@
     "colors": ["#67C5F5", "#F8E100"],
     "disabled": false,
     "wc": false,
-    "coffeeShop": false,
-    "groceryStore": false,
-    "fastFood": false,
+    "coffeeShop": true,
+    "groceryStore": true,
+    "fastFood": true,
     "atm": false,
     "relations": ["Meydan-e Hazrat Vali Asr", "Ferdowsi", "Meydan-e Enghelab-e Eslami", "Moniriyeh"]
   },
