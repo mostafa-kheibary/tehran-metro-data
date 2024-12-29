@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=location_on" />
     <title>Tehran metro station graph</title>
     <style>
       * {
@@ -15,6 +19,41 @@
         background-color: rgb(243, 243, 243);
         width: 100%;
       }
+      .ibm-plex-sans-arabic-thin {
+        font-family: "IBM Plex Sans Arabic", serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+      .ibm-plex-sans-arabic-extralight {
+        font-family: "IBM Plex Sans Arabic", serif;
+        font-weight: 200;
+        font-style: normal;
+      }
+      .ibm-plex-sans-arabic-light {
+        font-family: "IBM Plex Sans Arabic", serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      .ibm-plex-sans-arabic-regular {
+        font-family: "IBM Plex Sans Arabic", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .ibm-plex-sans-arabic-medium {
+        font-family: "IBM Plex Sans Arabic", serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      .ibm-plex-sans-arabic-semibold {
+        font-family: "IBM Plex Sans Arabic", serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+      .ibm-plex-sans-arabic-bold {
+        font-family: "IBM Plex Sans Arabic", serif;
+        font-weight: 700;
+        font-style: normal;
+      }
       .graph_wrapper {
         width: 100%;
         height: 100vh;
@@ -23,10 +62,73 @@
         width: 100%;
         height: 99%;
       }
+      .dialog {
+        display: none;
+        position: fixed;
+        direction: rtl;
+        bottom: 20px;
+        right: 20px;
+        width: 250px;
+        background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+        border: 2px solid rgba(255, 255, 255, 0.3); /* Light, semi-transparent border */
+        border-radius: 8px;
+        padding: 10px;
+        z-index: 1;
+        backdrop-filter: blur(10px); /* Apply the blur effect to the background */
+        -webkit-backdrop-filter: blur(10px); /* For Safari */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+        transition: all 0.3s ease;
+      }
+      .dialog-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+      }
+      .dialog-body {
+        margin-top: 10px;
+      }
+      button {
+        padding: 2px 6px;
+        border: 1px solid #cccccc00;
+        border-radius: 4px;
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0); /* Slight background for the button */
+        color: rgb(227, 20, 20);
+      }
+      button:hover {
+        background-color: rgba(0, 0, 0, 0.2); /* Darker background on hover */
+      }
+      .material-symbols-outlined {
+        transform: translateY(3px);
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+      .no-select {
+        -webkit-user-select: none; 
+        -moz-user-select: none; 
+        -ms-user-select: none; 
+        user-select: none;
+      }
     </style>
   </head>
   <body>
-    <div class="graph_wrapper" id="graph"></div>
+    <div class="graph_wrapper ibm-plex-sans-arabic-thin no-select" id="graph"></div>
+    <div  class="dialog ibm-plex-sans-arabic-regular" id="nodePropertiesDialog">
+      <div class="dialog-header">
+        <span id="dialogTitle">اطلاعات ایستگاه</span>
+        <button id="closeDialogBtn">X</button>
+      </div>
+      <div class="dialog-body">
+        <p><strong>نام:</strong> <span id="nodeName"></span></p>
+        <p><strong>خط:</strong> <span id="nodeLines"></span></p>
+        <p><strong>آدرس:</strong> <span class="no-select" id="nodeAddress"></span></p>
+      </div>
+    </div>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/vivagraphjs/0.12.0/vivagraph.min.js"
       integrity="sha512-gkKEgYqs7I24YHETln6iLyd9Oy10s2Cyaev28dxbCQa3mV22SbdDsWrprpRL/DSAJERZiFiQcN+wnsxPKR6Trw=="
@@ -37,6 +139,8 @@
       const graph = Viva.Graph.graph();
       const graphics = Viva.Graph.View.svgGraphics();
       const nodeSize = 24;
+      const GOOGLE_MAPS_BASE_URL = "https://maps.google.com/";
+      const LOCATION_ICON = `<span class="material-symbols-outlined" style="font-size:17px">location_on</span>`;
 
       const init = async () => {
         const response = await fetch(
@@ -56,6 +160,13 @@
         graphics.node((node) => {
           console.log(node.data);
           const ui = Viva.Graph.svg("g");
+          ui.on('click', function(e) {
+            RenderNodeProperties(node);
+          });
+          ui.on('touchstart', function(e) {
+            e.preventDefault(); // Prevent default touch behavior
+            RenderNodeProperties(node);
+          });
           // Create SVG text element with user id as content
           const svgText = Viva.Graph.svg("text")
             .attr("y", "-2px")
@@ -128,6 +239,50 @@
         });
         renderer.run();
       };
+      
+      function RenderNodeProperties(node) {
+        const dialog = document.getElementById('nodePropertiesDialog');
+        const nodeNameElement = document.getElementById('nodeName');
+        const nodeAddressElement = document.getElementById('nodeAddress');
+        const nodeLinesElement = document.getElementById('nodeLines');
+        const closeButton = document.getElementById('closeDialogBtn');
+
+        nodeNameElement.textContent = node.data.translations.fa || node.data.name;
+        nodeLinesElement.innerHTML = node.data.lines.map((line, i) => `<span style="color: ${node.data.colors[i]}; text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);">${line}</span>`).join(' و ');
+        nodeAddressElement.innerHTML = node.data.address ? `<a href="${GOOGLE_MAPS_BASE_URL}?q=$${node.data.latitude},${node.data.longitude}" target="_blank">${LOCATION_ICON}</a> ${node.data.address}` : `${LOCATION_ICON} به زودی ...`;
+        nodeAddressElement.style.fontSize = "13px"
+
+        dialog.style.display = 'block';
+
+        closeButton.onclick = function() {
+          dialog.style.display = 'none';
+        };
+
+        // Add click event listener for copy functionality
+        const handleAddressClick = (event) => {
+          event.preventDefault(); 
+          navigator.clipboard.writeText(node.data.address || "")
+            .then(() => {
+              nodeAddressElement.innerHTML = 
+              node.data.address 
+              ? `<a href="${GOOGLE_MAPS_BASE_URL}?q=$${node.data.latitude},${node.data.longitude}" target="_blank">${LOCATION_ICON}</a> آدرس کپی شد !` 
+              : `${LOCATION_ICON} به زودی ...`;
+              
+              setTimeout(() => {
+                nodeAddressElement.innerHTML = node.data.address 
+                ? `<a href="${GOOGLE_MAPS_BASE_URL}?q=$${node.data.latitude},${node.data.longitude}" target="_blank">${LOCATION_ICON}</a> ${node.data.address}`
+                : `${LOCATION_ICON} به زودی ...`;
+              }, 1000);
+            })
+            .catch(err => {
+              console.error('Failed to copy text:', err);
+            });
+        };
+
+        nodeAddressElement.addEventListener('click', handleAddressClick);
+        nodeAddressElement.addEventListener('touchstart', handleAddressClick);
+      }
+
       init();
     </script>
   </body>
