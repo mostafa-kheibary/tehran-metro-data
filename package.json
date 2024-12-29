@@ -1,0 +1,15 @@
+{
+	"name": "tehran-metro-graph",
+	"version": "1.0.0",
+	"description": "<img width=\"100px\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Tehran_Metro_Logo.svg/200px-Tehran_Metro_Logo.svg.png\"/>",
+	"main": "index.js",
+	"scripts": {
+		"format": "npx prettier . --write"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"prettier": "3.4.2"
+	}
+}
