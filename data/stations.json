@@ -1581,10 +1581,10 @@
     "colors": ["#007E46"],
     "disabled": false,
     "wc": true,
-    "coffeeShop": false,
-    "groceryStore": false,
-    "fastFood": false,
-    "atm": false,
+    "coffeeShop": true,
+    "groceryStore": true,
+    "fastFood": true,
+    "atm": true,
     "relations": ["Mohammadshahr", "Shahid Sepahbod Qasem Soleimani"]
   },
   "Shahid Sepahbod Qasem Soleimani": {
