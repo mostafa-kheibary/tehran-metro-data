@@ -1437,10 +1437,10 @@
     "colors": ["#F8E100", "#007E46"],
     "disabled": false,
     "wc": true,
-    "coffeeShop": false,
-    "groceryStore": false,
-    "fastFood": false,
-    "atm": false,
+    "coffeeShop": true,
+    "groceryStore": true,
+    "fastFood": true,
+    "atm": true,
     "relations": ["Tehran (Sadeghiyeh)", "Varzeshgah-e Azadi", "Allameh Jafari", "Shahrak-e Ekbatan"]
   },
   "Varzeshgah-e Azadi": {
