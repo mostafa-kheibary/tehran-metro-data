@@ -1273,10 +1273,10 @@
     "colors": ["#F8E100"],
     "disabled": false,
     "wc": false,
-    "coffeeShop": false,
+    "coffeeShop": true,
     "groceryStore": false,
     "fastFood": false,
-    "atm": false,
+    "atm": true,
     "relations": ["Teatr-e Shahr", "Towhid"]
   },
   "Towhid": {
