@@ -1273,10 +1273,10 @@
     "colors": ["#F8E100"],
     "disabled": false,
     "wc": false,
-    "coffeeShop": false,
+    "coffeeShop": true,
     "groceryStore": false,
     "fastFood": false,
-    "atm": false,
+    "atm": true,
     "relations": ["Teatr-e Shahr", "Towhid"]
   },
   "Towhid": {
@@ -1353,10 +1353,10 @@
     "colors": ["#F8E100"],
     "disabled": false,
     "wc": false,
-    "coffeeShop": false,
+    "coffeeShop": true,
     "groceryStore": false,
     "fastFood": false,
-    "atm": false,
+    "atm": true,
     "relations": ["Meydan-e Azadi", "Shahrak-e Ekbatan", "Mehrabad Airport Terminal 1&2"]
   },
   "Mehrabad Airport Terminal 1&2": {
@@ -1413,6 +1413,10 @@
     "lines": [4],
     "colors": ["#F8E100"],
     "disabled": false,
+    "coffeeShop": false,
+    "groceryStore": false,
+    "fastFood": false,
+    "atm": true,
     "relations": ["Eram-e Sabz"]
   },
   "Chaharbagh": {
@@ -1421,7 +1425,7 @@
     "lines": [4],
     "colors": ["#F8E100"],
     "disabled": false,
-    "relations": ["Eram-e Sabz"]
+    "relations": ["Ayatollah Kashani"]
   },
   "Eram-e Sabz": {
     "name": "Eram-e Sabz",
@@ -1433,10 +1437,10 @@
     "colors": ["#F8E100", "#007E46"],
     "disabled": false,
     "wc": true,
-    "coffeeShop": false,
-    "groceryStore": false,
-    "fastFood": false,
-    "atm": false,
+    "coffeeShop": true,
+    "groceryStore": true,
+    "fastFood": true,
+    "atm": true,
     "relations": ["Tehran (Sadeghiyeh)", "Varzeshgah-e Azadi", "Allameh Jafari", "Shahrak-e Ekbatan"]
   },
   "Varzeshgah-e Azadi": {
@@ -1577,10 +1581,10 @@
     "colors": ["#007E46"],
     "disabled": false,
     "wc": true,
-    "coffeeShop": false,
-    "groceryStore": false,
-    "fastFood": false,
-    "atm": false,
+    "coffeeShop": true,
+    "groceryStore": true,
+    "fastFood": true,
+    "atm": true,
     "relations": ["Mohammadshahr", "Shahid Sepahbod Qasem Soleimani"]
   },
   "Shahid Sepahbod Qasem Soleimani": {
