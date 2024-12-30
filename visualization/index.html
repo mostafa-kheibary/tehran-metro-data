@@ -74,15 +74,55 @@
 				-moz-user-select: none;
 				-ms-user-select: none;
 				user-select: none;
+			}.search-box-container{
+				position: fixed;
+				direction: rtl;
+				display: flex;
+				justify-content: center;
+				top: 5px;
+				width: 90%;
+				margin: 5%;
+				margin-top: 0;
+				height:  50px;
+				z-index: 1;
+			}.search-box{
+				width: 250px;
+				height:  35px;
+				padding: 10px;
+				margin-top: 0;
+				background: rgba(255, 255, 255, 0.1);
+				border: 2px solid rgba(0, 0, 0, 0.163);
+				backdrop-filter: blur(10px);
+				-webkit-backdrop-filter: blur(10px);
+				z-index: 1;
+				transition: all 0.3s ease;
+			}.search-item{
+				width: 250px;
+				height:  35px;
+				padding: 10px;
+				background: rgba(255, 255, 255, 0.675);
+				backdrop-filter: blur(10px);
+				-webkit-backdrop-filter: blur(10px);
+				z-index: 1;
+				transition: all 0.3s ease;
+			}.search-item:hover{
+				background: rgba(76, 76, 76, 0.675);
+				transition: all 0.5 ease;
 			}
 		</style>
 	</head>
 	<body>
-		<div
-			class="graph_wrapper ibm-plex-sans-arabic-thin no-select"
-			id="graph"
-		></div>
-		<div class="dialog ibm-plex-sans-arabic-regular" id="nodePropertiesDialog">
+		<div class="graph_wrapper no-select" id="graph"></div>
+		<div class="search-box-container no-select flex" id="search-box">
+			<div id="searchDropdown" class="dropdown-content">
+				<input type="text" id="serach-input" class="search-box" 
+				onfocusout="closeSearch();" 
+				onkeyup="searchStation()" 
+				onfocus="closeDialog();searchStation()" 
+				placeholder="نام ایستگاه را جستجو کنید ..."></div>
+			</div>
+		</div>
+		<div class="dialog" id="nodePropertiesDialog">
 			<div class="dialog-header">
 				<span id="dialogTitle">اطلاعات ایستگاه</span>
 				<button id="closeDialogBtn">X</button>
@@ -114,9 +154,21 @@
 				);
 				const stations = await response.json();
 
+				const searchDropdown = document.getElementById("searchDropdown");
+				
 				// add nodes and relationships based on the graph data
 				for (let station in stations) {
 					graph.addNode(station, stations[station]);
+
+					var span = document.createElement('span');
+					span.style.display="none"
+					span.classList.add("search-item");
+					span.innerHTML = stations[station].translations.fa;
+					span.addEventListener("mousedown", function (e) {
+						RenderNodeProperties({data:stations[station]});
+					});
+					searchDropdown.appendChild(span);
+
 					for (let relationship of stations[station].relations) {
 						graph.addLink(station, relationship);
 					}
@@ -207,8 +259,35 @@
 				});
 				renderer.run();
 			};
+			
+
+			function closeSearch() {
+				const items = document.querySelectorAll(".search-item");
+				for (let i = 0; i < items.length; i++) {
+					items[i].style.display = "none";
+				}
+			}
+
+			function searchStation() {
+				closeDialog();
+				const serachInput = document.getElementById("serach-input");
+				const filter = serachInput.value.toUpperCase();
+				const items = document.querySelectorAll(".search-item");
+
+				for (let i = 0; i < items.length; i++) {
+					txtValue = items[i].textContent || a[i].innerText;
+					if(filter==""){
+						items[i].style.display = "none";
+					}else if (txtValue.toUpperCase().indexOf(filter) > -1) {
+						items[i].style.display = "block";
+					} else {
+						items[i].style.display = "none";
+					}
+				}
+			}
 
 			function RenderNodeProperties(node) {
+				closeSearch();
 				const dialog = document.getElementById("nodePropertiesDialog");
 				const nodeNameElement = document.getElementById("nodeName");
 				const nodeAddressElement = document.getElementById("nodeAddress");
@@ -233,8 +312,11 @@
 				closeButton.onclick = function () {
 					dialog.style.display = "none";
 				};
-				nodeAddressElement.addEventListener("click", handleAddressClick);
-				nodeAddressElement.addEventListener("touchstart", handleAddressClick);
+			}
+
+			function closeDialog() {
+				const dialog = document.getElementById("nodePropertiesDialog");
+				dialog.style.display = "none";
 			}
 
 			init();
