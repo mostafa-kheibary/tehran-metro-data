@@ -10,6 +10,10 @@
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=location_on"
 		/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazir&display=swap"
+      rel="stylesheet"
+    />
 		<title>Tehran metro station graph</title>
 		<style>
 			* {
@@ -134,11 +138,13 @@
 						.attr("y", "-2px")
 						.attr("font-size", "10px")
 						.attr("font-weight", "bold")
+            .attr("font-family", "Vazir, sans-serif")
 						.attr("fill", "#000")
 						.text(node.data?.translations.fa || "");
 					const svgTexten = Viva.Graph.svg("text")
 						.attr("y", "-15px")
 						.attr("font-size", "10px")
+            .attr("font-family", "Vazir, sans-serif")
 						.attr("fill", "#000")
 						.text(node.data?.name || "");
 
