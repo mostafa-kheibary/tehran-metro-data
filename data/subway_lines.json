@@ -1,0 +1,386 @@
+{
+    "1":{
+        "metadata":{
+            "label":"Line 1",
+            "color":"#d40000",
+            "persianName":"خط ۱",
+            "wikidataID":"Q20110118",
+            "osmRelationID":"7735256",
+            "gkgID":"/g/11b6pr7b1y",
+            "logoURL":"https://upload.wikimedia.org/wikipedia/commons/a/a0/Tehran_Metro_Line_1.png",
+            "state":"in use"
+		},
+        "branches":{
+            "main":[
+                "Za'faraniyeh",
+                "Tajrish",
+                "Gheytariyeh",
+                "Shahid Sadr",
+                "Gholhak",
+                "Doctor Shariati",
+                "Mirdamad",
+                "Shahid Haghani",
+                "Shahid Hemmat",
+                "Mosalla Imam Khomeini",
+                "Shahid Beheshti",
+                "Shahid Mofatteh",
+                "Shohada-ye Haftom-e Tir",
+                "Ayatollah Taleghani",
+                "Darvazeh Dowlat",
+                "Sa'adi",
+                "Imam Khomeini",
+                "Panzdah-e Khordad",
+                "Khayyam",
+                "Meydan-e Mohammadiyeh",
+                "Shoush",
+                "Payaneh Jonoub",
+                "Shahid Bokharaei",
+                "Aliabad",
+                "Javanmard-e Ghassab",
+                "Shahr-e Rey",
+                "Palayeshgah",
+                "Shahed - BagherShahr",
+                "Haram-e Motahhar-e Imam Khomeini",
+                "Kahrizak"
+            ],
+            "Imam Khomeini Airport":[
+                "Shahed - BagherShahr",
+                "Namayeshgah-e Shahr-e Aftab",
+                "Vavan",
+                "Imam Khomeini Airport",
+                "Shahr-e Parand"
+            ],
+            "Zafar":[
+                "Shahid Haghani",
+                "Shahid Modarres",
+                "Zafar"
+            ]
+        }                   
+    },
+    "2":{
+        "metadata":{
+            "label":"Line 2",
+            "color":"#003380",
+            "persianName":"خط ۲",
+            "wikidataID":"Q20110119",
+            "osmRelationID":"7832325",
+            "gkgID":"/g/11b6pl7rzc",
+            "logoURL":"https://upload.wikimedia.org/wikipedia/commons/9/9b/Tehran_Metro_Line_2.png",
+            "state":"in use"
+        },
+        "branches":{
+            "main":[
+                "Pardis",
+                "Khorramdasht",
+                "Jajroud",
+                "Shahid Yasini",
+                "Pardis-e Mosaferi-ye Shargh",
+                "Shahid Babaeian",
+                "Farhangsara",
+                "Tehranpars",
+                "Shahid Bagheri",
+                "Daneshgah-e Elm va San'at",
+                "Sarsabz",
+                "Janbazan",
+                "Fadak",
+                "Sabalan",
+                "Shahid Madani",
+                "Imam Hussein",
+                "Darvazeh Shemiran",
+                "Baharistan",
+                "Mellat",
+                "Imam Khomeini",
+                "Hasan Abad",
+                "Daneshgah-e Imam Ali",
+                "Meydan-e Horr",
+                "Shahid Navab-e Safavi",
+                "Shademan",
+                "Daneshgah-e Sharif",
+                "Tarasht",
+                "Sadeghiyeh"
+            ]
+        }
+        
+    },
+    "3":{
+        "metadata":{
+            "label":"Line 3",
+            "color":"#00aad4",
+            "persianName":"خط ۳",
+            "wikidataID":"Q20110120",
+            "osmRelationID":"7770934",
+            "gkgID":"/g/11b6prwzs_",
+            "logoURL":"https://upload.wikimedia.org/wikipedia/commons/6/67/Tehran_Metro_Line_3.png",
+            "state":"in use"
+        },
+        "branches":{
+            "main":[
+                "Ghaem",
+                "Shahid Mahallati",
+                "Aghdasiyeh",
+                "Nobonyad",
+                "Hoseinabad",
+                "Meydan-e Heravi",
+                "Shahid Zeynoddin",
+                "Khajeh Abdollah-e Ansari",
+                "Shahid Sayyad Shirazi",
+                "Shahid Ghodousi",
+                "Sohrevardi",
+                "Shahid Beheshti",
+                "Mirza-ye Shirazi",
+                "Meydan-e Jahad",
+                "Teatr-e Shahr",
+                "Daneshgah-e Imam Ali",
+                "Moniriyeh",
+                "Mahdiyeh",
+                "Rahahan",
+                "Javadiyeh",
+                "Zamzam",
+                "Shahrak-e Shariati",
+                "Abdol Abad",
+                "Nemat Abad",
+                "Azadegan",
+                "Chahardangeh",
+                "Shatereh",
+                "Meydan-e Namaz",
+                "Salman Farsi",
+                "Meydan-e Ghaem",
+                "Golestan",
+                "Robat Karim",
+                "Shahr-e Parand"
+            ],
+            "Shahid Bahonar":[
+                "Nobonyad",
+                "Niavaran",
+                "Shahid Bahonar"
+            ]
+        }        
+    },
+    "4":{
+        "metadata":{
+            "label":"Line 4",
+            "color":"#eebb00",
+            "persianName":"خط ۴",
+            "wikidataID":"Q20110121",
+            "osmRelationID":"7705669",
+            "gkgID":"/g/11b6ppr4xs",
+            "logoURL":"https://upload.wikimedia.org/wikipedia/commons/e/e5/Tehran_Metro_Line_4.svg",
+            "state":"in use"
+        },
+        "branches":{
+            "main":[
+                "Daneshgah-e Azad-e Eslami Tehran Shomal",
+                "Shahid Zohdi",
+                "Parvin",
+                "Falakeh-ye Sajjadiyeh",
+                "Shahid Zafarghandi",
+                "Shahid Bagheri",
+                "Shahid Amiri Taemeh",
+                "Meydan-e Shaghayegh",
+                "Tehranno",
+                "Shahid Kolahdooz",
+                "Niroo-ye Havaei",
+                "Nabard",
+                "Piroozi",
+                "Ebn-e Sina",
+                "Meydan-e Shohada",
+                "Darvazeh Shemiran",
+                "Darvazeh Dowlat",
+                "Ferdowsi",
+                "Teatr-e Shahr",
+                "Meydan-e Enghelab-e Eslami",
+                "Towhid",
+                "Doctor Habibollah",
+                "Ostad Moein",
+                "Meydan-e Azadi",
+                "Bimeh",
+                "Shahrak-e Ekbatan",
+                "Eram-e Sabz",
+                "Allameh Ja'fari",
+                "Ayatollah Kashani",
+                "Chaharbagh"
+            ],
+            "Mehrabad Airport":[            
+                "Mehrabad Airport Terminal 1&2",
+                "Mehrabad Airport Terminal 4&6",
+                "Meydan-e Fath",
+                "Shahid Hashemi"
+            ]
+        }
+    },
+    "5":{
+        "metadata":{
+            "label":"Line 5",
+            "color":"#008033",
+            "persianName":"خط ۵",
+            "wikidataID":"Q20110122",
+            "osmRelationID":"7735262",
+            "gkgID":"/g/11b6pr97ck",
+            "logoURL":"https://upload.wikimedia.org/wikipedia/commons/3/38/Tehran_Metro_Line_5.svg",
+            "state":"in use"
+        },
+        "branches":{
+            "main":[
+                "Sadeghiyeh",
+                "Eram-e Sabz",
+                "Varzeshgah-e Azadi",
+                "Chitgar",
+                "Iran Khodro",
+                "Vardavard",
+                "Garmdareh",
+                "Atmosphere",
+                "Karaj",
+                "Mohammadshahr",
+                "Golshahr",
+                "Shahid Fakhrizadeh",
+                "Shahid Sepahbod Qasem Soleimani"
+            ]
+        }
+    },
+    "6":{
+        "metadata":{
+            "label":"Line 6",
+            "color":"#ed71a7",
+            "persianName":"خط ۶",
+            "wikidataID":"Q20110123",
+            "osmRelationID":"9468298",
+            "gkgID":"/g/11b6ppdfww",
+            "logoURL":"https://upload.wikimedia.org/wikipedia/commons/f/ff/Tehran_Metro_Line_6.svg",
+            "state":"in use"
+        },
+        "branches":{
+            "main":[
+                "Shahr-e Rey",
+                "Haram-e Hazrat-e Abdol Azim",
+                "Meydan-e Hazrat-e Abdol Azim",
+                "Ebn-e Babviyeh",
+                "Cheshmeh Ali",
+                "Shohada-ye Dowlat Abad",
+                "Kiyan Shahr",
+                "Be'sat",
+                "Shahid Rezaei",
+                "Meydan-e Khorasan",
+                "Shohada-ye Hefdah-e Shahrivar",
+                "Amirkabir",
+                "Meydan-e Shohada",
+                "Imam Hussein",
+                "Sarbaz",
+                "Bahar-e Shiraz",
+                "Shohada-ye Haftom-e Tir",
+                "Shahid Nejatollahi",
+                "Meydan-e Hazrat Vali Asr",
+                "Bustan-e Laleh",
+                "Karegar",
+                "Daneshgah-e Tarbiat Modarres",
+                "Shahrak-e Azmayesh",
+                "Marzdaran",
+                "Yadegar-e Imam",
+                "Shahid Ashrafi Esfahani",
+                "Shahid Sattari",
+                "Ayatollah Kashani",
+                "Shahr-e Ziba",
+                "Shahran",
+                "Shohada-ye Kan",
+                "Kouhsar"
+            ]
+        }
+    },
+    "7":{
+        "metadata":{
+            "label":"Line 7",
+            "color":"#aa00d4",
+            "persianName":"خط ۷",
+            "wikidataID":"Q20110124",
+            "osmRelationID":"7705644",
+            "gkgID":"/g/11b6prh04l",
+            "logoURL":"https://upload.wikimedia.org/wikipedia/commons/b/b5/Tehran_Metro_Line_7.svg",
+            "state":"in use"
+        },
+        "branches":{
+            "main":[
+                "Varzeshgah-e Takhti",
+                "Basij",
+                "Ahang",
+                "Chehel Tan-e Doulab",
+                "Meydan-e Ghiyam",
+                "Mowlavi",
+                "Helal Ahmar",
+                "Beryanak",
+                "Komeyl",
+                "Roudaki",
+                "Modafean-e Salamat",
+                "Boostan-e Goftegou",
+                "Milad Tower",
+                "Meydan-e San'at",
+                "Shahid Dadman",
+                "Meydan-e Ketab",
+                "Chahardivari",
+                "Daneshgah-e Azad-e Eslami Oloom Tahghighat",
+                "Shahid Bakeri"
+            ]
+    
+        }
+    },
+    "8":{
+        "metadata":{
+            "label":"Line 8",
+            "color":"#0eca0e",
+            "persianName":"خط ۸",
+            "wikidataID":"Q20110125",
+            "osmRelationID":"7832314",
+            "gkgID":"/g/11b6pmqrhj",
+            "logoURL":"https://upload.wikimedia.org/wikipedia/commons/b/b9/Tehran_Metro_Line_8.png",
+            "state":"under construction"
+        },
+        "branches":{
+            
+        }
+    },
+    "9":{
+        "metadata":{
+            "label":"Line 9",
+            "color":"#ffa500",
+            "persianName":"خط ۹",
+            "wikidataID":"Q20110126",
+            "osmRelationID": null,
+            "gkgID":"/g/11b6pvsxz2",
+            "logoURL": null,
+            "state":"under construction"
+        },
+        "branches":{
+
+        }
+    },
+    "10":{
+        "metadata":{
+            "label":"Line 10",
+            "color":"#00aad4",
+            "persianName":"خط ۱۰",
+            "wikidataID":"Q65199788",
+            "osmRelationID": null,
+            "gkgID":"/g/11fjv4pn93",
+            "logoURL": null,
+            "state":"under construction"
+        },
+        "branches":{
+
+        }
+    },
+    "11":{
+        "metadata":{
+            "label":"Line 11",
+            "color":"#00aad4",
+            "persianName":"خط ۱۱",
+            "wikidataID":"Q117406333",
+            "osmRelationID": null,
+            "gkgID":"/g/11b6prwzs_",
+            "logoURL": null,
+            "state":"under construction"
+        },
+        "branches":{
+
+        }
+    }
+    
+}
+
