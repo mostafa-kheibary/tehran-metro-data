@@ -1,0 +1,33 @@
+{
+    "cities":{
+        "Tehran":{
+            "label":"Tehran",
+            "wikidataID":"Q3616",
+            "persianName":"تهران",
+            "districts":{
+                "1":{
+                    "wikidataID":"Q5377769",
+                    "persianName":"منطقه ۱"
+                }
+            }
+
+        }
+    },
+    "streets":{
+        "Shariati Street":{
+            "wikidataID":"Q5583455",
+            "persianName":"خیابان شریعتی"
+        },
+        "Shahrdari Street":{
+            "wikidataID":"Q117465135",
+            "persianName":"خیابان شهرداری"
+        }
+    },
+    "intersections":{
+        "Ghods Square":{
+            "wikidataID":"Q5679814",
+            "persianName":"میدان قدس"
+        }
+    }
+    
+}
