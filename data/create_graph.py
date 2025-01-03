@@ -11,7 +11,7 @@ graph_in_use = {
         "label":"Tehran Subway Network (in-use stations)",
         "type":"Transportation Network",
         "directed": False,
-        "nodes":[x for x in data_stations if all(data_stations[x]["metadata"]["lines"][l]["state"]!="in use" for l in data_stations[x]["metadata"]["lines"])],
+        "nodes":{x:data_stations[x] for x in data_stations if any(data_stations[x]["metadata"]["lines"][l]["state"]=="in use" for l in data_stations[x]["metadata"]["lines"])},
         "edges":[],
         "metadata":{"lines":{}}
     }
