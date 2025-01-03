@@ -11,7 +11,7 @@
 			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=location_on"
 		/>
     <link
-      href="https://fonts.googleapis.com/css2?family=Vazir&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap"
       rel="stylesheet"
     />
 		<title>Tehran metro station graph</title>
@@ -107,18 +107,24 @@
 				transition: all 0.3s ease;
 			}.search-item:hover{
 				background: rgba(76, 76, 76, 0.675);
-				transition: all 0.5 ease;
+				transition: all 0.5s ease;
+			}
+      .vazirmatn-normal {
+				font-family: "Vazirmatn", serif;
+				font-optical-sizing: auto;
+				font-weight:300;
+				font-style: normal;
 			}
 		</style>
 	</head>
-	<body>
+	<body class="vazirmatn-normal">
 		<div class="graph_wrapper no-select" id="graph"></div>
 		<div class="search-box-container no-select flex" id="search-box">
 			<div id="searchDropdown" class="dropdown-content">
-				<input type="text" id="serach-input" class="search-box" 
-				onfocusout="closeSearch();" 
-				onkeyup="searchStation()" 
-				onfocus="closeDialog();searchStation()" 
+				<input type="text" id="serach-input" class="search-box vazirmatn-normal"
+				onfocusout="closeSearch();"
+				onkeyup="searchStation()"
+				onfocus="closeDialog();searchStation()"
 				placeholder="نام ایستگاه را جستجو کنید ..."></div>
 			</div>
 		</div>
@@ -155,7 +161,7 @@
 				const stations = await response.json();
 
 				const searchDropdown = document.getElementById("searchDropdown");
-				
+
 				// add nodes and relationships based on the graph data
 				for (let station in stations) {
 					graph.addNode(station, stations[station]);
@@ -190,13 +196,13 @@
 						.attr("y", "-2px")
 						.attr("font-size", "10px")
 						.attr("font-weight", "bold")
-            .attr("font-family", "Vazir, sans-serif")
+            .attr("font-family", "Vazirmatn, sans-serif")
 						.attr("fill", "#000")
 						.text(node.data?.translations.fa || "");
 					const svgTexten = Viva.Graph.svg("text")
 						.attr("y", "-15px")
 						.attr("font-size", "10px")
-            .attr("font-family", "Vazir, sans-serif")
+            .attr("font-family", "Vazirmatn, sans-serif")
 						.attr("fill", "#000")
 						.text(node.data?.name || "");
 
@@ -259,7 +265,7 @@
 				});
 				renderer.run();
 			};
-			
+
 
 			function closeSearch() {
 				const items = document.querySelectorAll(".search-item");
