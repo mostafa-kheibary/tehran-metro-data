@@ -1,0 +1,1255 @@
+{
+    "graph": {
+        "label": "Tehran Subway Network (in-use stations)",
+        "type": "Transportation Network",
+        "directed": false,
+        "nodes": [
+            "Za'faraniyeh",
+            "Javanmard-e Ghassab",
+            "Vavan",
+            "Shahid Modarres",
+            "Zafar",
+            "Pardis",
+            "Khorramdasht",
+            "Jajroud",
+            "Shahid Yasini",
+            "Pardis-e Mosaferi-ye Shargh",
+            "Shahid Babaeian",
+            "Chahardangeh",
+            "Shatereh",
+            "Meydan-e Namaz",
+            "Salman Farsi",
+            "Meydan-e Ghaem",
+            "Golestan",
+            "Robat Karim",
+            "Niavaran",
+            "Shahid Bahonar",
+            "Daneshgah-e Azad-e Eslami Tehran Shomal",
+            "Shahid Zohdi",
+            "Parvin",
+            "Falakeh-ye Sajjadiyeh",
+            "Shahid Zafarghandi",
+            "Shahid Amiri Taemeh",
+            "Meydan-e Shaghayegh",
+            "Tehranno",
+            "Meydan-e Fath",
+            "Shahid Hashemi",
+            "Chaharbagh",
+            "Haram-e Hazrat-e Abdol Azim",
+            "Meydan-e Hazrat-e Abdol Azim",
+            "Ebn-e Babviyeh",
+            "Cheshmeh Ali",
+            "Meydan-e Khorasan",
+            "Sarbaz",
+            "Shahid Nejatollahi",
+            "Varzeshgah-e Takhti",
+            "Chahardivari",
+            "Daneshgah-e Azad-e Eslami Oloom Tahghighat",
+            "Shahid Bakeri"
+        ],
+        "edges": [
+            {
+                "source": "Tajrish",
+                "target": "Gheytariyeh",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Gheytariyeh",
+                "target": "Shahid Sadr",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahid Sadr",
+                "target": "Gholhak",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Gholhak",
+                "target": "Doctor Shariati",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Doctor Shariati",
+                "target": "Mirdamad",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Mirdamad",
+                "target": "Shahid Haghani",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahid Haghani",
+                "target": "Shahid Hemmat",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahid Hemmat",
+                "target": "Mosalla Imam Khomeini",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Mosalla Imam Khomeini",
+                "target": "Shahid Beheshti",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahid Beheshti",
+                "target": "Shahid Mofatteh",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahid Mofatteh",
+                "target": "Shohada-ye Haftom-e Tir",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shohada-ye Haftom-e Tir",
+                "target": "Ayatollah Taleghani",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Ayatollah Taleghani",
+                "target": "Darvazeh Dowlat",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Darvazeh Dowlat",
+                "target": "Sa'adi",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Sa'adi",
+                "target": "Imam Khomeini",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Imam Khomeini",
+                "target": "Panzdah-e Khordad",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Panzdah-e Khordad",
+                "target": "Khayyam",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Khayyam",
+                "target": "Meydan-e Mohammadiyeh",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Meydan-e Mohammadiyeh",
+                "target": "Shoush",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shoush",
+                "target": "Payaneh Jonoub",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Payaneh Jonoub",
+                "target": "Shahid Bokharaei",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahid Bokharaei",
+                "target": "Aliabad",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Aliabad",
+                "target": "Shahr-e Rey",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahr-e Rey",
+                "target": "Palayeshgah",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Palayeshgah",
+                "target": "Shahed - BagherShahr",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahed - BagherShahr",
+                "target": "Haram-e Motahhar-e Imam Khomeini",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Haram-e Motahhar-e Imam Khomeini",
+                "target": "Kahrizak",
+                "metadata": {
+                    "line": "1",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahed - BagherShahr",
+                "target": "Namayeshgah-e Shahr-e Aftab",
+                "metadata": {
+                    "line": "1",
+                    "branch": "Imam Khomeini Airport"
+                }
+            },
+            {
+                "source": "Namayeshgah-e Shahr-e Aftab",
+                "target": "Imam Khomeini Airport",
+                "metadata": {
+                    "line": "1",
+                    "branch": "Imam Khomeini Airport"
+                }
+            },
+            {
+                "source": "Imam Khomeini Airport",
+                "target": "Shahr-e Parand",
+                "metadata": {
+                    "line": "1",
+                    "branch": "Imam Khomeini Airport"
+                }
+            },
+            {
+                "source": "Farhangsara",
+                "target": "Tehranpars",
+                "metadata": {
+                    "line": "2",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Tehranpars",
+                "target": "Shahid Bagheri",
+                "metadata": {
+                    "line": "2",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahid Bagheri",
+                "target": "Daneshgah-e Elm va San'at",
+                "metadata": {
+                    "line": "2",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Daneshgah-e Elm va San'at",
+                "target": "Sarsabz",
+                "metadata": {
+                    "line": "2",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Sarsabz",
+                "target": "Janbazan",
+                "metadata": {
+                    "line": "2",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Janbazan",
+                "target": "Fadak",
+                "metadata": {
+                    "line": "2",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Fadak",
+                "target": "Sabalan",
+                "metadata": {
+                    "line": "2",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Sabalan",
+                "target": "Shahid Madani",
+                "metadata": {
+                    "line": "2",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahid Madani",
+                "target": "Imam Hussein",
+                "metadata": {
+                    "line": "2",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Imam Hussein",
+                "target": "Darvazeh Shemiran",
+                "metadata": {
+                    "line": "2",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Darvazeh Shemiran",
+                "target": "Baharistan",
+                "metadata": {
+                    "line": "2",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Baharistan",
+                "target": "Mellat",
+                "metadata": {
+                    "line": "2",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Mellat",
+                "target": "Imam Khomeini",
+                "metadata": {
+                    "line": "2",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Imam Khomeini",
+                "target": "Hasan Abad",
+                "metadata": {
+                    "line": "2",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Hasan Abad",
+                "target": "Daneshgah-e Imam Ali",
+                "metadata": {
+                    "line": "2",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Daneshgah-e Imam Ali",
+                "target": "Meydan-e Horr",
+                "metadata": {
+                    "line": "2",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Meydan-e Horr",
+                "target": "Shahid Navab-e Safavi",
+                "metadata": {
+                    "line": "2",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahid Navab-e Safavi",
+                "target": "Shademan",
+                "metadata": {
+                    "line": "2",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shademan",
+                "target": "Daneshgah-e Sharif",
+                "metadata": {
+                    "line": "2",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Daneshgah-e Sharif",
+                "target": "Tarasht",
+                "metadata": {
+                    "line": "2",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Tarasht",
+                "target": "Sadeghiyeh",
+                "metadata": {
+                    "line": "2",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Ghaem",
+                "target": "Shahid Mahallati",
+                "metadata": {
+                    "line": "3",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahid Mahallati",
+                "target": "Aghdasiyeh",
+                "metadata": {
+                    "line": "3",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Aghdasiyeh",
+                "target": "Nobonyad",
+                "metadata": {
+                    "line": "3",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Nobonyad",
+                "target": "Hoseinabad",
+                "metadata": {
+                    "line": "3",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Hoseinabad",
+                "target": "Meydan-e Heravi",
+                "metadata": {
+                    "line": "3",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Meydan-e Heravi",
+                "target": "Shahid Zeynoddin",
+                "metadata": {
+                    "line": "3",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahid Zeynoddin",
+                "target": "Khajeh Abdollah-e Ansari",
+                "metadata": {
+                    "line": "3",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Khajeh Abdollah-e Ansari",
+                "target": "Shahid Sayyad Shirazi",
+                "metadata": {
+                    "line": "3",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahid Sayyad Shirazi",
+                "target": "Shahid Ghodousi",
+                "metadata": {
+                    "line": "3",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahid Ghodousi",
+                "target": "Sohrevardi",
+                "metadata": {
+                    "line": "3",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Sohrevardi",
+                "target": "Shahid Beheshti",
+                "metadata": {
+                    "line": "3",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahid Beheshti",
+                "target": "Mirza-ye Shirazi",
+                "metadata": {
+                    "line": "3",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Mirza-ye Shirazi",
+                "target": "Meydan-e Jahad",
+                "metadata": {
+                    "line": "3",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Meydan-e Jahad",
+                "target": "Teatr-e Shahr",
+                "metadata": {
+                    "line": "3",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Teatr-e Shahr",
+                "target": "Moniriyeh",
+                "metadata": {
+                    "line": "3",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Moniriyeh",
+                "target": "Mahdiyeh",
+                "metadata": {
+                    "line": "3",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Mahdiyeh",
+                "target": "Rahahan",
+                "metadata": {
+                    "line": "3",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Rahahan",
+                "target": "Javadiyeh",
+                "metadata": {
+                    "line": "3",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Javadiyeh",
+                "target": "Zamzam",
+                "metadata": {
+                    "line": "3",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Zamzam",
+                "target": "Shahrak-e Shariati",
+                "metadata": {
+                    "line": "3",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahrak-e Shariati",
+                "target": "Abdol Abad",
+                "metadata": {
+                    "line": "3",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Abdol Abad",
+                "target": "Nemat Abad",
+                "metadata": {
+                    "line": "3",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Nemat Abad",
+                "target": "Azadegan",
+                "metadata": {
+                    "line": "3",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahid Kolahdooz",
+                "target": "Niroo-ye Havaei",
+                "metadata": {
+                    "line": "4",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Niroo-ye Havaei",
+                "target": "Nabard",
+                "metadata": {
+                    "line": "4",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Nabard",
+                "target": "Piroozi",
+                "metadata": {
+                    "line": "4",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Piroozi",
+                "target": "Ebn-e Sina",
+                "metadata": {
+                    "line": "4",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Ebn-e Sina",
+                "target": "Meydan-e Shohada",
+                "metadata": {
+                    "line": "4",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Meydan-e Shohada",
+                "target": "Darvazeh Shemiran",
+                "metadata": {
+                    "line": "4",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Darvazeh Shemiran",
+                "target": "Darvazeh Dowlat",
+                "metadata": {
+                    "line": "4",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Darvazeh Dowlat",
+                "target": "Ferdowsi",
+                "metadata": {
+                    "line": "4",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Ferdowsi",
+                "target": "Teatr-e Shahr",
+                "metadata": {
+                    "line": "4",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Teatr-e Shahr",
+                "target": "Meydan-e Enghelab-e Eslami",
+                "metadata": {
+                    "line": "4",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Meydan-e Enghelab-e Eslami",
+                "target": "Towhid",
+                "metadata": {
+                    "line": "4",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Towhid",
+                "target": "Doctor Habibollah",
+                "metadata": {
+                    "line": "4",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Doctor Habibollah",
+                "target": "Ostad Moein",
+                "metadata": {
+                    "line": "4",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Ostad Moein",
+                "target": "Meydan-e Azadi",
+                "metadata": {
+                    "line": "4",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Meydan-e Azadi",
+                "target": "Bimeh",
+                "metadata": {
+                    "line": "4",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Bimeh",
+                "target": "Shahrak-e Ekbatan",
+                "metadata": {
+                    "line": "4",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahrak-e Ekbatan",
+                "target": "Eram-e Sabz",
+                "metadata": {
+                    "line": "4",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Eram-e Sabz",
+                "target": "Allameh Ja'fari",
+                "metadata": {
+                    "line": "4",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Mehrabad Airport Terminal 1&2",
+                "target": "Mehrabad Airport Terminal 4&6",
+                "metadata": {
+                    "line": "4",
+                    "branch": "Mehrabad Airport"
+                }
+            },
+            {
+                "source": "Sadeghiyeh",
+                "target": "Eram-e Sabz",
+                "metadata": {
+                    "line": "5",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Eram-e Sabz",
+                "target": "Varzeshgah-e Azadi",
+                "metadata": {
+                    "line": "5",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Varzeshgah-e Azadi",
+                "target": "Chitgar",
+                "metadata": {
+                    "line": "5",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Chitgar",
+                "target": "Iran Khodro",
+                "metadata": {
+                    "line": "5",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Iran Khodro",
+                "target": "Vardavard",
+                "metadata": {
+                    "line": "5",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Vardavard",
+                "target": "Garmdareh",
+                "metadata": {
+                    "line": "5",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Garmdareh",
+                "target": "Atmosphere",
+                "metadata": {
+                    "line": "5",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Atmosphere",
+                "target": "Karaj",
+                "metadata": {
+                    "line": "5",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Karaj",
+                "target": "Mohammadshahr",
+                "metadata": {
+                    "line": "5",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Mohammadshahr",
+                "target": "Golshahr",
+                "metadata": {
+                    "line": "5",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Golshahr",
+                "target": "Shahid Fakhrizadeh",
+                "metadata": {
+                    "line": "5",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahid Fakhrizadeh",
+                "target": "Shahid Sepahbod Qasem Soleimani",
+                "metadata": {
+                    "line": "5",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shohada-ye Dowlat Abad",
+                "target": "Kiyan Shahr",
+                "metadata": {
+                    "line": "6",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Kiyan Shahr",
+                "target": "Be'sat",
+                "metadata": {
+                    "line": "6",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Be'sat",
+                "target": "Shahid Rezaei",
+                "metadata": {
+                    "line": "6",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahid Rezaei",
+                "target": "Amirkabir",
+                "metadata": {
+                    "line": "6",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Amirkabir",
+                "target": "Meydan-e Shohada",
+                "metadata": {
+                    "line": "6",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Meydan-e Shohada",
+                "target": "Imam Hussein",
+                "metadata": {
+                    "line": "6",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Imam Hussein",
+                "target": "Bahar-e Shiraz",
+                "metadata": {
+                    "line": "6",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Bahar-e Shiraz",
+                "target": "Shohada-ye Haftom-e Tir",
+                "metadata": {
+                    "line": "6",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shohada-ye Haftom-e Tir",
+                "target": "Meydan-e Hazrat Vali Asr",
+                "metadata": {
+                    "line": "6",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Meydan-e Hazrat Vali Asr",
+                "target": "Bustan-e Laleh",
+                "metadata": {
+                    "line": "6",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Bustan-e Laleh",
+                "target": "Karegar",
+                "metadata": {
+                    "line": "6",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Karegar",
+                "target": "Daneshgah-e Tarbiat Modarres",
+                "metadata": {
+                    "line": "6",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Daneshgah-e Tarbiat Modarres",
+                "target": "Shahrak-e Azmayesh",
+                "metadata": {
+                    "line": "6",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahrak-e Azmayesh",
+                "target": "Marzdaran",
+                "metadata": {
+                    "line": "6",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Marzdaran",
+                "target": "Yadegar-e Imam",
+                "metadata": {
+                    "line": "6",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Yadegar-e Imam",
+                "target": "Shahid Ashrafi Esfahani",
+                "metadata": {
+                    "line": "6",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahid Ashrafi Esfahani",
+                "target": "Shahid Sattari",
+                "metadata": {
+                    "line": "6",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahid Sattari",
+                "target": "Ayatollah Kashani",
+                "metadata": {
+                    "line": "6",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Ayatollah Kashani",
+                "target": "Shahr-e Ziba",
+                "metadata": {
+                    "line": "6",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahr-e Ziba",
+                "target": "Shahran",
+                "metadata": {
+                    "line": "6",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahran",
+                "target": "Shohada-ye Kan",
+                "metadata": {
+                    "line": "6",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shohada-ye Kan",
+                "target": "Kouhsar",
+                "metadata": {
+                    "line": "6",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Basij",
+                "target": "Ahang",
+                "metadata": {
+                    "line": "7",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Ahang",
+                "target": "Chehel Tan-e Doulab",
+                "metadata": {
+                    "line": "7",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Chehel Tan-e Doulab",
+                "target": "Meydan-e Ghiyam",
+                "metadata": {
+                    "line": "7",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Meydan-e Ghiyam",
+                "target": "Mowlavi",
+                "metadata": {
+                    "line": "7",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Mowlavi",
+                "target": "Helal Ahmar",
+                "metadata": {
+                    "line": "7",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Helal Ahmar",
+                "target": "Beryanak",
+                "metadata": {
+                    "line": "7",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Beryanak",
+                "target": "Komeyl",
+                "metadata": {
+                    "line": "7",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Komeyl",
+                "target": "Roudaki",
+                "metadata": {
+                    "line": "7",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Roudaki",
+                "target": "Modafean-e Salamat",
+                "metadata": {
+                    "line": "7",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Modafean-e Salamat",
+                "target": "Boostan-e Goftegou",
+                "metadata": {
+                    "line": "7",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Boostan-e Goftegou",
+                "target": "Milad Tower",
+                "metadata": {
+                    "line": "7",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Milad Tower",
+                "target": "Meydan-e San'at",
+                "metadata": {
+                    "line": "7",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Meydan-e San'at",
+                "target": "Shahid Dadman",
+                "metadata": {
+                    "line": "7",
+                    "branch": "main"
+                }
+            },
+            {
+                "source": "Shahid Dadman",
+                "target": "Meydan-e Ketab",
+                "metadata": {
+                    "line": "7",
+                    "branch": "main"
+                }
+            }
+        ],
+        "metadata": {
+            "lines": {
+                "1": {
+                    "label": "Line 1",
+                    "color": "#d40000",
+                    "persianName": "خط ۱",
+                    "wikidataID": "Q20110118",
+                    "osmRelationID": "7735256",
+                    "gkgID": "/g/11b6pr7b1y",
+                    "logoURL": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Tehran_Metro_Line_1.png",
+                    "state": "in use"
+                },
+                "2": {
+                    "label": "Line 2",
+                    "color": "#003380",
+                    "persianName": "خط ۲",
+                    "wikidataID": "Q20110119",
+                    "osmRelationID": "7832325",
+                    "gkgID": "/g/11b6pl7rzc",
+                    "logoURL": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Tehran_Metro_Line_2.png",
+                    "state": "in use"
+                },
+                "3": {
+                    "label": "Line 3",
+                    "color": "#00aad4",
+                    "persianName": "خط ۳",
+                    "wikidataID": "Q20110120",
+                    "osmRelationID": "7770934",
+                    "gkgID": "/g/11b6prwzs_",
+                    "logoURL": "https://upload.wikimedia.org/wikipedia/commons/6/67/Tehran_Metro_Line_3.png",
+                    "state": "in use"
+                },
+                "4": {
+                    "label": "Line 4",
+                    "color": "#eebb00",
+                    "persianName": "خط ۴",
+                    "wikidataID": "Q20110121",
+                    "osmRelationID": "7705669",
+                    "gkgID": "/g/11b6ppr4xs",
+                    "logoURL": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Tehran_Metro_Line_4.svg",
+                    "state": "in use"
+                },
+                "5": {
+                    "label": "Line 5",
+                    "color": "#008033",
+                    "persianName": "خط ۵",
+                    "wikidataID": "Q20110122",
+                    "osmRelationID": "7735262",
+                    "gkgID": "/g/11b6pr97ck",
+                    "logoURL": "https://upload.wikimedia.org/wikipedia/commons/3/38/Tehran_Metro_Line_5.svg",
+                    "state": "in use"
+                },
+                "6": {
+                    "label": "Line 6",
+                    "color": "#ed71a7",
+                    "persianName": "خط ۶",
+                    "wikidataID": "Q20110123",
+                    "osmRelationID": "9468298",
+                    "gkgID": "/g/11b6ppdfww",
+                    "logoURL": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Tehran_Metro_Line_6.svg",
+                    "state": "in use"
+                },
+                "7": {
+                    "label": "Line 7",
+                    "color": "#aa00d4",
+                    "persianName": "خط ۷",
+                    "wikidataID": "Q20110124",
+                    "osmRelationID": "7705644",
+                    "gkgID": "/g/11b6prh04l",
+                    "logoURL": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Tehran_Metro_Line_7.svg",
+                    "state": "in use"
+                }
+            }
+        }
+    }
+}
