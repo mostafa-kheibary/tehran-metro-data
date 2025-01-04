@@ -64,8 +64,19 @@ Example:
 }
 ```
 
+## Contribution Guide
+
+We welcome contributions to this project! To contribute, please follow these steps:
+
+1. Open an issue describing the changes or additions you want to make.
+2. Wait for the repository owner to review and accept your issue. If the issue requires significant implementation time, please ensure it is approved before starting.
+3. Once approved, create a new branch from the `master` branch and commit your changes to this branch.
+4. Submit a pull request (PR) from your branch to the `master` branch. If your changes require testing, create your PR to the `develop` branch instead.
+
+**Important:** Please adhere to this workflow; otherwise, we may have to close PRs that do not follow these guidelines.
+
 ## License
 
 The data in this repository is licensed under the [Open Data Commons License](https://opendatacommons.org/licenses/). Please refer to the license file for more details on the terms and conditions of using the data.
 
-If you have any questions or suggestions regarding the data or this repository, feel free to open an issue or contact me
+If you have any questions or suggestions regarding the data or this repository, feel free to open an issue or contact me.
