@@ -136,10 +136,12 @@
 			<div class="dialog-body">
 				<p><strong>نام:</strong> <span id="nodeName"></span></p>
 				<p><strong>خط:</strong> <span id="nodeLines"></span></p>
+
 				<p>
 					<strong>آدرس:</strong>
 					<span class="no-select" id="nodeAddress"></span>
 				</p>
+				<p id="nodeEmojis"></p>
 			</div>
 		</div>
 
@@ -298,10 +300,28 @@
 				const nodeNameElement = document.getElementById("nodeName");
 				const nodeAddressElement = document.getElementById("nodeAddress");
 				const nodeLinesElement = document.getElementById("nodeLines");
+				const nodeEmojisElement = document.getElementById("nodeEmojis");
 				const closeButton = document.getElementById("closeDialogBtn");
 
+				const hasWC = node.data.wc || false;
+				const WcEmoji = hasWC ? ' 🚾' : '';
+
+				const hasFastfood = node.data.fastFood || false;
+				const FastfoodEmoji = hasFastfood ? ' 🍔' : '';
+
+				const hasGroceryStore = node.data.groceryStore || false;
+				const GroceryStoreEmoji = hasGroceryStore ? ' 🛒' : '';
+
+				const hasatm = node.data.atm || false;
+				const atmEmoji = hasatm ? ' 🏧' : '';
+
+				const hasCoffeeShop = node.data.coffeeShop || false;
+				const CoffeeShopEmoji = hasCoffeeShop ? ' ☕' : '';
+
+
 				nodeNameElement.textContent =
-					node.data.translations.fa || node.data.name;
+					(node.data.translations.fa || node.data.name || '') ;
+
 				nodeLinesElement.innerHTML = node.data.lines
 					.map(
 						(line, i) =>
@@ -311,6 +331,8 @@
 				nodeAddressElement.innerHTML = node.data.address
 					? `${node.data.address}`
 					: `به زودی ...`;
+
+				nodeEmojisElement.innerHTML = `${WcEmoji} ${FastfoodEmoji} ${GroceryStoreEmoji} ${atmEmoji} ${CoffeeShopEmoji}`;
 				nodeAddressElement.style.fontSize = "13px";
 
 				dialog.style.display = "block";
