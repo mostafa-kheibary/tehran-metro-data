@@ -1238,7 +1238,7 @@
 		"atm": false,
 		"relations": ["Shahid Kolahdooz", "Nobard"]
 	},
-	"Nobard": {
+	"Nabard": {
 		"name": "Nabard",
 		"translations": { "fa": "نبرد" },
 		"lines": [4],
@@ -1249,9 +1249,9 @@
 		"disabled": false,
 		"wc": false,
 		"coffeeShop": false,
-		"groceryStore": false,
-		"fastFood": false,
-		"atm": false,
+		"groceryStore": true,
+		"fastFood": true,
+		"atm": true,
 		"relations": ["Niroohavaii", "Piroozi"]
 	},
 	"Piroozi": {
