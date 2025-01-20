@@ -1236,7 +1236,7 @@
 		"groceryStore": false,
 		"fastFood": false,
 		"atm": false,
-		"relations": ["Shahid Kolahdooz", "Nobard"]
+		"relations": ["Shahid Kolahdooz", "Nabard"]
 	},
 	"Nabard": {
 		"name": "Nabard",
@@ -1268,7 +1268,7 @@
 		"groceryStore": false,
 		"fastFood": false,
 		"atm": false,
-		"relations": ["Nobard", "Ebn-e Sina"]
+		"relations": ["Nabard", "Ebn-e Sina"]
 	},
 	"Ebn-e Sina": {
 		"name": "Ebn-e Sina",
