@@ -671,7 +671,7 @@
 		"coffeeShop": false,
 		"groceryStore": false,
 		"fastFood": false,
-		"atm": false,
+		"atm": true,
 		"relations": [
 			"Imam Hussein",
 			"Meydan-e Shohada",
