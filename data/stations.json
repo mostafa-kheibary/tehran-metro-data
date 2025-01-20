@@ -569,7 +569,7 @@
 		"wc": false,
 		"coffeeShop": false,
 		"groceryStore": false,
-		"fastFood": false,
+		"fastFood": true,
 		"atm": false,
 		"relations": ["Daneshgah-e Elm va Sanat", "Janbazan"]
 	},
