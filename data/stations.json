@@ -412,9 +412,9 @@
 		"disabled": false,
 		"wc": false,
 		"coffeeShop": false,
-		"groceryStore": false,
-		"fastFood": false,
-		"atm": false,
+		"groceryStore": true,
+		"fastFood": true,
+		"atm": true,
 		"relations": [
 			"Palayeshgah",
 			"Namayeshgah-e Shahr-e Aftab",
