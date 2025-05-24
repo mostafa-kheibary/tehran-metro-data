@@ -13,7 +13,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Gheytariyeh"]
     },
@@ -31,7 +31,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": true,
         "relations": ["Tajrish", "Shahid Sadr"]
     },
@@ -49,7 +49,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": true,
         "relations": ["Gheytariyeh", "Qolhak"]
     },
@@ -67,7 +67,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Shahid Sadr", "Doctor Shariati"]
     },
@@ -85,7 +85,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": false,
         "relations": ["Qolhak", "Mirdamad"]
     },
@@ -103,7 +103,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Doctor Shariati", "Shahid Haghani"]
     },
@@ -121,7 +121,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Mirdamad", "Shahid Hemmat"]
     },
@@ -139,7 +139,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Shahid Haghani", "Mosalla-ye Imam Khomeini"]
     },
@@ -157,7 +157,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Shahid Hemmat", "Shahid Beheshti"]
     },
@@ -175,14 +175,9 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": false,
-        "relations": [
-            "Mosalla-ye Imam Khomeini",
-            "Sohrevardi",
-            "Mirza-ye Shirazi",
-            "Shahid Mofattah"
-        ]
+        "relations": ["Mosalla-ye Imam Khomeini", "Sohrevardi", "Mirza-ye Shirazi", "Shahid Mofattah"]
     },
     "Shahid Mofattah": {
         "name": "Shahid Mofattah",
@@ -198,7 +193,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": true,
         "relations": ["Shahid Beheshti", "Shohada-ye Haftom-e Tir"]
     },
@@ -216,7 +211,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Shohada-ye Haftom-e Tir", "Darvazeh Dolat"]
     },
@@ -234,14 +229,9 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
-        "relations": [
-            "Ayatollah Taleghani",
-            "Ferdowsi",
-            "Darvazeh Shemiran",
-            "Sa'adi"
-        ]
+        "relations": ["Ayatollah Taleghani", "Ferdowsi", "Darvazeh Shemiran", "Sa'adi"]
     },
     "Sa'adi": {
         "name": "Sa'adi",
@@ -275,7 +265,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": false,
         "relations": ["Sa'adi", "Hasan Abad", "Mellat", "Panzdah-e Khordad"]
     },
@@ -311,7 +301,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Panzdah-e Khordad", "Meydan-e Mohammadiyeh"]
     },
@@ -329,7 +319,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": true,
         "relations": ["Khayyam", "Mahdiyeh", "Mowlavi", "Shoush"]
     },
@@ -347,7 +337,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": true,
         "relations": ["Meydan-e Mohammadiyeh", "Payaneh Jonoub(Jonoub Terminal)"]
     },
@@ -365,7 +355,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Shoush", "Shahid Bokharaei"]
     },
@@ -383,7 +373,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": true,
         "relations": ["Payaneh Jonoub(Jonoub Terminal)", "Aliabad"]
     },
@@ -401,7 +391,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": true,
         "relations": ["Shahid Bokharaei", "Javanmard-e Ghassab"]
     },
@@ -419,7 +409,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": true,
         "relations": ["Aliabad", "Shahr-e Rey"]
     },
@@ -437,7 +427,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": true,
         "relations": ["Javanmard-e Ghassab", "Palayeshgah"]
     },
@@ -447,7 +437,7 @@
         "lines": [1],
         "colors": ["#E0001F"],
         "disabled": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Shahr-e Rey", "Shahed - BagherShahr"]
     },
@@ -465,13 +455,9 @@
         "groceryStore": true,
         "fastFood": true,
         "atm": true,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": true,
-        "relations": [
-            "Palayeshgah",
-            "Namayeshgah-e Shahr-e Aftab",
-            "Holy Shrine of Imam Khomeini"
-        ]
+        "relations": ["Palayeshgah", "Namayeshgah-e Shahr-e Aftab", "Holy Shrine of Imam Khomeini"]
     },
     "Namayeshgah-e Shahr-e Aftab": {
         "name": "Namayeshgah-e Shahr-e Aftab",
@@ -487,7 +473,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Shahed - BagherShahr", "Vavan"]
     },
@@ -497,7 +483,7 @@
         "lines": [1],
         "colors": ["#E0001F"],
         "disabled": true,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Namayeshgah-e Shahr-e Aftab", "Emam Khomeini Airport"]
     },
@@ -507,7 +493,7 @@
         "lines": [1],
         "colors": ["#E0001F"],
         "disabled": false,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": false,
         "relations": ["Vavan", "Shahr-e Parand"]
     },
@@ -517,7 +503,7 @@
         "lines": [1],
         "colors": ["#E0001F"],
         "disabled": true,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": false,
         "relations": ["Emam Khomeini Airport"]
     },
@@ -535,7 +521,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Shahed - BagherShahr", "Kahrizak"]
     },
@@ -553,7 +539,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": true,
         "relations": ["Holy Shrine of Imam Khomeini"]
     },
@@ -607,7 +593,7 @@
         "groceryStore": true,
         "fastFood": false,
         "atm": false,
-        "elevator": true,
+        "elevator": false,
         "bicycleParking": true,
         "relations": ["Tehranpars", "Daneshgah-e Elm va Sanat"]
     },
@@ -715,7 +701,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": true,
         "relations": ["Sabalan", "Imam Hussein"]
     },
@@ -733,14 +719,9 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": false,
-        "relations": [
-            "Shahid Madani",
-            "Sarbaz",
-            "Meydan-e Shohada",
-            "Darvazeh Shemiran"
-        ]
+        "relations": ["Shahid Madani", "Sarbaz", "Meydan-e Shohada", "Darvazeh Shemiran"]
     },
     "Darvazeh Shemiran": {
         "name": "Darvazeh Shemiran",
@@ -756,14 +737,9 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": true,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
-        "relations": [
-            "Imam Hussein",
-            "Meydan-e Shohada",
-            "Darvazeh Dolat",
-            "Baharistan"
-        ]
+        "relations": ["Imam Hussein", "Meydan-e Shohada", "Darvazeh Dolat", "Baharistan"]
     },
     "Baharistan": {
         "name": "Baharistan",
@@ -779,7 +755,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Darvazeh Shemiran", "Mellat"]
     },
@@ -797,7 +773,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Baharistan", "Imam Khomeini"]
     },
@@ -851,7 +827,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": true,
         "relations": ["Daneshgah-e Imam Ali", "Shahid Navab-e Safavi"]
     },
@@ -869,7 +845,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": true,
         "relations": ["Meydan-e Horr", "Towhid", "Roudaki", "Shademan"]
     },
@@ -887,14 +863,9 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": true,
-        "relations": [
-            "Shahid Navab-e Safavi",
-            "Towhid",
-            "Doctor Habibollah",
-            "Daneshgah-e Sharif"
-        ]
+        "relations": ["Shahid Navab-e Safavi", "Towhid", "Doctor Habibollah", "Daneshgah-e Sharif"]
     },
     "Daneshgah-e Sharif": {
         "name": "Daneshgah-e Sharif",
@@ -928,7 +899,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Daneshgah-e Sharif", "Tehran (Sadeghiyeh)"]
     },
@@ -964,7 +935,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Shahid Mahallati"]
     },
@@ -982,7 +953,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": true,
         "relations": ["Qa'em", "Aghdasiyeh"]
     },
@@ -992,7 +963,7 @@
         "lines": [3],
         "colors": ["#67C5F5"],
         "disabled": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Shahid Mahallati", "Nobonyad"]
     },
@@ -1010,7 +981,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Aghdasiyeh", "Hoseinabad"]
     },
@@ -1028,7 +999,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Nobonyad", "Meydan-e Heravi"]
     },
@@ -1046,7 +1017,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Hoseinabad", "Shahid Zeynoddin"]
     },
@@ -1064,7 +1035,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Meydan-e Heravi", "Khajeh Abdollah-e Ansari"]
     },
@@ -1082,7 +1053,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": true,
         "relations": ["Shahid Zeynoddin", "Shahid Sayyad Shirazi"]
     },
@@ -1100,7 +1071,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Khajeh Abdollah-e Ansari", "Shahid Ghodousi"]
     },
@@ -1110,7 +1081,7 @@
         "lines": [3],
         "longitude": "51.4445",
         "latitude": "35.731553",
-        "address": "\tخیابان شریعتی - تقاطع خیابان شهید بهشتی",
+        "address": "خیابان شریعتی - تقاطع خیابان شهید بهشتی",
         "colors": ["#67C5F5"],
         "disabled": false,
         "wc": false,
@@ -1118,7 +1089,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Shahid Sayyad Shirazi", "Sohrevardi"]
     },
@@ -1136,7 +1107,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": true,
         "relations": ["Shahid Ghodousi", "Shahid Beheshti"]
     },
@@ -1154,7 +1125,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Shahid Beheshti", "Meydan-e Jahad"]
     },
@@ -1172,7 +1143,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Mirza-ye Shirazi", "Meydan-e Hazrat Vali Asr"]
     },
@@ -1192,12 +1163,7 @@
         "atm": true,
         "elevator": false,
         "bicycleParking": true,
-        "relations": [
-            "Meydan-e Hazrat Vali Asr",
-            "Ferdowsi",
-            "Meydan-e Enghelab-e Eslami",
-            "Moniriyeh"
-        ]
+        "relations": ["Meydan-e Hazrat Vali Asr", "Ferdowsi", "Meydan-e Enghelab-e Eslami", "Moniriyeh"]
     },
     "Moniriyeh": {
         "name": "Moniriyeh",
@@ -1223,14 +1189,9 @@
         "lines": [3, 7],
         "colors": ["#67C5F5", "#7F0B74"],
         "disabled": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
-        "relations": [
-            "Moniriyeh",
-            "Meydan-e Mohammadiyeh",
-            "Helal Ahmar",
-            "Rahahan"
-        ]
+        "relations": ["Moniriyeh", "Meydan-e Mohammadiyeh", "Helal Ahmar", "Rahahan"]
     },
     "Rahahan": {
         "name": "Rahahan",
@@ -1246,7 +1207,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Mahdiyeh", "Javadiyeh"]
     },
@@ -1264,7 +1225,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Rahahan", "Zamzam"]
     },
@@ -1282,7 +1243,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": true,
         "relations": ["Javadiyeh", "Shahrak-e Shariaty"]
     },
@@ -1300,7 +1261,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": true,
         "relations": ["Zamzam", "Abdol Abad"]
     },
@@ -1318,7 +1279,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Shahrak-e Shariaty", "Nemat Abad"]
     },
@@ -1336,7 +1297,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Abdol Abad", "Azadegan"]
     },
@@ -1354,7 +1315,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": true,
         "relations": ["Nemat Abad"]
     },
@@ -1372,7 +1333,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": true,
         "relations": ["Niroohavaii"]
     },
@@ -1390,7 +1351,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Shahid Kolahdooz", "Nabard"]
     },
@@ -1408,7 +1369,7 @@
         "groceryStore": true,
         "fastFood": true,
         "atm": true,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": true,
         "relations": ["Niroohavaii", "Piroozi"]
     },
@@ -1436,7 +1397,7 @@
         "lines": [4],
         "longitude": "51.4579435",
         "latitude": "35.6907927",
-        "address": "خیابان پیروزی ،چهارصد دستگاه( تقاطع اتوبان امام علی (ع) و پیروزی)",
+        "address": "خیابان پیروزی ,چهارصد دستگاه( تقاطع اتوبان امام علی (ع) و پیروزی)",
         "colors": ["#F8E100"],
         "disabled": false,
         "wc": false,
@@ -1444,7 +1405,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": true,
         "relations": ["Piroozi", "Meydan-e Shohada"]
     },
@@ -1498,14 +1459,9 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": true,
-        "relations": [
-            "Meydan-e Enghelab-e Eslami",
-            "Modafean-e Salamat",
-            "Shahid Navab-e Safavi",
-            "Shademan"
-        ]
+        "relations": ["Meydan-e Enghelab-e Eslami", "Modafean-e Salamat", "Shahid Navab-e Safavi", "Shademan"]
     },
     "Doctor Habibollah": {
         "name": "Doctor Habibollah",
@@ -1521,7 +1477,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Shademan", "Ostad Mo'in"]
     },
@@ -1539,7 +1495,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Doctor Habibollah", "Meydan-e Azadi"]
     },
@@ -1577,11 +1533,7 @@
         "atm": true,
         "elevator": false,
         "bicycleParking": false,
-        "relations": [
-            "Meydan-e Azadi",
-            "Shahrak-e Ekbatan",
-            "Mehrabad Airport Terminal 1&2"
-        ]
+        "relations": ["Meydan-e Azadi", "Shahrak-e Ekbatan", "Mehrabad Airport Terminal 1&2"]
     },
     "Mehrabad Airport Terminal 1&2": {
         "name": "Mehrabad Airport Terminal 1&2",
@@ -1597,7 +1549,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Bimeh", "Mehrabad Airport Terminal 4&6"]
     },
@@ -1615,7 +1567,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Mehrabad Airport Terminal 1&2"]
     },
@@ -1633,7 +1585,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": true,
         "relations": ["Bimeh", "Eram-e Sabz"]
     },
@@ -1647,7 +1599,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": true,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Eram-e Sabz"]
     },
@@ -1657,7 +1609,7 @@
         "lines": [4],
         "colors": ["#F8E100"],
         "disabled": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Ayatollah Kashani"]
     },
@@ -1675,14 +1627,9 @@
         "groceryStore": true,
         "fastFood": true,
         "atm": true,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": false,
-        "relations": [
-            "Tehran (Sadeghiyeh)",
-            "Varzeshgah-e Azadi",
-            "Allameh Jafari",
-            "Shahrak-e Ekbatan"
-        ]
+        "relations": ["Tehran (Sadeghiyeh)", "Varzeshgah-e Azadi", "Allameh Jafari", "Shahrak-e Ekbatan"]
     },
     "Varzeshgah-e Azadi": {
         "name": "Varzeshgah-e Azadi",
@@ -1698,7 +1645,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": true,
         "relations": ["Eram-e Sabz", "Chitgar"]
     },
@@ -1716,7 +1663,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": true,
         "relations": ["Varzeshgah-e Azadi", "Iran Khodro"]
     },
@@ -1734,7 +1681,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": true,
         "relations": ["Chitgar", "Vardavard"]
     },
@@ -1752,7 +1699,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": true,
         "relations": ["Iran Khodro", "Garmdareh"]
     },
@@ -1770,7 +1717,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": true,
         "relations": ["Vardavard", "Atmosphere"]
     },
@@ -1788,7 +1735,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Garmdareh", "Karaj"]
     },
@@ -1806,7 +1753,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": true,
         "relations": ["Atmosphere", "Mohammadshahr"]
     },
@@ -1824,7 +1771,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": true,
         "relations": ["Karaj", "Golshahr"]
     },
@@ -1852,7 +1799,7 @@
         "lines": [5],
         "colors": ["#007E46"],
         "disabled": true,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Golshahr"]
     },
@@ -1862,7 +1809,7 @@
         "lines": [6],
         "colors": ["#EF639F"],
         "disabled": true,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Meydan-e Hazrat-e Abdol Azim"]
     },
@@ -1872,7 +1819,7 @@
         "lines": [6],
         "colors": ["#EF639F"],
         "disabled": true,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Haram-e Hazrat-e Abdol Azim", "Ebn-e Babviyeh"]
     },
@@ -1882,7 +1829,7 @@
         "lines": [6],
         "colors": ["#EF639F"],
         "disabled": true,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Meydan-e Hazrat-e Abdol Azim", "Cheshmeh Ali"]
     },
@@ -1892,7 +1839,7 @@
         "lines": [6],
         "colors": ["#EF639F"],
         "disabled": true,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Ebn-e Babviyeh", "Shohada-ye Dowlat Abad"]
     },
@@ -1902,7 +1849,7 @@
         "lines": [6],
         "colors": ["#EF639F"],
         "disabled": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": true,
         "relations": ["Cheshmeh Ali", "Kiyan Shahr"]
     },
@@ -1912,7 +1859,7 @@
         "lines": [6],
         "colors": ["#EF639F"],
         "disabled": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": true,
         "relations": ["Shohada-ye Dowlat Abad", "Be'sat"]
     },
@@ -1922,7 +1869,7 @@
         "lines": [6],
         "colors": ["#EF639F"],
         "disabled": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Kiyan Shahr", "Shahid Rezaei"]
     },
@@ -1932,7 +1879,7 @@
         "lines": [6],
         "colors": ["#EF639F"],
         "disabled": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Be'sat", "Meydan-e Khorasan"]
     },
@@ -1942,7 +1889,7 @@
         "lines": [6],
         "colors": ["#EF639F"],
         "disabled": true,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Shahid Rezaei", "Shohada-ye Hefdah-e Shahrivar"]
     },
@@ -1952,14 +1899,9 @@
         "lines": [6, 7],
         "colors": ["#EF639F", "#7F0B74"],
         "disabled": true,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
-        "relations": [
-            "Meydan-e Khorasan",
-            "Amirkabir",
-            "Chehel Tan-e Doulab",
-            "Meydan-e Ghiyam"
-        ]
+        "relations": ["Meydan-e Khorasan", "Amirkabir", "Chehel Tan-e Doulab", "Meydan-e Giyam"]
     },
     "Amirkabir": {
         "name": "Amirkabir",
@@ -1967,7 +1909,7 @@
         "lines": [6],
         "colors": ["#EF639F"],
         "disabled": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Shohada-ye Hefdah-e Shahrivar", "Meydan-e Shohada"]
     },
@@ -1985,14 +1927,9 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": true,
-        "relations": [
-            "Amirkabir",
-            "Ebn-e Sina",
-            "Darvazeh Shemiran",
-            "Imam Hussein"
-        ]
+        "relations": ["Amirkabir", "Ebn-e Sina", "Darvazeh Shemiran", "Imam Hussein"]
     },
     "Sarbaz": {
         "name": "Sarbaz",
@@ -2000,7 +1937,7 @@
         "lines": [6],
         "colors": ["#EF639F"],
         "disabled": true,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Imam Hussein", "Bahar Shiraz (Khanevadeh Hospital)"]
     },
@@ -2009,8 +1946,8 @@
         "translations": { "fa": "بهار شیراز (بیمارستان خانواده)" },
         "lines": [6],
         "colors": ["#EF639F"],
-        "disabled": true,
-        "elevator": null,
+        "disabled": false,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Sarbaz", "Shohada-ye Haftom-e Tir"]
     },
@@ -2028,14 +1965,9 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": false,
-        "relations": [
-            "Bahar Shiraz (Khanevadeh Hospital)",
-            "Shahid Nejatollahi",
-            "Shahid Mofattah",
-            "Ayatollah Taleghani"
-        ]
+        "relations": ["Bahar Shiraz (Khanevadeh Hospital)", "Shahid Nejatollahi", "Shahid Mofattah", "Ayatollah Taleghani"]
     },
     "Shahid Nejatollahi": {
         "name": "Shahid Nejatollahi",
@@ -2043,7 +1975,7 @@
         "lines": [6],
         "colors": ["#EF639F"],
         "disabled": true,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Shohada-ye Haftom-e Tir", "Meydan-e Hazrat Vali Asr"]
     },
@@ -2061,14 +1993,9 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": false,
-        "relations": [
-            "Shahid Nejatollahi",
-            "Meydan-e Jahad",
-            "Teatr-e Shahr",
-            "Bustan-e Laleh"
-        ]
+        "relations": ["Shahid Nejatollahi", "Meydan-e Jahad", "Teatr-e Shahr", "Bustan-e Laleh"]
     },
     "Bustan-e Laleh": {
         "name": "Bustan-e Laleh",
@@ -2076,7 +2003,7 @@
         "lines": [6],
         "colors": ["#EF639F"],
         "disabled": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Meydan-e Hazrat Vali Asr", "Karagar"]
     },
@@ -2086,7 +2013,7 @@
         "lines": [6],
         "colors": ["#EF639F"],
         "disabled": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Bustan-e Laleh", "Daneshgah-e Tarbiat Modarres"]
     },
@@ -2096,14 +2023,9 @@
         "lines": [6, 7],
         "colors": ["#EF639F", "#7F0B74"],
         "disabled": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
-        "relations": [
-            "Karagar",
-            "Boostan-e Goftegou",
-            "Modafean-e Salamat",
-            "Shahrak-e Azmayesh"
-        ]
+        "relations": ["Karagar", "Boostan-e Goftegou", "Modafean-e Salamat", "Shahrak-e Azmayesh"]
     },
     "Shahrak-e Azmayesh": {
         "name": "Shahrak-e Azmayesh",
@@ -2111,7 +2033,7 @@
         "lines": [6],
         "colors": ["#EF639F"],
         "disabled": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Daneshgah-e Tarbiat Modarres", "Marzdaran"]
     },
@@ -2121,7 +2043,7 @@
         "lines": [6],
         "colors": ["#EF639F"],
         "disabled": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Shahrak-e Azmayesh", "Yadegar-e Imam"]
     },
@@ -2131,7 +2053,7 @@
         "lines": [6],
         "colors": ["#EF639F"],
         "disabled": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Marzdaran", "Shahid Ashrafi Esfahani"]
     },
@@ -2141,7 +2063,7 @@
         "lines": [6],
         "colors": ["#EF639F"],
         "disabled": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Yadegar-e Imam", "Shahid Sattari"]
     },
@@ -2151,7 +2073,7 @@
         "lines": [6],
         "colors": ["#EF639F"],
         "disabled": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Shahid Ashrafi Esfahani", "Ayatollah Kashani"]
     },
@@ -2161,14 +2083,9 @@
         "lines": [6],
         "colors": ["#EF639F"],
         "disabled": true,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
-        "relations": [
-            "Shahid Sattari",
-            "Shahr-e Ziba",
-            "Allameh Jafari",
-            "Chaharbagh"
-        ]
+        "relations": ["Shahid Sattari", "Shahr-e Ziba", "Allameh Jafari", "Chaharbagh"]
     },
     "Shahr-e Ziba": {
         "name": "Shahr-e Ziba",
@@ -2176,7 +2093,7 @@
         "lines": [6],
         "colors": ["#EF639F"],
         "disabled": true,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": false,
         "relations": ["Ayatollah Kashani", "Shahran"]
     },
@@ -2186,7 +2103,7 @@
         "lines": [6],
         "colors": ["#EF639F"],
         "disabled": true,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": false,
         "relations": ["Shahr-e Ziba", "Shohada-ye Kan"]
     },
@@ -2196,7 +2113,7 @@
         "lines": [6],
         "colors": ["#EF639F"],
         "disabled": true,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Shahran", "Kouhsar"]
     },
@@ -2206,7 +2123,7 @@
         "lines": [6],
         "colors": ["#EF639F"],
         "disabled": true,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": false,
         "relations": ["Shohada-ye Kan"]
     },
@@ -2216,7 +2133,7 @@
         "lines": [7],
         "colors": ["#7F0B74"],
         "disabled": true,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Basij"]
     },
@@ -2234,7 +2151,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": true,
         "relations": ["Varzeshgah-e Takhti", "Ahang"]
     },
@@ -2244,7 +2161,7 @@
         "lines": [7],
         "colors": ["#7F0B74"],
         "disabled": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Basij", "Chehel Tan-e Doulab"]
     },
@@ -2254,7 +2171,7 @@
         "lines": [7],
         "colors": ["#7F0B74"],
         "disabled": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Ahang", "Shohada-ye Hefdah-e Shahrivar"]
     },
@@ -2264,7 +2181,7 @@
         "lines": [7],
         "colors": ["#7F0B74"],
         "disabled": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Shohada-ye Hefdah-e Shahrivar", "Mowlavi"]
     },
@@ -2284,7 +2201,7 @@
         "lines": [7],
         "colors": ["#7F0B74"],
         "disabled": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Mahdiyeh", "Beryanak"]
     },
@@ -2294,7 +2211,7 @@
         "lines": [7],
         "colors": ["#7F0B74"],
         "disabled": false,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": false,
         "relations": ["Helal Ahmar", "Kamil"]
     },
@@ -2312,7 +2229,7 @@
         "groceryStore": false,
         "fastFood": false,
         "atm": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": true,
         "relations": ["Beryanak", "Roudaki"]
     },
@@ -2322,7 +2239,7 @@
         "lines": [7],
         "colors": ["#7F0B74"],
         "disabled": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Kamil", "Shahid Navab-e Safavi"]
     },
@@ -2332,7 +2249,7 @@
         "lines": [7],
         "colors": ["#7F0B74"],
         "disabled": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Towhid", "Daneshgah-e Tarbiat Modarres"]
     },
@@ -2342,7 +2259,7 @@
         "lines": [7],
         "colors": ["#7F0B74"],
         "disabled": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Daneshgah-e Tarbiat Modarres", "Milad Tower"]
     },
@@ -2352,7 +2269,7 @@
         "lines": [7],
         "colors": ["#7F0B74"],
         "disabled": false,
-        "elevator": null,
+        "elevator": true,
         "bicycleParking": false,
         "relations": ["Boostan-e Goftegou", "Meydan-e San'at"]
     },
@@ -2390,7 +2307,7 @@
         "lines": [7],
         "colors": ["#7F0B74"],
         "disabled": false,
-        "elevator": null,
+        "elevator": false,
         "bicycleParking": false,
         "relations": ["Shahid Dadman"]
     }
