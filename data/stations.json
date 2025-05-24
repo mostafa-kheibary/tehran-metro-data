@@ -630,10 +630,10 @@
    "elevator": false,
    "bicycleParking": true,
    "waterCooler": null,
-   "relations": ["Tehranpars", "Daneshgah-e Elm va Sanat"]
+   "relations": ["Tehranpars", "Daneshgah-e Elm-o San'at"]
 },
-"Daneshgah-e Elm va Sanat": {
-   "name": "Daneshgah-e Elm va Sanat",
+"Daneshgah-e Elm-o San'at": {
+   "name": "Daneshgah-e Elm-o San'at",
    "translations": { "fa": "دانشگاه علم و صنعت" },
    "lines": [2],
    "longitude": "51.504786",
@@ -668,7 +668,7 @@
    "elevator": false,
    "bicycleParking": true,
    "waterCooler": null,
-   "relations": ["Daneshgah-e Elm va Sanat", "Janbazan"]
+   "relations": ["Daneshgah-e Elm-o San'at", "Janbazan"]
 },
 "Janbazan": {
    "name": "Janbazan",
@@ -744,10 +744,10 @@
    "elevator": true,
    "bicycleParking": true,
    "waterCooler": null,
-   "relations": ["Sabalan", "Imam Hussein"]
+   "relations": ["Sabalan", "Imam Hossein"]
 },
-"Imam Hussein": {
-   "name": "Imam Hussein",
+"Imam Hossein": {
+   "name": "Imam Hossein",
    "translations": { "fa": "امام حسین" },
    "lines": [2, 6],
    "longitude": "51.445702",
@@ -782,7 +782,7 @@
    "elevator": false,
    "bicycleParking": false,
    "waterCooler": null,
-   "relations": ["Imam Hussein", "Meydan-e Shohada", "Darvazeh Dolat", "Baharistan"]
+   "relations": ["Imam Hossein", "Meydan-e Shohada", "Darvazeh Dolat", "Baharistan"]
 },
 "Baharistan": {
    "name": "Baharistan",
@@ -1040,10 +1040,10 @@
    "elevator": false,
    "bicycleParking": false,
    "waterCooler": null,
-   "relations": ["Aghdasiyeh", "Hoseinabad"]
+   "relations": ["Aghdasiyeh", "Hossein Abad"]
 },
-"Hoseinabad": {
-   "name": "Hoseinabad",
+"Hossein Abad": {
+   "name": "Hossein Abad",
    "translations": { "fa": "حسین‌آباد" },
    "lines": [3],
    "longitude": "51.47852",
@@ -1078,7 +1078,7 @@
    "elevator": false,
    "bicycleParking": false,
    "waterCooler": null,
-   "relations": ["Hoseinabad", "Shahid Zeynoddin"]
+   "relations": ["Hossein Abad", "Shahid Zeynoddin"]
 },
 "Shahid Zeynoddin": {
    "name": "Shahid Zeynoddin",
@@ -1412,10 +1412,10 @@
    "elevator": true,
    "bicycleParking": true,
    "waterCooler": null,
-   "relations": ["Niroohavaii"]
+   "relations": ["Nirou Havaei"]
 },
-"Niroohavaii": {
-   "name": "Niroohavaii",
+"Nirou Havaei": {
+   "name": "Nirou Havaei",
    "translations": { "fa": "نیروهوایی" },
    "lines": [4],
    "longitude": "51.4886226",
@@ -1450,7 +1450,7 @@
    "elevator": false,
    "bicycleParking": true,
    "waterCooler": null,
-   "relations": ["Niroohavaii", "Piroozi"]
+   "relations": ["Nirou Havaei", "Piroozi"]
 },
 "Piroozi": {
    "name": "Piroozi",
@@ -2015,7 +2015,7 @@
    "elevator": false,
    "bicycleParking": false,
    "waterCooler": null,
-   "relations": ["Meydan-e Khorasan", "Amirkabir", "Chehel Tan-e Doulab", "Meydan-e Giyam"]
+   "relations": ["Meydan-e Khorasan", "Amirkabir", "Chehel Tan-e Doulab", "Meydan-e Ghiyam"]
 },
 "Amirkabir": {
    "name": "Amirkabir",
@@ -2045,7 +2045,7 @@
    "elevator": false,
    "bicycleParking": true,
    "waterCooler": null,
-   "relations": ["Amirkabir", "Ebn-e Sina", "Darvazeh Shemiran", "Imam Hussein"]
+   "relations": ["Amirkabir", "Ebn-e Sina", "Darvazeh Shemiran", "Imam Hossein"]
 },
 "Sarbaz": {
    "name": "Sarbaz",
@@ -2056,7 +2056,7 @@
    "elevator": false,
    "bicycleParking": false,
    "waterCooler": null,
-   "relations": ["Imam Hussein", "Bahar Shiraz (Khanevadeh Hospital)"]
+   "relations": ["Imam Hossein", "Bahar Shiraz (Khanevadeh Hospital)"]
 },
 "Bahar Shiraz (Khanevadeh Hospital)": {
    "name": "Bahar Shiraz (Khanevadeh Hospital)",
@@ -2313,8 +2313,8 @@
    "waterCooler": null,
    "relations": ["Ahang", "Shohada-ye Hefdah-e Shahrivar"]
 },
-"Meydan-e Giyam": {
-   "name": "Meydan-e Giyam",
+"Meydan-e Ghiyam": {
+   "name": "Meydan-e Ghiyam",
    "translations": { "fa": "میدان قیام" },
    "lines": [7],
    "colors": ["#7F0B74"],
@@ -2333,7 +2333,7 @@
    "elevator": false,
    "bicycleParking": false,
    "waterCooler": null,
-   "relations": ["Meydan-e Giyam", "Meydan-e Mohammadiyeh"]
+   "relations": ["Meydan-e Ghiyam", "Meydan-e Mohammadiyeh"]
 },
 "Helal Ahmar": {
    "name": "Helal Ahmar",
