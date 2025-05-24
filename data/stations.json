@@ -2449,5 +2449,15 @@
    "bicycleParking": false,
    "waterCooler": null,
    "relations": ["Meydan-e San'at", "Meydan-e Ketab"]
-}
+},
+"Meydan-e Ketab": {
+        "name": "Meydan-e Ketab",
+        "translations": { "fa": "میدان کتاب" },
+        "lines": [7],
+        "colors": ["#7F0B74"],
+        "disabled": false,
+        "elevator": false,
+        "bicycleParking": false,
+        "waterCooler": null,
+        "relations": ["Shahid Dadman"]}
 }
