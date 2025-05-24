@@ -506,7 +506,7 @@
 		"coffeeShop": false,
 		"groceryStore": false,
 		"fastFood": false,
-		"atm": false,
+		"atm": true,
 		"relations": ["Tehranpars"]
 	},
 	"Tehranpars": {
@@ -536,7 +536,7 @@
 		"disabled": false,
 		"wc": false,
 		"coffeeShop": false,
-		"groceryStore": false,
+		"groceryStore": true,
 		"fastFood": false,
 		"atm": false,
 		"relations": ["Tehranpars", "Daneshgah-e Elm va Sanat"]
@@ -585,7 +585,7 @@
 		"wc": false,
 		"coffeeShop": false,
 		"groceryStore": false,
-		"fastFood": false,
+		"fastFood": true,
 		"atm": false,
 		"relations": ["Sarsabz", "Fadak"]
 	},
@@ -602,7 +602,7 @@
 		"coffeeShop": false,
 		"groceryStore": false,
 		"fastFood": false,
-		"atm": false,
+		"atm": true,
 		"relations": ["Janbazan", "Sabalan"]
 	},
 	"Sabalan": {
@@ -839,8 +839,8 @@
 		"disabled": false,
 		"wc": true,
 		"coffeeShop": false,
-		"groceryStore": false,
-		"fastFood": false,
+		"groceryStore": true,
+		"fastFood": true,
 		"atm": false,
 		"relations": ["Tarasht", "Eram-e Sabz"]
 	},
@@ -1057,7 +1057,7 @@
 		"coffeeShop": true,
 		"groceryStore": true,
 		"fastFood": true,
-		"atm": false,
+		"atm": true,
 		"relations": [
 			"Meydan-e Hazrat Vali Asr",
 			"Ferdowsi",
