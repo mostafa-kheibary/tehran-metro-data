@@ -33,7 +33,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Gheytariyeh"
         ]
@@ -72,7 +73,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Tajrish",
             "Shahid Sadr"
@@ -112,10 +114,11 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Gheytariyeh",
-            "Shahid Sadr"
+            "Shahid Sadr" 
         ]
     },
     "Qolhak": {
@@ -152,7 +155,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Shahid Sadr",
             "Doctor Shariati"
@@ -192,7 +196,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Qolhak",
             "Mirdamad"
@@ -232,7 +237,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Doctor Shariati",
             "Shahid Haghani"
@@ -272,7 +278,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Mirdamad",
             "Shahid Hemmat"
@@ -312,7 +319,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Shahid Haghani",
             "Mosalla-ye Imam Khomeini"
@@ -352,7 +360,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Shahid Hemmat",
             "Shahid Beheshti"
@@ -394,7 +403,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": true,
+        "freeWifi": true,
+        "prayerRoom": true,
         "relations": [
             "Mosalla-ye Imam Khomeini",
             "Sohrevardi",
@@ -436,7 +446,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Shahid Beheshti",
             "Shohada-ye Haftom-e Tir"
@@ -476,7 +487,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Shohada-ye Haftom-e Tir",
             "Darvazeh Dolat"
@@ -518,7 +530,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": true,
+        "freeWifi": true,
+        "prayerRoom": true,
         "relations": [
             "Ayatollah Taleghani",
             "Ferdowsi",
@@ -560,7 +573,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Darvazeh Dolat",
             "Imam Khomeini"
@@ -602,7 +616,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": true,
+        "freeWifi": true,
+        "prayerRoom": true,
         "relations": [
             "Sa'adi",
             "Hasan Abad",
@@ -644,7 +659,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Imam Khomeini",
             "Khayyam"
@@ -684,7 +700,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Panzdah-e Khordad",
             "Meydan-e Mohammadiyeh"
@@ -726,7 +743,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Khayyam",
             "Mahdiyeh",
@@ -768,7 +786,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Meydan-e Mohammadiyeh",
             "Payaneh Jonoub(Jonoub Terminal)"
@@ -808,7 +827,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Shoush",
             "Shahid Bokharaei"
@@ -848,7 +868,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Payaneh Jonoub(Jonoub Terminal)",
             "Aliabad"
@@ -888,7 +909,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Shahid Bokharaei",
             "Javanmard-e Ghassab"
@@ -928,7 +950,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Aliabad",
             "Shahr-e Rey"
@@ -968,7 +991,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Javanmard-e Ghassab",
             "Palayeshgah"
@@ -1000,7 +1024,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Shahr-e Rey",
             "Shahed - BagherShahr"
@@ -1040,7 +1065,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Palayeshgah",
             "Namayeshgah-e Shahr-e Aftab",
@@ -1081,7 +1107,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shahed - BagherShahr",
             "Vavan"
@@ -1113,7 +1140,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Namayeshgah-e Shahr-e Aftab",
             "Emam Khomeini Airport"
@@ -1145,7 +1173,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Vavan",
             "Shahr-e Parand"
@@ -1177,7 +1206,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Emam Khomeini Airport"
         ]
@@ -1216,7 +1246,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Shahed - BagherShahr",
             "Kahrizak"
@@ -1256,7 +1287,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Holy Shrine of Imam Khomeini"
         ]
@@ -1295,7 +1327,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Tehranpars"
         ]
@@ -1334,7 +1367,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Farhangsara",
             "Shahid Bagheri"
@@ -1374,7 +1408,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Tehranpars",
             "Daneshgah-e Elm-o San'at"
@@ -1414,7 +1449,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shahid Bagheri",
             "Sarsabz"
@@ -1454,7 +1490,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Daneshgah-e Elm-o San'at",
             "Janbazan"
@@ -1494,7 +1531,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Sarsabz",
             "Fadak"
@@ -1534,7 +1572,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Janbazan",
             "Sabalan"
@@ -1574,7 +1613,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Fadak",
             "Shahid Madani"
@@ -1614,7 +1654,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Sabalan",
             "Imam Hossein"
@@ -1656,7 +1697,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shahid Madani",
             "Sarbaz",
@@ -1700,7 +1742,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Imam Hossein",
             "Meydan-e Shohada",
@@ -1742,7 +1785,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Darvazeh Shemiran",
             "Mellat"
@@ -1782,7 +1826,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Baharistan",
             "Imam Khomeini"
@@ -1822,7 +1867,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Imam Khomeini",
             "Daneshgah-e Imam Ali"
@@ -1862,7 +1908,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Hasan Abad",
             "Meydan-e Horr"
@@ -1902,7 +1949,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Daneshgah-e Imam Ali",
             "Shahid Navab-e Safavi"
@@ -1944,7 +1992,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Meydan-e Horr",
             "Towhid",
@@ -1988,7 +2037,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shahid Navab-e Safavi",
             "Towhid",
@@ -2030,7 +2080,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shademan",
             "Tarasht"
@@ -2070,7 +2121,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Daneshgah-e Sharif",
             "Tehran (Sadeghiyeh)"
@@ -2112,7 +2164,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Tarasht",
             "Eram-e Sabz"
@@ -2152,7 +2205,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shahid Mahallati"
         ]
@@ -2191,7 +2245,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Qa'em",
             "Aghdasiyeh"
@@ -2223,7 +2278,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shahid Mahallati",
             "Nobonyad"
@@ -2263,7 +2319,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Aghdasiyeh",
             "Hossein Abad"
@@ -2303,7 +2360,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Nobonyad",
             "Meydan-e Heravi"
@@ -2343,7 +2401,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Hossein Abad",
             "Shahid Zeynoddin"
@@ -2383,7 +2442,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Meydan-e Heravi",
             "Khajeh Abdollah-e Ansari"
@@ -2423,7 +2483,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shahid Zeynoddin",
             "Shahid Sayyad Shirazi"
@@ -2463,7 +2524,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Khajeh Abdollah-e Ansari",
             "Shahid Ghodousi"
@@ -2503,7 +2565,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shahid Sayyad Shirazi",
             "Sohrevardi"
@@ -2543,7 +2606,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shahid Ghodousi",
             "Shahid Beheshti"
@@ -2583,7 +2647,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shahid Beheshti",
             "Meydan-e Jahad"
@@ -2623,7 +2688,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Mirza-ye Shirazi",
             "Meydan-e Hazrat Vali Asr"
@@ -2665,7 +2731,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Meydan-e Hazrat Vali Asr",
             "Ferdowsi",
@@ -2707,7 +2774,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Teatr-e Shahr",
             "Mahdiyeh"
@@ -2741,7 +2809,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Moniriyeh",
             "Meydan-e Mohammadiyeh",
@@ -2783,7 +2852,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Mahdiyeh",
             "Javadiyeh"
@@ -2823,7 +2893,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Rahahan",
             "Zamzam"
@@ -2863,7 +2934,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Javadiyeh",
             "Shahrak-e Shariaty"
@@ -2903,7 +2975,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Zamzam",
             "Abdol Abad"
@@ -2943,7 +3016,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shahrak-e Shariaty",
             "Nemat Abad"
@@ -2983,7 +3057,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Abdol Abad",
             "Azadegan"
@@ -3023,7 +3098,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Nemat Abad"
         ]
@@ -3062,7 +3138,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Nirou Havaei"
         ]
@@ -3101,7 +3178,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shahid Kolahdooz",
             "Nabard"
@@ -3141,7 +3219,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Nirou Havaei",
             "Piroozi"
@@ -3181,7 +3260,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Nabard",
             "Ebn-e Sina"
@@ -3221,7 +3301,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Piroozi",
             "Meydan-e Shohada"
@@ -3261,7 +3342,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Darvazeh Dolat",
             "Teatr-e Shahr"
@@ -3301,7 +3383,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Teatr-e Shahr",
             "Towhid"
@@ -3343,7 +3426,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Meydan-e Enghelab-e Eslami",
             "Modafean-e Salamat",
@@ -3385,7 +3469,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shademan",
             "Ostad Mo'in"
@@ -3425,7 +3510,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Doctor Habibollah",
             "Meydan-e Azadi"
@@ -3465,7 +3551,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Ostad Mo'in",
             "Bimeh"
@@ -3505,7 +3592,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Meydan-e Azadi",
             "Shahrak-e Ekbatan",
@@ -3546,7 +3634,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Bimeh",
             "Mehrabad Airport Terminal 4&6"
@@ -3586,7 +3675,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Mehrabad Airport Terminal 1&2"
         ]
@@ -3625,7 +3715,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Bimeh",
             "Eram-e Sabz"
@@ -3661,7 +3752,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Eram-e Sabz"
         ]
@@ -3692,7 +3784,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Ayatollah Kashani"
         ]
@@ -3733,7 +3826,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Tehran (Sadeghiyeh)",
             "Varzeshgah-e Azadi",
@@ -3775,7 +3869,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Eram-e Sabz",
             "Chitgar"
@@ -3815,7 +3910,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Varzeshgah-e Azadi",
             "Iran Khodro"
@@ -3855,7 +3951,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Chitgar",
             "Vardavard"
@@ -3895,7 +3992,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Iran Khodro",
             "Garmdareh"
@@ -3935,7 +4033,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Vardavard",
             "Atmosphere"
@@ -3975,7 +4074,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Garmdareh",
             "Karaj"
@@ -4015,7 +4115,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Atmosphere",
             "Mohammadshahr"
@@ -4055,7 +4156,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Karaj",
             "Golshahr"
@@ -4095,7 +4197,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Mohammadshahr",
             "Shahid Sepahbod Qasem Soleimani"
@@ -4127,7 +4230,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Golshahr"
         ]
@@ -4158,7 +4262,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Meydan-e Hazrat-e Abdol Azim"
         ]
@@ -4189,7 +4294,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Haram-e Hazrat-e Abdol Azim",
             "Ebn-e Babviyeh"
@@ -4221,7 +4327,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Meydan-e Hazrat-e Abdol Azim",
             "Cheshmeh Ali"
@@ -4253,7 +4360,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Ebn-e Babviyeh",
             "Shohada-ye Dowlat Abad"
@@ -4285,7 +4393,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Cheshmeh Ali",
             "Kiyan Shahr"
@@ -4317,7 +4426,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shohada-ye Dowlat Abad",
             "Be'sat"
@@ -4349,7 +4459,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Kiyan Shahr",
             "Shahid Rezaei"
@@ -4381,7 +4492,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Be'sat",
             "Meydan-e Khorasan"
@@ -4413,7 +4525,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shahid Rezaei",
             "Shohada-ye Hefdah-e Shahrivar"
@@ -4447,7 +4560,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Meydan-e Khorasan",
             "Amirkabir",
@@ -4481,7 +4595,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shohada-ye Hefdah-e Shahrivar",
             "Meydan-e Shohada"
@@ -4523,7 +4638,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Amirkabir",
             "Ebn-e Sina",
@@ -4557,7 +4673,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Imam Hossein",
             "Bahar Shiraz (Khanevadeh Hospital)"
@@ -4589,7 +4706,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Sarbaz",
             "Shohada-ye Haftom-e Tir"
@@ -4631,7 +4749,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Bahar Shiraz (Khanevadeh Hospital)",
             "Shahid Nejatollahi",
@@ -4665,7 +4784,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shohada-ye Haftom-e Tir",
             "Meydan-e Hazrat Vali Asr"
@@ -4707,7 +4827,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Shahid Nejatollahi",
             "Meydan-e Jahad",
@@ -4741,7 +4862,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Meydan-e Hazrat Vali Asr",
             "Karagar"
@@ -4773,7 +4895,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Bustan-e Laleh",
             "Daneshgah-e Tarbiat Modarres"
@@ -4807,7 +4930,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Karagar",
             "Boostan-e Goftegou",
@@ -4841,7 +4965,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Daneshgah-e Tarbiat Modarres",
             "Marzdaran"
@@ -4873,7 +4998,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shahrak-e Azmayesh",
             "Yadegar-e Imam"
@@ -4905,7 +5031,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Marzdaran",
             "Shahid Ashrafi Esfahani"
@@ -4937,7 +5064,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Yadegar-e Imam",
             "Shahid Sattari"
@@ -4969,7 +5097,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shahid Ashrafi Esfahani",
             "Ayatollah Kashani"
@@ -5001,7 +5130,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shahid Sattari",
             "Shahr-e Ziba",
@@ -5035,7 +5165,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Ayatollah Kashani",
             "Shahran"
@@ -5067,7 +5198,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shahr-e Ziba",
             "Shohada-ye Kan"
@@ -5099,7 +5231,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shahran",
             "Kouhsar"
@@ -5131,7 +5264,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shohada-ye Kan"
         ]
@@ -5162,7 +5296,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Basij"
         ]
@@ -5201,7 +5336,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Varzeshgah-e Takhti",
             "Ahang"
@@ -5233,7 +5369,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Basij",
             "Chehel Tan-e Doulab"
@@ -5265,7 +5402,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Ahang",
             "Shohada-ye Hefdah-e Shahrivar"
@@ -5297,7 +5435,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shohada-ye Hefdah-e Shahrivar",
             "Mowlavi"
@@ -5329,7 +5468,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Meydan-e Giyam",
             "Meydan-e Mohammadiyeh"
@@ -5361,7 +5501,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Mahdiyeh",
             "Beryanak"
@@ -5393,7 +5534,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Helal Ahmar",
             "Komeyl"
@@ -5433,7 +5575,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Beryanak",
             "Roudaki"
@@ -5465,7 +5608,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Komeyl",
             "Shahid Navab-e Safavi"
@@ -5497,7 +5641,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Towhid",
             "Daneshgah-e Tarbiat Modarres"
@@ -5529,7 +5674,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Daneshgah-e Tarbiat Modarres",
             "Milad Tower"
@@ -5561,7 +5707,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Boostan-e Goftegou",
             "Meydan-e San'at"
@@ -5601,7 +5748,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": true,
         "relations": [
             "Milad Tower",
             "Shahid Dadman"
@@ -5633,7 +5781,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Meydan-e San'at",
             "Meydan-e Ketab"
@@ -5665,7 +5814,8 @@
         "trashCan": true,
         "smoking": false,
         "petsAllowed": false,
-        "has_free_wifi": false,
+        "freeWifi": false,
+        "prayerRoom": null,
         "relations": [
             "Shahid Dadman"
         ]
