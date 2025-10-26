@@ -3799,11 +3799,11 @@
         "petsAllowed": false,
         "freeWifi": false,
         "prayerRoom": true,
-        "relations": ["Bahar Shiraz (Khanevadeh Hospital)","Shahid Nejatollahi","Shahid Mofattah","Ayatollah Taleghani"]
+        "relations": ["Bahar Shiraz (Khanevadeh Hospital)","Maryam-e Moghaddas","Shahid Mofattah","Ayatollah Taleghani"]
     },
-    "Shahid Nejatollahi": {
-        "name": "Shahid Nejatollahi",
-        "translations": {"fa": "شهید نجات اللهی"},
+    "Maryam-e Moghaddas": {
+        "name": "Maryam-e Moghaddas",
+        "translations": {"fa": "مریم مقدس (س)"},
         "lines": [6],
         "longitude": "51.4164",
         "latitude": "35.7133",
@@ -3864,7 +3864,7 @@
         "petsAllowed": false,
         "freeWifi": false,
         "prayerRoom": true,
-        "relations": ["Shahid Nejatollahi","Meydan-e Jahad","Teatr-e Shahr","Bustan-e Laleh"]
+        "relations": ["Maryam-e Moghaddas","Meydan-e Jahad","Teatr-e Shahr","Bustan-e Laleh"]
     },
     "Bustan-e Laleh": {
         "name": "Bustan-e Laleh",
