@@ -93,7 +93,7 @@
         "petsAllowed": false,
         "freeWifi": false,
         "prayerRoom": true,
-        "relations": ["Gheytariyeh","Shahid Sadr" ] 
+        "relations": ["Gheytariyeh", "Qolhak"]
     },
     "Qolhak": {
         "name": "Qolhak",
