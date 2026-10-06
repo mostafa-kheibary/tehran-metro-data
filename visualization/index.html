@@ -2,352 +2,2364 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tehran Metro · 3D Network Graph</title>
+		<meta
+			name="description"
+			content="Interactive 3D visualization of the Tehran Metro network: geography, lines, hubs and routes."
+		/>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Vazirmatn:wght@300;400;500;700&display=swap"
 			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=location_on"
 		/>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap"
-      rel="stylesheet"
-    />
-		<title>Tehran metro station graph</title>
 		<style>
+			:root {
+				--bg: #0d1117;
+				--ink: #e9edf7;
+				--muted: #8a93a8;
+				--faint: #5b6478;
+				--accent: #6ee7ff;
+				--glass: rgba(22, 27, 36, 0.86);
+				--glass-strong: rgba(22, 27, 36, 0.97);
+				--stroke: rgba(255, 255, 255, 0.09);
+				--r: 16px;
+				--font: "Space Grotesk", "Vazirmatn", system-ui, sans-serif;
+			}
+			:lang(fa) {
+				--font: "Vazirmatn", "Space Grotesk", system-ui, sans-serif;
+			}
 			* {
 				margin: 0;
 				padding: 0;
 				box-sizing: border-box;
 			}
-			.body {
-				background-color: rgb(243, 243, 243);
-				width: 100%;
+			html,
+			body {
+				height: 100%;
+				background: var(--bg);
+				color: var(--ink);
+				font-family: var(--font);
+				overflow: hidden;
+				-webkit-font-smoothing: antialiased;
+				text-rendering: optimizeLegibility;
 			}
-			.graph_wrapper {
-				width: 100%;
-				height: 100vh;
-			}
-			svg {
-				width: 100%;
-				height: 99%;
-			}
-			.dialog {
-				display: none;
+			canvas#gl {
 				position: fixed;
-				direction: rtl;
-				bottom: 20px;
-				right: 20px;
-				width: 250px;
-				background: rgba(255, 255, 255, 0.1);
-				border: 2px solid rgba(0, 0, 0, 0.062);
-				border-radius: 8px;
-				padding: 10px;
-				z-index: 1;
-				backdrop-filter: blur(10px);
-				-webkit-backdrop-filter: blur(10px);
-				transition: all 0.3s ease;
+				inset: 0;
+				width: 100%;
+				height: 100%;
+				display: block;
+				outline: none;
+				touch-action: none;
 			}
-			.dialog-header {
+			.vignette {
+				position: fixed;
+				inset: 0;
+				pointer-events: none;
+				background: linear-gradient(to bottom, rgba(13, 17, 23, 0.7), transparent 18%, transparent 82%, rgba(13, 17, 23, 0.7));
+			}
+			.glass {
+				background: var(--glass);
+				border: 1px solid var(--stroke);
+				border-radius: var(--r);
+				backdrop-filter: blur(20px) saturate(150%);
+				-webkit-backdrop-filter: blur(20px) saturate(150%);
+
+			}
+			button {
+				font: inherit;
+				color: inherit;
+				background: none;
+				border: 0;
+				cursor: pointer;
+			}
+			button:focus-visible,
+			input:focus-visible {
+				outline: 2px solid var(--accent);
+				outline-offset: 2px;
+			}
+			.num {
+				font-variant-numeric: tabular-nums;
+			}
+
+			/* ---------- brand ---------- */
+			.brand {
+				position: fixed;
+				inset-block-start: 22px;
+				inset-inline-start: 24px;
+				z-index: 5;
+				max-width: 420px;
+				pointer-events: none;
+			}
+			.brand .eyebrow {
+				font-size: 11px;
+				letter-spacing: 0.22em;
+				text-transform: uppercase;
+				color: var(--accent);
+				display: flex;
+				align-items: center;
+				gap: 10px;
+			}
+			:lang(fa) .brand .eyebrow {
+				letter-spacing: 0.04em;
+			}
+			.brand .eyebrow i {
+				width: 28px;
+				height: 1px;
+				background: linear-gradient(90deg, var(--accent), transparent);
+			}
+			.brand h1 {
+				font-size: clamp(28px, 4vw, 44px);
+				font-weight: 600;
+				letter-spacing: -0.03em;
+				line-height: 1.05;
+				margin-top: 8px;
+				color: #fff;
+			}
+			.stats {
+				display: flex;
+				gap: 26px;
+				margin-top: 18px;
+			}
+			.stat b {
+				display: block;
+				font-size: 26px;
+				font-weight: 500;
+				letter-spacing: -0.02em;
+			}
+			.stat b small {
+				font-size: 12px;
+				color: var(--faint);
+				font-weight: 400;
+				margin-inline-start: 4px;
+			}
+			.stat span {
+				font-size: 11px;
+				color: var(--muted);
+				text-transform: uppercase;
+				letter-spacing: 0.12em;
+			}
+			:lang(fa) .stat span {
+				letter-spacing: 0;
+				text-transform: none;
+				font-size: 12px;
+			}
+
+			/* ---------- top right ---------- */
+			.tools {
+				position: fixed;
+				inset-block-start: 22px;
+				inset-inline-end: 24px;
+				z-index: 6;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
+				gap: 10px;
+				width: min(320px, calc(100vw - 48px));
+			}
+			.search {
+				position: relative;
+				width: 100%;
+			}
+			.search input {
+				width: 100%;
+				height: 44px;
+				border-radius: 14px;
+				padding: 0 16px 0 42px;
+				font: inherit;
+				font-size: 14px;
+				color: var(--ink);
+				background: var(--glass);
+				border: 1px solid var(--stroke);
+				backdrop-filter: blur(20px);
+				-webkit-backdrop-filter: blur(20px);
+				transition:
+					border-color 0.2s,
+					background 0.2s;
+			}
+			:lang(fa) .search input {
+				padding: 0 42px 0 16px;
+			}
+			.search input::placeholder {
+				color: var(--faint);
+			}
+			.search input:focus {
+				border-color: rgba(110, 231, 255, 0.5);
+				background: var(--glass-strong);
+				outline: none;
+			}
+			.search svg {
+				position: absolute;
+				inset-inline-start: 14px;
+				top: 13px;
+				width: 18px;
+				height: 18px;
+				stroke: var(--muted);
+				fill: none;
+				stroke-width: 2;
+				pointer-events: none;
+			}
+			.results {
+				position: absolute;
+				inset-inline: 0;
+				top: 50px;
+				background: var(--glass-strong);
+				border: 1px solid var(--stroke);
+				border-radius: 14px;
+				overflow: hidden;
+				backdrop-filter: blur(24px);
+				-webkit-backdrop-filter: blur(24px);
+				display: none;
+			}
+			.results.open {
+				display: block;
+			}
+			.results button {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				padding: 10px 14px;
+				text-align: start;
+				font-size: 14px;
+			}
+			.results button small {
+				color: var(--faint);
+				margin-inline-start: auto;
+				font-size: 12px;
+			}
+			.results button.on,
+			.results button:hover {
+				background: rgba(255, 255, 255, 0.07);
+			}
+			.toggles {
+				display: flex;
+				gap: 6px;
+				padding: 4px;
+			}
+			.toggles button {
+				height: 32px;
+				padding: 0 12px;
+				border-radius: 11px;
+				font-size: 12px;
+				color: var(--muted);
+				transition:
+					background 0.2s,
+					color 0.2s;
+			}
+			.toggles button[aria-pressed="true"] {
+				background: rgba(110, 231, 255, 0.14);
+				color: var(--accent);
+			}
+			.toggles button:hover {
+				color: var(--ink);
+			}
+
+			/* ---------- side panel ---------- */
+			#side {
+				position: fixed;
+				inset-inline-end: 24px;
+				inset-block-start: 130px;
+				z-index: 5;
+				width: min(340px, calc(100vw - 48px));
+				max-height: calc(100vh - 150px - 90px);
+				overflow: auto;
+				padding: 20px;
+				scrollbar-width: thin;
+				scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+				animation: rise 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+			}
+			@keyframes rise {
+				from {
+					opacity: 0;
+					transform: translateY(12px);
+				}
+			}
+			.h-eyebrow {
+				font-size: 11px;
+				text-transform: uppercase;
+				letter-spacing: 0.16em;
+				color: var(--muted);
+				margin-bottom: 14px;
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
-				font-weight: bold;
 			}
-			.dialog-body {
-				margin-top: 10px;
+			:lang(fa) .h-eyebrow {
+				letter-spacing: 0;
+				text-transform: none;
+				font-size: 12px;
 			}
-			button {
-				padding: 2px 6px;
-				border: 1px solid #cccccc00;
-				border-radius: 4px;
-				cursor: pointer;
-				background: rgba(0, 0, 0, 0);
-				color: rgb(227, 20, 20);
+			.hub {
+				display: grid;
+				grid-template-columns: 22px 1fr auto;
+				gap: 4px 10px;
+				align-items: center;
+				width: 100%;
+				text-align: start;
+				padding: 9px 8px;
+				border-radius: 10px;
+				transition: background 0.2s;
 			}
-			button:hover {
-				background-color: rgba(0, 0, 0, 0.2);
+			.hub:hover {
+				background: rgba(255, 255, 255, 0.06);
 			}
-			.no-select {
-				-webkit-user-select: none;
-				-moz-user-select: none;
-				-ms-user-select: none;
-				user-select: none;
-			}.search-box-container{
-				position: fixed;
-				direction: rtl;
+			.hub .rk {
+				color: var(--faint);
+				font-size: 12px;
+			}
+			.hub .nm {
+				font-size: 14px;
+				font-weight: 500;
+			}
+			.hub .bar {
+				grid-column: 2 / 4;
+				height: 3px;
+				border-radius: 3px;
+				background: rgba(255, 255, 255, 0.07);
+				overflow: hidden;
+			}
+			.hub .bar i {
+				display: block;
+				height: 100%;
+				border-radius: 3px;
+				background: var(--accent);
+				transform-origin: left;
+				animation: grow 1.2s 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+			}
+			:lang(fa) .hub .bar i {
+				transform-origin: right;
+			}
+			@keyframes grow {
+				from {
+					transform: scaleX(0);
+				}
+			}
+			.dots {
+				display: inline-flex;
+				gap: 3px;
+			}
+			.dot {
+				width: 8px;
+				height: 8px;
+				border-radius: 50%;
+							}
+			.facts {
+				margin-top: 16px;
+				padding-top: 14px;
+				border-top: 1px solid var(--stroke);
+				display: grid;
+				gap: 10px;
+				font-size: 13px;
+				color: var(--muted);
+			}
+			.facts b {
+				color: var(--ink);
+				font-weight: 500;
+			}
+			.st-head {
 				display: flex;
-				justify-content: center;
-				top: 5px;
-				width: 90%;
-				margin: 5%;
-				margin-top: 0;
-				height:  50px;
-				z-index: 1;
-			}.search-box{
-				width: 250px;
-				height:  35px;
-				padding: 10px;
-				margin-top: 0;
-				background: rgba(255, 255, 255, 0.1);
-				border: 2px solid rgba(0, 0, 0, 0.163);
-				backdrop-filter: blur(10px);
-				-webkit-backdrop-filter: blur(10px);
-				z-index: 1;
-				transition: all 0.3s ease;
-			}.search-item{
-				width: 250px;
-				height:  35px;
-				padding: 10px;
-				background: rgba(255, 255, 255, 0.675);
-				backdrop-filter: blur(10px);
-				-webkit-backdrop-filter: blur(10px);
-				z-index: 1;
-				transition: all 0.3s ease;
-			}.search-item:hover{
-				background: rgba(76, 76, 76, 0.675);
-				transition: all 0.5s ease;
+				justify-content: space-between;
+				gap: 10px;
 			}
-      .vazirmatn-normal {
-				font-family: "Vazirmatn", serif;
-				font-optical-sizing: auto;
-				font-weight:300;
-				font-style: normal;
+			.st-fa {
+				font-family: "Vazirmatn", sans-serif;
+				font-size: 26px;
+				font-weight: 700;
+				line-height: 1.25;
+			}
+			.st-en {
+				color: var(--muted);
+				font-size: 14px;
+				margin-top: 2px;
+			}
+			.x {
+				width: 30px;
+				height: 30px;
+				border-radius: 9px;
+				color: var(--muted);
+				flex: none;
+			}
+			.x:hover {
+				background: rgba(255, 255, 255, 0.08);
+				color: var(--ink);
+			}
+			.chips {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 6px;
+				margin-top: 14px;
+			}
+			.chip {
+				display: inline-flex;
+				align-items: center;
+				gap: 7px;
+				padding: 4px 10px 4px 5px;
+				border-radius: 99px;
+				font-size: 12px;
+				background: rgba(255, 255, 255, 0.06);
+				border: 1px solid var(--stroke);
+			}
+			.chip.plain {
+				padding: 4px 10px;
+			}
+			.chip.warn {
+				color: #ffb86b;
+				border-color: rgba(255, 184, 107, 0.35);
+				background: rgba(255, 184, 107, 0.08);
+			}
+			.ln {
+				display: inline-grid;
+				place-items: center;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				font-size: 11px;
+				font-weight: 700;
+				color: #fff;
+								background: var(--c);
+			}
+			.ln.dk {
+				color: #1b1500;
+				text-shadow: none;
+			}
+			.metrics {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 8px;
+				margin-top: 16px;
+			}
+			.metric {
+				padding: 12px;
+				border-radius: 12px;
+				background: rgba(255, 255, 255, 0.045);
+				border: 1px solid var(--stroke);
+			}
+			.metric b {
+				font-size: 22px;
+				font-weight: 500;
+				display: block;
+			}
+			.metric span {
+				font-size: 11px;
+				color: var(--muted);
+			}
+			.sec {
+				margin-top: 18px;
+			}
+			.sec h4 {
+				font-size: 11px;
+				font-weight: 500;
+				text-transform: uppercase;
+				letter-spacing: 0.14em;
+				color: var(--faint);
+				margin-bottom: 8px;
+			}
+			:lang(fa) .sec h4 {
+				letter-spacing: 0;
+				text-transform: none;
+				font-size: 12px;
+			}
+			.addr {
+				font-size: 13px;
+				color: var(--muted);
+				line-height: 1.7;
+				font-family: "Vazirmatn", sans-serif;
+				direction: rtl;
+				text-align: start;
+			}
+			.am {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 6px;
+			}
+			.am span {
+				font-size: 12px;
+				padding: 4px 9px;
+				border-radius: 9px;
+				background: rgba(255, 255, 255, 0.05);
+				color: var(--muted);
+			}
+			.nbs {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 6px;
+			}
+			.nbs button {
+				font-size: 12px;
+				padding: 6px 11px;
+				border-radius: 10px;
+				background: rgba(255, 255, 255, 0.06);
+				border: 1px solid var(--stroke);
+				transition: background 0.2s;
+			}
+			.nbs button:hover {
+				background: rgba(110, 231, 255, 0.14);
+			}
+			.cta {
+				margin-top: 18px;
+				width: 100%;
+				height: 42px;
+				border-radius: 12px;
+				font-size: 14px;
+				font-weight: 500;
+				color: #04202a;
+				background: var(--accent);
+								transition:
+					transform 0.2s,
+					filter 0.2s;
+			}
+			.cta:hover {
+				transform: translateY(-1px);
+				filter: brightness(1.08);
+			}
+			.cta.ghost {
+				background: rgba(255, 255, 255, 0.07);
+				color: var(--ink);
+				box-shadow: none;
+				border: 1px solid var(--stroke);
+			}
+			.route-sum {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 8px;
+				margin: 14px 0 4px;
+			}
+			.steps {
+				display: grid;
+				gap: 0;
+				margin-top: 14px;
+			}
+			.step {
+				display: grid;
+				grid-template-columns: 22px 1fr;
+				gap: 12px;
+				position: relative;
+				padding-bottom: 14px;
+				font-size: 13px;
+			}
+			.step::before {
+				content: "";
+				position: absolute;
+				inset-inline-start: 10px;
+				top: 22px;
+				bottom: 0;
+				width: 2px;
+				background: var(--c);
+				opacity: 0.55;
+			}
+			.step:last-child::before {
+				display: none;
+			}
+			.step small {
+				color: var(--muted);
+				display: block;
+				margin-top: 2px;
+			}
+			.algo {
+				font-size: 12px;
+				color: var(--muted);
+				margin-top: 6px;
+			}
+			.pick {
+				margin-top: 14px;
+				padding: 14px;
+				border-radius: 12px;
+				font-size: 13px;
+				color: var(--accent);
+				border: 1px dashed rgba(110, 231, 255, 0.4);
+				background: rgba(110, 231, 255, 0.06);
+				animation: pulse 1.6s ease-in-out infinite;
+			}
+			@keyframes pulse {
+				50% {
+					background: rgba(110, 231, 255, 0.13);
+				}
+			}
+
+			/* ---------- legend ---------- */
+			#legend {
+				position: fixed;
+				inset-inline-start: 24px;
+				inset-block-end: 24px;
+				z-index: 5;
+				padding: 14px;
+				width: 270px;
+			}
+			#legend .h-eyebrow {
+				margin: 0 4px 8px;
+			}
+			.lg {
+				display: grid;
+				grid-template-columns: 24px 1fr auto;
+				align-items: center;
+				gap: 2px 10px;
+				width: 100%;
+				text-align: start;
+				padding: 7px 6px;
+				border-radius: 10px;
+				transition:
+					background 0.2s,
+					opacity 0.3s;
+			}
+			.lg:hover {
+				background: rgba(255, 255, 255, 0.06);
+			}
+			.lg.on {
+				background: rgba(255, 255, 255, 0.1);
+			}
+			.lg.off {
+				opacity: 0.4;
+			}
+			.lg .t {
+				font-size: 13px;
+			}
+			.lg .v {
+				font-size: 11px;
+				color: var(--muted);
+			}
+			.lg .b {
+				grid-column: 2 / 4;
+				height: 3px;
+				border-radius: 3px;
+				background: rgba(255, 255, 255, 0.07);
+				overflow: hidden;
+			}
+			.lg .b i {
+				display: block;
+				height: 100%;
+				background: var(--c);
+								animation: grow 1.4s 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+				transform-origin: left;
+			}
+
+			/* ---------- modes ---------- */
+			#modes {
+				position: fixed;
+				inset-inline: 0;
+				margin-inline: auto;
+				width: fit-content;
+				inset-block-end: 24px;
+				z-index: 6;
+				display: flex;
+				padding: 5px;
+				gap: 2px;
+				border-radius: 18px;
+			}
+			#modes button {
+				position: relative;
+				z-index: 1;
+				padding: 10px 18px;
+				border-radius: 13px;
+				font-size: 13px;
+				font-weight: 500;
+				color: var(--muted);
+				display: flex;
+				align-items: center;
+				gap: 8px;
+				transition: color 0.25s;
+			}
+			#modes button[aria-pressed="true"] {
+				color: #04202a;
+			}
+			#modes svg {
+				width: 16px;
+				height: 16px;
+				stroke: currentColor;
+				fill: none;
+				stroke-width: 1.8;
+				stroke-linecap: round;
+				stroke-linejoin: round;
+			}
+			#pill {
+				position: absolute;
+				z-index: 0;
+				top: 5px;
+				bottom: 5px;
+				border-radius: 13px;
+				background: var(--accent);
+								transition:
+					left 0.5s cubic-bezier(0.3, 1.2, 0.4, 1),
+					width 0.5s cubic-bezier(0.3, 1.2, 0.4, 1);
+			}
+			#modeHint {
+				position: fixed;
+				inset-inline: 0;
+				text-align: center;
+				inset-block-end: 88px;
+				z-index: 4;
+				font-size: 12px;
+				color: var(--muted);
+				pointer-events: none;
+				transition: opacity 0.4s;
+			}
+
+			/* ---------- scene overlays ---------- */
+			#labels {
+				position: fixed;
+				inset: 0;
+				pointer-events: none;
+				overflow: hidden;
+				z-index: 2;
+			}
+			.lb {
+				position: absolute;
+				left: 0;
+				top: 0;
+				white-space: nowrap;
+				font-size: 11px;
+				font-weight: 500;
+				padding: 2px 7px;
+				border-radius: 7px;
+				color: #dfe7f8;
+				background: rgba(6, 9, 18, 0.55);
+				border: 1px solid rgba(255, 255, 255, 0.07);
+				backdrop-filter: blur(6px);
+				-webkit-backdrop-filter: blur(6px);
+				will-change: transform, opacity;
+				transition: opacity 0.25s;
+				font-family: "Vazirmatn", "Space Grotesk", sans-serif;
+				display: none;
+			}
+			.lb.hot {
+				color: #04202a;
+				background: #6ee7ff;
+				font-weight: 700;
+							}
+			#tip {
+				position: fixed;
+				z-index: 8;
+				pointer-events: none;
+				display: none;
+				padding: 8px 12px;
+				border-radius: 12px;
+				font-size: 13px;
+				background: var(--glass-strong);
+				border: 1px solid var(--stroke);
+				backdrop-filter: blur(16px);
+				-webkit-backdrop-filter: blur(16px);
+				transform: translate(14px, 14px);
+			}
+			#tip b {
+				font-family: "Vazirmatn", sans-serif;
+				font-weight: 700;
+			}
+			#tip small {
+				display: block;
+				color: var(--muted);
+				margin-top: 1px;
+			}
+			#loader {
+				position: fixed;
+				inset: 0;
+				z-index: 20;
+				display: grid;
+				place-items: center;
+				background: var(--bg);
+				transition:
+					opacity 1.1s ease,
+					visibility 1.1s;
+			}
+			#loader.done {
+				opacity: 0;
+				visibility: hidden;
+			}
+			#loader div {
+				text-align: center;
+				color: var(--muted);
+				font-size: 12px;
+				letter-spacing: 0.2em;
+				text-transform: uppercase;
+			}
+			#loader .bar {
+				width: 160px;
+				height: 2px;
+				margin: 16px auto 0;
+				background: rgba(255, 255, 255, 0.08);
+				overflow: hidden;
+				border-radius: 2px;
+			}
+			#loader .bar i {
+				display: block;
+				height: 100%;
+				width: 40%;
+				background: var(--accent);
+				animation: slide 1.1s ease-in-out infinite;
+			}
+			@keyframes slide {
+				from {
+					transform: translateX(-100%);
+				}
+				to {
+					transform: translateX(260%);
+				}
+			}
+			#fatal {
+				position: fixed;
+				inset: 0;
+				z-index: 30;
+				display: none;
+				place-items: center;
+				padding: 24px;
+				text-align: center;
+				color: var(--muted);
+			}
+
+			@media (max-width: 820px) {
+				.brand {
+					inset-inline-start: 16px;
+					inset-block-start: 16px;
+					max-width: 55vw;
+				}
+				.stats {
+					display: none;
+				}
+				.tools {
+					inset-inline-end: 16px;
+					inset-block-start: 16px;
+					width: min(240px, 52vw);
+				}
+				.toggles {
+					display: none;
+				}
+				#side {
+					inset-inline: 12px;
+					inset-block-start: auto;
+					inset-block-end: 84px;
+					width: auto;
+					max-height: 40vh;
+				}
+				#legend {
+					inset-inline-start: 12px;
+					inset-block-start: 88px;
+					inset-block-end: auto;
+					width: auto;
+					max-width: calc(100vw - 24px);
+					padding: 8px;
+					display: flex;
+					gap: 4px;
+					overflow-x: auto;
+				}
+				#legend .h-eyebrow,
+				#legend .lg .v,
+				#legend .lg .b,
+				#legend .lg .t {
+					display: none;
+				}
+				.lg {
+					grid-template-columns: auto;
+					padding: 5px;
+				}
+				#modes {
+					inset-block-end: 16px;
+				}
+				#modes button {
+					padding: 9px 12px;
+				}
+				#modeHint {
+					display: none;
+				}
+			}
+			@media (prefers-reduced-motion: reduce) {
+				* {
+					animation-duration: 0.01ms !important;
+					transition-duration: 0.01ms !important;
+				}
 			}
 		</style>
 	</head>
-	<body class="vazirmatn-normal">
-		<div class="graph_wrapper no-select" id="graph"></div>
-		<div class="search-box-container no-select flex" id="search-box">
-			<div id="searchDropdown" class="dropdown-content">
-				<input type="text" id="serach-input" class="search-box vazirmatn-normal"
-				onfocusout="closeSearch();"
-				onkeyup="searchStation()"
-				onfocus="closeDialog();searchStation()"
-				placeholder="نام ایستگاه را جستجو کنید ..."></div>
-			</div>
-		</div>
-		<div class="dialog" id="nodePropertiesDialog">
-			<div class="dialog-header">
-				<span id="dialogTitle">اطلاعات ایستگاه</span>
-				<button id="closeDialogBtn">X</button>
-			</div>
-			<div class="dialog-body">
-				<p><strong>نام:</strong> <span id="nodeName"></span></p>
-				<p><strong>خط:</strong> <span id="nodeLines"></span></p>
+	<body>
+		<canvas id="gl" tabindex="0" aria-label="3D Tehran metro network"></canvas>
+		<div class="vignette"></div>
+		<div id="labels"></div>
 
-				<p>
-					<strong>آدرس:</strong>
-					<span class="no-select" id="nodeAddress"></span>
-				</p>
-				<p id="nodeEmojis"></p>
+		<header class="brand">
+			<div class="eyebrow"><i></i><span data-t="eyebrow"></span></div>
+			<h1 data-t="title"></h1>
+			<div class="stats" id="stats"></div>
+		</header>
+
+		<div class="tools">
+			<div class="search">
+				<svg viewBox="0 0 24 24" stroke-linecap="round"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+				<input id="q" type="search" autocomplete="off" spellcheck="false" />
+				<div class="results" id="results" role="listbox"></div>
+			</div>
+			<div class="toggles glass" id="toggles">
+				<button data-tg="trains" aria-pressed="true"></button>
+				<button data-tg="labels" aria-pressed="true"></button>
+				<button data-tg="rotate" aria-pressed="true"></button>
+				<button data-tg="lang" aria-pressed="false">FA / EN</button>
 			</div>
 		</div>
 
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/vivagraphjs/0.12.0/vivagraph.min.js"
-			integrity="sha512-gkKEgYqs7I24YHETln6iLyd9Oy10s2Cyaev28dxbCQa3mV22SbdDsWrprpRL/DSAJERZiFiQcN+wnsxPKR6Trw=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		></script>
-		<script>
-			const graph = Viva.Graph.graph();
-			const graphics = Viva.Graph.View.svgGraphics();
-			const nodeSize = 24;
+		<aside id="side" class="glass" aria-live="polite"></aside>
+		<nav id="legend" class="glass"></nav>
 
-			const init = async () => {
-				const response = await fetch(
-					"https://raw.githubusercontent.com/mostafa-kheibary/tehran-metro-graph/main/data/stations.json",
-				);
-				const stations = await response.json();
+		<div id="modeHint"></div>
+		<div id="modes" class="glass" role="group">
+			<span id="pill"></span>
+			<button data-mode="map" aria-pressed="true">
+				<svg viewBox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3z" /><path d="M9 3v15M15 6v15" /></svg><span></span>
+			</button>
+			<button data-mode="layers" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5z" /><path d="m3 13 9 5 9-5" /><path d="m3 17.5 9 5 9-5" opacity=".5" /></svg><span></span>
+			</button>
+			<button data-mode="hubs" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M4 20V13M9 20V6M14 20v-9M19 20V9" /></svg><span></span>
+			</button>
+		</div>
 
-				const searchDropdown = document.getElementById("searchDropdown");
+		<div id="tip"></div>
+		<div id="loader"><div>Tehran Metro<span class="bar" style="display: block"><i></i></span></div></div>
+		<div id="fatal"></div>
 
-				// add nodes and relationships based on the graph data
-				for (let station in stations) {
-					graph.addNode(station, stations[station]);
-
-					var span = document.createElement('span');
-					span.style.display="none"
-					span.classList.add("search-item");
-					span.innerHTML = stations[station].translations.fa;
-					span.addEventListener("mousedown", function (e) {
-						RenderNodeProperties({data:stations[station]});
-					});
-					searchDropdown.appendChild(span);
-
-					for (let relationship of stations[station].relations) {
-						graph.addLink(station, relationship);
-					}
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+					"three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
 				}
+			}
+		</script>
+		<script type="module">
+			import * as THREE from "three";
+			import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+			import { EffectComposer } from "three/addons/postprocessing/EffectComposer.js";
+			import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
+			import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js";
+			import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
 
-				// Graphic as svg
-				graphics.node((node) => {
-					console.log(node.data);
-					const ui = Viva.Graph.svg("g");
-					ui.on("click", function (e) {
-						RenderNodeProperties(node);
-					});
-					ui.on("touchstart", function (e) {
-						e.preventDefault(); // Prevent default touch behavior
-						RenderNodeProperties(node);
-					});
-					// Create SVG text element with user id as content
-					const svgText = Viva.Graph.svg("text")
-						.attr("y", "-2px")
-						.attr("font-size", "10px")
-						.attr("font-weight", "bold")
-            .attr("font-family", "Vazirmatn, sans-serif")
-						.attr("fill", "#000")
-						.text(node.data?.translations.fa || "");
-					const svgTexten = Viva.Graph.svg("text")
-						.attr("y", "-15px")
-						.attr("font-size", "10px")
-            .attr("font-family", "Vazirmatn, sans-serif")
-						.attr("fill", "#000")
-						.text(node.data?.name || "");
-
-					const svgRect = Viva.Graph.svg("rect")
-						.attr("width", "10px")
-						.attr("height", "10px")
-						.attr("fill", node.data?.colors[0] || "black")
-						.attr("y", "10px")
-						.attr("x", "10px")
-						.attr("rx", "150px");
-					if (node.data?.colors[1]) {
-						const svg2Rect = Viva.Graph.svg("rect")
-							.attr("width", "15px")
-							.attr("height", "15px")
-							.attr("rx", "150px")
-							.attr("fill", node.data?.colors[1] || "black")
-							.attr("y", "7.5px")
-							.attr("x", "7.5px");
-						ui.append(svg2Rect);
-					}
-					if (node.data.disabled) {
-						const svg4Rect = Viva.Graph.svg("rect")
-							.attr("width", "15px")
-							.attr("height", "15px")
-							.attr("rx", "150px")
-							.attr("strock", "black")
-							.attr("stroke-dasharray", "3 3")
-							.attr("y", "7.5px")
-							.attr("x", "7.5px");
-						ui.append(svg4Rect);
-					}
-					ui.append(svgTexten);
-					ui.append(svgText);
-					ui.append(svgRect);
-					return ui;
-				});
-
-				graphics.placeNode(function (nodeUI, pos) {
-					nodeUI.attr(
-						"transform",
-						"translate(" +
-							(pos.x - nodeSize / 2) +
-							"," +
-							(pos.y - nodeSize / 2) +
-							")",
-					);
-				});
-
-				const layout = Viva.Graph.Layout.forceDirected(graph, {
-					springLength: 50,
-					springCoeff: 0.0005,
-					dragCoeff: 0.02,
-					gravity: -5,
-				});
-
-				const renderer = Viva.Graph.View.renderer(graph, {
-					layout,
-					graphics,
-					container: document.getElementById("graph"),
-				});
-				renderer.run();
+			/* =====================================================================
+			 * i18n
+			 * ===================================================================== */
+			const T = {
+				en: {
+					eyebrow: "Network graph · 3D",
+					title: "Tehran Metro",
+					stations: "Stations",
+					lines: "Lines",
+					interchanges: "Interchanges",
+					km: "Km of track",
+					planned: "planned",
+					search: "Search a station…",
+					trains: "Shimmer",
+					explored: "stations examined",
+					labels: "Labels",
+					rotate: "Orbit",
+					map: "Map",
+					layers: "Layers",
+					hubs: "Hubs",
+					hintMap: "True bearings, dense core spread apart · drag to orbit, scroll to zoom",
+					hintLayers: "Every line lifted to its own altitude · interchanges connect the layers",
+					hintHubs: "Height = betweenness centrality — how often a station sits on shortest paths",
+					legend: "Lines · click to isolate",
+					line: "Line",
+					top: "Most central stations",
+					centrality: "Betweenness centrality",
+					mostLines: "Largest interchange",
+					nLines: "lines",
+					longest: "Longest line",
+					closed: "Planned / closed",
+					station: "Station",
+					neighbors: "Adjacent stations",
+					degree: "Connections",
+					rank: "Network rank",
+					of: "of",
+					address: "Address",
+					amenities: "Amenities",
+					routeFrom: "Route from here",
+					pickDest: "Now click the destination station",
+					cancel: "Cancel",
+					route: "Route",
+					stops: "Stops",
+					transfers: "Transfers",
+					time: "Minutes",
+					clear: "Clear route",
+					from: "Board at",
+					toward: "to",
+					noRoute: "No operating route found between these stations.",
+					noResults: "No station found",
+					walk: "Transfer",
+					am: {
+						wc: "Restroom",
+						coffeeShop: "Coffee",
+						groceryStore: "Grocery",
+						fastFood: "Fast food",
+						atm: "ATM",
+						elevator: "Elevator",
+						bicycleParking: "Bike parking",
+						freeWifi: "Free Wi‑Fi",
+						prayerRoom: "Prayer room",
+						metroPolice: "Police",
+						blindPath: "Tactile path",
+						waterCooler: "Water",
+						waitingChair: "Seating",
+					},
+				},
+				fa: {
+					eyebrow: "گراف شبکه · سه‌بعدی",
+					title: "مترو تهران",
+					stations: "ایستگاه",
+					lines: "خط",
+					interchanges: "ایستگاه تبادلی",
+					km: "کیلومتر ریل",
+					planned: "در دست احداث",
+					search: "جستجوی ایستگاه…",
+					trains: "درخشش",
+					explored: "ایستگاه بررسی‌شده",
+					labels: "برچسب‌ها",
+					rotate: "چرخش",
+					map: "نقشه",
+					layers: "لایه‌ها",
+					hubs: "مراکز اهمیت",
+					hintMap: "جهت‌های واقعی، هسته شلوغ باز شده · برای چرخش بکشید، برای بزرگ‌نمایی اسکرول کنید",
+					hintLayers: "هر خط در یک ارتفاع جدا · ایستگاه‌های تبادلی لایه‌ها را به هم وصل می‌کنند",
+					hintHubs: "ارتفاع = مرکزیت بینابینی — اینکه ایستگاه چند بار روی کوتاه‌ترین مسیرها قرار دارد",
+					legend: "خط‌ها · برای تمرکز کلیک کنید",
+					line: "خط",
+					top: "مهم‌ترین ایستگاه‌های شبکه",
+					centrality: "مرکزیت بینابینی",
+					mostLines: "بزرگ‌ترین ایستگاه تبادلی",
+					nLines: "خط",
+					longest: "طولانی‌ترین خط",
+					closed: "غیرفعال / در دست احداث",
+					station: "ایستگاه",
+					neighbors: "ایستگاه‌های مجاور",
+					degree: "اتصال‌ها",
+					rank: "رتبه در شبکه",
+					of: "از",
+					address: "نشانی",
+					amenities: "امکانات",
+					routeFrom: "مسیر از اینجا",
+					pickDest: "حالا ایستگاه مقصد را انتخاب کنید",
+					cancel: "انصراف",
+					route: "مسیر",
+					stops: "ایستگاه",
+					transfers: "تعویض خط",
+					time: "دقیقه",
+					clear: "پاک کردن مسیر",
+					from: "سوار شوید در",
+					toward: "تا",
+					noRoute: "مسیر فعالی بین این دو ایستگاه پیدا نشد.",
+					noResults: "ایستگاهی پیدا نشد",
+					walk: "تعویض",
+					am: {
+						wc: "سرویس بهداشتی",
+						coffeeShop: "کافی‌شاپ",
+						groceryStore: "خواروبار",
+						fastFood: "فست‌فود",
+						atm: "خودپرداز",
+						elevator: "آسانسور",
+						bicycleParking: "پارک دوچرخه",
+						freeWifi: "وای‌فای رایگان",
+						prayerRoom: "نمازخانه",
+						metroPolice: "پلیس مترو",
+						blindPath: "مسیر نابینایان",
+						waterCooler: "آب‌سردکن",
+						waitingChair: "صندلی انتظار",
+					},
+				},
 			};
+			const AM_ICON = {
+				wc: "🚻",
+				coffeeShop: "☕",
+				groceryStore: "🛒",
+				fastFood: "🍔",
+				atm: "🏧",
+				elevator: "🛗",
+				bicycleParking: "🚲",
+				freeWifi: "📶",
+				prayerRoom: "🕌",
+				metroPolice: "👮",
+				blindPath: "🦯",
+				waterCooler: "🚰",
+				waitingChair: "🪑",
+			};
+			let lang = (navigator.language || "en").toLowerCase().startsWith("fa") ? "fa" : "en";
+			try {
+				lang = localStorage.getItem("tm-lang") || lang;
+			} catch {}
+			const tr = (k) => T[lang][k] ?? k;
+			const nf = (n, d = 0) =>
+				Number(n).toLocaleString(lang === "fa" ? "fa-IR" : "en-US", { maximumFractionDigits: d, minimumFractionDigits: d });
+			const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+			const $ = (s, r = document) => r.querySelector(s);
+			const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 
-
-			function closeSearch() {
-				const items = document.querySelectorAll(".search-item");
-				for (let i = 0; i < items.length; i++) {
-					items[i].style.display = "none";
+			/* =====================================================================
+			 * Data
+			 * ===================================================================== */
+			const DATA_URLS = ["../data/stations.json", "https://raw.githubusercontent.com/mostafa-kheibary/tehran-metro-graph/main/data/stations.json"];
+			async function loadData() {
+				for (const u of DATA_URLS) {
+					try {
+						const r = await fetch(u);
+						if (r.ok) return await r.json();
+					} catch {}
 				}
+				throw new Error("Could not load stations.json");
 			}
 
-			function searchStation() {
-				closeDialog();
-				const serachInput = document.getElementById("serach-input");
-				const filter = serachInput.value.toUpperCase();
-				const items = document.querySelectorAll(".search-item");
+			function fatal(msg) {
+				$("#loader").classList.add("done");
+				const f = $("#fatal");
+				f.style.display = "grid";
+				f.textContent = msg;
+			}
 
-				for (let i = 0; i < items.length; i++) {
-					txtValue = items[i].textContent || a[i].innerText;
-					if(filter==""){
-						items[i].style.display = "none";
-					}else if (txtValue.toUpperCase().indexOf(filter) > -1) {
-						items[i].style.display = "block";
+			let raw;
+			try {
+				raw = await loadData();
+			} catch (e) {
+				fatal(e.message);
+				throw e;
+			}
+
+			const ids = Object.keys(raw);
+			const lat0 = ids.reduce((s, k) => s + Number(raw[k].latitude), 0) / ids.length;
+			const lon0 = ids.reduce((s, k) => s + Number(raw[k].longitude), 0) / ids.length;
+			const KX = 111.32 * Math.cos((lat0 * Math.PI) / 180);
+			const KZ = 110.57;
+
+			const stations = ids.map((id, i) => {
+				const r = raw[id];
+				return {
+					id,
+					i,
+					en: r.name || id,
+					fa: r.translations?.fa || r.name || id,
+					lines: [...r.lines].sort((a, b) => a - b),
+					colorOf: Object.fromEntries(r.lines.map((l, k) => [l, r.colors?.[k] || "#888"])),
+					disabled: !!r.disabled,
+					x: (Number(r.longitude) - lon0) * KX,
+					z: -(Number(r.latitude) - lat0) * KZ,
+					address: r.address || "",
+					raw: r,
+					nb: new Set(),
+					insts: {},
+					instList: [],
+					bc: 0,
+					bcN: 0,
+					rank: 0,
+				};
+			});
+			// keep true km coordinates for statistics, then stretch the dense core apart for legibility:
+			// radial power warp around the median station — bearings are preserved, the centre is spread most
+			stations.forEach((s) => ((s.rx = s.x), (s.rz = s.z)));
+			(function spreadCore() {
+				const med = (a) => [...a].sort((p, q) => p - q)[a.length >> 1];
+				const cx = med(stations.map((s) => s.x)),
+					cz = med(stations.map((s) => s.z));
+				const rmax = Math.max(...stations.map((s) => Math.hypot(s.x - cx, s.z - cz)));
+				stations.forEach((s) => {
+					const dx = s.x - cx,
+						dz = s.z - cz,
+						r = Math.hypot(dx, dz);
+					if (r < 1e-6) return;
+					const r2 = rmax * Math.pow(r / rmax, 0.58);
+					s.x = cx + (dx / r) * r2;
+					s.z = cz + (dz / r) * r2;
+				});
+			})();
+			const byId = new Map(stations.map((s) => [s.id, s]));
+			const LINES = [...new Set(stations.flatMap((s) => s.lines))].sort((a, b) => a - b);
+			const LINE_COLOR = {};
+			stations.forEach((s) => s.lines.forEach((l) => (LINE_COLOR[l] ||= s.colorOf[l]) ));
+			const LAYER_GAP = 8.5;
+			const lineIdx = Object.fromEntries(LINES.map((l, i) => [l, i]));
+
+			// symmetric neighbour sets
+			stations.forEach((s) =>
+				(raw[s.id].relations || []).forEach((r) => {
+					const o = byId.get(r);
+					if (o && o !== s) {
+						s.nb.add(o);
+						o.nb.add(s);
+					}
+				}),
+			);
+
+			// instances = one per (station, line)
+			const insts = [];
+			stations.forEach((s) =>
+				s.lines.forEach((l) => {
+					const inst = {
+						id: insts.length,
+						st: s,
+						line: l,
+						color: new THREE.Color(s.colorOf[l]),
+						p: new THREE.Vector3(s.x, 0, s.z),
+						from: new THREE.Vector3(),
+						to: new THREE.Vector3(),
+						t0: 0,
+						l: 0,
+						tl: 1,
+						edges: [],
+						introDelay: 0,
+						hov: 0,
+						sel: 0,
+						sx: 0,
+						sy: 0,
+						sz: 0,
+					};
+					s.insts[l] = inst;
+					s.instList.push(inst);
+					insts.push(inst);
+				}),
+			);
+
+			// edges
+			const edges = [];
+			const seen = new Set();
+			stations.forEach((a) =>
+				a.nb.forEach((b) => {
+					const key = a.i < b.i ? a.i + "|" + b.i : b.i + "|" + a.i;
+					if (seen.has(key)) return;
+					seen.add(key);
+					const shared = a.lines.filter((l) => b.lines.includes(l));
+					const op = !a.disabled && !b.disabled;
+					if (shared.length) {
+						shared.forEach((l) => edges.push({ a: a.insts[l], b: b.insts[l], line: l, type: "line", op, l: 0, tl: 1 }));
 					} else {
-						items[i].style.display = "none";
+						// the data links two stations that share no line (walking connection / data quirk)
+						edges.push({ a: a.insts[a.lines[0]], b: b.insts[b.lines[0]], line: 0, type: "link", op: false, l: 0, tl: 1 });
+					}
+				}),
+			);
+			const lineEdges = edges.filter((e) => e.type === "line");
+			lineEdges.forEach((e) => {
+				e.a.edges.push(e);
+				e.b.edges.push(e);
+			});
+			// vertical transfer links
+			const xfers = [];
+			stations.forEach((s) => {
+				for (let k = 0; k < s.lines.length - 1; k++) {
+					xfers.push({ a: s.insts[s.lines[k]], b: s.insts[s.lines[k + 1]], line: 0, type: "xfer", op: !s.disabled, l: 0, tl: 1 });
+				}
+			});
+			const allEdges = [...edges, ...xfers];
+			const edgeKey = (a, b) => (a.id < b.id ? a.id + "|" + b.id : b.id + "|" + a.id);
+			const edgeMap = new Map(allEdges.map((e) => [edgeKey(e.a, e.b), e]));
+
+			// intro ordering: BFS along each line from one end
+			LINES.forEach((l) => {
+				const ls = stations.filter((s) => s.lines.includes(l));
+				const adj = (s) => [...s.nb].filter((n) => n.lines.includes(l) && s.lines.includes(l));
+				const start = ls.find((s) => adj(s).length === 1) || ls[0];
+				const dist = new Map([[start, 0]]);
+				const q = [start];
+				while (q.length) {
+					const c = q.shift();
+					adj(c).forEach((n) => {
+						if (!dist.has(n)) {
+							dist.set(n, dist.get(c) + 1);
+							q.push(n);
+						}
+					});
+				}
+				ls.forEach((s) => {
+					const inst = s.insts[l];
+					inst.order = dist.get(s) ?? 0;
+					inst.introDelay = 0.9 + lineIdx[l] * 0.42 + inst.order * 0.05;
+				});
+			});
+			edges.forEach((e) => {
+				if (e.type !== "line") {
+					e.delay = 3;
+					return;
+				}
+				if (e.b.order < e.a.order) [e.a, e.b] = [e.b, e.a];
+				e.delay = e.a.introDelay + 0.02;
+			});
+			xfers.forEach((e) => (e.delay = Math.max(e.a.introDelay, e.b.introDelay) + 0.4));
+
+			// analytics: lengths + betweenness (Brandes) on operating network
+			const dist2 = (a, b) => Math.hypot(a.st.rx - b.st.rx, a.st.rz - b.st.rz);
+			const lineStats = {};
+			LINES.forEach((l) => {
+				const sts = stations.filter((s) => s.lines.includes(l));
+				lineStats[l] = {
+					count: sts.filter((s) => !s.disabled).length,
+					planned: sts.filter((s) => s.disabled).length,
+					km: lineEdges.filter((e) => e.line === l && e.op).reduce((s, e) => s + dist2(e.a, e.b), 0),
+				};
+			});
+			const totalKm = LINES.reduce((s, l) => s + lineStats[l].km, 0);
+			const ops = stations.filter((s) => !s.disabled);
+			const opAdj = new Map(ops.map((s) => [s, new Set()]));
+			lineEdges.filter((e) => e.op).forEach((e) => {
+				opAdj.get(e.a.st).add(e.b.st);
+				opAdj.get(e.b.st).add(e.a.st);
+			});
+			(function brandes() {
+				const bc = new Map(ops.map((s) => [s, 0]));
+				for (const s of ops) {
+					const S = [],
+						P = new Map(ops.map((v) => [v, []])),
+						sigma = new Map(ops.map((v) => [v, 0])),
+						d = new Map(ops.map((v) => [v, -1]));
+					sigma.set(s, 1);
+					d.set(s, 0);
+					const Q = [s];
+					while (Q.length) {
+						const v = Q.shift();
+						S.push(v);
+						for (const w of opAdj.get(v)) {
+							if (d.get(w) < 0) {
+								Q.push(w);
+								d.set(w, d.get(v) + 1);
+							}
+							if (d.get(w) === d.get(v) + 1) {
+								sigma.set(w, sigma.get(w) + sigma.get(v));
+								P.get(w).push(v);
+							}
+						}
+					}
+					const delta = new Map(ops.map((v) => [v, 0]));
+					while (S.length) {
+						const w = S.pop();
+						for (const v of P.get(w)) delta.set(v, delta.get(v) + (sigma.get(v) / sigma.get(w)) * (1 + delta.get(w)));
+						if (w !== s) bc.set(w, bc.get(w) + delta.get(w));
 					}
 				}
+				const max = Math.max(...bc.values()) || 1;
+				ops.forEach((s) => {
+					s.bc = bc.get(s) / 2;
+					s.bcN = bc.get(s) / max;
+				});
+				[...ops].sort((a, b) => b.bc - a.bc).forEach((s, i) => (s.rank = i + 1));
+			})();
+			const topHubs = [...ops].sort((a, b) => b.bc - a.bc).slice(0, 5);
+
+			// routing: A* over (station, line) nodes, cost = travel minutes.
+			// line edge  = real km * MIN_PER_KM + dwell;  transfer = XFER_MIN.
+			// heuristic  = straight-line km to the goal * MIN_PER_KM — admissible and consistent,
+			// because no track can be quicker than MIN_PER_KM and no path is shorter than the straight line.
+			const MIN_PER_KM = 1.7,
+				DWELL_MIN = 0.7,
+				XFER_MIN = 4;
+			const edgeKm = (e) => dist2(e.a, e.b);
+			function findRoute(A, B) {
+				const h = (i) => Math.hypot(i.st.rx - B.rx, i.st.rz - B.rz) * MIN_PER_KM;
+				// binary min-heap on f = g + h
+				const heap = [];
+				const push = (n) => {
+					heap.push(n);
+					let k = heap.length - 1;
+					while (k > 0) {
+						const p = (k - 1) >> 1;
+						if (heap[p].f <= heap[k].f) break;
+						[heap[p], heap[k]] = [heap[k], heap[p]];
+						k = p;
+					}
+				};
+				const pop = () => {
+					const top = heap[0],
+						last = heap.pop();
+					if (heap.length) {
+						heap[0] = last;
+						let k = 0;
+						for (;;) {
+							let l = 2 * k + 1,
+								r = l + 1,
+								m = k;
+							if (l < heap.length && heap[l].f < heap[m].f) m = l;
+							if (r < heap.length && heap[r].f < heap[m].f) m = r;
+							if (m === k) break;
+							[heap[m], heap[k]] = [heap[k], heap[m]];
+							k = m;
+						}
+					}
+					return top;
+				};
+				const g = new Map(),
+					prev = new Map(),
+					closed = new Set(),
+					explored = [];
+				A.instList.forEach((i) => {
+					g.set(i, 0);
+					push({ i, f: h(i) });
+				});
+				while (heap.length) {
+					const { i: u } = pop();
+					if (closed.has(u)) continue;
+					closed.add(u);
+					if (!explored.includes(u.st)) explored.push(u.st);
+					if (u.st === B) {
+						const path = [u];
+						while (prev.has(path[0])) path.unshift(prev.get(path[0]));
+						let km = 0;
+						for (let k = 1; k < path.length; k++) if (path[k].st !== path[k - 1].st) km += dist2(path[k - 1], path[k]);
+						return { path, cost: g.get(u), km, explored };
+					}
+					const next = u.edges.filter((e) => e.op).map((e) => [e.a === u ? e.b : e.a, edgeKm(e) * MIN_PER_KM + DWELL_MIN]);
+					u.st.instList.forEach((o) => o !== u && !o.st.disabled && next.push([o, XFER_MIN]));
+					for (const [v, w] of next) {
+						if (closed.has(v)) continue;
+						const ng = g.get(u) + w;
+						if (ng < (g.get(v) ?? Infinity)) {
+							g.set(v, ng);
+							prev.set(v, u);
+							push({ i: v, f: ng + h(v) });
+						}
+					}
+				}
+				return null;
 			}
 
-			function RenderNodeProperties(node) {
-				closeSearch();
-				const dialog = document.getElementById("nodePropertiesDialog");
-				const nodeNameElement = document.getElementById("nodeName");
-				const nodeAddressElement = document.getElementById("nodeAddress");
-				const nodeLinesElement = document.getElementById("nodeLines");
-				const nodeEmojisElement = document.getElementById("nodeEmojis");
-				const closeButton = document.getElementById("closeDialogBtn");
+			/* =====================================================================
+			 * Three.js scene
+			 * ===================================================================== */
+			const canvas = $("#gl");
+			let renderer;
+			try {
+				renderer = new THREE.WebGLRenderer({ canvas, antialias: false, powerPreference: "high-performance" });
+			} catch (e) {
+				fatal("WebGL is not available in this browser.");
+				throw e;
+			}
+			const DPR = Math.min(window.devicePixelRatio || 1, 2);
+			renderer.setPixelRatio(DPR);
+			renderer.setSize(innerWidth, innerHeight, false);
+			renderer.toneMapping = THREE.NoToneMapping;
 
-				const hasWC = node.data.wc || false;
-				const WcEmoji = hasWC ? ' 🚾' : '';
+			const scene = new THREE.Scene();
+			scene.background = new THREE.Color(0x0d1117);
+			scene.fog = new THREE.Fog(0x0d1117, 170, 330);
 
-				const hasFastfood = node.data.fastFood || false;
-				const FastfoodEmoji = hasFastfood ? ' 🍔' : '';
+			const camera = new THREE.PerspectiveCamera(42, innerWidth / innerHeight, 0.5, 900);
+			const HOME = { pos: new THREE.Vector3(14, 84, 50), target: new THREE.Vector3(0, 0, 0) };
+			camera.position.set(-90, 190, 190);
+			const controls = new OrbitControls(camera, canvas);
+			controls.enableDamping = true;
+			controls.dampingFactor = 0.06;
+			controls.maxPolarAngle = Math.PI * 0.495;
+			controls.minDistance = 8;
+			controls.maxDistance = 260;
+			controls.target.copy(HOME.target);
+			controls.autoRotateSpeed = 0.35;
 
-				const hasGroceryStore = node.data.groceryStore || false;
-				const GroceryStoreEmoji = hasGroceryStore ? ' 🛒' : '';
+			const composer = new EffectComposer(renderer, new THREE.WebGLRenderTarget(innerWidth * DPR, innerHeight * DPR, { type: THREE.HalfFloatType, samples: 4 }));
+			composer.setPixelRatio(DPR);
+			composer.setSize(innerWidth, innerHeight);
+			composer.addPass(new RenderPass(scene, camera));
+			const bloom = new UnrealBloomPass(new THREE.Vector2(innerWidth, innerHeight), 0.55, 0.55, 0.42);
+			bloom.enabled = false; // flat look: no glow
+			composer.addPass(bloom);
+			composer.addPass(new OutputPass());
 
-				const hasatm = node.data.atm || false;
-				const atmEmoji = hasatm ? ' 🏧' : '';
+			/* ---- ground: grid + service-density heat + sonar ripple ---- */
+			const gUni = { uTime: { value: 0 }, uMode: { value: 0 } };
+			const ground = new THREE.Mesh(
+				new THREE.PlaneGeometry(600, 600, 1, 1).rotateX(-Math.PI / 2),
+				new THREE.ShaderMaterial({
+					transparent: true,
+					depthWrite: false,
+					uniforms: gUni,
+					extensions: { derivatives: true },
+					vertexShader: `varying vec2 vP; void main(){ vP = position.xz; gl_Position = projectionMatrix*modelViewMatrix*vec4(position,1.); }`,
+					fragmentShader: `
+						varying vec2 vP;
+						void main(){
+							float d = length(vP);
+							vec2 gp = vP/6.;
+							vec2 g = abs(fract(gp-.5)-.5)/fwidth(gp);
+							float minor = 1.-min(min(g.x,g.y),1.);
+							vec2 gp2 = vP/30.;
+							vec2 g2 = abs(fract(gp2-.5)-.5)/fwidth(gp2);
+							float major = 1.-min(min(g2.x,g2.y),1.);
+							float fade = smoothstep(140.,30.,d);
+							float a = (minor*.05 + major*.09)*fade;
+							gl_FragColor = vec4(vec3(.62,.7,.85), a);
+						}`,
+				}),
+			);
+			ground.position.y = -0.4;
+			ground.renderOrder = -1;
+			scene.add(ground);
 
-				const hasCoffeeShop = node.data.coffeeShop || false;
-				const CoffeeShopEmoji = hasCoffeeShop ? ' ☕' : '';
+			/* ---- dust ---- */
+			{
+				const n = 900,
+					pos = new Float32Array(n * 3);
+				for (let i = 0; i < n; i++) {
+					const a = Math.random() * Math.PI * 2,
+						r = 10 + Math.pow(Math.random(), 0.7) * 150;
+					pos.set([Math.cos(a) * r, Math.random() * 90, Math.sin(a) * r], i * 3);
+				}
+				const g = new THREE.BufferGeometry();
+				g.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+				const dust = new THREE.Points(
+					g,
+					new THREE.PointsMaterial({ size: 0.55, color: 0x7aa7ff, transparent: true, opacity: 0.45, depthWrite: false, blending: THREE.AdditiveBlending, sizeAttenuation: true }),
+				);
+				dust.userData.spin = true;
+				dust.visible = false;
+				scene.add(dust);
+				scene.userData.dust = dust;
+			}
 
+			/* ---- instanced meshes ---- */
+			const NI = insts.length;
+			const sphereGeo = new THREE.SphereGeometry(1, 22, 16);
+			const basic = (extra = {}) => new THREE.MeshBasicMaterial({ ...extra });
+			const stationMesh = new THREE.InstancedMesh(sphereGeo, basic(), NI);
+			const ringMesh = new THREE.InstancedMesh(new THREE.TorusGeometry(1, 0.06, 8, 48).rotateX(Math.PI / 2), basic({ transparent: true, opacity: 0.95 }), NI);
+			const haloMesh = new THREE.InstancedMesh(sphereGeo, basic({ transparent: true, opacity: 0.1, depthWrite: false, blending: THREE.AdditiveBlending }), NI);
+			const pillarMesh = new THREE.InstancedMesh(new THREE.CylinderGeometry(1, 1, 1, 6, 1, true), basic({ transparent: true, opacity: 0.13, depthWrite: false }), NI);
+			const cyl = new THREE.CylinderGeometry(1, 1, 1, 8, 1, true);
+			const edgeMesh = new THREE.InstancedMesh(cyl, basic(), edges.length);
+			const xferMesh = new THREE.InstancedMesh(cyl, basic({ transparent: true, opacity: 0.55, depthWrite: false }), xfers.length);
+			[stationMesh, ringMesh, haloMesh, pillarMesh, edgeMesh, xferMesh].forEach((m) => {
+				m.frustumCulled = false;
+				m.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
+				const c = new THREE.Color(1, 1, 1);
+				for (let i = 0; i < m.count; i++) m.setColorAt(i, c);
+				m.instanceColor.setUsage(THREE.DynamicDrawUsage);
+				scene.add(m);
+			});
+			xferMesh.renderOrder = 2;
+			haloMesh.renderOrder = 3;
+			haloMesh.visible = false;
 
-				nodeNameElement.textContent =
-					(node.data.translations.fa || node.data.name || '') ;
+			/* ---- selection beam ---- */
+			const beam = new THREE.Mesh(
+				new THREE.CylinderGeometry(0.15, 0.15, 120, 12, 1, true),
+				new THREE.ShaderMaterial({
+					transparent: true,
+					depthWrite: false,
+					side: THREE.DoubleSide,
+					uniforms: { uC: { value: new THREE.Color(0x6ee7ff) }, uA: { value: 0 } },
+					vertexShader: `varying float vY; void main(){ vY = uv.y; gl_Position = projectionMatrix*modelViewMatrix*vec4(position,1.); }`,
+					fragmentShader: `varying float vY; uniform vec3 uC; uniform float uA; void main(){ gl_FragColor = vec4(uC, (1.-vY)*.35*uA); }`,
+				}),
+			);
+			beam.visible = false;
+			scene.add(beam);
 
-				nodeLinesElement.innerHTML = node.data.lines
-					.map(
-						(line, i) =>
-							`<span style="color: ${node.data.colors[i]};">${line}</span>`,
-					)
-					.join(" و ");
-				nodeAddressElement.innerHTML = node.data.address
-					? `${node.data.address}`
-					: `به زودی ...`;
+			/* =====================================================================
+			 * State
+			 * ===================================================================== */
+			const state = {
+				mode: "map",
+				hubsMix: 0,
+				layersMix: 0,
+				selected: null,
+				hover: null,
+				isolate: null,
+				routeFrom: null,
+				route: null,
+				trains: true,
+				labels: true,
+				rotate: true,
+				introDone: false,
+				interacted: false,
+			};
+			const clock = new THREE.Clock();
+			let now = 0;
+			const ease = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+			const easeOut = (t) => 1 - Math.pow(1 - t, 3);
+			const backOut = (t) => {
+				const c1 = 1.9,
+					c3 = c1 + 1;
+				return 1 + c3 * Math.pow(t - 1, 3) + c1 * Math.pow(t - 1, 2);
+			};
+			const clamp01 = (x) => Math.max(0, Math.min(1, x));
 
-				nodeEmojisElement.innerHTML = `${WcEmoji} ${FastfoodEmoji} ${GroceryStoreEmoji} ${atmEmoji} ${CoffeeShopEmoji}`;
-				nodeAddressElement.style.fontSize = "13px";
+			const targetFor = (inst, mode) => {
+				const s = inst.st;
+				if (mode === "layers") return new THREE.Vector3(s.x, lineIdx[inst.line] * LAYER_GAP + 0.5, s.z);
+				if (mode === "hubs") return new THREE.Vector3(s.x, s.disabled ? 1 : 2 + Math.pow(s.bcN, 0.75) * 40, s.z);
+				return new THREE.Vector3(s.x, 0.5, s.z);
+			};
+			insts.forEach((i) => {
+				i.p.copy(targetFor(i, "map"));
+				i.from.copy(i.p);
+				i.to.copy(i.p);
+			});
 
-				dialog.style.display = "block";
+			function setMode(m, instant = false) {
+				state.mode = m;
+				insts.forEach((i) => {
+					i.from.copy(i.p);
+					i.to.copy(targetFor(i, m));
+					i.t0 = now + (instant ? -10 : Math.hypot(i.st.x, i.st.z) * 0.011 + (lineIdx[i.line] || 0) * 0.04);
+				});
+				$$("#modes button").forEach((b) => b.setAttribute("aria-pressed", b.dataset.mode === m));
+				movePill();
+				$("#modeHint").style.opacity = 0;
+				setTimeout(() => {
+					$("#modeHint").textContent = tr("hint" + m[0].toUpperCase() + m.slice(1));
+					$("#modeHint").style.opacity = 1;
+				}, 250);
+				if (m === "layers") tweenCamera(new THREE.Vector3(62, 104, 122), new THREE.Vector3(0, 18, 0), 1.8);
+				if (m === "hubs") tweenCamera(new THREE.Vector3(48, 86, 98), new THREE.Vector3(0, 8, 0), 1.8);
+				if (m === "map") tweenCamera(HOME.pos, HOME.target, 1.8);
+			}
 
-				closeButton.onclick = function () {
-					dialog.style.display = "none";
+			/* ---- camera tweening ---- */
+			let camTween = null;
+			function tweenCamera(pos, target, dur = 1.4) {
+				camTween = { p0: camera.position.clone(), t0: controls.target.clone(), p1: pos.clone(), t1: target.clone(), s: now, d: dur };
+			}
+			controls.addEventListener("start", () => {
+				camTween = null;
+				state.interacted = true;
+			});
+
+			function flyToStation(s) {
+				const c = avgPos(s);
+				const off = camera.position.clone().sub(controls.target);
+				off.setLength(Math.min(Math.max(off.length(), 30), 34));
+				if (off.y < 12) off.y = 12;
+				tweenCamera(c.clone().add(off), c, 1.3);
+			}
+			function avgPos(s) {
+				const v = new THREE.Vector3();
+				s.instList.forEach((i) => v.add(i.to));
+				return v.multiplyScalar(1 / s.instList.length);
+			}
+
+			/* =====================================================================
+			 * Focus / levels
+			 * ===================================================================== */
+			function applyFocus() {
+				const sel = state.selected,
+					L = state.isolate,
+					R = state.route;
+				state.focusActive = !!(sel || L || R);
+				const BR = 1,
+					MID = 0.3,
+					LOW = 0.075;
+				if (R) {
+					const rs = new Set(R.path.map((i) => i.st));
+					const re = new Set();
+					for (let k = 0; k < R.path.length - 1; k++) {
+						const e = edgeMap.get(edgeKey(R.path[k], R.path[k + 1]));
+						if (e) re.add(e);
+					}
+					insts.forEach((i) => (i.tl = rs.has(i.st) ? BR : LOW));
+					allEdges.forEach((e) => (e.tl = re.has(e) ? BR : LOW));
+				} else if (L) {
+					insts.forEach((i) => (i.tl = i.line === L ? BR : i.st.lines.includes(L) ? MID : LOW));
+					allEdges.forEach((e) => (e.tl = e.line === L ? BR : e.type === "xfer" && (e.a.line === L || e.b.line === L) ? MID : LOW));
+				} else if (sel && !state.routeFrom) {
+					insts.forEach((i) => (i.tl = i.st === sel || sel.nb.has(i.st) ? BR : sel.lines.includes(i.line) ? MID : LOW));
+					allEdges.forEach((e) => (e.tl = e.a.st === sel || e.b.st === sel ? BR : sel.lines.includes(e.line) ? MID : LOW));
+				} else {
+					insts.forEach((i) => (i.tl = 1));
+					allEdges.forEach((e) => (e.tl = 1));
+				}
+			}
+
+			/* =====================================================================
+			 * Frame update
+			 * ===================================================================== */
+			const M = new THREE.Matrix4(),
+				Q = new THREE.Quaternion(),
+				V = new THREE.Vector3(),
+				SC = new THREE.Vector3(),
+				UP = new THREE.Vector3(0, 1, 0),
+				D = new THREE.Vector3(),
+				C = new THREE.Color();
+
+			function setCyl(mesh, idx, p, q, w) {
+				D.subVectors(q, p);
+				const len = D.length();
+				if (len < 0.02) {
+					M.makeScale(0, 0, 0);
+				} else {
+					Q.setFromUnitVectors(UP, D.multiplyScalar(1 / len));
+					V.addVectors(p, q).multiplyScalar(0.5);
+					SC.set(w, len, w);
+					M.compose(V, Q, SC);
+				}
+				mesh.setMatrixAt(idx, M);
+			}
+
+			const tmpA = new THREE.Vector3();
+			const WHITE = new THREE.Color(1, 1, 1),
+				ACCENT = new THREE.Color(0x6ee7ff);
+			function update(dt) {
+				// mode mix
+				const ht = state.mode === "hubs" ? 1 : 0,
+					lt = state.mode === "layers" ? 1 : 0;
+				state.hubsMix += (ht - state.hubsMix) * (1 - Math.exp(-dt * 3));
+				state.layersMix += (lt - state.layersMix) * (1 - Math.exp(-dt * 3));
+				gUni.uMode.value = state.hubsMix;
+
+				// instance positions
+				const hovSt = state.hover,
+					selSt = state.selected;
+				for (let n = 0; n < NI; n++) {
+					const i = insts[n];
+					const k = ease(clamp01((now - i.t0) / 1.35));
+					i.p.lerpVectors(i.from, i.to, k);
+					i.l += (i.tl - i.l) * (1 - Math.exp(-dt * 7));
+					i.hov += ((hovSt === i.st ? 1 : 0) - i.hov) * (1 - Math.exp(-dt * 12));
+					i.sel += ((selSt === i.st ? 1 : 0) - i.sel) * (1 - Math.exp(-dt * 8));
+				}
+
+				// stations
+				const pulse = 0.5 + 0.5 * Math.sin(now * 3.2);
+				for (let n = 0; n < NI; n++) {
+					const i = insts[n],
+						s = i.st;
+					const pop = backOut(clamp01((now - i.introDelay) / 0.6));
+					const inter = s.lines.length > 1;
+					let r = (inter ? 0.4 : 0.27) * (s.disabled ? 0.72 : 1);
+					r *= 1 + state.hubsMix * (s.disabled ? 0 : s.bcN * 1.6);
+					r *= 1 + i.hov * 0.5 + i.sel * (0.6 + pulse * 0.15);
+					r *= pop * (0.55 + 0.45 * i.l);
+					V.copy(i.p);
+					SC.set(r, r, r);
+					M.compose(V, Q.identity(), SC);
+					stationMesh.setMatrixAt(n, M);
+					const boost = (s.disabled ? 0.35 : 1) * (0.14 + 0.86 * i.l);
+					C.copy(i.color).multiplyScalar(boost).lerp(WHITE, Math.max(i.hov * 0.35, i.sel * 0.45));
+					if (state.route?.explored) {
+						// replay the A* search: stations flash in the order they were expanded
+						const R = state.route,
+							k = R.exploredIdx.get(s);
+						if (k !== undefined) {
+							const f = clamp01(((now - R.t0) * 55 - k) / 6) * (1 - clamp01((now - R.t0 - 2.2) / 0.8));
+							if (f > 0) {
+								C.lerp(ACCENT, f * 0.9);
+								r *= 1 + f * 0.9;
+								SC.set(r, r, r);
+								M.compose(V, Q.identity(), SC);
+								stationMesh.setMatrixAt(n, M);
+							}
+						}
+					}
+					stationMesh.setColorAt(n, C);
+
+					// halo
+					const hr = r * (1.9 + i.sel * (1.2 + pulse));
+					SC.set(hr, hr, hr);
+					M.compose(V, Q.identity(), SC);
+					haloMesh.setMatrixAt(n, M);
+					C.copy(i.color).multiplyScalar((s.disabled ? 0.12 : 0.5) * (0.2 + 0.8 * i.l));
+					haloMesh.setColorAt(n, C);
+
+					// ring (interchanges, selected)
+					const showRing = inter || i.sel > 0.01 || i.hov > 0.01 ? 1 : 0;
+					const rr = showRing ? (inter ? 1.55 : 1.4) * pop * (1 + i.sel * (0.5 + pulse * 0.35)) * (0.6 + 0.4 * i.l) * (s.disabled ? 0.8 : 1) * (1 + state.hubsMix * (s.disabled ? 0 : s.bcN * 0.8)) : 0;
+					SC.set(rr, rr, rr);
+					M.compose(V, Q.identity(), SC);
+					ringMesh.setMatrixAt(n, M);
+					C.setRGB(1, 1, 1).multiplyScalar((0.25 + 0.75 * i.l) * (s.disabled ? 0.4 : 1));
+					ringMesh.setColorAt(n, C);
+
+					// pillar down to ground
+					tmpA.set(i.p.x, 0, i.p.z);
+					setCyl(pillarMesh, n, tmpA, i.p, 0.03 + 0.05 * state.hubsMix * s.bcN);
+					C.copy(i.color).multiplyScalar(0.25 + 0.75 * i.l);
+					pillarMesh.setColorAt(n, C);
+				}
+
+				// edges
+				for (let n = 0; n < edges.length; n++) {
+					const e = edges[n];
+					e.l += (e.tl - e.l) * (1 - Math.exp(-dt * 7));
+					const g = easeOut(clamp01((now - e.delay) / 0.55));
+					const q = tmpA.lerpVectors(e.a.p, e.b.p, g);
+					let w = e.type === "link" ? 0.07 : e.op ? 0.11 : 0.05;
+					if (state.focusActive && e.tl >= 1) w *= 1.55;
+					// shimmer: a narrow bright wave sweeps along each line (faster along the active route)
+					let wave = 0;
+					if (state.trains && e.type === "line" && e.op && now > 3) {
+						const inRoute = state.route && e.rIdx != null && e.tl >= 1;
+						const ph = inRoute ? e.rIdx : e.a.order;
+						wave = Math.pow(0.5 + 0.5 * Math.sin(ph * 0.5 - now * (inRoute ? 5.5 : 2.4) + lineIdx[e.line] * 1.7), inRoute ? 3 : 7) * e.l;
+					}
+					w *= 1 + wave * 0.7;
+					setCyl(edgeMesh, n, e.a.p, q, w * (0.7 + 0.3 * e.l));
+					if (e.type === "link") C.setRGB(0.5, 0.55, 0.65).multiplyScalar(0.4 * e.l);
+					else C.set(LINE_COLOR[e.line]).multiplyScalar((e.op ? 1 : 0.3) * (0.1 + 0.9 * e.l));
+					if (wave > 0.001) C.lerp(WHITE, wave * 0.6);
+					edgeMesh.setColorAt(n, C);
+				}
+				for (let n = 0; n < xfers.length; n++) {
+					const e = xfers[n];
+					e.l += (e.tl - e.l) * (1 - Math.exp(-dt * 7));
+					const g = easeOut(clamp01((now - e.delay) / 0.5));
+					const q = tmpA.lerpVectors(e.a.p, e.b.p, g);
+					setCyl(xferMesh, n, e.a.p, q, 0.06);
+					C.setRGB(1, 1, 1).multiplyScalar(0.85 * (0.1 + 0.9 * e.l) * (e.op ? 1 : 0.3));
+					xferMesh.setColorAt(n, C);
+				}
+
+				[stationMesh, ringMesh, haloMesh, pillarMesh, edgeMesh, xferMesh].forEach((m) => {
+					m.instanceMatrix.needsUpdate = true;
+					m.instanceColor.needsUpdate = true;
+				});
+
+				// beam
+				const sel = state.selected;
+				const tgtA = sel ? 1 : 0;
+				beam.material.uniforms.uA.value += (tgtA - beam.material.uniforms.uA.value) * (1 - Math.exp(-dt * 6));
+				beam.visible = beam.material.uniforms.uA.value > 0.01;
+				if (sel) {
+					const i0 = sel.instList[0];
+					beam.position.set(i0.p.x, i0.p.y + 60, i0.p.z);
+					beam.rotation.y = now;
+				}
+
+				ground.position.x = 0;
+				gUni.uTime.value = now;
+				scene.userData.dust.rotation.y = now * 0.012;
+				scene.userData.dust.position.y = Math.sin(now * 0.2) * 1.5;
+			}
+
+			/* =====================================================================
+			 * Labels (greedy decluttering by priority)
+			 * ===================================================================== */
+			const labelsEl = $("#labels");
+			const labelEls = stations.map((s) => {
+				const el = document.createElement("div");
+				el.className = "lb";
+				labelsEl.appendChild(el);
+				return el;
+			});
+			const prio = stations.map((s) => (s.lines.length > 1 ? 100 : 0) + s.bcN * 60 + (s.nb.size === 1 ? 25 : 0) + (s.disabled ? -30 : 0));
+			const order = stations.map((_, i) => i).sort((a, b) => prio[b] - prio[a]);
+			const proj = new THREE.Vector3();
+			let lbFrame = 0;
+			function updateLabels() {
+				if (lbFrame++ % 2) return;
+				const W = innerWidth,
+					H = innerHeight;
+				const placed = [];
+				const routeSts = state.route ? new Set(state.route.path.map((i) => i.st)) : null;
+				const forced = (s) => s === state.hover || s === state.selected || s === state.routeFrom || (state.route && (s === state.route.a || s === state.route.b));
+				let count = 0;
+				const want = new Map();
+				for (const idx of order) {
+					const s = stations[idx];
+					const el = labelEls[idx];
+					let show = state.labels || forced(s);
+					if (!show || now < 3.2) {
+						want.set(idx, null);
+						continue;
+					}
+					const inst = s.instList.reduce((a, b) => (b.l > a.l ? b : a));
+					if (!forced(s) && inst.l < 0.5) {
+						want.set(idx, null);
+						continue;
+					}
+					if (routeSts && !routeSts.has(s) && !forced(s)) {
+						want.set(idx, null);
+						continue;
+					}
+					proj.copy(inst.p);
+					proj.y += 1.2;
+					proj.project(camera);
+					if (proj.z > 1 || Math.abs(proj.x) > 1.05 || Math.abs(proj.y) > 1.05) {
+						want.set(idx, null);
+						continue;
+					}
+					const x = (proj.x * 0.5 + 0.5) * W,
+						y = (-proj.y * 0.5 + 0.5) * H;
+					const txt = lang === "fa" ? s.fa : s.en;
+					const w = txt.length * (lang === "fa" ? 7.4 : 6.6) + 16,
+						h = 20;
+					const rect = { x: x - w / 2, y: y - 30, w, h };
+					const hit = !forced(s) && placed.some((r) => rect.x < r.x + r.w + 4 && rect.x + rect.w + 4 > r.x && rect.y < r.y + r.h + 3 && rect.y + rect.h + 3 > r.y);
+					if (hit || count > 70) {
+						want.set(idx, null);
+						continue;
+					}
+					placed.push(rect);
+					count++;
+					want.set(idx, { rect, txt, hot: forced(s) });
+				}
+				stations.forEach((s, idx) => {
+					const el = labelEls[idx],
+						w = want.get(idx);
+					if (!w) {
+						if (el.style.display !== "none") el.style.display = "none";
+						return;
+					}
+					if (el.textContent !== w.txt) el.textContent = w.txt;
+					el.style.display = "block";
+					el.style.transform = `translate(${w.rect.x.toFixed(1)}px, ${w.rect.y.toFixed(1)}px)`;
+					el.classList.toggle("hot", w.hot);
+					el.style.zIndex = w.hot ? 3 : 1;
+				});
+			}
+
+			/* =====================================================================
+			 * Picking / pointer
+			 * ===================================================================== */
+			const mouse = { x: -1, y: -1, down: null, over: false };
+			const pickProj = new THREE.Vector3();
+			function pick(x, y) {
+				let best = null,
+					bd = 17;
+				for (const i of insts) {
+					if (i.l < 0.2 && !state.route && !state.routeFrom) continue;
+					if (now < i.introDelay) continue;
+					pickProj.copy(i.p).project(camera);
+					if (pickProj.z > 1) continue;
+					const sx = (pickProj.x * 0.5 + 0.5) * innerWidth,
+						sy = (-pickProj.y * 0.5 + 0.5) * innerHeight;
+					const d = Math.hypot(sx - x, sy - y) - (i.st.lines.length > 1 ? 3 : 0);
+					if (d < bd) {
+						bd = d;
+						best = i;
+					}
+				}
+				return best ? best.st : null;
+			}
+			canvas.addEventListener("pointermove", (e) => {
+				mouse.x = e.clientX;
+				mouse.y = e.clientY;
+				mouse.over = true;
+				mouse.moved = true;
+			});
+			canvas.addEventListener("pointerleave", () => {
+				mouse.over = false;
+				state.hover = null;
+				$("#tip").style.display = "none";
+			});
+			canvas.addEventListener("pointerdown", (e) => {
+				mouse.down = { x: e.clientX, y: e.clientY };
+			});
+			canvas.addEventListener("pointerup", (e) => {
+				if (!mouse.down) return;
+				const moved = Math.hypot(e.clientX - mouse.down.x, e.clientY - mouse.down.y);
+				mouse.down = null;
+				if (moved > 5) return;
+				const s = pick(e.clientX, e.clientY);
+				if (s) onStationClick(s);
+				else if (!state.routeFrom) clearSelection();
+			});
+			function updateHover() {
+				if (!mouse.moved) return;
+				mouse.moved = false;
+				const s = mouse.over && !mouse.down ? pick(mouse.x, mouse.y) : null;
+				state.hover = s;
+				canvas.style.cursor = s ? "pointer" : "";
+				const tip = $("#tip");
+				if (s) {
+					tip.style.display = "block";
+					tip.style.left = mouse.x + "px";
+					tip.style.top = mouse.y + "px";
+					tip.innerHTML = `<b>${esc(s.fa)}</b><small>${esc(s.en)} · ${s.lines.map((l) => `<span style="color:${LINE_COLOR[l]}">●</span>`).join("")}</small>`;
+				} else tip.style.display = "none";
+			}
+
+			function onStationClick(s) {
+				if (state.routeFrom && s !== state.routeFrom) {
+					const a = state.routeFrom;
+					state.routeFrom = null;
+					buildRoute(a, s);
+					return;
+				}
+				select(s);
+			}
+
+			/* =====================================================================
+			 * Selection / route
+			 * ===================================================================== */
+			function select(s, fly = true) {
+				state.route = null;
+				state.routeFrom = null;
+				state.isolate = null;
+				state.selected = s;
+				applyFocus();
+				renderSide();
+				renderLegend();
+				if (fly) flyToStation(s);
+			}
+			function clearSelection() {
+				if (!state.selected && !state.route && !state.isolate && !state.routeFrom) return;
+				state.selected = null;
+				state.route = null;
+				state.routeFrom = null;
+				state.isolate = null;
+				applyFocus();
+				renderSide();
+				renderLegend();
+			}
+			function buildRoute(a, b) {
+				const found = findRoute(a, b);
+				const path = found?.path;
+				state.selected = null;
+				state.isolate = null;
+				if (!path) {
+					state.route = { a, b, path: null };
+					state.route.path = [];
+					applyFocus();
+					renderSide();
+					renderLegend();
+					return;
+				}
+				const stopsTotal = path.filter((i, k) => k > 0 && path[k - 1].st !== i.st).length;
+				const transfers = path.filter((i, k) => k > 0 && path[k - 1].st === i.st).length;
+				// group the path into per-line legs
+				const clean = [];
+				path.forEach((i, k) => {
+					const prev = path[k - 1];
+					if (!prev) return clean.push({ line: i.line, from: i.st, to: i.st, stops: 0 });
+					if (prev.st === i.st) return clean.push({ line: i.line, from: i.st, to: i.st, stops: 0 });
+					const c = clean[clean.length - 1];
+					c.to = i.st;
+					c.stops++;
+				});
+				state.route = { a, b, path, segs: clean, stops: stopsTotal, transfers, minutes: Math.round(found.cost + 1), km: found.km, explored: found.explored, exploredIdx: new Map(found.explored.map((st, k) => [st, k])), t0: now };
+				allEdges.forEach((e) => (e.rIdx = null));
+				for (let k = 0; k < path.length - 1; k++) {
+					const e = edgeMap.get(edgeKey(path[k], path[k + 1]));
+					if (e) e.rIdx = k;
+				}
+				applyFocus();
+				renderSide();
+				renderLegend();
+				// frame the path
+				const box = new THREE.Box3();
+				path.forEach((i) => box.expandByPoint(i.to));
+				const c = box.getCenter(new THREE.Vector3());
+				const size = box.getSize(new THREE.Vector3()).length();
+				const off = camera.position.clone().sub(controls.target).normalize().multiplyScalar(Math.max(26, size * 1.5));
+				if (off.y < 14) off.y = 14;
+				tweenCamera(c.clone().add(off), c, 1.6);
+			}
+
+			/* =====================================================================
+			 * UI rendering
+			 * ===================================================================== */
+			const darkLines = new Set(Object.entries(LINE_COLOR).filter(([, c]) => new THREE.Color(c).getHSL({}).l > 0.55).map(([l]) => Number(l)));
+			const lnChip = (l) => `<span class="ln ${darkLines.has(l) ? "dk" : ""}" style="--c:${LINE_COLOR[l]}">${nf(l)}</span>`;
+			const dots = (s) => `<span class="dots">${s.lines.map((l) => `<i class="dot" style="background:${LINE_COLOR[l]};color:${LINE_COLOR[l]}"></i>`).join("")}</span>`;
+			const nm = (s) => (lang === "fa" ? s.fa : s.en);
+			const nm2 = (s) => (lang === "fa" ? s.en : s.fa);
+
+			function renderStats() {
+				const op = ops.length,
+					planned = stations.length - op,
+					inter = stations.filter((s) => s.lines.length > 1 && !s.disabled).length;
+				const defs = [
+					[op, tr("stations"), planned ? `+${nf(planned)}` : ""],
+					[LINES.length, tr("lines"), ""],
+					[inter, tr("interchanges"), ""],
+					[Math.round(totalKm), tr("km"), ""],
+				];
+				$("#stats").innerHTML = defs.map(([v, l, sub], k) => `<div class="stat"><b class="num" data-count="${v}">${nf(v)}${sub ? `<small>${sub}</small>` : ""}</b><span>${l}</span></div>`).join("");
+				countUp();
+			}
+			function countUp() {
+				$$("[data-count]").forEach((el) => {
+					const v = Number(el.dataset.count),
+						small = $("small", el)?.outerHTML || "";
+					const t0 = performance.now() + 700;
+					const step = (t) => {
+						const k = clamp01((t - t0) / 1600);
+						el.innerHTML = nf(Math.round(v * easeOut(k))) + small;
+						if (k < 1) requestAnimationFrame(step);
+					};
+					requestAnimationFrame(step);
+				});
+			}
+
+			function renderLegend() {
+				const maxKm = Math.max(...LINES.map((l) => lineStats[l].km));
+				$("#legend").innerHTML =
+					`<div class="h-eyebrow"><span>${tr("legend")}</span></div>` +
+					LINES.map((l) => {
+						const st = lineStats[l];
+						const cls = state.isolate === l ? "on" : state.isolate ? "off" : "";
+						return `<button class="lg ${cls}" data-line="${l}" style="--c:${LINE_COLOR[l]}">
+							${lnChip(l)}<span class="t">${tr("line")} ${nf(l)}</span><span class="v num">${nf(st.count)} · ${nf(st.km, 1)} km</span>
+							<span class="b"><i style="width:${(st.km / maxKm) * 100}%"></i></span></button>`;
+					}).join("");
+				$$("#legend .lg").forEach((b) =>
+					b.addEventListener("click", () => {
+						const l = Number(b.dataset.line);
+						state.isolate = state.isolate === l ? null : l;
+						state.selected = null;
+						state.route = null;
+						state.routeFrom = null;
+								applyFocus();
+						renderLegend();
+						renderSide();
+						if (state.isolate) {
+							const pts = insts.filter((i) => i.line === l).map((i) => i.to);
+							const box = new THREE.Box3().setFromPoints(pts);
+							const c = box.getCenter(new THREE.Vector3());
+							const off = camera.position.clone().sub(controls.target).normalize().multiplyScalar(Math.max(45, box.getSize(new THREE.Vector3()).length() * 1.15));
+							tweenCamera(c.clone().add(off), c, 1.4);
+						}
+					}),
+				);
+			}
+
+			function renderSide() {
+				const el = $("#side");
+				el.style.animation = "none";
+				void el.offsetWidth;
+				el.style.animation = "";
+				el.dir = lang === "fa" ? "rtl" : "ltr";
+				if (state.route) return renderRoute(el);
+				if (state.routeFrom) return renderPick(el);
+				if (state.selected) return renderStation(el, state.selected);
+				renderInsights(el);
+			}
+			function bindSideStationLinks(el) {
+				$$("[data-st]", el).forEach((b) => b.addEventListener("click", () => select(byId.get(b.dataset.st))));
+			}
+			function renderInsights(el) {
+				const widest = [...stations].filter((s) => !s.disabled).sort((a, b) => b.lines.length - a.lines.length)[0];
+				const longest = [...LINES].sort((a, b) => lineStats[b].km - lineStats[a].km)[0];
+				const planned = stations.length - ops.length;
+				el.innerHTML = `
+					<div class="h-eyebrow"><span>${tr("top")}</span></div>
+					${topHubs
+						.map(
+							(s, k) => `<button class="hub" data-st="${esc(s.id)}"><span class="rk num">${nf(k + 1)}</span><span class="nm">${esc(nm(s))}</span>${dots(s)}
+							<span class="bar"><i style="width:${s.bcN * 100}%"></i></span></button>`,
+						)
+						.join("")}
+					<div class="facts">
+						<div>${tr("mostLines")}: <b>${esc(nm(widest))}</b> · ${nf(widest.lines.length)} ${tr("nLines")}</div>
+						<div>${tr("longest")}: ${lnChip(longest)} <b class="num">${nf(lineStats[longest].km, 1)} km</b></div>
+						<div>${tr("closed")}: <b class="num">${nf(planned)}</b></div>
+					</div>`;
+				bindSideStationLinks(el);
+			}
+			function renderStation(el, s) {
+				const am = Object.entries(AM_ICON).filter(([k]) => s.raw[k] === true);
+				el.innerHTML = `
+					<div class="st-head"><div><div class="st-fa">${esc(s.fa)}</div><div class="st-en">${esc(s.en)}</div></div><button class="x" id="xs" aria-label="close">✕</button></div>
+					<div class="chips">${s.lines.map((l) => `<span class="chip">${lnChip(l)}${tr("line")} ${nf(l)}</span>`).join("")}${s.disabled ? `<span class="chip plain warn">${tr("closed")}</span>` : ""}</div>
+					<div class="metrics">
+						<div class="metric"><b class="num">${nf(s.nb.size)}</b><span>${tr("degree")}</span></div>
+						<div class="metric"><b class="num">${s.disabled ? "—" : "#" + nf(s.rank)}</b><span>${tr("rank")}${s.disabled ? "" : " · " + tr("of") + " " + nf(ops.length)}</span></div>
+					</div>
+					${s.address ? `<div class="sec"><h4>${tr("address")}</h4><div class="addr">${esc(s.address)}</div></div>` : ""}
+					${am.length ? `<div class="sec"><h4>${tr("amenities")}</h4><div class="am">${am.map(([k, ic]) => `<span title="${tr("am")[k]}">${ic} ${tr("am")[k]}</span>`).join("")}</div></div>` : ""}
+					<div class="sec"><h4>${tr("neighbors")}</h4><div class="nbs">${[...s.nb].map((n) => `<button data-st="${esc(n.id)}">${esc(nm(n))}</button>`).join("")}</div></div>
+					${s.disabled ? "" : `<button class="cta" id="rt">${tr("routeFrom")}</button>`}`;
+				$("#xs").onclick = clearSelection;
+				const rt = $("#rt");
+				if (rt)
+					rt.onclick = () => {
+						state.routeFrom = s;
+						applyFocus();
+						renderSide();
+					};
+				bindSideStationLinks(el);
+			}
+			function renderPick(el) {
+				const s = state.routeFrom;
+				el.innerHTML = `<div class="h-eyebrow"><span>${tr("route")}</span></div>
+					<div class="st-fa">${esc(nm(s))}</div><div class="st-en">${esc(nm2(s))}</div>
+					<div class="pick">${tr("pickDest")}</div>
+					<button class="cta ghost" id="cn">${tr("cancel")}</button>`;
+				$("#cn").onclick = () => {
+					state.routeFrom = null;
+					select(s, false);
 				};
 			}
-
-			function closeDialog() {
-				const dialog = document.getElementById("nodePropertiesDialog");
-				dialog.style.display = "none";
+			function renderRoute(el) {
+				const R = state.route;
+				if (!R.path.length) {
+					el.innerHTML = `<div class="h-eyebrow"><span>${tr("route")}</span></div><div>${tr("noRoute")}</div><button class="cta ghost" id="cr">${tr("clear")}</button>`;
+					$("#cr").onclick = clearSelection;
+					return;
+				}
+				el.innerHTML = `
+					<div class="st-head"><div><div class="h-eyebrow" style="margin-bottom:6px"><span>${tr("route")}</span></div>
+					<div class="st-fa" style="font-size:20px">${esc(nm(R.a))} → ${esc(nm(R.b))}</div></div><button class="x" id="xs" aria-label="close">✕</button></div>
+					<div class="route-sum">
+						<div class="metric"><b class="num">${nf(R.stops)}</b><span>${tr("stops")}</span></div>
+						<div class="metric"><b class="num">${nf(R.transfers)}</b><span>${tr("transfers")}</span></div>
+						<div class="metric"><b class="num">${nf(R.minutes)}</b><span>${tr("time")}</span></div>
+					</div>
+					<div class="algo">A* · ${nf(R.km, 1)} km · ${tr("explored")} ${nf(R.explored.length)} / ${nf(ops.length)}</div>
+					<div class="steps">${R.segs
+						.map(
+							(sg) => `<div class="step" style="--c:${LINE_COLOR[sg.line]}">${lnChip(sg.line)}<div><b>${esc(nm(sg.from))}${sg.stops ? ` → ${esc(nm(sg.to))}` : ""}</b><small>${tr("line")} ${nf(sg.line)}${sg.stops ? " · " + nf(sg.stops) + " " + tr("stops") : " · " + tr("walk")}</small></div></div>`,
+						)
+						.join("")}</div>
+					<button class="cta ghost" id="cr">${tr("clear")}</button>`;
+				$("#xs").onclick = $("#cr").onclick = clearSelection;
 			}
 
-			init();
+			/* ---- search ---- */
+			const norm = (s) =>
+				String(s)
+					.toLowerCase()
+					.replace(/ي/g, "ی")
+					.replace(/ك/g, "ک")
+					.replace(/[‌ً-ْ\s\-’'.]/g, "");
+			const q = $("#q"),
+				resEl = $("#results");
+			let resIdx = -1,
+				resList = [];
+			function doSearch() {
+				const v = norm(q.value);
+				if (!v) {
+					resEl.classList.remove("open");
+					resList = [];
+					return;
+				}
+				resList = stations.filter((s) => norm(s.fa).includes(v) || norm(s.en).includes(v)).sort((a, b) => (norm(nm(a)).startsWith(v) ? 0 : 1) - (norm(nm(b)).startsWith(v) ? 0 : 1)).slice(0, 8);
+				resIdx = resList.length ? 0 : -1;
+				resEl.innerHTML = resList.length
+					? resList.map((s, k) => `<button role="option" data-i="${k}" class="${k === 0 ? "on" : ""}">${dots(s)}<span>${esc(nm(s))}</span><small>${esc(nm2(s))}</small></button>`).join("")
+					: `<button disabled><small>${tr("noResults")}</small></button>`;
+				resEl.classList.add("open");
+				$$("button[data-i]", resEl).forEach((b) => b.addEventListener("mousedown", (e) => (e.preventDefault(), choose(Number(b.dataset.i)))));
+			}
+			function choose(k) {
+				const s = resList[k];
+				if (!s) return;
+				q.value = "";
+				resEl.classList.remove("open");
+				q.blur();
+				onStationClick(s);
+				if (!state.route) flyToStation(s);
+			}
+			q.addEventListener("input", doSearch);
+			q.addEventListener("focus", doSearch);
+			q.addEventListener("blur", () => resEl.classList.remove("open"));
+			q.addEventListener("keydown", (e) => {
+				if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+					e.preventDefault();
+					resIdx = (resIdx + (e.key === "ArrowDown" ? 1 : -1) + resList.length) % Math.max(resList.length, 1);
+					$$("button[data-i]", resEl).forEach((b, k) => b.classList.toggle("on", k === resIdx));
+				} else if (e.key === "Enter") choose(Math.max(resIdx, 0));
+				else if (e.key === "Escape") q.blur();
+			});
+			addEventListener("keydown", (e) => {
+				if (e.key === "/" && document.activeElement !== q) {
+					e.preventDefault();
+					q.focus();
+				}
+				if (e.key === "Escape" && document.activeElement !== q) clearSelection();
+				if (document.activeElement === document.body || document.activeElement === canvas) {
+					if (e.key === "1") setMode("map");
+					if (e.key === "2") setMode("layers");
+					if (e.key === "3") setMode("hubs");
+				}
+			});
+
+			/* ---- toggles / modes ---- */
+			function renderStatic() {
+				document.documentElement.lang = lang;
+				document.documentElement.dir = lang === "fa" ? "rtl" : "ltr";
+				$$("[data-t]").forEach((el) => (el.textContent = tr(el.dataset.t)));
+				q.placeholder = tr("search") + "  ( / )";
+				$$("#toggles [data-tg]").forEach((b) => {
+					const k = b.dataset.tg;
+					if (k !== "lang") b.textContent = tr(k);
+					b.setAttribute("aria-pressed", k === "lang" ? lang === "fa" : state[k]);
+				});
+				$$("#modes button").forEach((b) => ($("span", b).textContent = tr(b.dataset.mode)));
+				$("#modeHint").textContent = tr("hint" + state.mode[0].toUpperCase() + state.mode.slice(1));
+				renderStats();
+				renderLegend();
+				renderSide();
+				movePill();
+			}
+			$$("#toggles [data-tg]").forEach((b) =>
+				b.addEventListener("click", () => {
+					const k = b.dataset.tg;
+					if (k === "lang") {
+						lang = lang === "fa" ? "en" : "fa";
+						try {
+							localStorage.setItem("tm-lang", lang);
+						} catch {}
+						renderStatic();
+					} else {
+						state[k] = !state[k];
+						b.setAttribute("aria-pressed", state[k]);
+					}
+				}),
+			);
+			$$("#modes button").forEach((b) => b.addEventListener("click", () => setMode(b.dataset.mode)));
+			function movePill() {
+				const b = $('#modes button[aria-pressed="true"]');
+				if (!b) return;
+				const pill = $("#pill");
+				pill.style.width = b.offsetWidth + "px";
+				pill.style.left = b.offsetLeft + "px";
+			}
+
+			addEventListener("resize", () => {
+				camera.aspect = innerWidth / innerHeight;
+				camera.updateProjectionMatrix();
+				renderer.setSize(innerWidth, innerHeight, false);
+				composer.setSize(innerWidth, innerHeight);
+				bloom.setSize(innerWidth, innerHeight);
+				movePill();
+			});
+
+			/* =====================================================================
+			 * Main loop
+			 * ===================================================================== */
+			applyFocus();
+			insts.forEach((i) => (i.l = 1));
+			allEdges.forEach((e) => (e.l = 1));
+			renderStatic();
+			document.fonts?.ready.then(movePill);
+			setTimeout(() => $("#loader").classList.add("done"), 400);
+
+			// intro camera
+			const INTRO = { p0: camera.position.clone(), t0: controls.target.clone(), s: 0.2, d: 5.2 };
+			const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+			// "#skip" (optionally "#skip,layers") jumps past the intro — handy for screenshots
+			const hash = location.hash.slice(1).split(",");
+			if (hash.includes("skip")) {
+				now = 9;
+				state.introDone = true;
+				camera.position.copy(HOME.pos);
+				controls.target.copy(HOME.target);
+				const m = hash.find((h) => ["layers", "hubs"].includes(h));
+				if (m) setMode(m, true);
+				const r = hash.find((h) => h.startsWith("route="));
+				if (r) {
+					const [x, y] = decodeURIComponent(r.slice(6)).split(":");
+					if (byId.get(x) && byId.get(y)) buildRoute(byId.get(x), byId.get(y));
+				}
+			}
+
+			renderer.setAnimationLoop(() => {
+				const dt = Math.min(clock.getDelta(), 0.05);
+				now += dt;
+
+				if (!state.introDone) {
+					if (state.interacted || now > INTRO.s + INTRO.d) state.introDone = true;
+					else {
+						const k = easeOut(clamp01((now - INTRO.s) / INTRO.d));
+						camera.position.lerpVectors(INTRO.p0, HOME.pos, k);
+						controls.target.lerpVectors(INTRO.t0, HOME.target, k);
+					}
+				}
+				if (camTween) {
+					const k = ease(clamp01((now - camTween.s) / camTween.d));
+					camera.position.lerpVectors(camTween.p0, camTween.p1, k);
+					controls.target.lerpVectors(camTween.t0, camTween.t1, k);
+					if (k >= 1) camTween = null;
+				}
+				controls.autoRotate = state.rotate && state.introDone && !state.interacted && !state.selected && !state.route && !reduced;
+				controls.update();
+
+				update(dt);
+				updateHover();
+				updateLabels();
+				composer.render();
+			});
+
+			// expose for debugging
+			window.__metro = { state, setMode, select: (id) => select(byId.get(id)), route: (a, b) => buildRoute(byId.get(a), byId.get(b)), stations, camera, controls };
 		</script>
 	</body>
 </html>
